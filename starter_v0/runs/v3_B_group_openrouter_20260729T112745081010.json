@@ -1,0 +1,756 @@
+{
+  "run_id": "v3_B_group_openrouter_20260729T112745081010",
+  "version": "v3",
+  "artifact_version": "v3+pd7b4a561cb84+t0e8ff5a33f70",
+  "prompt_hash": "d7b4a561cb84adfceb20bdddcb9cfc39927582ba63bc5c41cfe0c045b41dcad1",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "phase": "B",
+  "suite": "group",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "system_prompt": "F:\\[VinUni] Lab\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "F:\\[VinUni] Lab\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "eval_cases": "data\\eval_group.json",
+  "dataset_id": "day04_v2_research_group",
+  "dataset_role": "group",
+  "description": "Bộ 10 test cases do nhóm tự thiết kế để đánh giá Agent với các tool mới (define, scholar, note_write, note_append) và kiểm thử ranh giới định tuyến.",
+  "generated_at": "2026-07-29T11:27:45",
+  "summary": {
+    "total_cases": 10,
+    "measured_cases": 10,
+    "provider_error_cases": 0,
+    "passed_cases": 10,
+    "case_accuracy": 1.0,
+    "tool_routing_accuracy": 1.0,
+    "argument_accuracy": 1.0,
+    "multiturn_accuracy": 1.0,
+    "failure_counts": {},
+    "observed_mismatch_counts": {}
+  },
+  "results": [
+    {
+      "id": "G01_define_concept",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": false,
+      "metadata": {
+        "what_it_tests": "Tìm định nghĩa khái niệm cơ bản -> define, không phải lookup."
+      },
+      "input": "Định nghĩa thuật ngữ 'Large Language Model' giúp mình.",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Large Language Model"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Large Language Model"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_tool",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "define",
+          "args": {
+            "term": "Large Language Model"
+          },
+          "result": {
+            "tool": "define_concept",
+            "term": "Large Language Model",
+            "lang": "en",
+            "resolved_title": "Large language model",
+            "definition": "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts, and are a foundational technology behind modern chatbots.",
+            "short_description": "Type of machine learning model",
+            "url": "https://en.wikipedia.org/wiki/Large_language_model",
+            "source": "en.wikipedia.org"
+          }
+        }
+      ]
+    },
+    {
+      "id": "G02_scholar_vs_papers",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": false,
+      "metadata": {
+        "what_it_tests": "Tìm bài báo peer-reviewed/highly cited -> scholar, không phải papers."
+      },
+      "input": "Tìm kiếm các bài báo khoa học đã được peer-review và trích dẫn nhiều nhất về 'Adam optimizer'.",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Adam optimizer"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Adam optimizer"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_tool",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "Adam optimizer"
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "Adam optimizer",
+            "min_year": null,
+            "verdict": "Most-cited work on 'Adam optimizer': 'Adam: A Method for Stochastic Optimization' (2014, 84,794 citations)",
+            "most_cited": {
+              "title": "Adam: A Method for Stochastic Optimization",
+              "authors": "Diederik P. Kingma, Jimmy Ba",
+              "year": 2014,
+              "venue": "UvA-DARE (University of Amsterdam)",
+              "cited_by_count": 84794,
+              "doi": "https://doi.org/10.48550/arxiv.1412.6980",
+              "url": "https://handle.uba.uva.nl/personal/pure/en/publications/adam-a-method-for-stochastic-optimization(a20791d3-1aff-464a-8544-268383c33a75).html",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Adam: A Method for Stochastic Optimization",
+                "authors": "Diederik P. Kingma, Jimmy Ba",
+                "year": 2014,
+                "venue": "UvA-DARE (University of Amsterdam)",
+                "cited_by_count": 84794,
+                "doi": "https://doi.org/10.48550/arxiv.1412.6980",
+                "url": "https://handle.uba.uva.nl/personal/pure/en/publications/adam-a-method-for-stochastic-optimization(a20791d3-1aff-464a-8544-268383c33a75).html",
+                "is_open_access": true
+              },
+              {
+                "title": "On the Convergence of Adam and Beyond",
+                "authors": "Sashank J. Reddi, Satyen Kale, Sanjiv Kumar",
+                "year": 2019,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 1618,
+                "doi": "https://doi.org/10.48550/arxiv.1904.09237",
+                "url": "https://arxiv.org/pdf/1904.09237",
+                "is_open_access": true
+              },
+              {
+                "title": "Improved Adam Optimizer for Deep Neural Networks",
+                "authors": "Zijun Zhang",
+                "year": 2018,
+                "venue": null,
+                "cited_by_count": 1387,
+                "doi": "https://doi.org/10.1109/iwqos.2018.8624183",
+                "url": "https://doi.org/10.1109/iwqos.2018.8624183",
+                "is_open_access": false
+              },
+              {
+                "title": "A modified Adam algorithm for deep neural network optimization",
+                "authors": "Mohamed Reyad, Amany Sarhan, M. Arafa",
+                "year": 2023,
+                "venue": "Neural Computing and Applications",
+                "cited_by_count": 504,
+                "doi": "https://doi.org/10.1007/s00521-023-08568-z",
+                "url": "https://link.springer.com/content/pdf/10.1007/s00521-023-08568-z.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Adam Optimization Algorithmfor Wide and Deep Neural Network",
+                "authors": "Imran Khan Mohd Jais, Amelia Ritahani Ismail",
+                "year": 2019,
+                "venue": "Knowledge Engineering and Data Science",
+                "cited_by_count": 437,
+                "doi": "https://doi.org/10.17977/um018v2i12019p41-46",
+                "url": "http://journal2.um.ac.id/index.php/keds/article/download/6775/3971",
+                "is_open_access": true
+              }
+            ],
+            "total_found": 12271
+          }
+        }
+      ]
+    },
+    {
+      "id": "G03_note_write_clarify",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": false,
+      "metadata": {
+        "what_it_tests": "Hành động ghi file (note_write) cần qua bước clarify yes_no trước."
+      },
+      "input": "Mở sổ tay mới nghiên cứu về chủ đề 'Quantum Computing' với nội dung tổng quan.",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "question": "Bạn có xác nhận muốn tạo một sổ tay mới về chủ đề 'Quantum Computing' với nội dung tổng quan không?",
+              "response_type": "yes_no"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_boundary",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có xác nhận muốn tạo một sổ tay mới về chủ đề 'Quantum Computing' với nội dung tổng quan không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có xác nhận muốn tạo một sổ tay mới về chủ đề 'Quantum Computing' với nội dung tổng quan không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "G04_note_append_missing_topic",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": false,
+      "metadata": {
+        "what_it_tests": "Ghi thêm vào sổ tay nhưng không rõ ghi vào sổ nào -> clarify hỏi tên sổ."
+      },
+      "input": "Ghi thêm phát hiện mới: 'ResNet giúp huấn luyện mạng sâu hơn' vào sổ tay của mình.",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "text"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "question": "Bạn có thể cho tôi biết chủ đề của ghi chú mà bạn muốn bổ sung phát hiện này không?",
+              "response_type": "text"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "missing_info",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có thể cho tôi biết chủ đề của ghi chú mà bạn muốn bổ sung phát hiện này không?",
+            "response_type": "text"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có thể cho tôi biết chủ đề của ghi chú mà bạn muốn bổ sung phát hiện này không?",
+            "response_type": "text",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "G05_out_of_scope_cooking",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": false,
+      "metadata": {
+        "what_it_tests": "Câu hỏi nấu ăn nằm ngoài phạm vi nghiên cứu khoa học/công nghệ -> KHÔNG gọi tool."
+      },
+      "input": "Cách nấu món phở bò Hà Nội chuẩn vị như thế nào?",
+      "expect": {
+        "no_tool": true,
+        "behavior": "refuse"
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [],
+        "actual_text": "Xin lỗi, nhưng tôi không thể cung cấp công thức nấu ăn hoặc hướng dẫn nấu ăn. Tuy nhiên, bạn có thể tìm kiếm trên internet hoặc tham khảo sách nấu ăn để có được công thức phở bò Hà Nội chuẩn vị.",
+        "case_failure_type": "out_of_scope",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": []
+    },
+    {
+      "id": "G06_define_disambiguate",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": true,
+      "metadata": {
+        "what_it_tests": "Multi-turn làm rõ nghĩa từ mơ hồ: Mercury -> Mercury (element) cho define."
+      },
+      "input": [
+        {
+          "role": "user",
+          "content": "Định nghĩa giúp mình từ 'Mercury'."
+        },
+        {
+          "role": "user",
+          "content": "Ý mình là nguyên tố hóa học Thủy ngân."
+        },
+        {
+          "role": "user",
+          "content": "Chỉ lấy thông tin về nguyên tố hóa học thôi."
+        }
+      ],
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Mercury (element)"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Mercury (element)"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_tool",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "define",
+          "args": {
+            "term": "Mercury (element)"
+          },
+          "result": {
+            "tool": "define_concept",
+            "term": "Mercury (element)",
+            "lang": "en",
+            "resolved_title": "Mercury (element)",
+            "definition": "Mercury is a chemical element; it has symbol Hg and atomic number 80. It is commonly known as quicksilver.",
+            "short_description": "Chemical element with atomic number 80 (Hg)",
+            "url": "https://en.wikipedia.org/wiki/Mercury_(element)",
+            "source": "en.wikipedia.org"
+          }
+        }
+      ]
+    },
+    {
+      "id": "G07_scholar_min_year",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": true,
+      "metadata": {
+        "what_it_tests": "Multi-turn mang theo filter năm: min_year=2020 cho scholar."
+      },
+      "input": [
+        {
+          "role": "user",
+          "content": "Tìm bài báo nổi tiếng về Transformer."
+        },
+        {
+          "role": "user",
+          "content": "Chỉ lấy các nghiên cứu công bố từ năm 2020 trở đi."
+        },
+        {
+          "role": "user",
+          "content": "Hãy tìm kiếm theo yêu cầu đó."
+        }
+      ],
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Transformer",
+              "min_year": 2020
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Transformer",
+              "min_year": 2020
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_arg_value",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "Transformer",
+            "min_year": 2020
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "Transformer",
+            "min_year": 2020,
+            "verdict": "Most-cited work on 'Transformer': 'Swin Transformer: Hierarchical Vision Transformer using Shifted Windows' (2021, 30,731 citations)",
+            "most_cited": {
+              "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+              "authors": "Ze Liu, Yutong Lin, Yue Cao et al.",
+              "year": 2021,
+              "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+              "cited_by_count": 30731,
+              "doi": "https://doi.org/10.1109/iccv48922.2021.00986",
+              "url": "https://doi.org/10.1109/iccv48922.2021.00986",
+              "is_open_access": false
+            },
+            "works": [
+              {
+                "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+                "authors": "Ze Liu, Yutong Lin, Yue Cao et al.",
+                "year": 2021,
+                "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+                "cited_by_count": 30731,
+                "doi": "https://doi.org/10.1109/iccv48922.2021.00986",
+                "url": "https://doi.org/10.1109/iccv48922.2021.00986",
+                "is_open_access": false
+              },
+              {
+                "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+                "authors": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov et al.",
+                "year": 2020,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 21718,
+                "doi": "https://doi.org/10.48550/arxiv.2010.11929",
+                "url": "https://arxiv.org/pdf/2010.11929",
+                "is_open_access": true
+              },
+              {
+                "title": "Transformers: State-of-the-Art Natural Language Processing",
+                "authors": "Thomas Wolf, Lysandre Debut, Victor Sanh et al.",
+                "year": 2020,
+                "venue": null,
+                "cited_by_count": 8132,
+                "doi": "https://doi.org/10.18653/v1/2020.emnlp-demos.6",
+                "url": "https://www.aclweb.org/anthology/2020.emnlp-demos.6.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+                "authors": "Haoyi Zhou, Shanghang Zhang, Jieqi Peng et al.",
+                "year": 2021,
+                "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+                "cited_by_count": 6339,
+                "doi": "https://doi.org/10.1609/aaai.v35i12.17325",
+                "url": "https://ojs.aaai.org/index.php/AAAI/article/download/17325/17132",
+                "is_open_access": true
+              },
+              {
+                "title": "Emerging Properties in Self-Supervised Vision Transformers",
+                "authors": "Mathilde Caron, Hugo Touvron, Ishan Misra et al.",
+                "year": 2021,
+                "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+                "cited_by_count": 5094,
+                "doi": "https://doi.org/10.1109/iccv48922.2021.00951",
+                "url": "https://arxiv.org/pdf/2104.14294",
+                "is_open_access": true
+              }
+            ],
+            "total_found": 301490
+          }
+        }
+      ]
+    },
+    {
+      "id": "G08_note_write_confirm_yes",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": true,
+      "metadata": {
+        "what_it_tests": "Multi-turn: sau khi user xác nhận đồng ý -> gọi note_write với confirmed=true."
+      },
+      "input": [
+        {
+          "role": "user",
+          "content": "Tạo một sổ tay mới cho chủ đề 'Quantum Computing' với nội dung tổng quan."
+        },
+        {
+          "role": "user",
+          "content": "Đồng ý, hãy tạo sổ tay đó."
+        },
+        {
+          "role": "user",
+          "content": "Xác nhận tạo nhé."
+        }
+      ],
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "note_write",
+            "args": {
+              "topic": "Quantum Computing",
+              "confirmed": true
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "note_write",
+            "args": {
+              "topic": "Quantum Computing",
+              "content": "",
+              "confirmed": true
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_boundary",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "note_write",
+          "args": {
+            "topic": "Quantum Computing",
+            "content": "",
+            "confirmed": true
+          },
+          "result": {
+            "tool": "write_research_note",
+            "error": "ValueError",
+            "message": "content must not be empty"
+          }
+        }
+      ]
+    },
+    {
+      "id": "G09_note_append_clarify_name",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": true,
+      "metadata": {
+        "what_it_tests": "Multi-turn: sau khi làm rõ tên sổ tay, vì đây là hành động ghi đè/bổ sung có side effect nên vẫn cần hỏi clarify yes_no để xác nhận."
+      },
+      "input": [
+        {
+          "role": "user",
+          "content": "Hãy ghi thêm thông tin 'Mô hình Llama 3 có 8B tham số' vào sổ."
+        },
+        {
+          "role": "user",
+          "content": "Ghi vào sổ 'Large Language Models'."
+        },
+        {
+          "role": "user",
+          "content": "Tiến hành ghi đi."
+        }
+      ],
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "question": "Bạn có đồng ý ghi thêm thông tin 'Mô hình Llama 3 có 8B tham số' vào sổ 'Large Language Models' không?",
+              "response_type": "yes_no"
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "missing_info",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có đồng ý ghi thêm thông tin 'Mô hình Llama 3 có 8B tham số' vào sổ 'Large Language Models' không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có đồng ý ghi thêm thông tin 'Mô hình Llama 3 có 8B tham số' vào sổ 'Large Language Models' không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "G10_note_append_confirm_yes",
+      "phase": "B",
+      "suite": "group",
+      "case_suite": "group",
+      "is_multiturn": true,
+      "metadata": {
+        "what_it_tests": "Multi-turn: ghi thông tin vào sổ tay đã biết với xác nhận đồng ý -> note_append với confirmed=true."
+      },
+      "input": [
+        {
+          "role": "user",
+          "content": "Hãy ghi thêm thông tin 'Llama 3 8B' vào sổ 'Large Language Models'."
+        },
+        {
+          "role": "user",
+          "content": "Đồng ý ghi, hãy lưu lại."
+        },
+        {
+          "role": "user",
+          "content": "Xác nhận ghi nhé."
+        }
+      ],
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "note_append",
+            "args": {
+              "topic": "Large Language Models",
+              "entry": "Llama 3 8B",
+              "confirmed": true
+            }
+          }
+        ]
+      },
+      "result": {
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
+        "actual_tool_calls": [
+          {
+            "name": "note_append",
+            "args": {
+              "topic": "Large Language Models",
+              "entry": "Llama 3 8B",
+              "confirmed": true
+            }
+          }
+        ],
+        "actual_text": null,
+        "case_failure_type": "wrong_boundary",
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
+      },
+      "tool_results": [
+        {
+          "tool": "note_append",
+          "args": {
+            "topic": "Large Language Models",
+            "entry": "Llama 3 8B",
+            "confirmed": true
+          },
+          "result": {
+            "tool": "append_to_research_note",
+            "error": "FileNotFoundError",
+            "message": "No note exists for 'Large Language Models' (expected notes/large-language-models.md). Existing notes: none. Use note_write to create it first, or ask the user which note they meant."
+          }
+        }
+      ]
+    }
+  ]
+}
