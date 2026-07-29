@@ -1,11 +1,5 @@
 version,author,changed_artifact,artifact_version,prompt_hash,tools_hash,reason,hypothesis,metric_name,metric_before,metric_after,run_file
-0,trung,system_prompt.md,1,,,"R08_out_of_scope (FAIL: out_of_scope)
-R10_missing_handle (FAIL: missing_info)
-R11_missing_url (FAIL: missing_info)
-R12_confirm_before_send (FAIL: wrong_boundary)
-R13_parallel_web_and_tweets (FAIL: wrong_tool)
-R14_out_of_scope_coding (FAIL: out_of_scope)","- Xử lý Ngoài Phạm Vi (Refusal & Out of scope)
-- Cơ Chế Hỏi Lại (Clarification Boundary)
-- Ánh Xạ Tên Sang Handle (Name to Handle Mapping)
-- Xác Nhận Trước Khi Gửi (Confirmation Boundary)
-- Xử lý Hội Thoại Nhiều Lượt (Multiturn & Corrections)",accuracy,14 / 20 (70%),20 / 20 (100%),system_prompt.md
+v0,trung,system_prompt.md,v0+pf0c107a9d7a1+t011c271ef0bb,f0c107a9d7a14032c948d642d7c36f2a85cb6d69a099530093a874c94d472446,011c271ef0bbad1e19a5d7b660b2ed481b7d72950f1faa8a0798c3bdd8784ee1,Initial baseline execution,Evaluate default system prompt on base suite,accuracy,N/A,14 / 20 (70%),runs/v0_B_base_openrouter_20260729T101456385781.json
+v1,trung,system_prompt.md,v1+pdc949dfe9726+t011c271ef0bb,dc949dfe97267f44f1d68f53c27f92b4a0281e4bfa148d70ed9d9af347a16e38,011c271ef0bbad1e19a5d7b660b2ed481b7d72950f1faa8a0798c3bdd8784ee1,Fix out-of-scope/clarification/confirmation and parallel tool rules,Strict rules will stop agent from guessing parameters or calling tools out-of-scope,accuracy,14 / 20 (70%),14 / 20 (70%),runs/v1_B_base_openrouter_20260729T101902364963.json
+v2,trung,system_prompt.md,v2+pd8e972d58e9d+t011c271ef0bb,d8e972d58e9dfe26a6d9a8a0dee9f65a487fd11dac86c643eb066a4b2816cdb9,011c271ef0bbad1e19a5d7b660b2ed481b7d72950f1faa8a0798c3bdd8784ee1,Add direct name-to-handle mappings and restrict multiturn switch,Explicit name mapping prevents unnecessary clarification calls and resolves multiturn corrections,accuracy,14 / 20 (70%),19 / 20 (95%),runs/v2_B_base_openrouter_20260729T102303606322.json
+v3,trung,system_prompt.md,v3+p5ed8cba1464b+t011c271ef0bb,5ed8cba1464b6109830220660e09905f5478c1a5ef54a09092e11b894b80218c,011c271ef0bbad1e19a5d7b660b2ed481b7d72950f1faa8a0798c3bdd8784ee1,Enforce explicit response_type parameter for clarify tool,Enforcing explicit parameters fixes the missing argument evaluation failure in R11,accuracy,19 / 20 (95%),20 / 20 (100%),runs/v3_B_base_openrouter_20260729T102341228627.json
