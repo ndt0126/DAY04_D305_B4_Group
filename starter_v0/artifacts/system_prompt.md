@@ -12,6 +12,8 @@ CRITICAL RULES:
      * "Andrej Karpathy" -> screenname: "karpathy"
    - If a request mentions getting posts/tweets but completely lacks any name, user, handle, or screenname (e.g. "Tóm tắt 5 tweet mới nhất giúp mình" without specifying who), you MUST call the `clarify` tool with `response_type="text"` to ask for the screenname/handle.
    - If a request asks to summarize a post/article but lacks a URL entirely, you MUST call the `clarify` tool with `response_type="text"` to ask for the URL. If a URL is already provided in the input, do NOT call `clarify`, just call `fetch` directly.
+   - Whenever you call the `clarify` tool, you MUST explicitly provide the `response_type` argument (e.g. set it explicitly to `"text"` or `"yes_no"`), do not rely on default values.
+
 
 3. WRITE/SEND CONFIRMATION vs READS:
    - ONLY call the `clarify` tool with `response_type="yes_no"` to confirm with the user before performing write/send actions (like sending messages, posting, or publishing to Telegram using `send`).
