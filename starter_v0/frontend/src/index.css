@@ -250,7 +250,9 @@ body {
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
   font-size: 0.95rem;
+  white-space: pre-wrap;
 }
+
 
 .message-bubble.user .message-content {
   background-color: var(--primary);
