@@ -1,7 +1,278 @@
 {
   "dataset_id": "day04_v2_research_group",
   "dataset_role": "group",
-  "description": "Template để NHÓM tự viết đúng 10 case: 5 single-turn dùng query và 5 multi-turn dùng turns. Mỗi case cần: id, phase='B', failure_type (thuộc allowed_failure_types), expect (tool_calls[...] hoặc no_tool=true), và metadata.what_it_tests. File để trống có chủ đích vì mỗi nhóm phải tự thiết kế các case này.",
-  "allowed_failure_types": ["wrong_tool", "wrong_arg_value", "wrong_boundary", "unnecessary_tool", "out_of_scope", "missing_info"],
-  "cases": []
+  "description": "Bộ 10 test cases do nhóm tự thiết kế để đánh giá Agent với các tool mới (define, scholar, note_write, note_append) và kiểm thử ranh giới định tuyến.",
+  "allowed_failure_types": [
+    "wrong_tool",
+    "wrong_arg_value",
+    "wrong_boundary",
+    "unnecessary_tool",
+    "out_of_scope",
+    "missing_info"
+  ],
+  "cases": [
+    {
+      "id": "G01_define_concept",
+      "phase": "B",
+      "suite": "group",
+      "query": "Định nghĩa thuật ngữ 'Large Language Model' giúp mình.",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Large Language Model"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Tìm định nghĩa khái niệm cơ bản -> define, không phải lookup."
+      }
+    },
+    {
+      "id": "G02_scholar_vs_papers",
+      "phase": "B",
+      "suite": "group",
+      "query": "Tìm kiếm các bài báo khoa học đã được peer-review và trích dẫn nhiều nhất về 'Adam optimizer'.",
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Adam optimizer"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Tìm bài báo peer-reviewed/highly cited -> scholar, không phải papers."
+      }
+    },
+    {
+      "id": "G03_note_write_clarify",
+      "phase": "B",
+      "suite": "group",
+      "query": "Mở sổ tay mới nghiên cứu về chủ đề 'Quantum Computing' với nội dung tổng quan.",
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Hành động ghi file (note_write) cần qua bước clarify yes_no trước."
+      }
+    },
+    {
+      "id": "G04_note_append_missing_topic",
+      "phase": "B",
+      "suite": "group",
+      "query": "Ghi thêm phát hiện mới: 'ResNet giúp huấn luyện mạng sâu hơn' vào sổ tay của mình.",
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "text"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Ghi thêm vào sổ tay nhưng không rõ ghi vào sổ nào -> clarify hỏi tên sổ."
+      }
+    },
+    {
+      "id": "G05_out_of_scope_cooking",
+      "phase": "B",
+      "suite": "group",
+      "query": "Cách nấu món phở bò Hà Nội chuẩn vị như thế nào?",
+      "failure_type": "out_of_scope",
+      "expect": {
+        "no_tool": true,
+        "behavior": "refuse"
+      },
+      "metadata": {
+        "what_it_tests": "Câu hỏi nấu ăn nằm ngoài phạm vi nghiên cứu khoa học/công nghệ -> KHÔNG gọi tool."
+      }
+    },
+    {
+      "id": "G06_define_disambiguate",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Định nghĩa giúp mình từ 'Mercury'."
+        },
+        {
+          "role": "user",
+          "content": "Ý mình là nguyên tố hóa học Thủy ngân."
+        },
+        {
+          "role": "user",
+          "content": "Chỉ lấy thông tin về nguyên tố hóa học thôi."
+        }
+      ],
+      "failure_type": "wrong_tool",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "define",
+            "args": {
+              "term": "Mercury (element)"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn làm rõ nghĩa từ mơ hồ: Mercury -> Mercury (element) cho define."
+      }
+    },
+    {
+      "id": "G07_scholar_min_year",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tìm bài báo nổi tiếng về Transformer."
+        },
+        {
+          "role": "user",
+          "content": "Chỉ lấy các nghiên cứu công bố từ năm 2020 trở đi."
+        },
+        {
+          "role": "user",
+          "content": "Hãy tìm kiếm theo yêu cầu đó."
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "scholar",
+            "args": {
+              "query": "Transformer",
+              "min_year": 2020
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn mang theo filter năm: min_year=2020 cho scholar."
+      }
+    },
+    {
+      "id": "G08_note_write_confirm_yes",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tạo một sổ tay mới cho chủ đề 'Quantum Computing' với nội dung tổng quan."
+        },
+        {
+          "role": "user",
+          "content": "Đồng ý, hãy tạo sổ tay đó."
+        },
+        {
+          "role": "user",
+          "content": "Xác nhận tạo nhé."
+        }
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "note_write",
+            "args": {
+              "topic": "Quantum Computing",
+              "confirmed": true
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn: sau khi user xác nhận đồng ý -> gọi note_write với confirmed=true."
+      }
+    },
+    {
+      "id": "G09_note_append_clarify_name",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Hãy ghi thêm thông tin 'Mô hình Llama 3 có 8B tham số' vào sổ."
+        },
+        {
+          "role": "user",
+          "content": "Ghi vào sổ 'Large Language Models'."
+        },
+        {
+          "role": "user",
+          "content": "Tiến hành ghi đi."
+        }
+      ],
+      "failure_type": "missing_info",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "clarify",
+            "args": {
+              "response_type": "yes_no"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn: sau khi làm rõ tên sổ tay, vì đây là hành động ghi đè/bổ sung có side effect nên vẫn cần hỏi clarify yes_no để xác nhận."
+      }
+    },
+    {
+      "id": "G10_note_append_confirm_yes",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Hãy ghi thêm thông tin 'Llama 3 8B' vào sổ 'Large Language Models'."
+        },
+        {
+          "role": "user",
+          "content": "Đồng ý ghi, hãy lưu lại."
+        },
+        {
+          "role": "user",
+          "content": "Xác nhận ghi nhé."
+        }
+      ],
+      "failure_type": "wrong_boundary",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "note_append",
+            "args": {
+              "topic": "Large Language Models",
+              "entry": "Llama 3 8B",
+              "confirmed": true
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "what_it_tests": "Multi-turn: ghi thông tin vào sổ tay đã biết với xác nhận đồng ý -> note_append với confirmed=true."
+      }
+    }
+  ]
 }
