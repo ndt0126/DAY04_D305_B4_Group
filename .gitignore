@@ -22,3 +22,11 @@ arxiv_papers/
 Thumbs.db
 .idea/
 .vscode/
+
+# Agent Customizations & Skills
+.agents/
+
+# Frontend Node modules & build artifacts
+starter_v0/frontend/node_modules/
+starter_v0/frontend/dist/
+

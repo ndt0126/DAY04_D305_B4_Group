@@ -1,0 +1,85 @@
+{
+  "transcript_id": "baseline_openai_20260729T113700633752",
+  "version": "baseline",
+  "artifact_version": "baseline+peb1c8179815b+t6cdb53d5d7b8",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "6cdb53d5d7b8de80d60b298b1357f462cedbedfae261d5ba60b08ccc401687c5",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "C:\\VinUniLab\\Lab4\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "C:\\VinUniLab\\Lab4\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T11:37:06",
+  "updated_at": "2026-07-29T11:37:06",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-07-29T11:37:00",
+      "user": "Fetch https://example.com",
+      "status": "answered",
+      "assistant_text": "I fetched the content from the URL you provided. Here are the details:\n\n**Title:** Example Domain  \n**URL:** [example.com](https://example.com)  \n**Summary:** This domain is for use in documentation examples without needing permission. Avoid use in operations.  \n[Learn more](https://iana.org/domains/example)",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "fetch",
+              "args": {
+                "url": "https://example.com"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "fetch",
+              "args": {
+                "url": "https://example.com"
+              },
+              "result": {
+                "tool": "read_url",
+                "url": "https://example.com",
+                "items": [
+                  {
+                    "title": "Example Domain",
+                    "url": "https://example.com",
+                    "source": "example.com",
+                    "summary": "# Example Domain\n\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\n\n[Learn more](https://iana.org/domains/example)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "I fetched the content from the URL you provided. Here are the details:\n\n**Title:** Example Domain  \n**URL:** [example.com](https://example.com)  \n**Summary:** This domain is for use in documentation examples without needing permission. Avoid use in operations.  \n[Learn more](https://iana.org/domains/example)",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "fetch",
+          "args": {
+            "url": "https://example.com"
+          },
+          "result": {
+            "tool": "read_url",
+            "url": "https://example.com",
+            "items": [
+              {
+                "title": "Example Domain",
+                "url": "https://example.com",
+                "source": "example.com",
+                "summary": "# Example Domain\n\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.\n\n[Learn more](https://iana.org/domains/example)"
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T11:37:06"
+    }
+  ]
+}
