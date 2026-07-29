@@ -152,6 +152,9 @@ if (-not (Test-Path -LiteralPath $FrontendDistIndex)) {
     throw "Frontend build output missing: $FrontendDistIndex"
 }
 
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+
 Write-Host "Starting React/FastAPI application at http://127.0.0.1:8501"
 & $VenvPython -m uvicorn backend.main:app `
     --host 127.0.0.1 `

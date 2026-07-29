@@ -1,0 +1,1161 @@
+{
+  "transcript_id": "v3_openai_20260729T130003197005",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T13:00:47",
+  "updated_at": "2026-07-29T13:00:47",
+  "turns": [
+    {
+      "turn_index": 21,
+      "started_at": "2026-07-29T13:00:03",
+      "user": "nữa đi vẫn còn đấy",
+      "status": "answered",
+      "assistant_text": "Dưới đây là danh sách 50 bài báo khoa học về trí tuệ nhân tạo và học máy được trích dẫn nhiều nhất:\n\n### Về Trí Tuệ Nhân Tạo (AI)\n\n1. **[Artificial intelligence: a modern approach](https://doi.org/10.5281/zenodo.11381885)**  \n   - **Tác giả:** Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.  \n   - **Năm:** 1995  \n   - **Nơi xuất bản:** Choice Reviews Online  \n   - **Số lần trích dẫn:** 22,252  \n   - **Mở truy cập:** Có\n\n2. **[Artificial intelligence: A modern approach](https://doi.org/10.1016/0004-3702(96)00007-0)**  \n   - **Tác giả:** Nils J. Nilsson  \n   - **Năm:** 1996  \n   - **Nơi xuất bản:** Artificial Intelligence  \n   - **Số lần trích dẫn:** 10,702  \n   - **Mở truy cập:** Không\n\n3. **[Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)**  \n   - **Tác giả:** Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** Information Fusion  \n   - **Số lần trích dẫn:** 9,295  \n   - **Mở truy cập:** Có\n\n4. **[High-performance medicine: the convergence of human and artificial intelligence](https://doi.org/10.1038/s41591-018-0300-7)**  \n   - **Tác giả:** Eric J. Topol  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** Nature Medicine  \n   - **Số lần trích dẫn:** 9,115  \n   - **Mở truy cập:** Không\n\n5. **[Lecture Notes in Artificial Intelligence](https://openalex.org/W26772505)**  \n   - **Tác giả:** Patrick Brézillon, Paolo Bouquet  \n   - **Năm:** 1999  \n   - **Số lần trích dẫn:** 7,440  \n   - **Mở truy cập:** Không\n\n6. **[Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://doi.org/10.1109/access.2018.2870052)**  \n   - **Tác giả:** Amina Adadi, Mohammed Berrada  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** IEEE Access  \n   - **Số lần trích dẫn:** 5,953  \n   - **Mở truy cập:** Có\n\n7. **[Proceedings of the 19th International Joint Conference on Artificial Intelligence](https://openalex.org/W2531563875)**  \n   - **Tác giả:** Josep M. Pujol, Jordi Delgado, Ramón Sangüesa et al.  \n   - **Năm:** 2005  \n   - **Số lần trích dẫn:** 5,781  \n   - **Mở truy cập:** Không\n\n8. **[Systematic review of research on artificial intelligence applications in higher education – where are the educators?](https://doi.org/10.1186/s41239-019-0171-0)**  \n   - **Tác giả:** Olaf Zawacki‐Richter, Victoria I. Marín, Melissa Bond et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** International Journal of Educational Technology in Higher Education  \n   - **Số lần trích dẫn:** 5,661  \n   - **Mở truy cập:** Có\n\n9. **[Artificial intelligence in healthcare: past, present and future](https://doi.org/10.1136/svn-2017-000101)**  \n   - **Tác giả:** Fei Jiang, Yong Jiang, Hui Zhi et al.  \n   - **Năm:** 2017  \n   - **Nơi xuất bản:** Stroke and Vascular Neurology  \n   - **Số lần trích dẫn:** 4,693  \n   - **Mở truy cập:** Có\n\n10. **[BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence](https://doi.org/10.48550/arxiv.2201.11903)**  \n    - **Tác giả:** Wei, Jason, Wang, Xuezhi, Dale Schuurmans et al.  \n    - **Năm:** 2022  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 4,285  \n    - **Mở truy cập:** Có\n\n### Về Học Máy (Machine Learning)\n\n11. **[Deep learning](https://doi.org/10.1038/nature14539)**  \n    - **Tác giả:** Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton  \n    - **Năm:** 2015  \n    - **Nơi xuất bản:** Nature  \n    - **Số lần trích dẫn:** 82,677  \n    - **Mở truy cập:** Có\n\n12. **[Scikit-learn: Machine Learning in Python](https://doi.org/10.48550/arxiv.1201.0490)**  \n    - **Tác giả:** Fabián Pedregosa, Gaël Varoquaux, Alexandre Gramfort et al.  \n    - **Năm:** 2012  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 63,891  \n    - **Mở truy cập:** Có\n\n13. **[Genetic algorithms in search, optimization, and machine learning](https://doi.org/10.5860/choice.27-0936)**  \n    - **Tác giả:** Unknown  \n    - **Năm:** 1989  \n    - **Nơi xuất bản:** Choice Reviews Online  \n    - **Số lần trích dẫn:** 49,343  \n    - **Mở truy cập:** Không\n\n14. **[Data Mining: Practical Machine Learning Tools and Techniques](https://doi.org/10.1016/c2009-0-19715-5)**  \n    - **Tác giả:** Ian H. Witten, Eibe Frank, Mark A. Hall  \n    - **Năm:** 2011  \n    - **Nơi xuất bản:** Elsevier eBooks  \n    - **Số lần trích dẫn:** 25,725  \n    - **Mở truy cập:** Có\n\n15. **[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](https://doi.org/10.3115/v1/d14-1179)**  \n    - **Tác giả:** Kyunghyun Cho, Bart van Merriënboer, Çağlar Gülçehre et al.  \n    - **Năm:** 2014  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 24,690  \n    - **Mở truy cập:** Có\n\n16. **[UCI Machine Learning Repository](https://openalex.org/W3120740533)**  \n    - **Tác giả:** Arthur Asuncion  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:** Medical Entomology and Zoology  \n    - **Số lần trích dẫn:** 24,353  \n    - **Mở truy cập:** Không\n\n17. **[C4.5: Programs for Machine Learning](https://openalex.org/W2125055259)**  \n    - **Tác giả:** J. R. Quinlan  \n    - **Năm:** 1992  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 23,703  \n    - **Mở truy cập:** Không\n\n18. **[Pattern Recognition and Machine Learning](https://doi.org/10.1117/1.2819119)**  \n    - **Tác giả:** Nasser M. Nasrabadi  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:** Journal of Electronic Imaging  \n    - **Số lần trích dẫn:** 22,094  \n    - **Mở truy cập:** Không\n\n19. **[Genetic Algorithms in Search, Optimization and Machine Learning](https://openalex.org/W1639032689)**  \n    - **Tác giả:** David E. Goldberg, David Robson  \n    - **Năm:** 1988  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 17,773  \n    - **Mở truy cập:** Không\n\n20. **[Neural Machine Translation by Jointly Learning to Align and Translate](https://doi.org/10.48550/arxiv.1409.0473)**  \n    - **Tác giả:** Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio  \n    - **Năm:** 2014  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 14,622  \n    - **Mở truy cập:** Có\n\n21. **[An Introduction to Support Vector Machines and Other Kernel-based Learning Methods](https://doi.org/10.1017/cbo9780511801389)**  \n    - **Tác giả:** Nello Cristianini, John Shawe‐Taylor  \n    - **Năm:** 2000  \n    - **Nơi xuất bản:** Cambridge University Press eBooks  \n    - **Số lần trích dẫn:** 13,900  \n    - **Mở truy cập:** Có\n\n22. **[Extreme learning machine: Theory and applications](https://doi.org/10.1016/j.neucom.2005.12.126)**  \n    - **Tác giả:** Guang-Bin Huang, Qinyu Zhu, Chee‐Kheong Siew  \n    - **Năm:** 2006  \n    - **Nơi xuất bản:** Neurocomputing  \n    - **Số lần trích dẫn:** 13,236  \n    - **Mở truy cập:** Không\n\n23. **[Proceedings of the 24th international conference on Machine learning](https://doi.org/10.1145/1273496)**  \n    - **Tác giả:** Unknown  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 11,736  \n    - **Mở truy cập:** Không\n\n24. **[UCI Repository of machine learning databases](https://openalex.org/W2084812512)**  \n    - **Tác giả:** Catherine Blake  \n    - **Năm:** 1998  \n    - **Nơi xuất bản:** Medical Entomology and Zoology  \n    - **Số lần trích dẫn:** 10,548  \n    - **Mở truy cập:** Không\n\n25. **[Gaussian Processes for Machine Learning](https://doi.org/10.7551/mitpress/3206.001.0001)**  \n    - **Tác giả:** Carl Edward Rasmussen, Christopher K. I. Williams  \n    - **Năm:** 2005  \n    - **Nơi xuất bản:** The MIT Press eBooks  \n    - **Số lần trích dẫn:** 10,493  \n    - **Mở truy cập:** Không\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm bài báo khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 25
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "machine learning",
+                "limit": 25
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 25
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "artificial intelligence",
+                "min_year": null,
+                "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+                "most_cited": {
+                  "title": "Artificial intelligence: a modern approach",
+                  "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                  "year": 1995,
+                  "venue": "Choice Reviews Online",
+                  "cited_by_count": 22252,
+                  "doi": "https://doi.org/10.5860/choice.33-1577",
+                  "url": "https://doi.org/10.5281/zenodo.11381885",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Artificial intelligence: a modern approach",
+                    "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                    "year": 1995,
+                    "venue": "Choice Reviews Online",
+                    "cited_by_count": 22252,
+                    "doi": "https://doi.org/10.5860/choice.33-1577",
+                    "url": "https://doi.org/10.5281/zenodo.11381885",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence: A modern approach",
+                    "authors": "Nils J. Nilsson",
+                    "year": 1996,
+                    "venue": "Artificial Intelligence",
+                    "cited_by_count": 10702,
+                    "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                    "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                    "year": 2019,
+                    "venue": "Information Fusion",
+                    "cited_by_count": 9295,
+                    "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                    "url": "https://arxiv.org/pdf/1910.10045",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                    "authors": "Eric J. Topol",
+                    "year": 2018,
+                    "venue": "Nature Medicine",
+                    "cited_by_count": 9115,
+                    "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Lecture Notes in Artificial Intelligence",
+                    "authors": "Patrick Brézillon, Paolo Bouquet",
+                    "year": 1999,
+                    "venue": null,
+                    "cited_by_count": 7440,
+                    "doi": null,
+                    "url": "https://openalex.org/W26772505",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
+                    "authors": "Amina Adadi, Mohammed Berrada",
+                    "year": 2018,
+                    "venue": "IEEE Access",
+                    "cited_by_count": 5953,
+                    "doi": "https://doi.org/10.1109/access.2018.2870052",
+                    "url": "https://doi.org/10.1109/access.2018.2870052",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Proceedings of the 19th International Joint Conference on Artificial Intelligence",
+                    "authors": "Josep M. Pujol, Jordi Delgado, Ramón Sangüesa et al.",
+                    "year": 2005,
+                    "venue": "International Joint Conference on Artificial Intelligence",
+                    "cited_by_count": 5781,
+                    "doi": null,
+                    "url": "https://openalex.org/W2531563875",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Systematic review of research on artificial intelligence applications in higher education – where are the educators?",
+                    "authors": "Olaf Zawacki‐Richter, Victoria I. Marín, Melissa Bond et al.",
+                    "year": 2019,
+                    "venue": "International Journal of Educational Technology in Higher Education",
+                    "cited_by_count": 5661,
+                    "doi": "https://doi.org/10.1186/s41239-019-0171-0",
+                    "url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-019-0171-0",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence in healthcare: past, present and future",
+                    "authors": "Fei Jiang, Yong Jiang, Hui Zhi et al.",
+                    "year": 2017,
+                    "venue": "Stroke and Vascular Neurology",
+                    "cited_by_count": 4693,
+                    "doi": "https://doi.org/10.1136/svn-2017-000101",
+                    "url": "https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence",
+                    "authors": "Wei, Jason, Wang, Xuezhi, Dale Schuurmans et al.",
+                    "year": 2022,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 4285,
+                    "doi": "https://doi.org/10.48550/arxiv.2201.11903",
+                    "url": "https://arxiv.org/pdf/2201.11903",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+                    "authors": "Yogesh K. Dwivedi, Laurie Hughes, Elvira Ismagilova et al.",
+                    "year": 2019,
+                    "venue": "International Journal of Information Management",
+                    "cited_by_count": 4151,
+                    "doi": "https://doi.org/10.1016/j.ijinfomgt.2019.08.002",
+                    "url": "https://www.sciencedirect.com/science/article/pii/S026840121930917X",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Future paths for integer programming and links to artificial intelligence",
+                    "authors": "Fred Glover",
+                    "year": 1986,
+                    "venue": "Computers & Operations Research",
+                    "cited_by_count": 4099,
+                    "doi": "https://doi.org/10.1016/0305-0548(86)90048-1",
+                    "url": "https://doi.org/10.1016/0305-0548(86)90048-1",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "The potential for artificial intelligence in healthcare",
+                    "authors": "Thomas H. Davenport, Ravi Kalakota",
+                    "year": 2019,
+                    "venue": "Future Healthcare Journal",
+                    "cited_by_count": 3701,
+                    "doi": "https://doi.org/10.7861/futurehosp.6-2-94",
+                    "url": "https://www.rcpjournals.org/content/futurehosp/6/2/94.full.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence in radiology",
+                    "authors": "Ahmed Hosny, Chintan Parmar, John Quackenbush et al.",
+                    "year": 2018,
+                    "venue": "Nature reviews. Cancer",
+                    "cited_by_count": 3680,
+                    "doi": "https://doi.org/10.1038/s41568-018-0016-5",
+                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6268174",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial Intelligence in Education: A Review",
+                    "authors": "Lijia Chen, Pingping Chen, Zhijian Lin",
+                    "year": 2020,
+                    "venue": "IEEE Access",
+                    "cited_by_count": 3593,
+                    "doi": "https://doi.org/10.1109/access.2020.2988510",
+                    "url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09069875.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Multiagent Systems : A Modern Approach to Distributed Artificial Intelligence",
+                    "authors": "Gerhard Weiß",
+                    "year": 2000,
+                    "venue": "Medical Entomology and Zoology",
+                    "cited_by_count": 3478,
+                    "doi": null,
+                    "url": "https://openalex.org/W1564534945",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Principles of Artificial Intelligence",
+                    "authors": "Nils J. Nilsson",
+                    "year": 1982,
+                    "venue": null,
+                    "cited_by_count": 3356,
+                    "doi": "https://doi.org/10.1007/978-3-662-09438-9",
+                    "url": "https://doi.org/10.1007/978-3-662-09438-9",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Artificial Intelligence in Service",
+                    "authors": "Ming‐Hui Huang, Roland T. Rust",
+                    "year": 2018,
+                    "venue": "Journal of Service Research",
+                    "cited_by_count": 3335,
+                    "doi": "https://doi.org/10.1177/1094670517752459",
+                    "url": "https://doi.org/10.1177/1094670517752459",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Some Philosophical Problems from the Standpoint of Artificial Intelligence",
+                    "authors": "John McCarthy, Patrick J. Hayes",
+                    "year": 1981,
+                    "venue": "Elsevier eBooks",
+                    "cited_by_count": 3306,
+                    "doi": "https://doi.org/10.1016/b978-0-934613-03-3.50033-7",
+                    "url": "https://doi.org/10.1016/b978-0-934613-03-3.50033-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "The role of artificial intelligence in achieving the Sustainable Development Goals",
+                    "authors": "Ricardo Vinuesa, Hossein Azizpour, Iolanda Leite et al.",
+                    "year": 2020,
+                    "venue": "Nature Communications",
+                    "cited_by_count": 3001,
+                    "doi": "https://doi.org/10.1038/s41467-019-14108-y",
+                    "url": "https://www.nature.com/articles/s41467-019-14108-y.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Siri, Siri, in my hand: Who’s the fairest in the land? On the interpretations, illustrations, and implications of artificial intelligence",
+                    "authors": "Andreas Kaplan, Michael Haenlein",
+                    "year": 2018,
+                    "venue": "Business Horizons",
+                    "cited_by_count": 2927,
+                    "doi": "https://doi.org/10.1016/j.bushor.2018.08.004",
+                    "url": "https://doi.org/10.1016/j.bushor.2018.08.004",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+                    "authors": "Shuroug A. Alowais, Sahar S. Alghamdi, Nada Alsuhebany et al.",
+                    "year": 2023,
+                    "venue": "BMC Medical Education",
+                    "cited_by_count": 2907,
+                    "doi": "https://doi.org/10.1186/s12909-023-04698-z",
+                    "url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-023-04698-z",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial Intelligence through Simulated Evolution",
+                    "authors": "Lawrence J. Fogel, Alvin J. Owens, Michael J. Walsh",
+                    "year": 1966,
+                    "venue": null,
+                    "cited_by_count": 2824,
+                    "doi": null,
+                    "url": "https://openalex.org/W3149025087",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "2009 International Joint Conference on Artificial Intelligence",
+                    "authors": "Unknown",
+                    "year": 2009,
+                    "venue": null,
+                    "cited_by_count": 2806,
+                    "doi": "https://doi.org/10.1109/jcai15434.2009",
+                    "url": "https://doi.org/10.1109/jcai15434.2009",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Proceedings of the International Joint Conference on Artificial Intelligence 2007",
+                    "authors": "Alan Bundy",
+                    "year": 2007,
+                    "venue": "International Joint Conference on Artificial Intelligence",
+                    "cited_by_count": 2765,
+                    "doi": null,
+                    "url": "https://openalex.org/W2602753196",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 979123
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "machine learning",
+                "limit": 25
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "machine learning",
+                "min_year": null,
+                "verdict": "Most-cited work on 'machine learning': 'Deep learning' (2015, 82,677 citations)",
+                "most_cited": {
+                  "title": "Deep learning",
+                  "authors": "Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton",
+                  "year": 2015,
+                  "venue": "Nature",
+                  "cited_by_count": 82677,
+                  "doi": "https://doi.org/10.1038/nature14539",
+                  "url": "https://hal.science/hal-04206682",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Deep learning",
+                    "authors": "Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton",
+                    "year": 2015,
+                    "venue": "Nature",
+                    "cited_by_count": 82677,
+                    "doi": "https://doi.org/10.1038/nature14539",
+                    "url": "https://hal.science/hal-04206682",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Scikit-learn: Machine Learning in Python",
+                    "authors": "Fabián Pedregosa, Gaël Varoquaux, Alexandre Gramfort et al.",
+                    "year": 2012,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 63891,
+                    "doi": "https://doi.org/10.48550/arxiv.1201.0490",
+                    "url": "https://arxiv.org/pdf/1201.0490",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Genetic algorithms in search, optimization, and machine learning",
+                    "authors": "Unknown",
+                    "year": 1989,
+                    "venue": "Choice Reviews Online",
+                    "cited_by_count": 49343,
+                    "doi": "https://doi.org/10.5860/choice.27-0936",
+                    "url": "https://doi.org/10.5860/choice.27-0936",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+                    "authors": "Ian H. Witten, Eibe Frank, Mark A. Hall",
+                    "year": 2011,
+                    "venue": "Elsevier eBooks",
+                    "cited_by_count": 25725,
+                    "doi": "https://doi.org/10.1016/c2009-0-19715-5",
+                    "url": "http://www.gbv.de/dms/bowker/toc/9780123748560.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation",
+                    "authors": "Kyunghyun Cho, Bart van Merriënboer, Çağlar Gülçehre et al.",
+                    "year": 2014,
+                    "venue": null,
+                    "cited_by_count": 24690,
+                    "doi": "https://doi.org/10.3115/v1/d14-1179",
+                    "url": "https://aclanthology.org/D14-1179.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "UCI Machine Learning Repository",
+                    "authors": "Arthur Asuncion",
+                    "year": 2007,
+                    "venue": "Medical Entomology and Zoology",
+                    "cited_by_count": 24353,
+                    "doi": null,
+                    "url": "https://openalex.org/W3120740533",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "C4.5: Programs for Machine Learning",
+                    "authors": "J. R. Quinlan",
+                    "year": 1992,
+                    "venue": null,
+                    "cited_by_count": 23703,
+                    "doi": null,
+                    "url": "https://openalex.org/W2125055259",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Pattern Recognition and Machine Learning",
+                    "authors": "Nasser M. Nasrabadi",
+                    "year": 2007,
+                    "venue": "Journal of Electronic Imaging",
+                    "cited_by_count": 22094,
+                    "doi": "https://doi.org/10.1117/1.2819119",
+                    "url": "https://doi.org/10.1117/1.2819119",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Genetic Algorithms in Search, Optimization and Machine Learning",
+                    "authors": "David E. Goldberg, David Robson",
+                    "year": 1988,
+                    "venue": null,
+                    "cited_by_count": 17773,
+                    "doi": null,
+                    "url": "https://openalex.org/W1639032689",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+                    "authors": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+                    "year": 2014,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 14622,
+                    "doi": "https://doi.org/10.48550/arxiv.1409.0473",
+                    "url": "https://arxiv.org/pdf/1409.0473",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "An Introduction to Support Vector Machines and Other Kernel-based Learning Methods",
+                    "authors": "Nello Cristianini, John Shawe‐Taylor",
+                    "year": 2000,
+                    "venue": "Cambridge University Press eBooks",
+                    "cited_by_count": 13900,
+                    "doi": "https://doi.org/10.1017/cbo9780511801389",
+                    "url": "http://infoscience.epfl.ch/record/51488",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Extreme learning machine: Theory and applications",
+                    "authors": "Guang-Bin Huang, Qinyu Zhu, Chee‐Kheong Siew",
+                    "year": 2006,
+                    "venue": "Neurocomputing",
+                    "cited_by_count": 13236,
+                    "doi": "https://doi.org/10.1016/j.neucom.2005.12.126",
+                    "url": "https://doi.org/10.1016/j.neucom.2005.12.126",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Proceedings of the 24th international conference on Machine learning",
+                    "authors": "Unknown",
+                    "year": 2007,
+                    "venue": null,
+                    "cited_by_count": 11736,
+                    "doi": "https://doi.org/10.1145/1273496",
+                    "url": "https://doi.org/10.1145/1273496",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "UCI Repository of machine learning databases",
+                    "authors": "Catherine Blake",
+                    "year": 1998,
+                    "venue": "Medical Entomology and Zoology",
+                    "cited_by_count": 10548,
+                    "doi": null,
+                    "url": "https://openalex.org/W2084812512",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Gaussian Processes for Machine Learning",
+                    "authors": "Carl Edward Rasmussen, Christopher K. I. Williams",
+                    "year": 2005,
+                    "venue": "The MIT Press eBooks",
+                    "cited_by_count": 10493,
+                    "doi": "https://doi.org/10.7551/mitpress/3206.001.0001",
+                    "url": "https://doi.org/10.7551/mitpress/3206.001.0001",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Pattern Recognition and Machine Learning",
+                    "authors": "Unknown",
+                    "year": 2006,
+                    "venue": null,
+                    "cited_by_count": 9891,
+                    "doi": "https://doi.org/10.1007/978-0-387-45528-0",
+                    "url": "https://doi.org/10.1007/978-0-387-45528-0",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems",
+                    "authors": "Martı́n Abadi, Ashish Agarwal, Paul Barham et al.",
+                    "year": 2016,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 9797,
+                    "doi": "https://doi.org/10.48550/arxiv.1603.04467",
+                    "url": "https://arxiv.org/pdf/1603.04467",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Machine learning: Trends, perspectives, and prospects",
+                    "authors": "Michael I. Jordan, Tom M. Mitchell",
+                    "year": 2015,
+                    "venue": "Science",
+                    "cited_by_count": 9721,
+                    "doi": "https://doi.org/10.1126/science.aaa8415",
+                    "url": "https://doi.org/10.1126/science.aaa8415",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+                    "authors": "Cynthia Rudin",
+                    "year": 2019,
+                    "venue": "Nature Machine Intelligence",
+                    "cited_by_count": 9375,
+                    "doi": "https://doi.org/10.1038/s42256-019-0048-x",
+                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9122117",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Machine learning a probabilistic perspective",
+                    "authors": "Kevin P. Murphy",
+                    "year": 2012,
+                    "venue": null,
+                    "cited_by_count": 9328,
+                    "doi": null,
+                    "url": "https://openalex.org/W1503398984",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "TensorFlow: A system for large-scale machine learning",
+                    "authors": "Martı́n Abadi, Paul Barham, Jianmin Chen et al.",
+                    "year": 2016,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 8831,
+                    "doi": "https://doi.org/10.48550/arxiv.1605.08695",
+                    "url": "https://arxiv.org/pdf/1605.08695",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Pattern Recognition and Machine Learning",
+                    "authors": "Unknown",
+                    "year": 2007,
+                    "venue": "Kybernetes",
+                    "cited_by_count": 8435,
+                    "doi": "https://doi.org/10.1108/03684920710743466",
+                    "url": "https://doi.org/10.1108/03684920710743466",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Pattern Recognition and Machine Learning (Information Science and Statistics)",
+                    "authors": "Chris Bishop",
+                    "year": 2006,
+                    "venue": "Springer eBooks",
+                    "cited_by_count": 8360,
+                    "doi": null,
+                    "url": "https://openalex.org/W1506806321",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Scikit-learn: Machine Learning in Python",
+                    "authors": "PedregosaFabian, VaroquauxGaël, GramfortAlexandre et al.",
+                    "year": 2011,
+                    "venue": "Journal of Machine Learning Research",
+                    "cited_by_count": 8279,
+                    "doi": "https://doi.org/10.5555/1953048.2078195",
+                    "url": "https://doi.org/10.5555/1953048.2078195",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Text categorization with Support Vector Machines: Learning with many relevant features",
+                    "authors": "Thorsten Joachims",
+                    "year": 1998,
+                    "venue": "Lecture notes in computer science",
+                    "cited_by_count": 8018,
+                    "doi": "https://doi.org/10.1007/bfb0026683",
+                    "url": "https://doi.org/10.1007/bfb0026683",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 1705256
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là danh sách 50 bài báo khoa học về trí tuệ nhân tạo và học máy được trích dẫn nhiều nhất:\n\n### Về Trí Tuệ Nhân Tạo (AI)\n\n1. **[Artificial intelligence: a modern approach](https://doi.org/10.5281/zenodo.11381885)**  \n   - **Tác giả:** Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.  \n   - **Năm:** 1995  \n   - **Nơi xuất bản:** Choice Reviews Online  \n   - **Số lần trích dẫn:** 22,252  \n   - **Mở truy cập:** Có\n\n2. **[Artificial intelligence: A modern approach](https://doi.org/10.1016/0004-3702(96)00007-0)**  \n   - **Tác giả:** Nils J. Nilsson  \n   - **Năm:** 1996  \n   - **Nơi xuất bản:** Artificial Intelligence  \n   - **Số lần trích dẫn:** 10,702  \n   - **Mở truy cập:** Không\n\n3. **[Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)**  \n   - **Tác giả:** Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** Information Fusion  \n   - **Số lần trích dẫn:** 9,295  \n   - **Mở truy cập:** Có\n\n4. **[High-performance medicine: the convergence of human and artificial intelligence](https://doi.org/10.1038/s41591-018-0300-7)**  \n   - **Tác giả:** Eric J. Topol  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** Nature Medicine  \n   - **Số lần trích dẫn:** 9,115  \n   - **Mở truy cập:** Không\n\n5. **[Lecture Notes in Artificial Intelligence](https://openalex.org/W26772505)**  \n   - **Tác giả:** Patrick Brézillon, Paolo Bouquet  \n   - **Năm:** 1999  \n   - **Số lần trích dẫn:** 7,440  \n   - **Mở truy cập:** Không\n\n6. **[Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)](https://doi.org/10.1109/access.2018.2870052)**  \n   - **Tác giả:** Amina Adadi, Mohammed Berrada  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** IEEE Access  \n   - **Số lần trích dẫn:** 5,953  \n   - **Mở truy cập:** Có\n\n7. **[Proceedings of the 19th International Joint Conference on Artificial Intelligence](https://openalex.org/W2531563875)**  \n   - **Tác giả:** Josep M. Pujol, Jordi Delgado, Ramón Sangüesa et al.  \n   - **Năm:** 2005  \n   - **Số lần trích dẫn:** 5,781  \n   - **Mở truy cập:** Không\n\n8. **[Systematic review of research on artificial intelligence applications in higher education – where are the educators?](https://doi.org/10.1186/s41239-019-0171-0)**  \n   - **Tác giả:** Olaf Zawacki‐Richter, Victoria I. Marín, Melissa Bond et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** International Journal of Educational Technology in Higher Education  \n   - **Số lần trích dẫn:** 5,661  \n   - **Mở truy cập:** Có\n\n9. **[Artificial intelligence in healthcare: past, present and future](https://doi.org/10.1136/svn-2017-000101)**  \n   - **Tác giả:** Fei Jiang, Yong Jiang, Hui Zhi et al.  \n   - **Năm:** 2017  \n   - **Nơi xuất bản:** Stroke and Vascular Neurology  \n   - **Số lần trích dẫn:** 4,693  \n   - **Mở truy cập:** Có\n\n10. **[BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence](https://doi.org/10.48550/arxiv.2201.11903)**  \n    - **Tác giả:** Wei, Jason, Wang, Xuezhi, Dale Schuurmans et al.  \n    - **Năm:** 2022  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 4,285  \n    - **Mở truy cập:** Có\n\n### Về Học Máy (Machine Learning)\n\n11. **[Deep learning](https://doi.org/10.1038/nature14539)**  \n    - **Tác giả:** Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton  \n    - **Năm:** 2015  \n    - **Nơi xuất bản:** Nature  \n    - **Số lần trích dẫn:** 82,677  \n    - **Mở truy cập:** Có\n\n12. **[Scikit-learn: Machine Learning in Python](https://doi.org/10.48550/arxiv.1201.0490)**  \n    - **Tác giả:** Fabián Pedregosa, Gaël Varoquaux, Alexandre Gramfort et al.  \n    - **Năm:** 2012  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 63,891  \n    - **Mở truy cập:** Có\n\n13. **[Genetic algorithms in search, optimization, and machine learning](https://doi.org/10.5860/choice.27-0936)**  \n    - **Tác giả:** Unknown  \n    - **Năm:** 1989  \n    - **Nơi xuất bản:** Choice Reviews Online  \n    - **Số lần trích dẫn:** 49,343  \n    - **Mở truy cập:** Không\n\n14. **[Data Mining: Practical Machine Learning Tools and Techniques](https://doi.org/10.1016/c2009-0-19715-5)**  \n    - **Tác giả:** Ian H. Witten, Eibe Frank, Mark A. Hall  \n    - **Năm:** 2011  \n    - **Nơi xuất bản:** Elsevier eBooks  \n    - **Số lần trích dẫn:** 25,725  \n    - **Mở truy cập:** Có\n\n15. **[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](https://doi.org/10.3115/v1/d14-1179)**  \n    - **Tác giả:** Kyunghyun Cho, Bart van Merriënboer, Çağlar Gülçehre et al.  \n    - **Năm:** 2014  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 24,690  \n    - **Mở truy cập:** Có\n\n16. **[UCI Machine Learning Repository](https://openalex.org/W3120740533)**  \n    - **Tác giả:** Arthur Asuncion  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:** Medical Entomology and Zoology  \n    - **Số lần trích dẫn:** 24,353  \n    - **Mở truy cập:** Không\n\n17. **[C4.5: Programs for Machine Learning](https://openalex.org/W2125055259)**  \n    - **Tác giả:** J. R. Quinlan  \n    - **Năm:** 1992  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 23,703  \n    - **Mở truy cập:** Không\n\n18. **[Pattern Recognition and Machine Learning](https://doi.org/10.1117/1.2819119)**  \n    - **Tác giả:** Nasser M. Nasrabadi  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:** Journal of Electronic Imaging  \n    - **Số lần trích dẫn:** 22,094  \n    - **Mở truy cập:** Không\n\n19. **[Genetic Algorithms in Search, Optimization and Machine Learning](https://openalex.org/W1639032689)**  \n    - **Tác giả:** David E. Goldberg, David Robson  \n    - **Năm:** 1988  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 17,773  \n    - **Mở truy cập:** Không\n\n20. **[Neural Machine Translation by Jointly Learning to Align and Translate](https://doi.org/10.48550/arxiv.1409.0473)**  \n    - **Tác giả:** Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio  \n    - **Năm:** 2014  \n    - **Nơi xuất bản:** arXiv (Cornell University)  \n    - **Số lần trích dẫn:** 14,622  \n    - **Mở truy cập:** Có\n\n21. **[An Introduction to Support Vector Machines and Other Kernel-based Learning Methods](https://doi.org/10.1017/cbo9780511801389)**  \n    - **Tác giả:** Nello Cristianini, John Shawe‐Taylor  \n    - **Năm:** 2000  \n    - **Nơi xuất bản:** Cambridge University Press eBooks  \n    - **Số lần trích dẫn:** 13,900  \n    - **Mở truy cập:** Có\n\n22. **[Extreme learning machine: Theory and applications](https://doi.org/10.1016/j.neucom.2005.12.126)**  \n    - **Tác giả:** Guang-Bin Huang, Qinyu Zhu, Chee‐Kheong Siew  \n    - **Năm:** 2006  \n    - **Nơi xuất bản:** Neurocomputing  \n    - **Số lần trích dẫn:** 13,236  \n    - **Mở truy cập:** Không\n\n23. **[Proceedings of the 24th international conference on Machine learning](https://doi.org/10.1145/1273496)**  \n    - **Tác giả:** Unknown  \n    - **Năm:** 2007  \n    - **Nơi xuất bản:**  \n    - **Số lần trích dẫn:** 11,736  \n    - **Mở truy cập:** Không\n\n24. **[UCI Repository of machine learning databases](https://openalex.org/W2084812512)**  \n    - **Tác giả:** Catherine Blake  \n    - **Năm:** 1998  \n    - **Nơi xuất bản:** Medical Entomology and Zoology  \n    - **Số lần trích dẫn:** 10,548  \n    - **Mở truy cập:** Không\n\n25. **[Gaussian Processes for Machine Learning](https://doi.org/10.7551/mitpress/3206.001.0001)**  \n    - **Tác giả:** Carl Edward Rasmussen, Christopher K. I. Williams  \n    - **Năm:** 2005  \n    - **Nơi xuất bản:** The MIT Press eBooks  \n    - **Số lần trích dẫn:** 10,493  \n    - **Mở truy cập:** Không\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm bài báo khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "artificial intelligence",
+            "limit": 25
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "artificial intelligence",
+            "min_year": null,
+            "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+            "most_cited": {
+              "title": "Artificial intelligence: a modern approach",
+              "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+              "year": 1995,
+              "venue": "Choice Reviews Online",
+              "cited_by_count": 22252,
+              "doi": "https://doi.org/10.5860/choice.33-1577",
+              "url": "https://doi.org/10.5281/zenodo.11381885",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Artificial intelligence: a modern approach",
+                "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                "year": 1995,
+                "venue": "Choice Reviews Online",
+                "cited_by_count": 22252,
+                "doi": "https://doi.org/10.5860/choice.33-1577",
+                "url": "https://doi.org/10.5281/zenodo.11381885",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence: A modern approach",
+                "authors": "Nils J. Nilsson",
+                "year": 1996,
+                "venue": "Artificial Intelligence",
+                "cited_by_count": 10702,
+                "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "is_open_access": false
+              },
+              {
+                "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                "year": 2019,
+                "venue": "Information Fusion",
+                "cited_by_count": 9295,
+                "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                "url": "https://arxiv.org/pdf/1910.10045",
+                "is_open_access": true
+              },
+              {
+                "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                "authors": "Eric J. Topol",
+                "year": 2018,
+                "venue": "Nature Medicine",
+                "cited_by_count": 9115,
+                "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                "is_open_access": false
+              },
+              {
+                "title": "Lecture Notes in Artificial Intelligence",
+                "authors": "Patrick Brézillon, Paolo Bouquet",
+                "year": 1999,
+                "venue": null,
+                "cited_by_count": 7440,
+                "doi": null,
+                "url": "https://openalex.org/W26772505",
+                "is_open_access": false
+              },
+              {
+                "title": "Peeking Inside the Black-Box: A Survey on Explainable Artificial Intelligence (XAI)",
+                "authors": "Amina Adadi, Mohammed Berrada",
+                "year": 2018,
+                "venue": "IEEE Access",
+                "cited_by_count": 5953,
+                "doi": "https://doi.org/10.1109/access.2018.2870052",
+                "url": "https://doi.org/10.1109/access.2018.2870052",
+                "is_open_access": true
+              },
+              {
+                "title": "Proceedings of the 19th International Joint Conference on Artificial Intelligence",
+                "authors": "Josep M. Pujol, Jordi Delgado, Ramón Sangüesa et al.",
+                "year": 2005,
+                "venue": "International Joint Conference on Artificial Intelligence",
+                "cited_by_count": 5781,
+                "doi": null,
+                "url": "https://openalex.org/W2531563875",
+                "is_open_access": false
+              },
+              {
+                "title": "Systematic review of research on artificial intelligence applications in higher education – where are the educators?",
+                "authors": "Olaf Zawacki‐Richter, Victoria I. Marín, Melissa Bond et al.",
+                "year": 2019,
+                "venue": "International Journal of Educational Technology in Higher Education",
+                "cited_by_count": 5661,
+                "doi": "https://doi.org/10.1186/s41239-019-0171-0",
+                "url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-019-0171-0",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence in healthcare: past, present and future",
+                "authors": "Fei Jiang, Yong Jiang, Hui Zhi et al.",
+                "year": 2017,
+                "venue": "Stroke and Vascular Neurology",
+                "cited_by_count": 4693,
+                "doi": "https://doi.org/10.1136/svn-2017-000101",
+                "url": "https://svn.bmj.com/content/svnbmj/2/4/230.full.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "BNAI, NO-TOKEN, and MIND-UNITY: Pillars of a Systemic Revolution in Artificial Intelligence",
+                "authors": "Wei, Jason, Wang, Xuezhi, Dale Schuurmans et al.",
+                "year": 2022,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 4285,
+                "doi": "https://doi.org/10.48550/arxiv.2201.11903",
+                "url": "https://arxiv.org/pdf/2201.11903",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial Intelligence (AI): Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy",
+                "authors": "Yogesh K. Dwivedi, Laurie Hughes, Elvira Ismagilova et al.",
+                "year": 2019,
+                "venue": "International Journal of Information Management",
+                "cited_by_count": 4151,
+                "doi": "https://doi.org/10.1016/j.ijinfomgt.2019.08.002",
+                "url": "https://www.sciencedirect.com/science/article/pii/S026840121930917X",
+                "is_open_access": true
+              },
+              {
+                "title": "Future paths for integer programming and links to artificial intelligence",
+                "authors": "Fred Glover",
+                "year": 1986,
+                "venue": "Computers & Operations Research",
+                "cited_by_count": 4099,
+                "doi": "https://doi.org/10.1016/0305-0548(86)90048-1",
+                "url": "https://doi.org/10.1016/0305-0548(86)90048-1",
+                "is_open_access": false
+              },
+              {
+                "title": "The potential for artificial intelligence in healthcare",
+                "authors": "Thomas H. Davenport, Ravi Kalakota",
+                "year": 2019,
+                "venue": "Future Healthcare Journal",
+                "cited_by_count": 3701,
+                "doi": "https://doi.org/10.7861/futurehosp.6-2-94",
+                "url": "https://www.rcpjournals.org/content/futurehosp/6/2/94.full.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence in radiology",
+                "authors": "Ahmed Hosny, Chintan Parmar, John Quackenbush et al.",
+                "year": 2018,
+                "venue": "Nature reviews. Cancer",
+                "cited_by_count": 3680,
+                "doi": "https://doi.org/10.1038/s41568-018-0016-5",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6268174",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial Intelligence in Education: A Review",
+                "authors": "Lijia Chen, Pingping Chen, Zhijian Lin",
+                "year": 2020,
+                "venue": "IEEE Access",
+                "cited_by_count": 3593,
+                "doi": "https://doi.org/10.1109/access.2020.2988510",
+                "url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09069875.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Multiagent Systems : A Modern Approach to Distributed Artificial Intelligence",
+                "authors": "Gerhard Weiß",
+                "year": 2000,
+                "venue": "Medical Entomology and Zoology",
+                "cited_by_count": 3478,
+                "doi": null,
+                "url": "https://openalex.org/W1564534945",
+                "is_open_access": false
+              },
+              {
+                "title": "Principles of Artificial Intelligence",
+                "authors": "Nils J. Nilsson",
+                "year": 1982,
+                "venue": null,
+                "cited_by_count": 3356,
+                "doi": "https://doi.org/10.1007/978-3-662-09438-9",
+                "url": "https://doi.org/10.1007/978-3-662-09438-9",
+                "is_open_access": false
+              },
+              {
+                "title": "Artificial Intelligence in Service",
+                "authors": "Ming‐Hui Huang, Roland T. Rust",
+                "year": 2018,
+                "venue": "Journal of Service Research",
+                "cited_by_count": 3335,
+                "doi": "https://doi.org/10.1177/1094670517752459",
+                "url": "https://doi.org/10.1177/1094670517752459",
+                "is_open_access": false
+              },
+              {
+                "title": "Some Philosophical Problems from the Standpoint of Artificial Intelligence",
+                "authors": "John McCarthy, Patrick J. Hayes",
+                "year": 1981,
+                "venue": "Elsevier eBooks",
+                "cited_by_count": 3306,
+                "doi": "https://doi.org/10.1016/b978-0-934613-03-3.50033-7",
+                "url": "https://doi.org/10.1016/b978-0-934613-03-3.50033-7",
+                "is_open_access": false
+              },
+              {
+                "title": "The role of artificial intelligence in achieving the Sustainable Development Goals",
+                "authors": "Ricardo Vinuesa, Hossein Azizpour, Iolanda Leite et al.",
+                "year": 2020,
+                "venue": "Nature Communications",
+                "cited_by_count": 3001,
+                "doi": "https://doi.org/10.1038/s41467-019-14108-y",
+                "url": "https://www.nature.com/articles/s41467-019-14108-y.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Siri, Siri, in my hand: Who’s the fairest in the land? On the interpretations, illustrations, and implications of artificial intelligence",
+                "authors": "Andreas Kaplan, Michael Haenlein",
+                "year": 2018,
+                "venue": "Business Horizons",
+                "cited_by_count": 2927,
+                "doi": "https://doi.org/10.1016/j.bushor.2018.08.004",
+                "url": "https://doi.org/10.1016/j.bushor.2018.08.004",
+                "is_open_access": false
+              },
+              {
+                "title": "Revolutionizing healthcare: the role of artificial intelligence in clinical practice",
+                "authors": "Shuroug A. Alowais, Sahar S. Alghamdi, Nada Alsuhebany et al.",
+                "year": 2023,
+                "venue": "BMC Medical Education",
+                "cited_by_count": 2907,
+                "doi": "https://doi.org/10.1186/s12909-023-04698-z",
+                "url": "https://bmcmededuc.biomedcentral.com/counter/pdf/10.1186/s12909-023-04698-z",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial Intelligence through Simulated Evolution",
+                "authors": "Lawrence J. Fogel, Alvin J. Owens, Michael J. Walsh",
+                "year": 1966,
+                "venue": null,
+                "cited_by_count": 2824,
+                "doi": null,
+                "url": "https://openalex.org/W3149025087",
+                "is_open_access": false
+              },
+              {
+                "title": "2009 International Joint Conference on Artificial Intelligence",
+                "authors": "Unknown",
+                "year": 2009,
+                "venue": null,
+                "cited_by_count": 2806,
+                "doi": "https://doi.org/10.1109/jcai15434.2009",
+                "url": "https://doi.org/10.1109/jcai15434.2009",
+                "is_open_access": false
+              },
+              {
+                "title": "Proceedings of the International Joint Conference on Artificial Intelligence 2007",
+                "authors": "Alan Bundy",
+                "year": 2007,
+                "venue": "International Joint Conference on Artificial Intelligence",
+                "cited_by_count": 2765,
+                "doi": null,
+                "url": "https://openalex.org/W2602753196",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 979123
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "machine learning",
+            "limit": 25
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "machine learning",
+            "min_year": null,
+            "verdict": "Most-cited work on 'machine learning': 'Deep learning' (2015, 82,677 citations)",
+            "most_cited": {
+              "title": "Deep learning",
+              "authors": "Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton",
+              "year": 2015,
+              "venue": "Nature",
+              "cited_by_count": 82677,
+              "doi": "https://doi.org/10.1038/nature14539",
+              "url": "https://hal.science/hal-04206682",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Deep learning",
+                "authors": "Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton",
+                "year": 2015,
+                "venue": "Nature",
+                "cited_by_count": 82677,
+                "doi": "https://doi.org/10.1038/nature14539",
+                "url": "https://hal.science/hal-04206682",
+                "is_open_access": true
+              },
+              {
+                "title": "Scikit-learn: Machine Learning in Python",
+                "authors": "Fabián Pedregosa, Gaël Varoquaux, Alexandre Gramfort et al.",
+                "year": 2012,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 63891,
+                "doi": "https://doi.org/10.48550/arxiv.1201.0490",
+                "url": "https://arxiv.org/pdf/1201.0490",
+                "is_open_access": true
+              },
+              {
+                "title": "Genetic algorithms in search, optimization, and machine learning",
+                "authors": "Unknown",
+                "year": 1989,
+                "venue": "Choice Reviews Online",
+                "cited_by_count": 49343,
+                "doi": "https://doi.org/10.5860/choice.27-0936",
+                "url": "https://doi.org/10.5860/choice.27-0936",
+                "is_open_access": false
+              },
+              {
+                "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+                "authors": "Ian H. Witten, Eibe Frank, Mark A. Hall",
+                "year": 2011,
+                "venue": "Elsevier eBooks",
+                "cited_by_count": 25725,
+                "doi": "https://doi.org/10.1016/c2009-0-19715-5",
+                "url": "http://www.gbv.de/dms/bowker/toc/9780123748560.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation",
+                "authors": "Kyunghyun Cho, Bart van Merriënboer, Çağlar Gülçehre et al.",
+                "year": 2014,
+                "venue": null,
+                "cited_by_count": 24690,
+                "doi": "https://doi.org/10.3115/v1/d14-1179",
+                "url": "https://aclanthology.org/D14-1179.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "UCI Machine Learning Repository",
+                "authors": "Arthur Asuncion",
+                "year": 2007,
+                "venue": "Medical Entomology and Zoology",
+                "cited_by_count": 24353,
+                "doi": null,
+                "url": "https://openalex.org/W3120740533",
+                "is_open_access": false
+              },
+              {
+                "title": "C4.5: Programs for Machine Learning",
+                "authors": "J. R. Quinlan",
+                "year": 1992,
+                "venue": null,
+                "cited_by_count": 23703,
+                "doi": null,
+                "url": "https://openalex.org/W2125055259",
+                "is_open_access": false
+              },
+              {
+                "title": "Pattern Recognition and Machine Learning",
+                "authors": "Nasser M. Nasrabadi",
+                "year": 2007,
+                "venue": "Journal of Electronic Imaging",
+                "cited_by_count": 22094,
+                "doi": "https://doi.org/10.1117/1.2819119",
+                "url": "https://doi.org/10.1117/1.2819119",
+                "is_open_access": false
+              },
+              {
+                "title": "Genetic Algorithms in Search, Optimization and Machine Learning",
+                "authors": "David E. Goldberg, David Robson",
+                "year": 1988,
+                "venue": null,
+                "cited_by_count": 17773,
+                "doi": null,
+                "url": "https://openalex.org/W1639032689",
+                "is_open_access": false
+              },
+              {
+                "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+                "authors": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+                "year": 2014,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 14622,
+                "doi": "https://doi.org/10.48550/arxiv.1409.0473",
+                "url": "https://arxiv.org/pdf/1409.0473",
+                "is_open_access": true
+              },
+              {
+                "title": "An Introduction to Support Vector Machines and Other Kernel-based Learning Methods",
+                "authors": "Nello Cristianini, John Shawe‐Taylor",
+                "year": 2000,
+                "venue": "Cambridge University Press eBooks",
+                "cited_by_count": 13900,
+                "doi": "https://doi.org/10.1017/cbo9780511801389",
+                "url": "http://infoscience.epfl.ch/record/51488",
+                "is_open_access": true
+              },
+              {
+                "title": "Extreme learning machine: Theory and applications",
+                "authors": "Guang-Bin Huang, Qinyu Zhu, Chee‐Kheong Siew",
+                "year": 2006,
+                "venue": "Neurocomputing",
+                "cited_by_count": 13236,
+                "doi": "https://doi.org/10.1016/j.neucom.2005.12.126",
+                "url": "https://doi.org/10.1016/j.neucom.2005.12.126",
+                "is_open_access": false
+              },
+              {
+                "title": "Proceedings of the 24th international conference on Machine learning",
+                "authors": "Unknown",
+                "year": 2007,
+                "venue": null,
+                "cited_by_count": 11736,
+                "doi": "https://doi.org/10.1145/1273496",
+                "url": "https://doi.org/10.1145/1273496",
+                "is_open_access": false
+              },
+              {
+                "title": "UCI Repository of machine learning databases",
+                "authors": "Catherine Blake",
+                "year": 1998,
+                "venue": "Medical Entomology and Zoology",
+                "cited_by_count": 10548,
+                "doi": null,
+                "url": "https://openalex.org/W2084812512",
+                "is_open_access": false
+              },
+              {
+                "title": "Gaussian Processes for Machine Learning",
+                "authors": "Carl Edward Rasmussen, Christopher K. I. Williams",
+                "year": 2005,
+                "venue": "The MIT Press eBooks",
+                "cited_by_count": 10493,
+                "doi": "https://doi.org/10.7551/mitpress/3206.001.0001",
+                "url": "https://doi.org/10.7551/mitpress/3206.001.0001",
+                "is_open_access": false
+              },
+              {
+                "title": "Pattern Recognition and Machine Learning",
+                "authors": "Unknown",
+                "year": 2006,
+                "venue": null,
+                "cited_by_count": 9891,
+                "doi": "https://doi.org/10.1007/978-0-387-45528-0",
+                "url": "https://doi.org/10.1007/978-0-387-45528-0",
+                "is_open_access": false
+              },
+              {
+                "title": "TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems",
+                "authors": "Martı́n Abadi, Ashish Agarwal, Paul Barham et al.",
+                "year": 2016,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 9797,
+                "doi": "https://doi.org/10.48550/arxiv.1603.04467",
+                "url": "https://arxiv.org/pdf/1603.04467",
+                "is_open_access": true
+              },
+              {
+                "title": "Machine learning: Trends, perspectives, and prospects",
+                "authors": "Michael I. Jordan, Tom M. Mitchell",
+                "year": 2015,
+                "venue": "Science",
+                "cited_by_count": 9721,
+                "doi": "https://doi.org/10.1126/science.aaa8415",
+                "url": "https://doi.org/10.1126/science.aaa8415",
+                "is_open_access": false
+              },
+              {
+                "title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+                "authors": "Cynthia Rudin",
+                "year": 2019,
+                "venue": "Nature Machine Intelligence",
+                "cited_by_count": 9375,
+                "doi": "https://doi.org/10.1038/s42256-019-0048-x",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9122117",
+                "is_open_access": true
+              },
+              {
+                "title": "Machine learning a probabilistic perspective",
+                "authors": "Kevin P. Murphy",
+                "year": 2012,
+                "venue": null,
+                "cited_by_count": 9328,
+                "doi": null,
+                "url": "https://openalex.org/W1503398984",
+                "is_open_access": false
+              },
+              {
+                "title": "TensorFlow: A system for large-scale machine learning",
+                "authors": "Martı́n Abadi, Paul Barham, Jianmin Chen et al.",
+                "year": 2016,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 8831,
+                "doi": "https://doi.org/10.48550/arxiv.1605.08695",
+                "url": "https://arxiv.org/pdf/1605.08695",
+                "is_open_access": true
+              },
+              {
+                "title": "Pattern Recognition and Machine Learning",
+                "authors": "Unknown",
+                "year": 2007,
+                "venue": "Kybernetes",
+                "cited_by_count": 8435,
+                "doi": "https://doi.org/10.1108/03684920710743466",
+                "url": "https://doi.org/10.1108/03684920710743466",
+                "is_open_access": false
+              },
+              {
+                "title": "Pattern Recognition and Machine Learning (Information Science and Statistics)",
+                "authors": "Chris Bishop",
+                "year": 2006,
+                "venue": "Springer eBooks",
+                "cited_by_count": 8360,
+                "doi": null,
+                "url": "https://openalex.org/W1506806321",
+                "is_open_access": false
+              },
+              {
+                "title": "Scikit-learn: Machine Learning in Python",
+                "authors": "PedregosaFabian, VaroquauxGaël, GramfortAlexandre et al.",
+                "year": 2011,
+                "venue": "Journal of Machine Learning Research",
+                "cited_by_count": 8279,
+                "doi": "https://doi.org/10.5555/1953048.2078195",
+                "url": "https://doi.org/10.5555/1953048.2078195",
+                "is_open_access": false
+              },
+              {
+                "title": "Text categorization with Support Vector Machines: Learning with many relevant features",
+                "authors": "Thorsten Joachims",
+                "year": 1998,
+                "venue": "Lecture notes in computer science",
+                "cited_by_count": 8018,
+                "doi": "https://doi.org/10.1007/bfb0026683",
+                "url": "https://doi.org/10.1007/bfb0026683",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 1705256
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T13:00:47"
+    }
+  ]
+}

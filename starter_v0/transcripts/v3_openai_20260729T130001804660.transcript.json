@@ -1,0 +1,606 @@
+{
+  "transcript_id": "v3_openai_20260729T130001804660",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T13:00:16",
+  "updated_at": "2026-07-29T13:00:16",
+  "turns": [
+    {
+      "turn_index": 6,
+      "started_at": "2026-07-29T13:00:01",
+      "user": "cho tôi 100 bài báo về phố ẩm thực",
+      "status": "answered",
+      "assistant_text": "Tôi đã tìm thấy một số bài báo liên quan đến \"phố ẩm thực\". Dưới đây là một số bài tiêu biểu:\n\n1. **[Semihard Hadron Processes and Quark-gluon String Model](http://arxiv.org/abs/hep-th/9502028v1)**\n   - Tác giả: G. I. Lykasov, M. N. Sergeenko\n   - Tóm tắt: Resubmitted as hep-ph/9502316. Removed from hep-th. Incorrigibly inept submitter publicly excoriated.\n   - Ngày xuất bản: 1995-02-03\n\n2. **[Scalar nonet quarkonia and the scalar glueball: mixing and decays in an effective chiral approach](http://arxiv.org/abs/hep-ph/0509248v2)**\n   - Tác giả: F. Giacosa, Th. Gutsche, V. E. Lyubovitskij, Amand Faessler\n   - Tóm tắt: Erroneous duplicate of hep-ph/0509247 removed by arXiv admin.\n   - Ngày xuất bản: 2005-09-22\n\n3. **[Effects of electrons on nuclear clock transition frequency in $^{229}$Th ions](http://arxiv.org/abs/2309.11176v1)**\n   - Tác giả: V. A. Dzuba, V. V. Flambaum\n   - Tóm tắt: We perform calculations of the energy shift of the nuclear clock transition frequency $^{229}$Th as a function of the number of electrons in Th ion.\n   - Ngày xuất bản: 2023-09-20\n\n4. **[PRODIGE -- Planet-forming disks in Taurus with NOEMA. I. Overview and first results for 12CO, 13CO, and C18O](http://arxiv.org/abs/2402.14653v3)**\n   - Tác giả: D. Semenov, Th. Henning, S. Guilloteau, và nhiều người khác.\n   - Tóm tắt: We are performing a line survey of 8 planet-forming Class II disks in Taurus with the IRAM NOrthern Extended Millimeter Array (NOEMA).\n   - Ngày xuất bản: 2024-02-22\n\n5. **[Uncertainties in the Th cosmochronometry](http://arxiv.org/abs/astro-ph/9904409v1)**\n   - Tác giả: S. Goriely, B. Clerbaux\n   - Tóm tắt: Recent observations of r-nuclei, and in particular of Th, in ultra-metal poor stars revived the old idea that the Th cosmochronometry could provide an age estimate of the oldest stars in the Galaxy.\n   - Ngày xuất bản: 1999-04-29\n\nNếu bạn cần thêm thông tin hoặc muốn xem nhiều bài báo hơn, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "phố ẩm thực",
+                "max_results": 100
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "phố ẩm thực",
+                "max_results": 100
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "phố ẩm thực",
+                "api_query": "all:ph AND all:th",
+                "total_results": 127720,
+                "items": [
+                  {
+                    "arxiv_id": "",
+                    "title": "Semihard Hadron Processes and Quark-gluon String Model",
+                    "summary": "Resubmitted as hep-ph/9502316. Removed from hep-th. Incorrigibly inept submitter publicly excoriated.",
+                    "authors": [
+                      "G. I. Lykasov",
+                      "M. N. Sergeenko"
+                    ],
+                    "published": "1995-02-03T18:25:44Z",
+                    "updated": "1995-02-03T18:25:44Z",
+                    "url": "http://arxiv.org/abs/hep-th/9502028v1",
+                    "pdf_url": "https://arxiv.org/pdf/hep-th/9502028v1",
+                    "source": "arxiv.org",
+                    "primary_category": "hep-th",
+                    "categories": [
+                      "hep-th"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "",
+                    "title": "Scalar nonet quarkonia and the scalar glueball: mixing and decays in an effective chiral approach",
+                    "summary": "Erroneous duplicate of hep-ph/0509247 removed by arXiv admin",
+                    "authors": [
+                      "F. Giacosa",
+                      "Th. Gutsche",
+                      "V. E. Lyubovitskij",
+                      "Amand Faessler"
+                    ],
+                    "published": "2005-09-22T22:10:45Z",
+                    "updated": "2005-09-26T23:46:05Z",
+                    "url": "http://arxiv.org/abs/hep-ph/0509248v2",
+                    "pdf_url": "https://arxiv.org/pdf/hep-ph/0509248v2",
+                    "source": "arxiv.org",
+                    "primary_category": "hep-ph",
+                    "categories": [
+                      "hep-ph"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "",
+                    "title": "Reply to Comment on ``Determination of pion-baryon coupling constants from QCD sum rules''",
+                    "summary": "In response to Kim's comment (nucl-th/9903040) on the sum rules for pion-baryon coupling constants obtained in hep-ph/9512259 and hep-ph/9606471, we point out that our treatment of the continuum is consistent with duality and with the fact that the correlator in the presence of an external meson or field should be represented by a double dispersion relation.",
+                    "authors": [
+                      "Boris Krippa",
+                      "Michael C. Birse"
+                    ],
+                    "published": "1999-04-01T16:03:53Z",
+                    "updated": "1999-04-01T16:03:53Z",
+                    "url": "http://arxiv.org/abs/nucl-th/9904003v1",
+                    "pdf_url": "https://arxiv.org/pdf/nucl-th/9904003v1",
+                    "source": "arxiv.org",
+                    "primary_category": "nucl-th",
+                    "categories": [
+                      "nucl-th"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2309.11176v1",
+                    "title": "Effects of electrons on nuclear clock transition frequency in $^{229}$Th ions",
+                    "summary": "We perform calculations of the energy shift of the nuclear clock transition frequency $^{229}$Th as a function of the number of electrons in Th ion. We demonstrate that the dependence of the nuclear frequency on electron configuration is significant. E.g., removing one electron from the atom leads to relative shift of the nuclear frequency $\\sim 10^{-7}$, which is twelve orders of magnitude larger than expected relative uncertainty of the nuclear clock transition frequency ($\\sim 10^{-19}$). This leads to difference of the nuclear clock frequencies in Th~IV, Th~III, Th~II and Th~I. The relative change of the nuclear frequency between neutral Th and its bare nucleus is 1\\%. We also calculate the field shift constants for isotopic and isomeric shifts of atomic electron transitions in Th ions.",
+                    "authors": [
+                      "V. A. Dzuba",
+                      "V. V. Flambaum"
+                    ],
+                    "published": "2023-09-20T09:52:14Z",
+                    "updated": "2023-09-20T09:52:14Z",
+                    "url": "http://arxiv.org/abs/2309.11176v1",
+                    "pdf_url": "https://arxiv.org/pdf/2309.11176v1",
+                    "source": "arxiv.org",
+                    "primary_category": "physics.atom-ph",
+                    "categories": [
+                      "physics.atom-ph",
+                      "hep-ph",
+                      "nucl-th"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2402.14653v3",
+                    "title": "PRODIGE -- Planet-forming disks in Taurus with NOEMA. I. Overview and first results for 12CO, 13CO, and C18O",
+                    "summary": "We are performing a line survey of 8 planet-forming Class II disks in Taurus with the IRAM NOrthern Extended Millimeter Array (NOEMA), as a part of the MPG-IRAM Observatory Program PRODIGE (PROtostars and DIsks: Global Evolution; PIs: P. Caselli and Th. Henning). Compact and extended disks around T Tauri stars CI, CY, DG, DL, DM, DN, IQ Tau, and UZ Tau E are observed in ~80 lines from >20 C-, O,- N-, and S-bearing species. The observations in four spectral settings at 210-280 GHz with $1σ$ rms sensitivity of ~ 8-12 mJy/beam at 0.9\" and 0.3 km/s resolution will be completed in 2024. The uv-visibilities are fitted with the DiskFit model to obtain key stellar and disk properties. In this paper, the combined $^{12}$CO, $^{13}$CO and C$^{18}$O $J = 2-1$ data are presented. We find that the CO fluxes and disk masses inferred from dust continuum tentatively correlate with the CO emission sizes. We constrain dynamical stellar masses, geometries, temperatures, the CO column densities and gas masses for each disk. The best-fit temperatures at 100 au are ~ 17-37 K, and decrease radially with the power-law exponent q ~ 0.05-0.76. The inferred CO column densities decrease radially with the power-law exponent p ~ 0.2-3.1. The gas masses estimated from $^{13}$CO (2-1) are ~ $0.001-0.2 M_\\textrm{Sun}$. The best-fit CO column densities point to severe CO freeze-out in the disks. The DL Tau disk is an outlier, and has either stronger CO depletion or lower gas mass than the rest of the sample. The CO isotopologue ratios are roughly consistent with the observed values in disks and the low-mass star-forming regions.",
+                    "authors": [
+                      "D. Semenov",
+                      "Th. Henning",
+                      "S. Guilloteau",
+                      "G. Smirnov-Pinchukov",
+                      "A. Dutrey",
+                      "E. Chapillon",
+                      "V. Pietu",
+                      "R. Franceschi",
+                      "K. Schwarz",
+                      "S. van Terwisga",
+                      "L. Bouscasse",
+                      "P. Caselli",
+                      "C. Ceccarelli",
+                      "N. Cunningham",
+                      "A. Fuente",
+                      "C. Gieser",
+                      "T. -H. Hsieh",
+                      "A. Lopez-Sepulcre",
+                      "D. M. Segura-Cox",
+                      "J. E. Pineda",
+                      "M. J. Maureira",
+                      "Th. Moeller",
+                      "M. Tafalla",
+                      "M. T. Valdivia-Mena"
+                    ],
+                    "published": "2024-02-22T16:04:57Z",
+                    "updated": "2024-02-27T13:44:52Z",
+                    "url": "http://arxiv.org/abs/2402.14653v3",
+                    "pdf_url": "https://arxiv.org/pdf/2402.14653v3",
+                    "source": "arxiv.org",
+                    "primary_category": "astro-ph.GA",
+                    "categories": [
+                      "astro-ph.GA",
+                      "astro-ph.EP",
+                      "astro-ph.SR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "",
+                    "title": "Replay to hep-ph/0606266",
+                    "summary": "The φ\\toγππamplitude is found from the e+e-\\toγππamplitude suggested in Ref. hep-ph/0606266. It is shown that the found amplitude differs essentially from that studied in Refs. hep-ph/0606266 and [3]. It is noticed that the suggestion of the author of Ref. hep-ph/0606266 about the phase of the φ\\toγππamplitude is misleading.",
+                    "authors": [
+                      "N. N. Achasov"
+                    ],
+                    "published": "2006-07-18T04:23:29Z",
+                    "updated": "2006-07-20T04:02:03Z",
+                    "url": "http://arxiv.org/abs/hep-ph/0607192v2",
+                    "pdf_url": "https://arxiv.org/pdf/hep-ph/0607192v2",
+                    "source": "arxiv.org",
+                    "primary_category": "hep-ph",
+                    "categories": [
+                      "hep-ph",
+                      "hep-ex",
+                      "nucl-th"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "",
+                    "title": "First AMBER/VLTI observations of hot massive stars",
+                    "summary": "AMBER is the first near infrared focal instrument of the VLTI. It combines three telescopes and produces spectrally resolved interferometric measures. This paper discusses some preliminary results of the first scientific observations of AMBER with three Unit Telescopes at medium (1500) and high (12000) spectral resolution. We derive a first set of constraints on the structure of the circumstellar material around the Wolf Rayet Gamma2 Velorum and the LBV Eta Carinae.",
+                    "authors": [
+                      "R. G. Petrov",
+                      "F. Millour",
+                      "O. Chesneau",
+                      "G. Weigelt",
+                      "D. Bonneau",
+                      "Ph. Stee",
+                      "S. Kraus",
+                      "D. Mourard",
+                      "A. Meilland",
+                      "F. Malbet",
+                      "F. Lisi",
+                      "P. Kern",
+                      "U. Beckmann",
+                      "S. Lagarde",
+                      "S. Gennari",
+                      "E. Lecoarer",
+                      "Th. Driebe",
+                      "M. Accardo",
+                      "S. Robbe-Dubois",
+                      "K. Ohnaka",
+                      "S. Busoni",
+                      "A. Roussel",
+                      "G. Zins",
+                      "J. Behrend",
+                      "D. Ferruzi",
+                      "Y. Bresson",
+                      "G. Duvert",
+                      "E. Nussbaum",
+                      "A. Marconi",
+                      "Ph. Feautrier",
+                      "M. Dugué",
+                      "A. Chelli",
+                      "E. Tatulli",
+                      "M. Heininger",
+                      "A. Delboulbé",
+                      "S. Bonhomme",
+                      "D. Schertl",
+                      "L. Testi",
+                      "Ph. Mathias",
+                      "J. -L. Monin",
+                      "L. Gluck",
+                      "K. H. Hofmann",
+                      "P. Salinari",
+                      "P. Puget",
+                      "J. -M. Clausse",
+                      "D. Fraix-Burnet",
+                      "R. Foy",
+                      "A. Isella"
+                    ],
+                    "published": "2005-09-08T07:07:30Z",
+                    "updated": "2005-09-08T07:07:30Z",
+                    "url": "http://arxiv.org/abs/astro-ph/0509208v1",
+                    "pdf_url": "https://arxiv.org/pdf/astro-ph/0509208v1",
+                    "source": "arxiv.org",
+                    "primary_category": "astro-ph",
+                    "categories": [
+                      "astro-ph"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "",
+                    "title": "Uncertainties in the Th cosmochronometry",
+                    "summary": "Recent observations of r-nuclei, and in particular of Th, in ultra-metal poor stars revived the old idea that the Th cosmochronometry could provide an age estimate of the oldest stars in the Galaxy, and therefore a lower limit to the age of the Galaxy. Unfortunately, some nuclear, astrophysics and observational uncertainties still affect the theoretical r-process models required to predict the original production of Th. The impact of these uncertainties on the prediction of the age of the Galaxy is analyzed and discussed. Although the present study suggests that at the moment great care should be taken in estimating the age of the stars on the basis of the observed Th abundance, new accurate observations of heavy r-elements could put the Th cosmochronometry on safer grounds, especially if Th and U lines could be observed accurately and simultaneously in metal-poor stars.",
+                    "authors": [
+                      "S. Goriely",
+                      "B. Clerbaux"
+                    ],
+                    "published": "1999-04-29T13:41:56Z",
+                    "updated": "1999-04-29T13:41:56Z",
+                    "url": "http://arxiv.org/abs/astro-ph/9904409v1",
+                    "pdf_url": "https://arxiv.org/pdf/astro-ph/9904409v1",
+                    "source": "arxiv.org",
+                    "primary_category": "astro-ph",
+                    "categories": [
+                      "astro-ph"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "1408.3067v1",
+                    "title": "Relativistic all-order calculations of Th, Th$^{+}$ and Th$^{2+}$ atomic properties",
+                    "summary": "Excitation energies, term designations, and $g$-factors of Th, Th$^{+}$ and Th$^{2+}$ are determined using a relativistic hybrid configuration interaction (CI) + all-order approach that combines configuration interaction and linearized coupled-cluster methods. The results are compared with other theory and experiment where available. We find some \"vanishing\" $g$-factors, similar to those known in lanthanide spectra. Reduced matrix elements, oscillator strengths, transition rates, and lifetimes are determined for Th$^{2+}$. To estimate the uncertainties of our results, we compared our values with the available experimental lifetimes for higher $5f7p\\ ^3G_{4}$, $7s7p\\ ^3P_{0}$, $7s7p\\ ^3P_{1}$, and $6d7p\\ ^3F_{4}$ levels of Th$^{2+}$. These calculations provide a benchmark test of the CI+all-order method for heavy systems with several valence electrons and yield recommended values for transition rates and lifetimes of Th$^{2+}$.",
+                    "authors": [
+                      "M. S. Safronova",
+                      "U. I. Safronova",
+                      "Charles W. Clark"
+                    ],
+                    "published": "2014-08-13T17:59:31Z",
+                    "updated": "2014-08-13T17:59:31Z",
+                    "url": "http://arxiv.org/abs/1408.3067v1",
+                    "pdf_url": "https://arxiv.org/pdf/1408.3067v1",
+                    "source": "arxiv.org",
+                    "primary_category": "physics.atom-ph",
+                    "categories": [
+                      "physics.atom-ph",
+                      "physics.optics",
+                      "quant-ph"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "1004.1351v1",
+                    "title": "Parity nonconservation effect with laser-induced 2^3S_1 - 2^1S_0 transition in heavy heliumlike ions",
+                    "summary": "The parity nonconservation (PNC) effect on the laser-induced 2^3S_1 - 2^1S_0 transition in heavy heliumlike ions is considered. A simple analytical formula for the PNC correction to the cross section is derived for the case, when the opposite-parity 2^1S_0 and 2^3P_0 states are almost degenerate and, therefore, the PNC effect is strongly enhanced. Numerical results are presented for heliumlike gadolinium and thorium, which seem most promising candidates for such kind of experiments. In both Gd and Th cases the photon energy required will be anticipated with a high-energy laser built at GSI. Alternatively, it can be gained with ultraviolet lasers utilizing relativistic Doppler tuning at FAIR facilities in Darmstadt.",
+                    "authors": [
+                      "V. M. Shabaev",
+                      "A. V. Volotka",
+                      "C. Kozhuharov",
+                      "G. Plunien",
+                      "Th. Stöhlker"
+                    ],
+                    "published": "2010-04-08T14:35:38Z",
+                    "updated": "2010-04-08T14:35:38Z",
+                    "url": "http://arxiv.org/abs/1004.1351v1",
+                    "pdf_url": "https://arxiv.org/pdf/1004.1351v1",
+                    "source": "arxiv.org",
+                    "primary_category": "physics.atom-ph",
+                    "categories": [
+                      "physics.atom-ph",
+                      "hep-ph"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Tôi đã tìm thấy một số bài báo liên quan đến \"phố ẩm thực\". Dưới đây là một số bài tiêu biểu:\n\n1. **[Semihard Hadron Processes and Quark-gluon String Model](http://arxiv.org/abs/hep-th/9502028v1)**\n   - Tác giả: G. I. Lykasov, M. N. Sergeenko\n   - Tóm tắt: Resubmitted as hep-ph/9502316. Removed from hep-th. Incorrigibly inept submitter publicly excoriated.\n   - Ngày xuất bản: 1995-02-03\n\n2. **[Scalar nonet quarkonia and the scalar glueball: mixing and decays in an effective chiral approach](http://arxiv.org/abs/hep-ph/0509248v2)**\n   - Tác giả: F. Giacosa, Th. Gutsche, V. E. Lyubovitskij, Amand Faessler\n   - Tóm tắt: Erroneous duplicate of hep-ph/0509247 removed by arXiv admin.\n   - Ngày xuất bản: 2005-09-22\n\n3. **[Effects of electrons on nuclear clock transition frequency in $^{229}$Th ions](http://arxiv.org/abs/2309.11176v1)**\n   - Tác giả: V. A. Dzuba, V. V. Flambaum\n   - Tóm tắt: We perform calculations of the energy shift of the nuclear clock transition frequency $^{229}$Th as a function of the number of electrons in Th ion.\n   - Ngày xuất bản: 2023-09-20\n\n4. **[PRODIGE -- Planet-forming disks in Taurus with NOEMA. I. Overview and first results for 12CO, 13CO, and C18O](http://arxiv.org/abs/2402.14653v3)**\n   - Tác giả: D. Semenov, Th. Henning, S. Guilloteau, và nhiều người khác.\n   - Tóm tắt: We are performing a line survey of 8 planet-forming Class II disks in Taurus with the IRAM NOrthern Extended Millimeter Array (NOEMA).\n   - Ngày xuất bản: 2024-02-22\n\n5. **[Uncertainties in the Th cosmochronometry](http://arxiv.org/abs/astro-ph/9904409v1)**\n   - Tác giả: S. Goriely, B. Clerbaux\n   - Tóm tắt: Recent observations of r-nuclei, and in particular of Th, in ultra-metal poor stars revived the old idea that the Th cosmochronometry could provide an age estimate of the oldest stars in the Galaxy.\n   - Ngày xuất bản: 1999-04-29\n\nNếu bạn cần thêm thông tin hoặc muốn xem nhiều bài báo hơn, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "phố ẩm thực",
+            "max_results": 100
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "phố ẩm thực",
+            "api_query": "all:ph AND all:th",
+            "total_results": 127720,
+            "items": [
+              {
+                "arxiv_id": "",
+                "title": "Semihard Hadron Processes and Quark-gluon String Model",
+                "summary": "Resubmitted as hep-ph/9502316. Removed from hep-th. Incorrigibly inept submitter publicly excoriated.",
+                "authors": [
+                  "G. I. Lykasov",
+                  "M. N. Sergeenko"
+                ],
+                "published": "1995-02-03T18:25:44Z",
+                "updated": "1995-02-03T18:25:44Z",
+                "url": "http://arxiv.org/abs/hep-th/9502028v1",
+                "pdf_url": "https://arxiv.org/pdf/hep-th/9502028v1",
+                "source": "arxiv.org",
+                "primary_category": "hep-th",
+                "categories": [
+                  "hep-th"
+                ]
+              },
+              {
+                "arxiv_id": "",
+                "title": "Scalar nonet quarkonia and the scalar glueball: mixing and decays in an effective chiral approach",
+                "summary": "Erroneous duplicate of hep-ph/0509247 removed by arXiv admin",
+                "authors": [
+                  "F. Giacosa",
+                  "Th. Gutsche",
+                  "V. E. Lyubovitskij",
+                  "Amand Faessler"
+                ],
+                "published": "2005-09-22T22:10:45Z",
+                "updated": "2005-09-26T23:46:05Z",
+                "url": "http://arxiv.org/abs/hep-ph/0509248v2",
+                "pdf_url": "https://arxiv.org/pdf/hep-ph/0509248v2",
+                "source": "arxiv.org",
+                "primary_category": "hep-ph",
+                "categories": [
+                  "hep-ph"
+                ]
+              },
+              {
+                "arxiv_id": "",
+                "title": "Reply to Comment on ``Determination of pion-baryon coupling constants from QCD sum rules''",
+                "summary": "In response to Kim's comment (nucl-th/9903040) on the sum rules for pion-baryon coupling constants obtained in hep-ph/9512259 and hep-ph/9606471, we point out that our treatment of the continuum is consistent with duality and with the fact that the correlator in the presence of an external meson or field should be represented by a double dispersion relation.",
+                "authors": [
+                  "Boris Krippa",
+                  "Michael C. Birse"
+                ],
+                "published": "1999-04-01T16:03:53Z",
+                "updated": "1999-04-01T16:03:53Z",
+                "url": "http://arxiv.org/abs/nucl-th/9904003v1",
+                "pdf_url": "https://arxiv.org/pdf/nucl-th/9904003v1",
+                "source": "arxiv.org",
+                "primary_category": "nucl-th",
+                "categories": [
+                  "nucl-th"
+                ]
+              },
+              {
+                "arxiv_id": "2309.11176v1",
+                "title": "Effects of electrons on nuclear clock transition frequency in $^{229}$Th ions",
+                "summary": "We perform calculations of the energy shift of the nuclear clock transition frequency $^{229}$Th as a function of the number of electrons in Th ion. We demonstrate that the dependence of the nuclear frequency on electron configuration is significant. E.g., removing one electron from the atom leads to relative shift of the nuclear frequency $\\sim 10^{-7}$, which is twelve orders of magnitude larger than expected relative uncertainty of the nuclear clock transition frequency ($\\sim 10^{-19}$). This leads to difference of the nuclear clock frequencies in Th~IV, Th~III, Th~II and Th~I. The relative change of the nuclear frequency between neutral Th and its bare nucleus is 1\\%. We also calculate the field shift constants for isotopic and isomeric shifts of atomic electron transitions in Th ions.",
+                "authors": [
+                  "V. A. Dzuba",
+                  "V. V. Flambaum"
+                ],
+                "published": "2023-09-20T09:52:14Z",
+                "updated": "2023-09-20T09:52:14Z",
+                "url": "http://arxiv.org/abs/2309.11176v1",
+                "pdf_url": "https://arxiv.org/pdf/2309.11176v1",
+                "source": "arxiv.org",
+                "primary_category": "physics.atom-ph",
+                "categories": [
+                  "physics.atom-ph",
+                  "hep-ph",
+                  "nucl-th"
+                ]
+              },
+              {
+                "arxiv_id": "2402.14653v3",
+                "title": "PRODIGE -- Planet-forming disks in Taurus with NOEMA. I. Overview and first results for 12CO, 13CO, and C18O",
+                "summary": "We are performing a line survey of 8 planet-forming Class II disks in Taurus with the IRAM NOrthern Extended Millimeter Array (NOEMA), as a part of the MPG-IRAM Observatory Program PRODIGE (PROtostars and DIsks: Global Evolution; PIs: P. Caselli and Th. Henning). Compact and extended disks around T Tauri stars CI, CY, DG, DL, DM, DN, IQ Tau, and UZ Tau E are observed in ~80 lines from >20 C-, O,- N-, and S-bearing species. The observations in four spectral settings at 210-280 GHz with $1σ$ rms sensitivity of ~ 8-12 mJy/beam at 0.9\" and 0.3 km/s resolution will be completed in 2024. The uv-visibilities are fitted with the DiskFit model to obtain key stellar and disk properties. In this paper, the combined $^{12}$CO, $^{13}$CO and C$^{18}$O $J = 2-1$ data are presented. We find that the CO fluxes and disk masses inferred from dust continuum tentatively correlate with the CO emission sizes. We constrain dynamical stellar masses, geometries, temperatures, the CO column densities and gas masses for each disk. The best-fit temperatures at 100 au are ~ 17-37 K, and decrease radially with the power-law exponent q ~ 0.05-0.76. The inferred CO column densities decrease radially with the power-law exponent p ~ 0.2-3.1. The gas masses estimated from $^{13}$CO (2-1) are ~ $0.001-0.2 M_\\textrm{Sun}$. The best-fit CO column densities point to severe CO freeze-out in the disks. The DL Tau disk is an outlier, and has either stronger CO depletion or lower gas mass than the rest of the sample. The CO isotopologue ratios are roughly consistent with the observed values in disks and the low-mass star-forming regions.",
+                "authors": [
+                  "D. Semenov",
+                  "Th. Henning",
+                  "S. Guilloteau",
+                  "G. Smirnov-Pinchukov",
+                  "A. Dutrey",
+                  "E. Chapillon",
+                  "V. Pietu",
+                  "R. Franceschi",
+                  "K. Schwarz",
+                  "S. van Terwisga",
+                  "L. Bouscasse",
+                  "P. Caselli",
+                  "C. Ceccarelli",
+                  "N. Cunningham",
+                  "A. Fuente",
+                  "C. Gieser",
+                  "T. -H. Hsieh",
+                  "A. Lopez-Sepulcre",
+                  "D. M. Segura-Cox",
+                  "J. E. Pineda",
+                  "M. J. Maureira",
+                  "Th. Moeller",
+                  "M. Tafalla",
+                  "M. T. Valdivia-Mena"
+                ],
+                "published": "2024-02-22T16:04:57Z",
+                "updated": "2024-02-27T13:44:52Z",
+                "url": "http://arxiv.org/abs/2402.14653v3",
+                "pdf_url": "https://arxiv.org/pdf/2402.14653v3",
+                "source": "arxiv.org",
+                "primary_category": "astro-ph.GA",
+                "categories": [
+                  "astro-ph.GA",
+                  "astro-ph.EP",
+                  "astro-ph.SR"
+                ]
+              },
+              {
+                "arxiv_id": "",
+                "title": "Replay to hep-ph/0606266",
+                "summary": "The φ\\toγππamplitude is found from the e+e-\\toγππamplitude suggested in Ref. hep-ph/0606266. It is shown that the found amplitude differs essentially from that studied in Refs. hep-ph/0606266 and [3]. It is noticed that the suggestion of the author of Ref. hep-ph/0606266 about the phase of the φ\\toγππamplitude is misleading.",
+                "authors": [
+                  "N. N. Achasov"
+                ],
+                "published": "2006-07-18T04:23:29Z",
+                "updated": "2006-07-20T04:02:03Z",
+                "url": "http://arxiv.org/abs/hep-ph/0607192v2",
+                "pdf_url": "https://arxiv.org/pdf/hep-ph/0607192v2",
+                "source": "arxiv.org",
+                "primary_category": "hep-ph",
+                "categories": [
+                  "hep-ph",
+                  "hep-ex",
+                  "nucl-th"
+                ]
+              },
+              {
+                "arxiv_id": "",
+                "title": "First AMBER/VLTI observations of hot massive stars",
+                "summary": "AMBER is the first near infrared focal instrument of the VLTI. It combines three telescopes and produces spectrally resolved interferometric measures. This paper discusses some preliminary results of the first scientific observations of AMBER with three Unit Telescopes at medium (1500) and high (12000) spectral resolution. We derive a first set of constraints on the structure of the circumstellar material around the Wolf Rayet Gamma2 Velorum and the LBV Eta Carinae.",
+                "authors": [
+                  "R. G. Petrov",
+                  "F. Millour",
+                  "O. Chesneau",
+                  "G. Weigelt",
+                  "D. Bonneau",
+                  "Ph. Stee",
+                  "S. Kraus",
+                  "D. Mourard",
+                  "A. Meilland",
+                  "F. Malbet",
+                  "F. Lisi",
+                  "P. Kern",
+                  "U. Beckmann",
+                  "S. Lagarde",
+                  "S. Gennari",
+                  "E. Lecoarer",
+                  "Th. Driebe",
+                  "M. Accardo",
+                  "S. Robbe-Dubois",
+                  "K. Ohnaka",
+                  "S. Busoni",
+                  "A. Roussel",
+                  "G. Zins",
+                  "J. Behrend",
+                  "D. Ferruzi",
+                  "Y. Bresson",
+                  "G. Duvert",
+                  "E. Nussbaum",
+                  "A. Marconi",
+                  "Ph. Feautrier",
+                  "M. Dugué",
+                  "A. Chelli",
+                  "E. Tatulli",
+                  "M. Heininger",
+                  "A. Delboulbé",
+                  "S. Bonhomme",
+                  "D. Schertl",
+                  "L. Testi",
+                  "Ph. Mathias",
+                  "J. -L. Monin",
+                  "L. Gluck",
+                  "K. H. Hofmann",
+                  "P. Salinari",
+                  "P. Puget",
+                  "J. -M. Clausse",
+                  "D. Fraix-Burnet",
+                  "R. Foy",
+                  "A. Isella"
+                ],
+                "published": "2005-09-08T07:07:30Z",
+                "updated": "2005-09-08T07:07:30Z",
+                "url": "http://arxiv.org/abs/astro-ph/0509208v1",
+                "pdf_url": "https://arxiv.org/pdf/astro-ph/0509208v1",
+                "source": "arxiv.org",
+                "primary_category": "astro-ph",
+                "categories": [
+                  "astro-ph"
+                ]
+              },
+              {
+                "arxiv_id": "",
+                "title": "Uncertainties in the Th cosmochronometry",
+                "summary": "Recent observations of r-nuclei, and in particular of Th, in ultra-metal poor stars revived the old idea that the Th cosmochronometry could provide an age estimate of the oldest stars in the Galaxy, and therefore a lower limit to the age of the Galaxy. Unfortunately, some nuclear, astrophysics and observational uncertainties still affect the theoretical r-process models required to predict the original production of Th. The impact of these uncertainties on the prediction of the age of the Galaxy is analyzed and discussed. Although the present study suggests that at the moment great care should be taken in estimating the age of the stars on the basis of the observed Th abundance, new accurate observations of heavy r-elements could put the Th cosmochronometry on safer grounds, especially if Th and U lines could be observed accurately and simultaneously in metal-poor stars.",
+                "authors": [
+                  "S. Goriely",
+                  "B. Clerbaux"
+                ],
+                "published": "1999-04-29T13:41:56Z",
+                "updated": "1999-04-29T13:41:56Z",
+                "url": "http://arxiv.org/abs/astro-ph/9904409v1",
+                "pdf_url": "https://arxiv.org/pdf/astro-ph/9904409v1",
+                "source": "arxiv.org",
+                "primary_category": "astro-ph",
+                "categories": [
+                  "astro-ph"
+                ]
+              },
+              {
+                "arxiv_id": "1408.3067v1",
+                "title": "Relativistic all-order calculations of Th, Th$^{+}$ and Th$^{2+}$ atomic properties",
+                "summary": "Excitation energies, term designations, and $g$-factors of Th, Th$^{+}$ and Th$^{2+}$ are determined using a relativistic hybrid configuration interaction (CI) + all-order approach that combines configuration interaction and linearized coupled-cluster methods. The results are compared with other theory and experiment where available. We find some \"vanishing\" $g$-factors, similar to those known in lanthanide spectra. Reduced matrix elements, oscillator strengths, transition rates, and lifetimes are determined for Th$^{2+}$. To estimate the uncertainties of our results, we compared our values with the available experimental lifetimes for higher $5f7p\\ ^3G_{4}$, $7s7p\\ ^3P_{0}$, $7s7p\\ ^3P_{1}$, and $6d7p\\ ^3F_{4}$ levels of Th$^{2+}$. These calculations provide a benchmark test of the CI+all-order method for heavy systems with several valence electrons and yield recommended values for transition rates and lifetimes of Th$^{2+}$.",
+                "authors": [
+                  "M. S. Safronova",
+                  "U. I. Safronova",
+                  "Charles W. Clark"
+                ],
+                "published": "2014-08-13T17:59:31Z",
+                "updated": "2014-08-13T17:59:31Z",
+                "url": "http://arxiv.org/abs/1408.3067v1",
+                "pdf_url": "https://arxiv.org/pdf/1408.3067v1",
+                "source": "arxiv.org",
+                "primary_category": "physics.atom-ph",
+                "categories": [
+                  "physics.atom-ph",
+                  "physics.optics",
+                  "quant-ph"
+                ]
+              },
+              {
+                "arxiv_id": "1004.1351v1",
+                "title": "Parity nonconservation effect with laser-induced 2^3S_1 - 2^1S_0 transition in heavy heliumlike ions",
+                "summary": "The parity nonconservation (PNC) effect on the laser-induced 2^3S_1 - 2^1S_0 transition in heavy heliumlike ions is considered. A simple analytical formula for the PNC correction to the cross section is derived for the case, when the opposite-parity 2^1S_0 and 2^3P_0 states are almost degenerate and, therefore, the PNC effect is strongly enhanced. Numerical results are presented for heliumlike gadolinium and thorium, which seem most promising candidates for such kind of experiments. In both Gd and Th cases the photon energy required will be anticipated with a high-energy laser built at GSI. Alternatively, it can be gained with ultraviolet lasers utilizing relativistic Doppler tuning at FAIR facilities in Darmstadt.",
+                "authors": [
+                  "V. M. Shabaev",
+                  "A. V. Volotka",
+                  "C. Kozhuharov",
+                  "G. Plunien",
+                  "Th. Stöhlker"
+                ],
+                "published": "2010-04-08T14:35:38Z",
+                "updated": "2010-04-08T14:35:38Z",
+                "url": "http://arxiv.org/abs/1004.1351v1",
+                "pdf_url": "https://arxiv.org/pdf/1004.1351v1",
+                "source": "arxiv.org",
+                "primary_category": "physics.atom-ph",
+                "categories": [
+                  "physics.atom-ph",
+                  "hep-ph"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T13:00:16"
+    }
+  ]
+}

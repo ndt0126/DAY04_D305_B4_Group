@@ -1,0 +1,72 @@
+{
+  "transcript_id": "baseline_openai_20260729T125801168226",
+  "version": "baseline",
+  "artifact_version": "baseline+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:58:02",
+  "updated_at": "2026-07-29T12:58:02",
+  "turns": [
+    {
+      "turn_index": 6,
+      "started_at": "2026-07-29T12:58:01",
+      "user": "gửi tin nhắn cho tôi \"dói quá\"",
+      "status": "waiting_for_user",
+      "assistant_text": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "clarify",
+              "args": {
+                "question": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+                "response_type": "yes_no"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "clarify",
+              "args": {
+                "question": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+                "response_type": "yes_no"
+              },
+              "result": {
+                "tool": "ask_user",
+                "question": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+                "response_type": "yes_no",
+                "options": [],
+                "awaiting_user": true
+              }
+            }
+          ]
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "clarify",
+          "args": {
+            "question": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+            "response_type": "yes_no"
+          },
+          "result": {
+            "tool": "ask_user",
+            "question": "Bạn có chắc chắn muốn gửi tin nhắn \"dói quá\" không?",
+            "response_type": "yes_no",
+            "options": [],
+            "awaiting_user": true
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:58:02"
+    }
+  ]
+}

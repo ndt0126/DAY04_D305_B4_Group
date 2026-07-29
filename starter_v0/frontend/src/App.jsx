@@ -1,5 +1,138 @@
 import React, { useState, useEffect, useRef } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Send, Bot, User, Wrench, FileText, Settings, History, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Terminal } from 'lucide-react';
+
+function MarkdownBlock({ text }) {
+  return (
+    <div className="markdown-content">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          a: ({ node: _node, ...props }) => (
+            <a {...props} target="_blank" rel="noreferrer" />
+          ),
+        }}
+      >
+        {text}
+      </ReactMarkdown>
+    </div>
+  );
+}
+
+function ArticleDetailCard({ title, url, source, summary }) {
+  return (
+    <article className="article-detail-card">
+      <div className="article-detail-header">
+        <span className="article-detail-icon" aria-hidden="true">
+          <FileText size={18} />
+        </span>
+        <div>
+          <span className="article-detail-kicker">Chi tiết bài báo</span>
+          <h3 className="article-detail-title">{title}</h3>
+        </div>
+      </div>
+
+      <a
+        className="article-detail-link"
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {url}
+      </a>
+
+      <div className="article-detail-meta">
+        <span className="article-detail-label">Nguồn</span>
+        <span className="article-detail-source">{source}</span>
+      </div>
+
+      <div className="article-detail-summary">
+        <span className="article-detail-label">Tóm tắt</span>
+        <p>{summary}</p>
+      </div>
+    </article>
+  );
+}
+
+function MessageText({ text }) {
+  const lines = String(text || '').split('\n');
+  const content = [];
+  let markdownLines = [];
+
+  const flushMarkdown = (key) => {
+    if (markdownLines.length === 0) return;
+
+    const markdown = markdownLines.join('\n');
+    if (markdown.trim()) {
+      content.push(<MarkdownBlock key={`markdown-${key}`} text={markdown} />);
+    }
+    markdownLines = [];
+  };
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    const article = line.trim().match(
+      /^(\d+)\.\s+\*\*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*\*\s*$/
+    );
+    const detailTitle = line.trim().match(
+      /^-\s+\*\*Tiêu đề:\*\*\s+\*{0,2}\[([^\]]+)\]\((https?:\/\/[^)]+)\)\*{0,2}\s*$/i
+    );
+
+    if (detailTitle) {
+      const source = lines[index + 1]?.trim().match(
+        /^-\s+\*\*Nguồn:\*\*\s+(.+)\s*$/i
+      );
+      const summary = lines[index + 2]?.trim().match(
+        /^-\s+\*\*Tóm tắt:\*\*\s+(.+)\s*$/i
+      );
+
+      if (source && summary) {
+        flushMarkdown(index);
+        content.push(
+          <ArticleDetailCard
+            key={`detail-${index}`}
+            title={detailTitle[1]}
+            url={detailTitle[2]}
+            source={source[1]}
+            summary={summary[1]}
+          />
+        );
+        index += 2;
+        continue;
+      }
+    }
+
+    if (article) {
+      const [, number, title, url] = article;
+
+      flushMarkdown(index);
+      content.push(
+        <div className="article-heading" key={`article-${index}`}>
+          <span className="article-number">{number}.</span>
+          <div className="article-heading-content">
+            <strong className="article-title">{title}</strong>
+            <a
+              className="article-link"
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {url}
+            </a>
+          </div>
+        </div>
+      );
+      continue;
+    }
+
+    markdownLines.push(line);
+  }
+
+  flushMarkdown(lines.length);
+
+  return <div className="message-text">{content}</div>;
+}
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('chat'); // 'chat' | 'transcripts' | 'config'
@@ -221,7 +354,7 @@ export default function App() {
                   </div>
 
                   <div className="message-content">
-                    <div>{msg.text}</div>
+                    <MessageText text={msg.text} />
 
                     {/* Tool Execution Trace Card */}
                     {msg.toolEvents && msg.toolEvents.length > 0 && (
@@ -327,7 +460,10 @@ export default function App() {
                   {selectedTranscript.turns?.map((turn, tIdx) => (
                     <div key={tIdx} style={{ background: '#f7fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '14px', marginBottom: '12px' }}>
                       <div style={{ fontWeight: 700, color: '#2b6cb0' }}>Turn #{turn.turn_index}: {turn.user}</div>
-                      <div style={{ marginTop: '8px', fontSize: '0.9rem' }}>Agent: {turn.assistant_text}</div>
+                      <div style={{ marginTop: '8px', fontSize: '0.9rem' }}>
+                        <span style={{ fontWeight: 600 }}>Agent:</span>
+                        <MessageText text={turn.assistant_text} />
+                      </div>
 
                       {turn.tool_events && turn.tool_events.length > 0 && (
                         <div style={{ marginTop: '10px' }}>

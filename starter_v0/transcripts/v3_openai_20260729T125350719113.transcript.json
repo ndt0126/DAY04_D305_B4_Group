@@ -1,0 +1,1069 @@
+{
+  "transcript_id": "v3_openai_20260729T125350719113",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:54:11",
+  "updated_at": "2026-07-29T12:54:11",
+  "turns": [
+    {
+      "turn_index": 3,
+      "started_at": "2026-07-29T12:53:50",
+      "user": "về NLP",
+      "status": "answered",
+      "assistant_text": "Dưới đây là một số tài liệu về Xử lý ngôn ngữ tự nhiên (NLP) từ arXiv và các bài báo học thuật:\n\n### Tài liệu từ arXiv:\n1. **[A dissemination workshop for introducing young Italian students to NLP](http://arxiv.org/abs/2104.12405v2)**  \n   - **Tác giả:** Lucio Messina, Lucia Busso, Claudia Roberta Combei, Ludovica Pannitto, Alessio Miaschi, Gabriele Sarti, Malvina Nissim  \n   - **Tóm tắt:** Mô tả tài liệu trò chơi được phát triển cho một phòng thí nghiệm tại nhiều lễ hội khoa học ở Ý để phổ biến NLP cho học sinh trẻ.  \n   - **Ngày xuất bản:** 26/04/2021  \n   - **[PDF](https://arxiv.org/pdf/2104.12405v2)**\n\n2. **[Teaching NLP with Bracelets and Restaurant Menus: An Interactive Workshop for Italian Students](http://arxiv.org/abs/2104.12422v2)**  \n   - **Tác giả:** Ludovica Pannitto, Lucia Busso, Claudia Roberta Combei, Lucio Messina, Alessio Miaschi, Gabriele Sarti, Malvina Nissim  \n   - **Tóm tắt:** Một hội thảo tương tác được thiết kế để minh họa các nguyên tắc cơ bản của NLP cho học sinh trung học ở Ý.  \n   - **Ngày xuất bản:** 26/04/2021  \n   - **[PDF](https://arxiv.org/pdf/2104.12422v2)**\n\n3. **[GR-NLP-TOOLKIT: An Open-Source NLP Toolkit for Modern Greek](http://arxiv.org/abs/2412.08520v1)**  \n   - **Tác giả:** Lefteris Loukas, Nikolaos Smyrnioudis, Chrysa Dikonomaki, Spyros Barbakos, Anastasios Toumazatos, John Koutsikakis, Manolis Kyriakakis, Mary Georgiou, Stavros Vassos, John Pavlopoulos, Ion Androutsopoulos  \n   - **Tóm tắt:** Giới thiệu GR-NLP-TOOLKIT, một bộ công cụ NLP mã nguồn mở phát triển cho tiếng Hy Lạp hiện đại.  \n   - **Ngày xuất bản:** 11/12/2024  \n   - **[PDF](https://arxiv.org/pdf/2412.08520v1)**\n\n4. **[How Good Is NLP? A Sober Look at NLP Tasks through the Lens of Social Impact](http://arxiv.org/abs/2106.02359v3)**  \n   - **Tác giả:** Zhijing Jin, Geeticka Chauhan, Brian Tse, Mrinmaya Sachan, Rada Mihalcea  \n   - **Tóm tắt:** Nghiên cứu về tác động xã hội của các nhiệm vụ NLP và đề xuất hướng nghiên cứu cho lợi ích xã hội.  \n   - **Ngày xuất bản:** 04/06/2021  \n   - **[PDF](https://arxiv.org/pdf/2106.02359v3)**\n\n5. **[NLP-ADBench: NLP Anomaly Detection Benchmark](http://arxiv.org/abs/2412.04784v2)**  \n   - **Tác giả:** Yuangang Li, Jiaqi Li, Zhuo Xiao, Tiankai Yang, Yi Nian, Xiyang Hu, Yue Zhao  \n   - **Tóm tắt:** Giới thiệu NLP-ADBench, một chuẩn mực phát hiện bất thường trong NLP với nhiều bộ dữ liệu và thuật toán hiện đại.  \n   - **Ngày xuất bản:** 06/12/2024  \n   - **[PDF](https://arxiv.org/pdf/2412.04784v2)**\n\n### Bài báo học thuật nổi bật:\n1. **[BERT Rediscovers the Classical NLP Pipeline](https://doi.org/10.18653/v1/p19-1452)**  \n   - **Tác giả:** Ian Tenney, Dipanjan Das, Ellie Pavlick  \n   - **Năm:** 2019  \n   - **Số lần trích dẫn:** 1297\n\n2. **[Jumping NLP Curves: A Review of Natural Language Processing Research](https://doi.org/10.1109/mci.2014.2307227)**  \n   - **Tác giả:** Erik Cambria, Bebo White  \n   - **Năm:** 2014  \n   - **Số lần trích dẫn:** 1075\n\n3. **[Multiword Expressions: A Pain in the Neck for NLP](https://doi.org/10.1007/3-540-45715-1_1)**  \n   - **Tác giả:** Ivan A. Sag, Timothy Baldwin, Francis Bond et al.  \n   - **Năm:** 2002  \n   - **Số lần trích dẫn:** 1027\n\nNếu bạn cần thêm thông tin hoặc tài liệu cụ thể nào khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "NLP",
+                "max_results": 50
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "NLP",
+                "limit": 50
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "NLP",
+                "max_results": 50
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "NLP",
+                "api_query": "all:NLP",
+                "total_results": 13552,
+                "items": [
+                  {
+                    "arxiv_id": "2104.12405v2",
+                    "title": "A dissemination workshop for introducing young Italian students to NLP",
+                    "summary": "We describe and make available the game-based material developed for a laboratory run at several Italian science festivals to popularize NLP among young students.",
+                    "authors": [
+                      "Lucio Messina",
+                      "Lucia Busso",
+                      "Claudia Roberta Combei",
+                      "Ludovica Pannitto",
+                      "Alessio Miaschi",
+                      "Gabriele Sarti",
+                      "Malvina Nissim"
+                    ],
+                    "published": "2021-04-26T09:00:56Z",
+                    "updated": "2021-05-14T07:59:50Z",
+                    "url": "http://arxiv.org/abs/2104.12405v2",
+                    "pdf_url": "https://arxiv.org/pdf/2104.12405v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2104.12422v2",
+                    "title": "Teaching NLP with Bracelets and Restaurant Menus: An Interactive Workshop for Italian Students",
+                    "summary": "Although Natural Language Processing (NLP) is at the core of many tools young people use in their everyday life, high school curricula (in Italy) do not include any computational linguistics education. This lack of exposure makes the use of such tools less responsible than it could be and makes choosing computational linguistics as a university degree unlikely. To raise awareness, curiosity, and longer-term interest in young people, we have developed an interactive workshop designed to illustrate the basic principles of NLP and computational linguistics to high school Italian students aged between 13 and 18 years. The workshop takes the form of a game in which participants play the role of machines needing to solve some of the most common problems a computer faces in understanding language: from voice recognition to Markov chains to syntactic parsing. Participants are guided through the workshop with the help of instructors, who present the activities and explain core concepts from computational linguistics. The workshop was presented at numerous outlets in Italy between 2019 and 2021, both face-to-face and online.",
+                    "authors": [
+                      "Ludovica Pannitto",
+                      "Lucia Busso",
+                      "Claudia Roberta Combei",
+                      "Lucio Messina",
+                      "Alessio Miaschi",
+                      "Gabriele Sarti",
+                      "Malvina Nissim"
+                    ],
+                    "published": "2021-04-26T09:23:52Z",
+                    "updated": "2021-05-14T07:49:21Z",
+                    "url": "http://arxiv.org/abs/2104.12422v2",
+                    "pdf_url": "https://arxiv.org/pdf/2104.12422v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2412.08520v1",
+                    "title": "GR-NLP-TOOLKIT: An Open-Source NLP Toolkit for Modern Greek",
+                    "summary": "We present GR-NLP-TOOLKIT, an open-source natural language processing (NLP) toolkit developed specifically for modern Greek. The toolkit provides state-of-the-art performance in five core NLP tasks, namely part-of-speech tagging, morphological tagging, dependency parsing, named entity recognition, and Greeklishto-Greek transliteration. The toolkit is based on pre-trained Transformers, it is freely available, and can be easily installed in Python (pip install gr-nlp-toolkit). It is also accessible through a demonstration platform on HuggingFace, along with a publicly available API for non-commercial use. We discuss the functionality provided for each task, the underlying methods, experiments against comparable open-source toolkits, and future possible enhancements. The toolkit is available at: https://github.com/nlpaueb/gr-nlp-toolkit",
+                    "authors": [
+                      "Lefteris Loukas",
+                      "Nikolaos Smyrnioudis",
+                      "Chrysa Dikonomaki",
+                      "Spyros Barbakos",
+                      "Anastasios Toumazatos",
+                      "John Koutsikakis",
+                      "Manolis Kyriakakis",
+                      "Mary Georgiou",
+                      "Stavros Vassos",
+                      "John Pavlopoulos",
+                      "Ion Androutsopoulos"
+                    ],
+                    "published": "2024-12-11T16:34:23Z",
+                    "updated": "2024-12-11T16:34:23Z",
+                    "url": "http://arxiv.org/abs/2412.08520v1",
+                    "pdf_url": "https://arxiv.org/pdf/2412.08520v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI",
+                      "cs.SE"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2106.02359v3",
+                    "title": "How Good Is NLP? A Sober Look at NLP Tasks through the Lens of Social Impact",
+                    "summary": "Recent years have seen many breakthroughs in natural language processing (NLP), transitioning it from a mostly theoretical field to one with many real-world applications. Noting the rising number of applications of other machine learning and AI techniques with pervasive societal impact, we anticipate the rising importance of developing NLP technologies for social good. Inspired by theories in moral philosophy and global priorities research, we aim to promote a guideline for social good in the context of NLP. We lay the foundations via the moral philosophy definition of social good, propose a framework to evaluate the direct and indirect real-world impact of NLP tasks, and adopt the methodology of global priorities research to identify priority causes for NLP research. Finally, we use our theoretical framework to provide some practical guidelines for future NLP research for social good. Our data and code are available at http://github.com/zhijing-jin/nlp4sg_acl2021. In addition, we curate a list of papers and resources on NLP for social good at https://github.com/zhijing-jin/NLP4SocialGood_Papers.",
+                    "authors": [
+                      "Zhijing Jin",
+                      "Geeticka Chauhan",
+                      "Brian Tse",
+                      "Mrinmaya Sachan",
+                      "Rada Mihalcea"
+                    ],
+                    "published": "2021-06-04T09:17:15Z",
+                    "updated": "2023-01-18T04:23:03Z",
+                    "url": "http://arxiv.org/abs/2106.02359v3",
+                    "pdf_url": "https://arxiv.org/pdf/2106.02359v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI",
+                      "cs.CY",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2412.04784v2",
+                    "title": "NLP-ADBench: NLP Anomaly Detection Benchmark",
+                    "summary": "Anomaly detection (AD) is an important machine learning task with applications in fraud detection, content moderation, and user behavior analysis. However, AD is relatively understudied in a natural language processing (NLP) context, limiting its effectiveness in detecting harmful content, phishing attempts, and spam reviews. We introduce NLP-ADBench, the most comprehensive NLP anomaly detection (NLP-AD) benchmark to date, which includes eight curated datasets and 19 state-of-the-art algorithms. These span 3 end-to-end methods and 16 two-step approaches that adapt classical, non-AD methods to language embeddings from BERT and OpenAI. Our empirical results show that no single model dominates across all datasets, indicating a need for automated model selection. Moreover, two-step methods with transformer-based embeddings consistently outperform specialized end-to-end approaches, with OpenAI embeddings outperforming those of BERT. We release NLP-ADBench at https://github.com/USC-FORTIS/NLP-ADBench, providing a unified framework for NLP-AD and supporting future investigations.",
+                    "authors": [
+                      "Yuangang Li",
+                      "Jiaqi Li",
+                      "Zhuo Xiao",
+                      "Tiankai Yang",
+                      "Yi Nian",
+                      "Xiyang Hu",
+                      "Yue Zhao"
+                    ],
+                    "published": "2024-12-06T05:30:41Z",
+                    "updated": "2025-10-09T19:13:25Z",
+                    "url": "http://arxiv.org/abs/2412.04784v2",
+                    "pdf_url": "https://arxiv.org/pdf/2412.04784v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2105.00895v1",
+                    "title": "Teaching NLP outside Linguistics and Computer Science classrooms: Some challenges and some opportunities",
+                    "summary": "NLP's sphere of influence went much beyond computer science research and the development of software applications in the past decade. We see people using NLP methods in a range of academic disciplines from Asian Studies to Clinical Oncology. We also notice the presence of NLP as a module in most of the data science curricula within and outside of regular university setups. These courses are taken by students from very diverse backgrounds. This paper takes a closer look at some issues related to teaching NLP to these diverse audiences based on my classroom experiences, and identifies some challenges the instructors face, particularly when there is no ecosystem of related courses for the students. In this process, it also identifies a few challenge areas for both NLP researchers and tool developers.",
+                    "authors": [
+                      "Sowmya Vajjala"
+                    ],
+                    "published": "2021-05-03T14:30:32Z",
+                    "updated": "2021-05-03T14:30:32Z",
+                    "url": "http://arxiv.org/abs/2105.00895v1",
+                    "pdf_url": "https://arxiv.org/pdf/2105.00895v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2010.03061v1",
+                    "title": "A Survey on Recognizing Textual Entailment as an NLP Evaluation",
+                    "summary": "Recognizing Textual Entailment (RTE) was proposed as a unified evaluation framework to compare semantic understanding of different NLP systems. In this survey paper, we provide an overview of different approaches for evaluating and understanding the reasoning capabilities of NLP systems. We then focus our discussion on RTE by highlighting prominent RTE datasets as well as advances in RTE dataset that focus on specific linguistic phenomena that can be used to evaluate NLP systems on a fine-grained level. We conclude by arguing that when evaluating NLP systems, the community should utilize newly introduced RTE datasets that focus on specific linguistic phenomena.",
+                    "authors": [
+                      "Adam Poliak"
+                    ],
+                    "published": "2020-10-06T22:23:00Z",
+                    "updated": "2020-10-06T22:23:00Z",
+                    "url": "http://arxiv.org/abs/2010.03061v1",
+                    "pdf_url": "https://arxiv.org/pdf/2010.03061v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2408.05664v1",
+                    "title": "Training an NLP Scholar at a Small Liberal Arts College: A Backwards Designed Course Proposal",
+                    "summary": "The rapid growth in natural language processing (NLP) over the last couple years has generated student interest and excitement in learning more about the field. In this paper, we present two types of students that NLP courses might want to train. First, an \"NLP engineer\" who is able to flexibly design, build and apply new technologies in NLP for a wide range of tasks. Second, an \"NLP scholar\" who is able to pose, refine and answer questions in NLP and how it relates to the society, while also learning to effectively communicate these answers to a broader audience. While these two types of skills are not mutually exclusive -- NLP engineers should be able to think critically, and NLP scholars should be able to build systems -- we think that courses can differ in the balance of these skills. As educators at Small Liberal Arts Colleges, the strengths of our students and our institution favors an approach that is better suited to train NLP scholars. In this paper we articulate what kinds of skills an NLP scholar should have, and then adopt a backwards design to propose course components that can aid the acquisition of these skills.",
+                    "authors": [
+                      "Grusha Prasad",
+                      "Forrest Davis"
+                    ],
+                    "published": "2024-08-11T00:50:59Z",
+                    "updated": "2024-08-11T00:50:59Z",
+                    "url": "http://arxiv.org/abs/2408.05664v1",
+                    "pdf_url": "https://arxiv.org/pdf/2408.05664v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2204.07288v1",
+                    "title": "Characterizing the Efficiency vs. Accuracy Trade-off for Long-Context NLP Models",
+                    "summary": "With many real-world applications of Natural Language Processing (NLP) comprising of long texts, there has been a rise in NLP benchmarks that measure the accuracy of models that can handle longer input sequences. However, these benchmarks do not consider the trade-offs between accuracy, speed, and power consumption as input sizes or model sizes are varied. In this work, we perform a systematic study of this accuracy vs. efficiency trade-off on two widely used long-sequence models - Longformer-Encoder-Decoder (LED) and Big Bird - during fine-tuning and inference on four datasets from the SCROLLS benchmark. To study how this trade-off differs across hyperparameter settings, we compare the models across four sequence lengths (1024, 2048, 3072, 4096) and two model sizes (base and large) under a fixed resource budget. We find that LED consistently achieves better accuracy at lower energy costs than Big Bird. For summarization, we find that increasing model size is more energy efficient than increasing sequence length for higher accuracy. However, this comes at the cost of a large drop in inference speed. For question answering, we find that smaller models are both more efficient and more accurate due to the larger training batch sizes possible under a fixed resource budget.",
+                    "authors": [
+                      "Phyllis Ang",
+                      "Bhuwan Dhingra",
+                      "Lisa Wu Wills"
+                    ],
+                    "published": "2022-04-15T01:52:45Z",
+                    "updated": "2022-04-15T01:52:45Z",
+                    "url": "http://arxiv.org/abs/2204.07288v1",
+                    "pdf_url": "https://arxiv.org/pdf/2204.07288v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2102.13461v1",
+                    "title": "Methods for the Design and Evaluation of HCI+NLP Systems",
+                    "summary": "HCI and NLP traditionally focus on different evaluation methods. While HCI involves a small number of people directly and deeply, NLP traditionally relies on standardized benchmark evaluations that involve a larger number of people indirectly. We present five methodological proposals at the intersection of HCI and NLP and situate them in the context of ML-based NLP models. Our goal is to foster interdisciplinary collaboration and progress in both fields by emphasizing what the fields can learn from each other.",
+                    "authors": [
+                      "Hendrik Heuer",
+                      "Daniel Buschek"
+                    ],
+                    "published": "2021-02-26T13:37:10Z",
+                    "updated": "2021-02-26T13:37:10Z",
+                    "url": "http://arxiv.org/abs/2102.13461v1",
+                    "pdf_url": "https://arxiv.org/pdf/2102.13461v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.HC"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "NLP",
+                "limit": 50
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "NLP",
+                "min_year": null,
+                "verdict": "Most-cited work on 'NLP': 'BERT Rediscovers the Classical NLP Pipeline' (2019, 1,297 citations)",
+                "most_cited": {
+                  "title": "BERT Rediscovers the Classical NLP Pipeline",
+                  "authors": "Ian Tenney, Dipanjan Das, Ellie Pavlick",
+                  "year": 2019,
+                  "venue": null,
+                  "cited_by_count": 1297,
+                  "doi": "https://doi.org/10.18653/v1/p19-1452",
+                  "url": "https://aclanthology.org/P19-1452.pdf",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "BERT Rediscovers the Classical NLP Pipeline",
+                    "authors": "Ian Tenney, Dipanjan Das, Ellie Pavlick",
+                    "year": 2019,
+                    "venue": null,
+                    "cited_by_count": 1297,
+                    "doi": "https://doi.org/10.18653/v1/p19-1452",
+                    "url": "https://aclanthology.org/P19-1452.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Jumping NLP Curves: A Review of Natural Language Processing Research [Review Article]",
+                    "authors": "Erik Cambria, Bebo White",
+                    "year": 2014,
+                    "venue": "IEEE Computational Intelligence Magazine",
+                    "cited_by_count": 1075,
+                    "doi": "https://doi.org/10.1109/mci.2014.2307227",
+                    "url": "https://doi.org/10.1109/mci.2014.2307227",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Multiword Expressions: A Pain in the Neck for NLP",
+                    "authors": "Ivan A. Sag, Timothy Baldwin, Francis Bond et al.",
+                    "year": 2002,
+                    "venue": "Lecture notes in computer science",
+                    "cited_by_count": 1027,
+                    "doi": "https://doi.org/10.1007/3-540-45715-1_1",
+                    "url": "https://doi.org/10.1007/3-540-45715-1_1",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "brat: a Web-based Tool for NLP-Assisted Text Annotation",
+                    "authors": "Pontus Stenetorp, Sampo Pyysalo, Goran Topić et al.",
+                    "year": 2012,
+                    "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+                    "cited_by_count": 942,
+                    "doi": "https://doi.org/10.1016/0020-7519(95)00001-i",
+                    "url": "https://doi.org/10.1016/0020-7519(95)00001-i",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Instance Weighting for Domain Adaptation in NLP",
+                    "authors": "Jing Jiang, ChengXiang Zhai",
+                    "year": 2007,
+                    "venue": "Singapore Management University Institutional Knowledge (InK) (Singapore Management University)",
+                    "cited_by_count": 755,
+                    "doi": null,
+                    "url": "https://openalex.org/W2111362445",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Scatter Search and Local NLP Solvers: A Multistart Framework for Global Optimization",
+                    "authors": "Zsolt Ugray, Leon S. Lasdon, John Plummer et al.",
+                    "year": 2007,
+                    "venue": "INFORMS journal on computing",
+                    "cited_by_count": 717,
+                    "doi": "https://doi.org/10.1287/ijoc.1060.0175",
+                    "url": "https://doi.org/10.1287/ijoc.1060.0175",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Discovery of nitrate–CPK–NLP signalling in central nutrient–growth networks",
+                    "authors": "Kun-Hsiang Liu, Yajie Niu, Mineko Konishi et al.",
+                    "year": 2017,
+                    "venue": "Nature",
+                    "cited_by_count": 668,
+                    "doi": "https://doi.org/10.1038/nature22077",
+                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5823009",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Dice Loss for Data-imbalanced NLP Tasks",
+                    "authors": "Xiaoya Li, Xiaofei Sun, Yuxian Meng et al.",
+                    "year": 2020,
+                    "venue": null,
+                    "cited_by_count": 589,
+                    "doi": "https://doi.org/10.18653/v1/2020.acl-main.45",
+                    "url": "https://aclanthology.org/2020.acl-main.45.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Visualizing and Understanding Neural Models in NLP",
+                    "authors": "Jiwei Li, Xinlei Chen, Eduard Hovy et al.",
+                    "year": 2016,
+                    "venue": null,
+                    "cited_by_count": 545,
+                    "doi": "https://doi.org/10.18653/v1/n16-1082",
+                    "url": "https://www.aclweb.org/anthology/N16-1082.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "TextAttack: A Framework for Adversarial Attacks, Data Augmentation, and Adversarial Training in NLP",
+                    "authors": "John X. Morris, Eli Lifland, Jin Yong Yoo et al.",
+                    "year": 2020,
+                    "venue": null,
+                    "cited_by_count": 537,
+                    "doi": "https://doi.org/10.18653/v1/2020.emnlp-demos.16",
+                    "url": "https://www.aclweb.org/anthology/2020.emnlp-demos.16.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks",
+                    "authors": "Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka et al.",
+                    "year": 2017,
+                    "venue": null,
+                    "cited_by_count": 533,
+                    "doi": "https://doi.org/10.18653/v1/d17-1206",
+                    "url": "https://www.aclweb.org/anthology/D17-1206.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "An RLP23–SOBIR1–BAK1 complex mediates NLP-triggered immunity",
+                    "authors": "Isabell Albert, Hannah Böhm, Markus Albert et al.",
+                    "year": 2015,
+                    "venue": "Nature Plants",
+                    "cited_by_count": 527,
+                    "doi": "https://doi.org/10.1038/nplants.2015.140",
+                    "url": "https://dspace.library.uu.nl/handle/1874/429807",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Natural language processing (NLP) in management research: A literature review",
+                    "authors": "Yue Kang, Zhao Cai, Chee‐Wee Tan et al.",
+                    "year": 2020,
+                    "venue": "Journal of Management Analytics",
+                    "cited_by_count": 524,
+                    "doi": "https://doi.org/10.1080/23270012.2020.1756939",
+                    "url": "https://research.cbs.dk/en/publications/5fba618b-de65-4c73-a469-481268c1c497",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A global optimization method, αBB, for general twice-differentiable constrained NLPs — I. Theoretical advances",
+                    "authors": "Claire S. Adjiman, S. Dallwig, Christodoulos A. Floudas et al.",
+                    "year": 1998,
+                    "venue": "Computers & Chemical Engineering",
+                    "cited_by_count": 519,
+                    "doi": "https://doi.org/10.1016/s0098-1354(98)00027-1",
+                    "url": "https://doi.org/10.1016/s0098-1354(98)00027-1",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP",
+                    "authors": "Abu Bakr Soliman, Kareem Eissa, Samhaa R. El-Beltagy",
+                    "year": 2017,
+                    "venue": "Procedia Computer Science",
+                    "cited_by_count": 513,
+                    "doi": "https://doi.org/10.1016/j.procs.2017.10.117",
+                    "url": "https://doi.org/10.1016/j.procs.2017.10.117",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Semantically Equivalent Adversarial Rules for Debugging NLP models",
+                    "authors": "Marco Túlio Ribeiro, Sameer Singh, Carlos Guestrin",
+                    "year": 2018,
+                    "venue": null,
+                    "cited_by_count": 470,
+                    "doi": "https://doi.org/10.18653/v1/p18-1079",
+                    "url": "https://www.aclweb.org/anthology/P18-1079.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Jumping NLP Curves: A Review of Natural Language Processing Research",
+                    "authors": "Erik Cambria, Bebo White",
+                    "year": 2014,
+                    "venue": null,
+                    "cited_by_count": 469,
+                    "doi": null,
+                    "url": "https://openalex.org/W2341587966",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "An LP/NLP based branch and bound algorithm for convex MINLP optimization problems",
+                    "authors": "Ignacio Quesada, Ignacio E. Grossmann",
+                    "year": 1992,
+                    "venue": "Computers & Chemical Engineering",
+                    "cited_by_count": 449,
+                    "doi": "https://doi.org/10.1016/0098-1354(92)80028-8",
+                    "url": "https://doi.org/10.1016/0098-1354(92)80028-8",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Global optimization of nonconvex NLPs and MINLPs with applications in process design",
+                    "authors": "Hanil Ryoo, Nikolaos V. Sahinidis",
+                    "year": 1995,
+                    "venue": "Computers & Chemical Engineering",
+                    "cited_by_count": 446,
+                    "doi": "https://doi.org/10.1016/0098-1354(94)00097-2",
+                    "url": "https://doi.org/10.1016/0098-1354(94)00097-2",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Energy and Policy Considerations for Deep Learning in NLP",
+                    "authors": "Emma Strubell, Ananya Ganesh, Andrew McCallum",
+                    "year": 2019,
+                    "venue": null,
+                    "cited_by_count": 422,
+                    "doi": "https://doi.org/10.18653/v1/p19-1355",
+                    "url": "https://www.aclweb.org/anthology/P19-1355.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "The language of proteins: NLP, machine learning &amp; protein sequences",
+                    "authors": "Dan Ofer, Nadav Brandes, Michal Linial",
+                    "year": 2021,
+                    "venue": "Computational and Structural Biotechnology Journal",
+                    "cited_by_count": 387,
+                    "doi": "https://doi.org/10.1016/j.csbj.2021.03.022",
+                    "url": "https://doi.org/10.1016/j.csbj.2021.03.022",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Overview of the Transformer-based Models for NLP Tasks",
+                    "authors": "Anthony Gillioz, Jacky Casas, Elena Mugellini et al.",
+                    "year": 2020,
+                    "venue": "Annals of Computer Science and Information Systems",
+                    "cited_by_count": 383,
+                    "doi": "https://doi.org/10.15439/2020f20",
+                    "url": "https://annals-csis.org/proceedings/2020/drp/pdf/20.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Semantic NLP-Based Information Extraction from Construction Regulatory Documents for Automated Compliance Checking",
+                    "authors": "Jiansong Zhang, Nora El-Gohary",
+                    "year": 2013,
+                    "venue": "Journal of Computing in Civil Engineering",
+                    "cited_by_count": 383,
+                    "doi": "https://doi.org/10.1061/(asce)cp.1943-5487.0000346",
+                    "url": "https://doi.org/10.1061/(asce)cp.1943-5487.0000346",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Deep Sentiment Classification and Topic Discovery on Novel Coronavirus or COVID-19 Online Discussions: NLP Using LSTM Recurrent Neural Network Approach",
+                    "authors": "Hamed Jelodar, Yongli Wang, Rita Orji et al.",
+                    "year": 2020,
+                    "venue": "IEEE Journal of Biomedical and Health Informatics",
+                    "cited_by_count": 380,
+                    "doi": "https://doi.org/10.1109/jbhi.2020.3001216",
+                    "url": "https://doi.org/10.1109/jbhi.2020.3001216",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Optimum Coordination of Directional Overcurrent Relays Using the Hybrid GA-NLP Approach",
+                    "authors": "Prashant P. Bedekar, Sudhir R. Bhide",
+                    "year": 2010,
+                    "venue": "IEEE Transactions on Power Delivery",
+                    "cited_by_count": 378,
+                    "doi": "https://doi.org/10.1109/tpwrd.2010.2080289",
+                    "url": "https://doi.org/10.1109/tpwrd.2010.2080289",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 113890
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là một số tài liệu về Xử lý ngôn ngữ tự nhiên (NLP) từ arXiv và các bài báo học thuật:\n\n### Tài liệu từ arXiv:\n1. **[A dissemination workshop for introducing young Italian students to NLP](http://arxiv.org/abs/2104.12405v2)**  \n   - **Tác giả:** Lucio Messina, Lucia Busso, Claudia Roberta Combei, Ludovica Pannitto, Alessio Miaschi, Gabriele Sarti, Malvina Nissim  \n   - **Tóm tắt:** Mô tả tài liệu trò chơi được phát triển cho một phòng thí nghiệm tại nhiều lễ hội khoa học ở Ý để phổ biến NLP cho học sinh trẻ.  \n   - **Ngày xuất bản:** 26/04/2021  \n   - **[PDF](https://arxiv.org/pdf/2104.12405v2)**\n\n2. **[Teaching NLP with Bracelets and Restaurant Menus: An Interactive Workshop for Italian Students](http://arxiv.org/abs/2104.12422v2)**  \n   - **Tác giả:** Ludovica Pannitto, Lucia Busso, Claudia Roberta Combei, Lucio Messina, Alessio Miaschi, Gabriele Sarti, Malvina Nissim  \n   - **Tóm tắt:** Một hội thảo tương tác được thiết kế để minh họa các nguyên tắc cơ bản của NLP cho học sinh trung học ở Ý.  \n   - **Ngày xuất bản:** 26/04/2021  \n   - **[PDF](https://arxiv.org/pdf/2104.12422v2)**\n\n3. **[GR-NLP-TOOLKIT: An Open-Source NLP Toolkit for Modern Greek](http://arxiv.org/abs/2412.08520v1)**  \n   - **Tác giả:** Lefteris Loukas, Nikolaos Smyrnioudis, Chrysa Dikonomaki, Spyros Barbakos, Anastasios Toumazatos, John Koutsikakis, Manolis Kyriakakis, Mary Georgiou, Stavros Vassos, John Pavlopoulos, Ion Androutsopoulos  \n   - **Tóm tắt:** Giới thiệu GR-NLP-TOOLKIT, một bộ công cụ NLP mã nguồn mở phát triển cho tiếng Hy Lạp hiện đại.  \n   - **Ngày xuất bản:** 11/12/2024  \n   - **[PDF](https://arxiv.org/pdf/2412.08520v1)**\n\n4. **[How Good Is NLP? A Sober Look at NLP Tasks through the Lens of Social Impact](http://arxiv.org/abs/2106.02359v3)**  \n   - **Tác giả:** Zhijing Jin, Geeticka Chauhan, Brian Tse, Mrinmaya Sachan, Rada Mihalcea  \n   - **Tóm tắt:** Nghiên cứu về tác động xã hội của các nhiệm vụ NLP và đề xuất hướng nghiên cứu cho lợi ích xã hội.  \n   - **Ngày xuất bản:** 04/06/2021  \n   - **[PDF](https://arxiv.org/pdf/2106.02359v3)**\n\n5. **[NLP-ADBench: NLP Anomaly Detection Benchmark](http://arxiv.org/abs/2412.04784v2)**  \n   - **Tác giả:** Yuangang Li, Jiaqi Li, Zhuo Xiao, Tiankai Yang, Yi Nian, Xiyang Hu, Yue Zhao  \n   - **Tóm tắt:** Giới thiệu NLP-ADBench, một chuẩn mực phát hiện bất thường trong NLP với nhiều bộ dữ liệu và thuật toán hiện đại.  \n   - **Ngày xuất bản:** 06/12/2024  \n   - **[PDF](https://arxiv.org/pdf/2412.04784v2)**\n\n### Bài báo học thuật nổi bật:\n1. **[BERT Rediscovers the Classical NLP Pipeline](https://doi.org/10.18653/v1/p19-1452)**  \n   - **Tác giả:** Ian Tenney, Dipanjan Das, Ellie Pavlick  \n   - **Năm:** 2019  \n   - **Số lần trích dẫn:** 1297\n\n2. **[Jumping NLP Curves: A Review of Natural Language Processing Research](https://doi.org/10.1109/mci.2014.2307227)**  \n   - **Tác giả:** Erik Cambria, Bebo White  \n   - **Năm:** 2014  \n   - **Số lần trích dẫn:** 1075\n\n3. **[Multiword Expressions: A Pain in the Neck for NLP](https://doi.org/10.1007/3-540-45715-1_1)**  \n   - **Tác giả:** Ivan A. Sag, Timothy Baldwin, Francis Bond et al.  \n   - **Năm:** 2002  \n   - **Số lần trích dẫn:** 1027\n\nNếu bạn cần thêm thông tin hoặc tài liệu cụ thể nào khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "NLP",
+            "max_results": 50
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "NLP",
+            "api_query": "all:NLP",
+            "total_results": 13552,
+            "items": [
+              {
+                "arxiv_id": "2104.12405v2",
+                "title": "A dissemination workshop for introducing young Italian students to NLP",
+                "summary": "We describe and make available the game-based material developed for a laboratory run at several Italian science festivals to popularize NLP among young students.",
+                "authors": [
+                  "Lucio Messina",
+                  "Lucia Busso",
+                  "Claudia Roberta Combei",
+                  "Ludovica Pannitto",
+                  "Alessio Miaschi",
+                  "Gabriele Sarti",
+                  "Malvina Nissim"
+                ],
+                "published": "2021-04-26T09:00:56Z",
+                "updated": "2021-05-14T07:59:50Z",
+                "url": "http://arxiv.org/abs/2104.12405v2",
+                "pdf_url": "https://arxiv.org/pdf/2104.12405v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2104.12422v2",
+                "title": "Teaching NLP with Bracelets and Restaurant Menus: An Interactive Workshop for Italian Students",
+                "summary": "Although Natural Language Processing (NLP) is at the core of many tools young people use in their everyday life, high school curricula (in Italy) do not include any computational linguistics education. This lack of exposure makes the use of such tools less responsible than it could be and makes choosing computational linguistics as a university degree unlikely. To raise awareness, curiosity, and longer-term interest in young people, we have developed an interactive workshop designed to illustrate the basic principles of NLP and computational linguistics to high school Italian students aged between 13 and 18 years. The workshop takes the form of a game in which participants play the role of machines needing to solve some of the most common problems a computer faces in understanding language: from voice recognition to Markov chains to syntactic parsing. Participants are guided through the workshop with the help of instructors, who present the activities and explain core concepts from computational linguistics. The workshop was presented at numerous outlets in Italy between 2019 and 2021, both face-to-face and online.",
+                "authors": [
+                  "Ludovica Pannitto",
+                  "Lucia Busso",
+                  "Claudia Roberta Combei",
+                  "Lucio Messina",
+                  "Alessio Miaschi",
+                  "Gabriele Sarti",
+                  "Malvina Nissim"
+                ],
+                "published": "2021-04-26T09:23:52Z",
+                "updated": "2021-05-14T07:49:21Z",
+                "url": "http://arxiv.org/abs/2104.12422v2",
+                "pdf_url": "https://arxiv.org/pdf/2104.12422v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2412.08520v1",
+                "title": "GR-NLP-TOOLKIT: An Open-Source NLP Toolkit for Modern Greek",
+                "summary": "We present GR-NLP-TOOLKIT, an open-source natural language processing (NLP) toolkit developed specifically for modern Greek. The toolkit provides state-of-the-art performance in five core NLP tasks, namely part-of-speech tagging, morphological tagging, dependency parsing, named entity recognition, and Greeklishto-Greek transliteration. The toolkit is based on pre-trained Transformers, it is freely available, and can be easily installed in Python (pip install gr-nlp-toolkit). It is also accessible through a demonstration platform on HuggingFace, along with a publicly available API for non-commercial use. We discuss the functionality provided for each task, the underlying methods, experiments against comparable open-source toolkits, and future possible enhancements. The toolkit is available at: https://github.com/nlpaueb/gr-nlp-toolkit",
+                "authors": [
+                  "Lefteris Loukas",
+                  "Nikolaos Smyrnioudis",
+                  "Chrysa Dikonomaki",
+                  "Spyros Barbakos",
+                  "Anastasios Toumazatos",
+                  "John Koutsikakis",
+                  "Manolis Kyriakakis",
+                  "Mary Georgiou",
+                  "Stavros Vassos",
+                  "John Pavlopoulos",
+                  "Ion Androutsopoulos"
+                ],
+                "published": "2024-12-11T16:34:23Z",
+                "updated": "2024-12-11T16:34:23Z",
+                "url": "http://arxiv.org/abs/2412.08520v1",
+                "pdf_url": "https://arxiv.org/pdf/2412.08520v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.AI",
+                  "cs.SE"
+                ]
+              },
+              {
+                "arxiv_id": "2106.02359v3",
+                "title": "How Good Is NLP? A Sober Look at NLP Tasks through the Lens of Social Impact",
+                "summary": "Recent years have seen many breakthroughs in natural language processing (NLP), transitioning it from a mostly theoretical field to one with many real-world applications. Noting the rising number of applications of other machine learning and AI techniques with pervasive societal impact, we anticipate the rising importance of developing NLP technologies for social good. Inspired by theories in moral philosophy and global priorities research, we aim to promote a guideline for social good in the context of NLP. We lay the foundations via the moral philosophy definition of social good, propose a framework to evaluate the direct and indirect real-world impact of NLP tasks, and adopt the methodology of global priorities research to identify priority causes for NLP research. Finally, we use our theoretical framework to provide some practical guidelines for future NLP research for social good. Our data and code are available at http://github.com/zhijing-jin/nlp4sg_acl2021. In addition, we curate a list of papers and resources on NLP for social good at https://github.com/zhijing-jin/NLP4SocialGood_Papers.",
+                "authors": [
+                  "Zhijing Jin",
+                  "Geeticka Chauhan",
+                  "Brian Tse",
+                  "Mrinmaya Sachan",
+                  "Rada Mihalcea"
+                ],
+                "published": "2021-06-04T09:17:15Z",
+                "updated": "2023-01-18T04:23:03Z",
+                "url": "http://arxiv.org/abs/2106.02359v3",
+                "pdf_url": "https://arxiv.org/pdf/2106.02359v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.AI",
+                  "cs.CY",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2412.04784v2",
+                "title": "NLP-ADBench: NLP Anomaly Detection Benchmark",
+                "summary": "Anomaly detection (AD) is an important machine learning task with applications in fraud detection, content moderation, and user behavior analysis. However, AD is relatively understudied in a natural language processing (NLP) context, limiting its effectiveness in detecting harmful content, phishing attempts, and spam reviews. We introduce NLP-ADBench, the most comprehensive NLP anomaly detection (NLP-AD) benchmark to date, which includes eight curated datasets and 19 state-of-the-art algorithms. These span 3 end-to-end methods and 16 two-step approaches that adapt classical, non-AD methods to language embeddings from BERT and OpenAI. Our empirical results show that no single model dominates across all datasets, indicating a need for automated model selection. Moreover, two-step methods with transformer-based embeddings consistently outperform specialized end-to-end approaches, with OpenAI embeddings outperforming those of BERT. We release NLP-ADBench at https://github.com/USC-FORTIS/NLP-ADBench, providing a unified framework for NLP-AD and supporting future investigations.",
+                "authors": [
+                  "Yuangang Li",
+                  "Jiaqi Li",
+                  "Zhuo Xiao",
+                  "Tiankai Yang",
+                  "Yi Nian",
+                  "Xiyang Hu",
+                  "Yue Zhao"
+                ],
+                "published": "2024-12-06T05:30:41Z",
+                "updated": "2025-10-09T19:13:25Z",
+                "url": "http://arxiv.org/abs/2412.04784v2",
+                "pdf_url": "https://arxiv.org/pdf/2412.04784v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2105.00895v1",
+                "title": "Teaching NLP outside Linguistics and Computer Science classrooms: Some challenges and some opportunities",
+                "summary": "NLP's sphere of influence went much beyond computer science research and the development of software applications in the past decade. We see people using NLP methods in a range of academic disciplines from Asian Studies to Clinical Oncology. We also notice the presence of NLP as a module in most of the data science curricula within and outside of regular university setups. These courses are taken by students from very diverse backgrounds. This paper takes a closer look at some issues related to teaching NLP to these diverse audiences based on my classroom experiences, and identifies some challenges the instructors face, particularly when there is no ecosystem of related courses for the students. In this process, it also identifies a few challenge areas for both NLP researchers and tool developers.",
+                "authors": [
+                  "Sowmya Vajjala"
+                ],
+                "published": "2021-05-03T14:30:32Z",
+                "updated": "2021-05-03T14:30:32Z",
+                "url": "http://arxiv.org/abs/2105.00895v1",
+                "pdf_url": "https://arxiv.org/pdf/2105.00895v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2010.03061v1",
+                "title": "A Survey on Recognizing Textual Entailment as an NLP Evaluation",
+                "summary": "Recognizing Textual Entailment (RTE) was proposed as a unified evaluation framework to compare semantic understanding of different NLP systems. In this survey paper, we provide an overview of different approaches for evaluating and understanding the reasoning capabilities of NLP systems. We then focus our discussion on RTE by highlighting prominent RTE datasets as well as advances in RTE dataset that focus on specific linguistic phenomena that can be used to evaluate NLP systems on a fine-grained level. We conclude by arguing that when evaluating NLP systems, the community should utilize newly introduced RTE datasets that focus on specific linguistic phenomena.",
+                "authors": [
+                  "Adam Poliak"
+                ],
+                "published": "2020-10-06T22:23:00Z",
+                "updated": "2020-10-06T22:23:00Z",
+                "url": "http://arxiv.org/abs/2010.03061v1",
+                "pdf_url": "https://arxiv.org/pdf/2010.03061v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2408.05664v1",
+                "title": "Training an NLP Scholar at a Small Liberal Arts College: A Backwards Designed Course Proposal",
+                "summary": "The rapid growth in natural language processing (NLP) over the last couple years has generated student interest and excitement in learning more about the field. In this paper, we present two types of students that NLP courses might want to train. First, an \"NLP engineer\" who is able to flexibly design, build and apply new technologies in NLP for a wide range of tasks. Second, an \"NLP scholar\" who is able to pose, refine and answer questions in NLP and how it relates to the society, while also learning to effectively communicate these answers to a broader audience. While these two types of skills are not mutually exclusive -- NLP engineers should be able to think critically, and NLP scholars should be able to build systems -- we think that courses can differ in the balance of these skills. As educators at Small Liberal Arts Colleges, the strengths of our students and our institution favors an approach that is better suited to train NLP scholars. In this paper we articulate what kinds of skills an NLP scholar should have, and then adopt a backwards design to propose course components that can aid the acquisition of these skills.",
+                "authors": [
+                  "Grusha Prasad",
+                  "Forrest Davis"
+                ],
+                "published": "2024-08-11T00:50:59Z",
+                "updated": "2024-08-11T00:50:59Z",
+                "url": "http://arxiv.org/abs/2408.05664v1",
+                "pdf_url": "https://arxiv.org/pdf/2408.05664v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL"
+                ]
+              },
+              {
+                "arxiv_id": "2204.07288v1",
+                "title": "Characterizing the Efficiency vs. Accuracy Trade-off for Long-Context NLP Models",
+                "summary": "With many real-world applications of Natural Language Processing (NLP) comprising of long texts, there has been a rise in NLP benchmarks that measure the accuracy of models that can handle longer input sequences. However, these benchmarks do not consider the trade-offs between accuracy, speed, and power consumption as input sizes or model sizes are varied. In this work, we perform a systematic study of this accuracy vs. efficiency trade-off on two widely used long-sequence models - Longformer-Encoder-Decoder (LED) and Big Bird - during fine-tuning and inference on four datasets from the SCROLLS benchmark. To study how this trade-off differs across hyperparameter settings, we compare the models across four sequence lengths (1024, 2048, 3072, 4096) and two model sizes (base and large) under a fixed resource budget. We find that LED consistently achieves better accuracy at lower energy costs than Big Bird. For summarization, we find that increasing model size is more energy efficient than increasing sequence length for higher accuracy. However, this comes at the cost of a large drop in inference speed. For question answering, we find that smaller models are both more efficient and more accurate due to the larger training batch sizes possible under a fixed resource budget.",
+                "authors": [
+                  "Phyllis Ang",
+                  "Bhuwan Dhingra",
+                  "Lisa Wu Wills"
+                ],
+                "published": "2022-04-15T01:52:45Z",
+                "updated": "2022-04-15T01:52:45Z",
+                "url": "http://arxiv.org/abs/2204.07288v1",
+                "pdf_url": "https://arxiv.org/pdf/2204.07288v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2102.13461v1",
+                "title": "Methods for the Design and Evaluation of HCI+NLP Systems",
+                "summary": "HCI and NLP traditionally focus on different evaluation methods. While HCI involves a small number of people directly and deeply, NLP traditionally relies on standardized benchmark evaluations that involve a larger number of people indirectly. We present five methodological proposals at the intersection of HCI and NLP and situate them in the context of ML-based NLP models. Our goal is to foster interdisciplinary collaboration and progress in both fields by emphasizing what the fields can learn from each other.",
+                "authors": [
+                  "Hendrik Heuer",
+                  "Daniel Buschek"
+                ],
+                "published": "2021-02-26T13:37:10Z",
+                "updated": "2021-02-26T13:37:10Z",
+                "url": "http://arxiv.org/abs/2102.13461v1",
+                "pdf_url": "https://arxiv.org/pdf/2102.13461v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.HC"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "NLP",
+            "limit": 50
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "NLP",
+            "min_year": null,
+            "verdict": "Most-cited work on 'NLP': 'BERT Rediscovers the Classical NLP Pipeline' (2019, 1,297 citations)",
+            "most_cited": {
+              "title": "BERT Rediscovers the Classical NLP Pipeline",
+              "authors": "Ian Tenney, Dipanjan Das, Ellie Pavlick",
+              "year": 2019,
+              "venue": null,
+              "cited_by_count": 1297,
+              "doi": "https://doi.org/10.18653/v1/p19-1452",
+              "url": "https://aclanthology.org/P19-1452.pdf",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "BERT Rediscovers the Classical NLP Pipeline",
+                "authors": "Ian Tenney, Dipanjan Das, Ellie Pavlick",
+                "year": 2019,
+                "venue": null,
+                "cited_by_count": 1297,
+                "doi": "https://doi.org/10.18653/v1/p19-1452",
+                "url": "https://aclanthology.org/P19-1452.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Jumping NLP Curves: A Review of Natural Language Processing Research [Review Article]",
+                "authors": "Erik Cambria, Bebo White",
+                "year": 2014,
+                "venue": "IEEE Computational Intelligence Magazine",
+                "cited_by_count": 1075,
+                "doi": "https://doi.org/10.1109/mci.2014.2307227",
+                "url": "https://doi.org/10.1109/mci.2014.2307227",
+                "is_open_access": false
+              },
+              {
+                "title": "Multiword Expressions: A Pain in the Neck for NLP",
+                "authors": "Ivan A. Sag, Timothy Baldwin, Francis Bond et al.",
+                "year": 2002,
+                "venue": "Lecture notes in computer science",
+                "cited_by_count": 1027,
+                "doi": "https://doi.org/10.1007/3-540-45715-1_1",
+                "url": "https://doi.org/10.1007/3-540-45715-1_1",
+                "is_open_access": false
+              },
+              {
+                "title": "brat: a Web-based Tool for NLP-Assisted Text Annotation",
+                "authors": "Pontus Stenetorp, Sampo Pyysalo, Goran Topić et al.",
+                "year": 2012,
+                "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+                "cited_by_count": 942,
+                "doi": "https://doi.org/10.1016/0020-7519(95)00001-i",
+                "url": "https://doi.org/10.1016/0020-7519(95)00001-i",
+                "is_open_access": false
+              },
+              {
+                "title": "Instance Weighting for Domain Adaptation in NLP",
+                "authors": "Jing Jiang, ChengXiang Zhai",
+                "year": 2007,
+                "venue": "Singapore Management University Institutional Knowledge (InK) (Singapore Management University)",
+                "cited_by_count": 755,
+                "doi": null,
+                "url": "https://openalex.org/W2111362445",
+                "is_open_access": false
+              },
+              {
+                "title": "Scatter Search and Local NLP Solvers: A Multistart Framework for Global Optimization",
+                "authors": "Zsolt Ugray, Leon S. Lasdon, John Plummer et al.",
+                "year": 2007,
+                "venue": "INFORMS journal on computing",
+                "cited_by_count": 717,
+                "doi": "https://doi.org/10.1287/ijoc.1060.0175",
+                "url": "https://doi.org/10.1287/ijoc.1060.0175",
+                "is_open_access": false
+              },
+              {
+                "title": "Discovery of nitrate–CPK–NLP signalling in central nutrient–growth networks",
+                "authors": "Kun-Hsiang Liu, Yajie Niu, Mineko Konishi et al.",
+                "year": 2017,
+                "venue": "Nature",
+                "cited_by_count": 668,
+                "doi": "https://doi.org/10.1038/nature22077",
+                "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5823009",
+                "is_open_access": true
+              },
+              {
+                "title": "Dice Loss for Data-imbalanced NLP Tasks",
+                "authors": "Xiaoya Li, Xiaofei Sun, Yuxian Meng et al.",
+                "year": 2020,
+                "venue": null,
+                "cited_by_count": 589,
+                "doi": "https://doi.org/10.18653/v1/2020.acl-main.45",
+                "url": "https://aclanthology.org/2020.acl-main.45.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Visualizing and Understanding Neural Models in NLP",
+                "authors": "Jiwei Li, Xinlei Chen, Eduard Hovy et al.",
+                "year": 2016,
+                "venue": null,
+                "cited_by_count": 545,
+                "doi": "https://doi.org/10.18653/v1/n16-1082",
+                "url": "https://www.aclweb.org/anthology/N16-1082.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "TextAttack: A Framework for Adversarial Attacks, Data Augmentation, and Adversarial Training in NLP",
+                "authors": "John X. Morris, Eli Lifland, Jin Yong Yoo et al.",
+                "year": 2020,
+                "venue": null,
+                "cited_by_count": 537,
+                "doi": "https://doi.org/10.18653/v1/2020.emnlp-demos.16",
+                "url": "https://www.aclweb.org/anthology/2020.emnlp-demos.16.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks",
+                "authors": "Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka et al.",
+                "year": 2017,
+                "venue": null,
+                "cited_by_count": 533,
+                "doi": "https://doi.org/10.18653/v1/d17-1206",
+                "url": "https://www.aclweb.org/anthology/D17-1206.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "An RLP23–SOBIR1–BAK1 complex mediates NLP-triggered immunity",
+                "authors": "Isabell Albert, Hannah Böhm, Markus Albert et al.",
+                "year": 2015,
+                "venue": "Nature Plants",
+                "cited_by_count": 527,
+                "doi": "https://doi.org/10.1038/nplants.2015.140",
+                "url": "https://dspace.library.uu.nl/handle/1874/429807",
+                "is_open_access": true
+              },
+              {
+                "title": "Natural language processing (NLP) in management research: A literature review",
+                "authors": "Yue Kang, Zhao Cai, Chee‐Wee Tan et al.",
+                "year": 2020,
+                "venue": "Journal of Management Analytics",
+                "cited_by_count": 524,
+                "doi": "https://doi.org/10.1080/23270012.2020.1756939",
+                "url": "https://research.cbs.dk/en/publications/5fba618b-de65-4c73-a469-481268c1c497",
+                "is_open_access": true
+              },
+              {
+                "title": "A global optimization method, αBB, for general twice-differentiable constrained NLPs — I. Theoretical advances",
+                "authors": "Claire S. Adjiman, S. Dallwig, Christodoulos A. Floudas et al.",
+                "year": 1998,
+                "venue": "Computers & Chemical Engineering",
+                "cited_by_count": 519,
+                "doi": "https://doi.org/10.1016/s0098-1354(98)00027-1",
+                "url": "https://doi.org/10.1016/s0098-1354(98)00027-1",
+                "is_open_access": false
+              },
+              {
+                "title": "AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP",
+                "authors": "Abu Bakr Soliman, Kareem Eissa, Samhaa R. El-Beltagy",
+                "year": 2017,
+                "venue": "Procedia Computer Science",
+                "cited_by_count": 513,
+                "doi": "https://doi.org/10.1016/j.procs.2017.10.117",
+                "url": "https://doi.org/10.1016/j.procs.2017.10.117",
+                "is_open_access": true
+              },
+              {
+                "title": "Semantically Equivalent Adversarial Rules for Debugging NLP models",
+                "authors": "Marco Túlio Ribeiro, Sameer Singh, Carlos Guestrin",
+                "year": 2018,
+                "venue": null,
+                "cited_by_count": 470,
+                "doi": "https://doi.org/10.18653/v1/p18-1079",
+                "url": "https://www.aclweb.org/anthology/P18-1079.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Jumping NLP Curves: A Review of Natural Language Processing Research",
+                "authors": "Erik Cambria, Bebo White",
+                "year": 2014,
+                "venue": null,
+                "cited_by_count": 469,
+                "doi": null,
+                "url": "https://openalex.org/W2341587966",
+                "is_open_access": false
+              },
+              {
+                "title": "An LP/NLP based branch and bound algorithm for convex MINLP optimization problems",
+                "authors": "Ignacio Quesada, Ignacio E. Grossmann",
+                "year": 1992,
+                "venue": "Computers & Chemical Engineering",
+                "cited_by_count": 449,
+                "doi": "https://doi.org/10.1016/0098-1354(92)80028-8",
+                "url": "https://doi.org/10.1016/0098-1354(92)80028-8",
+                "is_open_access": false
+              },
+              {
+                "title": "Global optimization of nonconvex NLPs and MINLPs with applications in process design",
+                "authors": "Hanil Ryoo, Nikolaos V. Sahinidis",
+                "year": 1995,
+                "venue": "Computers & Chemical Engineering",
+                "cited_by_count": 446,
+                "doi": "https://doi.org/10.1016/0098-1354(94)00097-2",
+                "url": "https://doi.org/10.1016/0098-1354(94)00097-2",
+                "is_open_access": false
+              },
+              {
+                "title": "Energy and Policy Considerations for Deep Learning in NLP",
+                "authors": "Emma Strubell, Ananya Ganesh, Andrew McCallum",
+                "year": 2019,
+                "venue": null,
+                "cited_by_count": 422,
+                "doi": "https://doi.org/10.18653/v1/p19-1355",
+                "url": "https://www.aclweb.org/anthology/P19-1355.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "The language of proteins: NLP, machine learning &amp; protein sequences",
+                "authors": "Dan Ofer, Nadav Brandes, Michal Linial",
+                "year": 2021,
+                "venue": "Computational and Structural Biotechnology Journal",
+                "cited_by_count": 387,
+                "doi": "https://doi.org/10.1016/j.csbj.2021.03.022",
+                "url": "https://doi.org/10.1016/j.csbj.2021.03.022",
+                "is_open_access": true
+              },
+              {
+                "title": "Overview of the Transformer-based Models for NLP Tasks",
+                "authors": "Anthony Gillioz, Jacky Casas, Elena Mugellini et al.",
+                "year": 2020,
+                "venue": "Annals of Computer Science and Information Systems",
+                "cited_by_count": 383,
+                "doi": "https://doi.org/10.15439/2020f20",
+                "url": "https://annals-csis.org/proceedings/2020/drp/pdf/20.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Semantic NLP-Based Information Extraction from Construction Regulatory Documents for Automated Compliance Checking",
+                "authors": "Jiansong Zhang, Nora El-Gohary",
+                "year": 2013,
+                "venue": "Journal of Computing in Civil Engineering",
+                "cited_by_count": 383,
+                "doi": "https://doi.org/10.1061/(asce)cp.1943-5487.0000346",
+                "url": "https://doi.org/10.1061/(asce)cp.1943-5487.0000346",
+                "is_open_access": false
+              },
+              {
+                "title": "Deep Sentiment Classification and Topic Discovery on Novel Coronavirus or COVID-19 Online Discussions: NLP Using LSTM Recurrent Neural Network Approach",
+                "authors": "Hamed Jelodar, Yongli Wang, Rita Orji et al.",
+                "year": 2020,
+                "venue": "IEEE Journal of Biomedical and Health Informatics",
+                "cited_by_count": 380,
+                "doi": "https://doi.org/10.1109/jbhi.2020.3001216",
+                "url": "https://doi.org/10.1109/jbhi.2020.3001216",
+                "is_open_access": false
+              },
+              {
+                "title": "Optimum Coordination of Directional Overcurrent Relays Using the Hybrid GA-NLP Approach",
+                "authors": "Prashant P. Bedekar, Sudhir R. Bhide",
+                "year": 2010,
+                "venue": "IEEE Transactions on Power Delivery",
+                "cited_by_count": 378,
+                "doi": "https://doi.org/10.1109/tpwrd.2010.2080289",
+                "url": "https://doi.org/10.1109/tpwrd.2010.2080289",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 113890
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:54:11"
+    }
+  ]
+}

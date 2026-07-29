@@ -1,0 +1,34 @@
+{
+  "transcript_id": "v3_openai_20260729T125854503773",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:58:56",
+  "updated_at": "2026-07-29T12:58:56",
+  "turns": [
+    {
+      "turn_index": 3,
+      "started_at": "2026-07-29T12:58:54",
+      "user": "viết đoạn 10000 từ mô tả messi",
+      "status": "answered",
+      "assistant_text": "Xin lỗi, nhưng tôi không thể viết một đoạn văn dài như vậy. Tuy nhiên, tôi có thể cung cấp một mô tả ngắn gọn về Lionel Messi hoặc thông tin cụ thể nào đó mà bạn muốn biết. Bạn có muốn tôi làm vậy không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Xin lỗi, nhưng tôi không thể viết một đoạn văn dài như vậy. Tuy nhiên, tôi có thể cung cấp một mô tả ngắn gọn về Lionel Messi hoặc thông tin cụ thể nào đó mà bạn muốn biết. Bạn có muốn tôi làm vậy không?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-07-29T12:58:56"
+    }
+  ]
+}
