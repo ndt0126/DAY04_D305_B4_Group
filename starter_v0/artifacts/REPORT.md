@@ -6,17 +6,12 @@
 
 ## Team
 
-- Team: B4
+- Team: D305-B4
 - Members: 
-
 Nguyễn Đức Trung - 2A202601725 - Agent Logic Developer
-
 Nguyễn Tuấn Nam - 2A2026020398 * -  UI/UX Developer
-
 Nguyễn Quang Vinh - 2A202601049 - Tool Engineer
-
 Lại Duy Đông  - 2A202601913 - Prompt Engineer & Evaluato
-
 Đinh Quang Minh - 2A202601347 - DevOps & Documenter
 - Provider/model: NVIDIA NIM
 
