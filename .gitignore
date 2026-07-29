@@ -25,6 +25,9 @@ Thumbs.db
 
 # Agent Customizations & Skills
 .agents/
+.skills/
+skills-lock.json
+
 
 # Frontend Node modules & build artifacts
 starter_v0/frontend/node_modules/
