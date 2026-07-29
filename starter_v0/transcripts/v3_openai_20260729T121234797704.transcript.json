@@ -1,0 +1,84 @@
+{
+  "transcript_id": "v3_openai_20260729T121234797704",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:12:43",
+  "updated_at": "2026-07-29T12:12:43",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-07-29T12:12:34",
+      "user": "Define vector database in one sentence.",
+      "status": "answered",
+      "assistant_text": "A vector database, also known as a vector store or vector search engine, is a database that stores and retrieves embeddings of data in vector space. [Source](https://en.wikipedia.org/wiki/Vector_database).",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "define",
+              "args": {
+                "term": "vector database",
+                "max_sentences": 1
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "define",
+              "args": {
+                "term": "vector database",
+                "max_sentences": 1
+              },
+              "result": {
+                "tool": "define_concept",
+                "term": "vector database",
+                "lang": "en",
+                "resolved_title": "Vector database",
+                "definition": "A vector database, vector store or vector search engine is a database that stores and retrieves embeddings of data in vector space.",
+                "short_description": "Type of database that uses vectors to represent other data",
+                "url": "https://en.wikipedia.org/wiki/Vector_database",
+                "source": "en.wikipedia.org"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "A vector database, also known as a vector store or vector search engine, is a database that stores and retrieves embeddings of data in vector space. [Source](https://en.wikipedia.org/wiki/Vector_database).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "define",
+          "args": {
+            "term": "vector database",
+            "max_sentences": 1
+          },
+          "result": {
+            "tool": "define_concept",
+            "term": "vector database",
+            "lang": "en",
+            "resolved_title": "Vector database",
+            "definition": "A vector database, vector store or vector search engine is a database that stores and retrieves embeddings of data in vector space.",
+            "short_description": "Type of database that uses vectors to represent other data",
+            "url": "https://en.wikipedia.org/wiki/Vector_database",
+            "source": "en.wikipedia.org"
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:12:43"
+    }
+  ]
+}

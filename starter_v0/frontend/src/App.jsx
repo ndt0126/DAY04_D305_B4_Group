@@ -4,7 +4,7 @@ import { Send, Bot, User, Wrench, FileText, Settings, History, CheckCircle2, Ale
 export default function App() {
   const [activeTab, setActiveTab] = useState('chat'); // 'chat' | 'transcripts' | 'config'
   const [provider, setProvider] = useState('openai');
-  const [version, setVersion] = useState('baseline');
+  const [version, setVersion] = useState('v3');
   
   // Chat state
   const [messages, setMessages] = useState([
@@ -70,7 +70,7 @@ export default function App() {
     setLoading(true);
 
     // Build conversation history for API
-    const historyPayload = updatedMessages
+    const historyPayload = messages
       .filter(m => m.role === 'user' || m.role === 'assistant')
       .map(m => ({ role: m.role, content: m.text }));
 
@@ -159,7 +159,7 @@ export default function App() {
               value={provider} 
               onChange={(e) => setProvider(e.target.value)}
             >
-              <option value="openai">OpenAI (GPT-4o)</option>
+              <option value="openai">OpenAI (gpt-4o-mini)</option>
               <option value="openrouter">OpenRouter</option>
               <option value="anthropic">Anthropic (Claude)</option>
               <option value="gemini">Google Gemini</option>

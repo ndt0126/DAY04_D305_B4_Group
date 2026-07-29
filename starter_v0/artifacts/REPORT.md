@@ -8,7 +8,7 @@
 
 - Team:
 - Members:
-- Provider/model:
+- Provider/model: Live UI — OpenAI / `gpt-4o-mini` (provider preflight PASS); eval artifacts — OpenRouter / `openai/gpt-4o-mini`
 
 ---
 
@@ -24,7 +24,16 @@ Ví dụ: "Research agent: tìm tin theo từ khóa / theo tài khoản, đọc 
 
 > Dán public URL nếu người khác cần mở từ máy riêng; localhost cũng được nếu demo trực tiếp trên máy trình chiếu. Streamlit được khuyến nghị, nhưng nhóm có thể dùng bất kỳ framework nào.
 >
-> URL:
+> URL: https://agentlab4.dquangminh2003.id.vn
+
+### Deployment
+
+- **Public URL:** https://agentlab4.dquangminh2003.id.vn
+- **Local origin:** http://127.0.0.1:8501
+- **Tunnel:** `vinuni-research-agent-lab4`
+- **Deployment method:** React/Vite static frontend served by FastAPI/Uvicorn and exposed through Cloudflare Tunnel
+- **Availability:** Ứng dụng chỉ hoạt động khi máy host, Uvicorn và `cloudflared` đều đang chạy.
+- **Verified on 2026-07-29:** local/public frontend and `/api/health` returned `200 OK`; public chat completed a real tool call with no browser console errors.
 
 ## A2. Tool agent có
 
@@ -99,7 +108,7 @@ Use `transcripts/*.transcript.json`.
 
 | Scenario/Turn | Version | Tool Calls + Args | Transcript/Run | Outcome |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| Define vector database in one sentence | `v3+p9a9d711efde9+t0e8ff5a33f70` | `define(term="vector database", max_sentences=1)` | `transcripts/v3_openai_20260729T121234797704.transcript.json` | PASS — request sent through public React UI; FastAPI returned the answer and tool trace |
 
 ## B5. Tool capability evidence
 
@@ -119,3 +128,14 @@ UI is core deliverable, not bonus. Do not list it here.
 - Which fixes belonged in `tools.yaml`?
 - Which failure needed manual review instead of automatic grading?
 - What would you improve next?
+
+## B7. Deployment evidence
+
+| Check | Result | Evidence |
+|---|---|---|
+| React production build | PASS | Vite built `frontend/dist` from 1470 modules |
+| Backend/import check | PASS | FastAPI, Uvicorn and `run_model_tool_loop` imported successfully |
+| Provider preflight | PASS | OpenAI / `gpt-4o-mini` returned a structured tool call |
+| Local frontend + API | PASS | `/` returned `200 OK`; `/api/health` returned `status: ok` |
+| Public frontend + API | PASS | Public `/` returned `200 OK`; public `/api/health` returned `status: ok` |
+| Public end-to-end agent flow | PASS | React UI called FastAPI, `define` ran, tool trace rendered and transcript was saved |
