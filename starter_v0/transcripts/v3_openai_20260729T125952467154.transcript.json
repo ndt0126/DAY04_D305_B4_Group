@@ -1,0 +1,282 @@
+{
+  "transcript_id": "v3_openai_20260729T125952467154",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T13:00:04",
+  "updated_at": "2026-07-29T13:00:04",
+  "turns": [
+    {
+      "turn_index": 4,
+      "started_at": "2026-07-29T12:59:52",
+      "user": "thế cho tôi 5 bài anxiv",
+      "status": "answered",
+      "assistant_text": "Dưới đây là 5 bài báo từ arXiv liên quan đến các chủ đề đang hot:\n\n1. **[Nowcasting Growth using Google Trends Data: A Bayesian Structural Time Series Model](http://arxiv.org/abs/2011.00938v2)**\n   - **Tác giả:** David Kohns, Arnab Bhattacharjee\n   - **Tóm tắt:** Nghiên cứu này điều tra lợi ích của dữ liệu tìm kiếm trên internet từ Google Trends để dự đoán tăng trưởng GDP thực của Mỹ theo thời gian thực thông qua các mô hình Bayesian Structural Time Series (BSTS).\n   - **Ngày xuất bản:** 02/11/2020\n   - **[PDF](https://arxiv.org/pdf/2011.00938v2)**\n\n2. **[Trending Videos: Measurement and Analysis](http://arxiv.org/abs/1409.7733v1)**\n   - **Tác giả:** Iman Barjasteh, Ying Liu, Hayder Radha\n   - **Tóm tắt:** Nghiên cứu này phân tích các video đang trending trên YouTube, đo lường và so sánh các khía cạnh chính của chúng.\n   - **Ngày xuất bản:** 26/09/2014\n   - **[PDF](https://arxiv.org/pdf/1409.7733v1)**\n\n3. **[A Comprehensive Analysis of Twitter Trending Topics](http://arxiv.org/abs/1907.09007v2)**\n   - **Tác giả:** Issa Annamoradnejad, Jafar Habibi\n   - **Tóm tắt:** Bài báo này xem xét các chủ đề trending trên Twitter trong năm 2018, phân tích các tiêu chí như phân tích từ vựng, thời gian đạt được, và số lượng tweet.\n   - **Ngày xuất bản:** 21/07/2019\n   - **[PDF](https://arxiv.org/pdf/1907.09007v2)**\n\n4. **[Effects of Algorithmic Trend Promotion: Evidence from Coordinated Campaigns in Twitter's Trending Topics](http://arxiv.org/abs/2304.05382v1)**\n   - **Tác giả:** Joseph Schlessinger, Kiran Garimella, Maurice Jakesch, Dean Eckles\n   - **Tóm tắt:** Nghiên cứu này phân tích ảnh hưởng của các chủ đề trending trên Twitter đến số lượng tweet được tạo ra với hashtag đó.\n   - **Ngày xuất bản:** 08/04/2023\n   - **[PDF](https://arxiv.org/pdf/2304.05382v1)**\n\n5. **[Mapping Computer Science Research: Trends, Influences, and Predictions](http://arxiv.org/abs/2308.00733v1)**\n   - **Tác giả:** Mohammed Almutairi, Ozioma Collins Oguine\n   - **Tóm tắt:** Bài báo này khám phá các lĩnh vực nghiên cứu đang trending trong lĩnh vực Khoa học Máy tính và điều tra các yếu tố góp phần vào sự xuất hiện của chúng.\n   - **Ngày xuất bản:** 01/08/2023\n   - **[PDF](https://arxiv.org/pdf/2308.00733v1)**\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "trending",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "trending",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "trending",
+                "api_query": "all:trending",
+                "total_results": 35205,
+                "items": [
+                  {
+                    "arxiv_id": "2011.00938v2",
+                    "title": "Nowcasting Growth using Google Trends Data: A Bayesian Structural Time Series Model",
+                    "summary": "This paper investigates the benefits of internet search data in the form of Google Trends for nowcasting real U.S. GDP growth in real time through the lens of mixed frequency Bayesian Structural Time Series (BSTS) models. We augment and enhance both model and methodology to make these better amenable to nowcasting with large number of potential covariates. Specifically, we allow shrinking state variances towards zero to avoid overfitting, extend the SSVS (spike and slab variable selection) prior to the more flexible normal-inverse-gamma prior which stays agnostic about the underlying model size, as well as adapt the horseshoe prior to the BSTS. The application to nowcasting GDP growth as well as a simulation study demonstrate that the horseshoe prior BSTS improves markedly upon the SSVS and the original BSTS model with the largest gains in dense data-generating-processes. Our application also shows that a large dimensional set of search terms is able to improve nowcasts early in a specific quarter before other macroeconomic data become available. Search terms with high inclusion probability have good economic interpretation, reflecting leading signals of economic anxiety and wealth effects.",
+                    "authors": [
+                      "David Kohns",
+                      "Arnab Bhattacharjee"
+                    ],
+                    "published": "2020-11-02T12:36:30Z",
+                    "updated": "2022-05-15T17:47:05Z",
+                    "url": "http://arxiv.org/abs/2011.00938v2",
+                    "pdf_url": "https://arxiv.org/pdf/2011.00938v2",
+                    "source": "arxiv.org",
+                    "primary_category": "econ.EM",
+                    "categories": [
+                      "econ.EM",
+                      "stat.AP"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "1409.7733v1",
+                    "title": "Trending Videos: Measurement and Analysis",
+                    "summary": "Unlike popular videos, which would have already achieved high viewership numbers by the time they are declared popular, YouTube trending videos represent content that targets viewers attention over a relatively short time, and has the potential of becoming popular. Despite their importance and visibility, YouTube trending videos have not been studied or analyzed thoroughly. In this paper, we present our findings for measuring, analyzing, and comparing key aspects of YouTube trending videos. Our study is based on collecting and monitoring high-resolution time-series of the viewership and related statistics of more than 8,000 YouTube videos over an aggregate period of nine months. Since trending videos are declared as such just several hours after they are uploaded, we are able to analyze trending videos time-series across critical and sufficiently-long durations of their lifecycle. In addition, we analyze the profile of users who upload trending videos, to potentially identify the role that these users profile plays in getting their uploaded videos trending. Furthermore, we conduct a directional-relationship analysis among all pairs of trending videos time-series that we have monitored. We employ Granger Causality (GC) with significance testing to conduct this analysis. Unlike traditional correlation measures, our directional-relationship analysis provides a deeper insight onto the viewership pattern of different categories of trending videos. Trending videos and their channels have clear distinct statistical attributes when compared to other YouTube content that has not been labeled as trending. Our results also reveal a highly asymmetric directional-relationship among different categories of trending videos. Our directionality analysis also shows a clear pattern of viewership toward popular categories, whereas some categories tend to be isolated.",
+                    "authors": [
+                      "Iman Barjasteh",
+                      "Ying Liu",
+                      "Hayder Radha"
+                    ],
+                    "published": "2014-09-26T21:39:30Z",
+                    "updated": "2014-09-26T21:39:30Z",
+                    "url": "http://arxiv.org/abs/1409.7733v1",
+                    "pdf_url": "https://arxiv.org/pdf/1409.7733v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.SI",
+                    "categories": [
+                      "cs.SI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "1907.09007v2",
+                    "title": "A Comprehensive Analysis of Twitter Trending Topics",
+                    "summary": "In Twitter, a name, phrase, or topic that is mentioned at a greater rate than others is called a \"trending topic\" or simply \"trend\". Twitter trends list has a powerful ability to promote public events such as natural events, political scandals, market changes and other types of breaking news. Nevertheless, there have been very few works focused on the dynamics of these trending topics. In this article, we thoroughly examined the Twitter's trending topics of 2018. To this end, we automatically accessed Twitter's trends API and stored the resulting 50 top trending topics in a novel dataset. We propose and analyze our dataset according to six criteria: lexical analysis, time to reach, trend reoccurrence, trending time, tweets count, and language analysis. Based on our results, 77.6% of the topics that reached the Top-10 list were trending with less than 100k tweets. More than 50% of the topics could not hold the position for more than an hour. English and Arabic languages comprised close to 40% and 20% of the first rank topics, respectively.",
+                    "authors": [
+                      "Issa Annamoradnejad",
+                      "Jafar Habibi"
+                    ],
+                    "published": "2019-07-21T17:07:07Z",
+                    "updated": "2020-08-28T12:31:30Z",
+                    "url": "http://arxiv.org/abs/1907.09007v2",
+                    "pdf_url": "https://arxiv.org/pdf/1907.09007v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.SI",
+                    "categories": [
+                      "cs.SI",
+                      "cs.CL",
+                      "cs.IR",
+                      "stat.AP"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2304.05382v1",
+                    "title": "Effects of Algorithmic Trend Promotion: Evidence from Coordinated Campaigns in Twitter's Trending Topics",
+                    "summary": "In addition to more personalized content feeds, some leading social media platforms give a prominent role to content that is more widely popular. On Twitter, \"trending topics\" identify popular topics of conversation on the platform, thereby promoting popular content which users might not have otherwise seen through their network. Hence, \"trending topics\" potentially play important roles in influencing the topics users engage with on a particular day. Using two carefully constructed data sets from India and Turkey, we study the effects of a hashtag appearing on the trending topics page on the number of tweets produced with that hashtag. We specifically aim to answer the question: How many new tweeting using that hashtag appear because a hashtag is labeled as trending? We distinguish the effects of the trending topics page from network exposure and find there is a statistically significant, but modest, return to a hashtag being featured on trending topics. Analysis of the types of users impacted by trending topics shows that the feature helps less popular and new users to discover and spread content outside their network, which they otherwise might not have been able to do.",
+                    "authors": [
+                      "Joseph Schlessinger",
+                      "Kiran Garimella",
+                      "Maurice Jakesch",
+                      "Dean Eckles"
+                    ],
+                    "published": "2023-04-08T15:22:36Z",
+                    "updated": "2023-04-08T15:22:36Z",
+                    "url": "http://arxiv.org/abs/2304.05382v1",
+                    "pdf_url": "https://arxiv.org/pdf/2304.05382v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.SI",
+                    "categories": [
+                      "cs.SI",
+                      "cs.CY",
+                      "cs.HC"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2308.00733v1",
+                    "title": "Mapping Computer Science Research: Trends, Influences, and Predictions",
+                    "summary": "This paper explores the current trending research areas in the field of Computer Science (CS) and investigates the factors contributing to their emergence. Leveraging a comprehensive dataset comprising papers, citations, and funding information, we employ advanced machine learning techniques, including Decision Tree and Logistic Regression models, to predict trending research areas. Our analysis reveals that the number of references cited in research papers (Reference Count) plays a pivotal role in determining trending research areas making reference counts the most relevant factor that drives trend in the CS field. Additionally, the influence of NSF grants and patents on trending topics has increased over time. The Logistic Regression model outperforms the Decision Tree model in predicting trends, exhibiting higher accuracy, precision, recall, and F1 score. By surpassing a random guess baseline, our data-driven approach demonstrates higher accuracy and efficacy in identifying trending research areas. The results offer valuable insights into the trending research areas, providing researchers and institutions with a data-driven foundation for decision-making and future research direction.",
+                    "authors": [
+                      "Mohammed Almutairi",
+                      "Ozioma Collins Oguine"
+                    ],
+                    "published": "2023-08-01T16:59:25Z",
+                    "updated": "2023-08-01T16:59:25Z",
+                    "url": "http://arxiv.org/abs/2308.00733v1",
+                    "pdf_url": "https://arxiv.org/pdf/2308.00733v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.HC",
+                    "categories": [
+                      "cs.HC",
+                      "cs.LG"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là 5 bài báo từ arXiv liên quan đến các chủ đề đang hot:\n\n1. **[Nowcasting Growth using Google Trends Data: A Bayesian Structural Time Series Model](http://arxiv.org/abs/2011.00938v2)**\n   - **Tác giả:** David Kohns, Arnab Bhattacharjee\n   - **Tóm tắt:** Nghiên cứu này điều tra lợi ích của dữ liệu tìm kiếm trên internet từ Google Trends để dự đoán tăng trưởng GDP thực của Mỹ theo thời gian thực thông qua các mô hình Bayesian Structural Time Series (BSTS).\n   - **Ngày xuất bản:** 02/11/2020\n   - **[PDF](https://arxiv.org/pdf/2011.00938v2)**\n\n2. **[Trending Videos: Measurement and Analysis](http://arxiv.org/abs/1409.7733v1)**\n   - **Tác giả:** Iman Barjasteh, Ying Liu, Hayder Radha\n   - **Tóm tắt:** Nghiên cứu này phân tích các video đang trending trên YouTube, đo lường và so sánh các khía cạnh chính của chúng.\n   - **Ngày xuất bản:** 26/09/2014\n   - **[PDF](https://arxiv.org/pdf/1409.7733v1)**\n\n3. **[A Comprehensive Analysis of Twitter Trending Topics](http://arxiv.org/abs/1907.09007v2)**\n   - **Tác giả:** Issa Annamoradnejad, Jafar Habibi\n   - **Tóm tắt:** Bài báo này xem xét các chủ đề trending trên Twitter trong năm 2018, phân tích các tiêu chí như phân tích từ vựng, thời gian đạt được, và số lượng tweet.\n   - **Ngày xuất bản:** 21/07/2019\n   - **[PDF](https://arxiv.org/pdf/1907.09007v2)**\n\n4. **[Effects of Algorithmic Trend Promotion: Evidence from Coordinated Campaigns in Twitter's Trending Topics](http://arxiv.org/abs/2304.05382v1)**\n   - **Tác giả:** Joseph Schlessinger, Kiran Garimella, Maurice Jakesch, Dean Eckles\n   - **Tóm tắt:** Nghiên cứu này phân tích ảnh hưởng của các chủ đề trending trên Twitter đến số lượng tweet được tạo ra với hashtag đó.\n   - **Ngày xuất bản:** 08/04/2023\n   - **[PDF](https://arxiv.org/pdf/2304.05382v1)**\n\n5. **[Mapping Computer Science Research: Trends, Influences, and Predictions](http://arxiv.org/abs/2308.00733v1)**\n   - **Tác giả:** Mohammed Almutairi, Ozioma Collins Oguine\n   - **Tóm tắt:** Bài báo này khám phá các lĩnh vực nghiên cứu đang trending trong lĩnh vực Khoa học Máy tính và điều tra các yếu tố góp phần vào sự xuất hiện của chúng.\n   - **Ngày xuất bản:** 01/08/2023\n   - **[PDF](https://arxiv.org/pdf/2308.00733v1)**\n\nNếu bạn cần thêm thông tin hoặc có yêu cầu khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "trending",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "trending",
+            "api_query": "all:trending",
+            "total_results": 35205,
+            "items": [
+              {
+                "arxiv_id": "2011.00938v2",
+                "title": "Nowcasting Growth using Google Trends Data: A Bayesian Structural Time Series Model",
+                "summary": "This paper investigates the benefits of internet search data in the form of Google Trends for nowcasting real U.S. GDP growth in real time through the lens of mixed frequency Bayesian Structural Time Series (BSTS) models. We augment and enhance both model and methodology to make these better amenable to nowcasting with large number of potential covariates. Specifically, we allow shrinking state variances towards zero to avoid overfitting, extend the SSVS (spike and slab variable selection) prior to the more flexible normal-inverse-gamma prior which stays agnostic about the underlying model size, as well as adapt the horseshoe prior to the BSTS. The application to nowcasting GDP growth as well as a simulation study demonstrate that the horseshoe prior BSTS improves markedly upon the SSVS and the original BSTS model with the largest gains in dense data-generating-processes. Our application also shows that a large dimensional set of search terms is able to improve nowcasts early in a specific quarter before other macroeconomic data become available. Search terms with high inclusion probability have good economic interpretation, reflecting leading signals of economic anxiety and wealth effects.",
+                "authors": [
+                  "David Kohns",
+                  "Arnab Bhattacharjee"
+                ],
+                "published": "2020-11-02T12:36:30Z",
+                "updated": "2022-05-15T17:47:05Z",
+                "url": "http://arxiv.org/abs/2011.00938v2",
+                "pdf_url": "https://arxiv.org/pdf/2011.00938v2",
+                "source": "arxiv.org",
+                "primary_category": "econ.EM",
+                "categories": [
+                  "econ.EM",
+                  "stat.AP"
+                ]
+              },
+              {
+                "arxiv_id": "1409.7733v1",
+                "title": "Trending Videos: Measurement and Analysis",
+                "summary": "Unlike popular videos, which would have already achieved high viewership numbers by the time they are declared popular, YouTube trending videos represent content that targets viewers attention over a relatively short time, and has the potential of becoming popular. Despite their importance and visibility, YouTube trending videos have not been studied or analyzed thoroughly. In this paper, we present our findings for measuring, analyzing, and comparing key aspects of YouTube trending videos. Our study is based on collecting and monitoring high-resolution time-series of the viewership and related statistics of more than 8,000 YouTube videos over an aggregate period of nine months. Since trending videos are declared as such just several hours after they are uploaded, we are able to analyze trending videos time-series across critical and sufficiently-long durations of their lifecycle. In addition, we analyze the profile of users who upload trending videos, to potentially identify the role that these users profile plays in getting their uploaded videos trending. Furthermore, we conduct a directional-relationship analysis among all pairs of trending videos time-series that we have monitored. We employ Granger Causality (GC) with significance testing to conduct this analysis. Unlike traditional correlation measures, our directional-relationship analysis provides a deeper insight onto the viewership pattern of different categories of trending videos. Trending videos and their channels have clear distinct statistical attributes when compared to other YouTube content that has not been labeled as trending. Our results also reveal a highly asymmetric directional-relationship among different categories of trending videos. Our directionality analysis also shows a clear pattern of viewership toward popular categories, whereas some categories tend to be isolated.",
+                "authors": [
+                  "Iman Barjasteh",
+                  "Ying Liu",
+                  "Hayder Radha"
+                ],
+                "published": "2014-09-26T21:39:30Z",
+                "updated": "2014-09-26T21:39:30Z",
+                "url": "http://arxiv.org/abs/1409.7733v1",
+                "pdf_url": "https://arxiv.org/pdf/1409.7733v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.SI",
+                "categories": [
+                  "cs.SI"
+                ]
+              },
+              {
+                "arxiv_id": "1907.09007v2",
+                "title": "A Comprehensive Analysis of Twitter Trending Topics",
+                "summary": "In Twitter, a name, phrase, or topic that is mentioned at a greater rate than others is called a \"trending topic\" or simply \"trend\". Twitter trends list has a powerful ability to promote public events such as natural events, political scandals, market changes and other types of breaking news. Nevertheless, there have been very few works focused on the dynamics of these trending topics. In this article, we thoroughly examined the Twitter's trending topics of 2018. To this end, we automatically accessed Twitter's trends API and stored the resulting 50 top trending topics in a novel dataset. We propose and analyze our dataset according to six criteria: lexical analysis, time to reach, trend reoccurrence, trending time, tweets count, and language analysis. Based on our results, 77.6% of the topics that reached the Top-10 list were trending with less than 100k tweets. More than 50% of the topics could not hold the position for more than an hour. English and Arabic languages comprised close to 40% and 20% of the first rank topics, respectively.",
+                "authors": [
+                  "Issa Annamoradnejad",
+                  "Jafar Habibi"
+                ],
+                "published": "2019-07-21T17:07:07Z",
+                "updated": "2020-08-28T12:31:30Z",
+                "url": "http://arxiv.org/abs/1907.09007v2",
+                "pdf_url": "https://arxiv.org/pdf/1907.09007v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.SI",
+                "categories": [
+                  "cs.SI",
+                  "cs.CL",
+                  "cs.IR",
+                  "stat.AP"
+                ]
+              },
+              {
+                "arxiv_id": "2304.05382v1",
+                "title": "Effects of Algorithmic Trend Promotion: Evidence from Coordinated Campaigns in Twitter's Trending Topics",
+                "summary": "In addition to more personalized content feeds, some leading social media platforms give a prominent role to content that is more widely popular. On Twitter, \"trending topics\" identify popular topics of conversation on the platform, thereby promoting popular content which users might not have otherwise seen through their network. Hence, \"trending topics\" potentially play important roles in influencing the topics users engage with on a particular day. Using two carefully constructed data sets from India and Turkey, we study the effects of a hashtag appearing on the trending topics page on the number of tweets produced with that hashtag. We specifically aim to answer the question: How many new tweeting using that hashtag appear because a hashtag is labeled as trending? We distinguish the effects of the trending topics page from network exposure and find there is a statistically significant, but modest, return to a hashtag being featured on trending topics. Analysis of the types of users impacted by trending topics shows that the feature helps less popular and new users to discover and spread content outside their network, which they otherwise might not have been able to do.",
+                "authors": [
+                  "Joseph Schlessinger",
+                  "Kiran Garimella",
+                  "Maurice Jakesch",
+                  "Dean Eckles"
+                ],
+                "published": "2023-04-08T15:22:36Z",
+                "updated": "2023-04-08T15:22:36Z",
+                "url": "http://arxiv.org/abs/2304.05382v1",
+                "pdf_url": "https://arxiv.org/pdf/2304.05382v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.SI",
+                "categories": [
+                  "cs.SI",
+                  "cs.CY",
+                  "cs.HC"
+                ]
+              },
+              {
+                "arxiv_id": "2308.00733v1",
+                "title": "Mapping Computer Science Research: Trends, Influences, and Predictions",
+                "summary": "This paper explores the current trending research areas in the field of Computer Science (CS) and investigates the factors contributing to their emergence. Leveraging a comprehensive dataset comprising papers, citations, and funding information, we employ advanced machine learning techniques, including Decision Tree and Logistic Regression models, to predict trending research areas. Our analysis reveals that the number of references cited in research papers (Reference Count) plays a pivotal role in determining trending research areas making reference counts the most relevant factor that drives trend in the CS field. Additionally, the influence of NSF grants and patents on trending topics has increased over time. The Logistic Regression model outperforms the Decision Tree model in predicting trends, exhibiting higher accuracy, precision, recall, and F1 score. By surpassing a random guess baseline, our data-driven approach demonstrates higher accuracy and efficacy in identifying trending research areas. The results offer valuable insights into the trending research areas, providing researchers and institutions with a data-driven foundation for decision-making and future research direction.",
+                "authors": [
+                  "Mohammed Almutairi",
+                  "Ozioma Collins Oguine"
+                ],
+                "published": "2023-08-01T16:59:25Z",
+                "updated": "2023-08-01T16:59:25Z",
+                "url": "http://arxiv.org/abs/2308.00733v1",
+                "pdf_url": "https://arxiv.org/pdf/2308.00733v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.HC",
+                "categories": [
+                  "cs.HC",
+                  "cs.LG"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T13:00:04"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "transcript_id": "v3_openai_20260729T125637937189",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:56:41",
+  "updated_at": "2026-07-29T12:56:41",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-07-29T12:56:37",
+      "user": "tìm bài viết về anh Độ Mixi",
+      "status": "answered",
+      "assistant_text": "Hiện tại, tôi không thể tìm thấy thông tin về Độ Mixi do một số lỗi kỹ thuật trong việc truy cập dữ liệu. Bạn có muốn tôi thử lại sau hoặc tìm kiếm thông tin khác không?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "Độ Mixi",
+                "topic": "general"
+              }
+            },
+            {
+              "name": "social_search",
+              "args": {
+                "query": "Độ Mixi",
+                "search_type": "Latest"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "Độ Mixi",
+                "topic": "general"
+              },
+              "result": {
+                "tool": "web_search",
+                "error": "RuntimeError",
+                "message": "Missing TAVILY_API_KEY env var"
+              }
+            },
+            {
+              "tool": "social_search",
+              "args": {
+                "query": "Độ Mixi",
+                "search_type": "Latest"
+              },
+              "result": {
+                "tool": "search_tweets",
+                "error": "RuntimeError",
+                "message": "Missing RAPIDAPI_KEY env var"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, tôi không thể tìm thấy thông tin về Độ Mixi do một số lỗi kỹ thuật trong việc truy cập dữ liệu. Bạn có muốn tôi thử lại sau hoặc tìm kiếm thông tin khác không?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Độ Mixi",
+            "topic": "general"
+          },
+          "result": {
+            "tool": "web_search",
+            "error": "RuntimeError",
+            "message": "Missing TAVILY_API_KEY env var"
+          }
+        },
+        {
+          "tool": "social_search",
+          "args": {
+            "query": "Độ Mixi",
+            "search_type": "Latest"
+          },
+          "result": {
+            "tool": "search_tweets",
+            "error": "RuntimeError",
+            "message": "Missing RAPIDAPI_KEY env var"
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:56:41"
+    }
+  ]
+}

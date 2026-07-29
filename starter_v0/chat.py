@@ -112,7 +112,11 @@ def run_model_tool_loop(
         non_clarification_events: list[dict[str, Any]] = []
 
         for call in calls:
-            print(f"[TOOL] {call.name}({json.dumps(call.args, ensure_ascii=False, sort_keys=True)})")
+            # Keep console logs ASCII-safe because legacy Windows code pages
+            # cannot encode every Vietnamese character. Transcript/UI data
+            # still remains UTF-8 and is not changed by this log formatting.
+            log_args = json.dumps(call.args, ensure_ascii=True, sort_keys=True)
+            print(f"[TOOL] {call.name}({log_args})")
 
             event = execute_tool_call(call)
             round_record["tool_results"].append(event)

@@ -1,0 +1,536 @@
+{
+  "transcript_id": "v3_openai_20260729T125818718900",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:58:31",
+  "updated_at": "2026-07-29T12:58:31",
+  "turns": [
+    {
+      "turn_index": 3,
+      "started_at": "2026-07-29T12:58:18",
+      "user": "tìm cho tôi 50 bài báo về prompt injection",
+      "status": "answered",
+      "assistant_text": "Dưới đây là một số bài báo về \"prompt injection\":\n\n1. **[Automatic and Universal Prompt Injection Attacks against Large Language Models](http://arxiv.org/abs/2403.04957v1)**  \n   - **Tác giả:** Xiaogeng Liu, Zhiyuan Yu, Yizhe Zhang, Ning Zhang, Chaowei Xiao  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu một khung thống nhất để hiểu các cuộc tấn công prompt injection và trình bày một phương pháp tự động để tạo dữ liệu prompt injection hiệu quả.  \n   - **Ngày xuất bản:** 2024-03-07  \n   - **[PDF](https://arxiv.org/pdf/2403.04957v1)**\n\n2. **[SecAlign: Defending Against Prompt Injection with Preference Optimization](http://arxiv.org/abs/2410.05451v3)**  \n   - **Tác giả:** Sizhe Chen, Arman Zharmagambetov, Saeed Mahloujifar, Kamalika Chaudhuri, David Wagner, Chuan Guo  \n   - **Tóm tắt:** Nghiên cứu này đề xuất một phương pháp phòng thủ mới gọi là SecAlign, giúp giảm tỷ lệ thành công của các cuộc tấn công prompt injection xuống dưới 10%.  \n   - **Ngày xuất bản:** 2024-10-07  \n   - **[PDF](https://arxiv.org/pdf/2410.05451v3)**\n\n3. **[UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models](http://arxiv.org/abs/2502.13141v1)**  \n   - **Tác giả:** Huawei Lin, Yingjie Lao, Tong Geng, Tan Yu, Weijie Zhao  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu UniGuardian, một cơ chế phòng thủ thống nhất để phát hiện các cuộc tấn công prompt injection và các cuộc tấn công khác trong các mô hình ngôn ngữ lớn.  \n   - **Ngày xuất bản:** 2025-02-18  \n   - **[PDF](https://arxiv.org/pdf/2502.13141v1)**\n\n4. **[StruQ: Defending Against Prompt Injection with Structured Queries](http://arxiv.org/abs/2402.06363v2)**  \n   - **Tác giả:** Sizhe Chen, Julien Piet, Chawin Sitawarin, David Wagner  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu các truy vấn có cấu trúc để tách biệt các prompt và dữ liệu, giúp cải thiện khả năng chống lại các cuộc tấn công prompt injection.  \n   - **Ngày xuất bản:** 2024-02-09  \n   - **[PDF](https://arxiv.org/pdf/2402.06363v2)**\n\n5. **[Detecting Prompt Injection Attacks Against Application Using Classifiers](http://arxiv.org/abs/2512.12583v1)**  \n   - **Tác giả:** Safwan Shaheer, G. M. Refatul Islam, Mohammad Rafid Hamid, Md. Abrar Faiaz Khan, Md. Omar Faruk, Yaseen Nur  \n   - **Tóm tắt:** Nghiên cứu này phát triển một bộ dữ liệu và các bộ phân loại để phát hiện các cuộc tấn công prompt injection trong các ứng dụng web tích hợp LLM.  \n   - **Ngày xuất bản:** 2025-12-14  \n   - **[PDF](https://arxiv.org/pdf/2512.12583v1)**\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm thêm bài báo, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "prompt injection",
+                "max_results": 50
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "prompt injection",
+                "max_results": 50
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "prompt injection",
+                "api_query": "all:prompt AND all:injection",
+                "total_results": 2342,
+                "items": [
+                  {
+                    "arxiv_id": "2403.04957v1",
+                    "title": "Automatic and Universal Prompt Injection Attacks against Large Language Models",
+                    "summary": "Large Language Models (LLMs) excel in processing and generating human language, powered by their ability to interpret and follow instructions. However, their capabilities can be exploited through prompt injection attacks. These attacks manipulate LLM-integrated applications into producing responses aligned with the attacker's injected content, deviating from the user's actual requests. The substantial risks posed by these attacks underscore the need for a thorough understanding of the threats. Yet, research in this area faces challenges due to the lack of a unified goal for such attacks and their reliance on manually crafted prompts, complicating comprehensive assessments of prompt injection robustness. We introduce a unified framework for understanding the objectives of prompt injection attacks and present an automated gradient-based method for generating highly effective and universal prompt injection data, even in the face of defensive measures. With only five training samples (0.3% relative to the test data), our attack can achieve superior performance compared with baselines. Our findings emphasize the importance of gradient-based testing, which can avoid overestimation of robustness, especially for defense mechanisms.",
+                    "authors": [
+                      "Xiaogeng Liu",
+                      "Zhiyuan Yu",
+                      "Yizhe Zhang",
+                      "Ning Zhang",
+                      "Chaowei Xiao"
+                    ],
+                    "published": "2024-03-07T23:46:20Z",
+                    "updated": "2024-03-07T23:46:20Z",
+                    "url": "http://arxiv.org/abs/2403.04957v1",
+                    "pdf_url": "https://arxiv.org/pdf/2403.04957v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.AI",
+                    "categories": [
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2410.05451v3",
+                    "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+                    "summary": "Large language models (LLMs) are becoming increasingly prevalent in modern software systems, interfacing between the user and the Internet to assist with tasks that require advanced language understanding. To accomplish these tasks, the LLM often uses external data sources such as user documents, web retrieval, results from API calls, etc. This opens up new avenues for attackers to manipulate the LLM via prompt injection. Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction. To mitigate this vulnerability, we propose a new defense called SecAlign based on the technique of preference optimization. Our defense first constructs a preference dataset with prompt-injected inputs, secure outputs (ones that respond to the legitimate instruction), and insecure outputs (ones that respond to the injection). We then perform preference optimization on this dataset to teach the LLM to prefer the secure output over the insecure one. This provides the first known method that reduces the success rates of various prompt injections to <10%, even against attacks much more sophisticated than ones seen during training. This indicates our defense generalizes well against unknown and yet-to-come attacks. Also, SecAlign models are still practical with similar utility to the one before defensive training in our evaluations. Our code is at https://github.com/facebookresearch/SecAlign",
+                    "authors": [
+                      "Sizhe Chen",
+                      "Arman Zharmagambetov",
+                      "Saeed Mahloujifar",
+                      "Kamalika Chaudhuri",
+                      "David Wagner",
+                      "Chuan Guo"
+                    ],
+                    "published": "2024-10-07T19:34:35Z",
+                    "updated": "2025-07-03T05:45:41Z",
+                    "url": "http://arxiv.org/abs/2410.05451v3",
+                    "pdf_url": "https://arxiv.org/pdf/2410.05451v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2502.13141v1",
+                    "title": "UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models",
+                    "summary": "Large Language Models (LLMs) are vulnerable to attacks like prompt injection, backdoor attacks, and adversarial attacks, which manipulate prompts or models to generate harmful outputs. In this paper, departing from traditional deep learning attack paradigms, we explore their intrinsic relationship and collectively term them Prompt Trigger Attacks (PTA). This raises a key question: Can we determine if a prompt is benign or poisoned? To address this, we propose UniGuardian, the first unified defense mechanism designed to detect prompt injection, backdoor attacks, and adversarial attacks in LLMs. Additionally, we introduce a single-forward strategy to optimize the detection pipeline, enabling simultaneous attack detection and text generation within a single forward pass. Our experiments confirm that UniGuardian accurately and efficiently identifies malicious prompts in LLMs.",
+                    "authors": [
+                      "Huawei Lin",
+                      "Yingjie Lao",
+                      "Tong Geng",
+                      "Tan Yu",
+                      "Weijie Zhao"
+                    ],
+                    "published": "2025-02-18T18:59:00Z",
+                    "updated": "2025-02-18T18:59:00Z",
+                    "url": "http://arxiv.org/abs/2502.13141v1",
+                    "pdf_url": "https://arxiv.org/pdf/2502.13141v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CL",
+                    "categories": [
+                      "cs.CL",
+                      "cs.AI",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2402.06363v2",
+                    "title": "StruQ: Defending Against Prompt Injection with Structured Queries",
+                    "summary": "Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model into deviating from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/StruQ.",
+                    "authors": [
+                      "Sizhe Chen",
+                      "Julien Piet",
+                      "Chawin Sitawarin",
+                      "David Wagner"
+                    ],
+                    "published": "2024-02-09T12:15:51Z",
+                    "updated": "2024-09-25T19:48:39Z",
+                    "url": "http://arxiv.org/abs/2402.06363v2",
+                    "pdf_url": "https://arxiv.org/pdf/2402.06363v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2512.12583v1",
+                    "title": "Detecting Prompt Injection Attacks Against Application Using Classifiers",
+                    "summary": "Prompt injection attacks can compromise the security and stability of critical systems, from infrastructure to large web applications. This work curates and augments a prompt injection dataset based on the HackAPrompt Playground Submissions corpus and trains several classifiers, including LSTM, feed forward neural networks, Random Forest, and Naive Bayes, to detect malicious prompts in LLM integrated web applications. The proposed approach improves prompt injection detection and mitigation, helping protect targeted applications and systems.",
+                    "authors": [
+                      "Safwan Shaheer",
+                      "G. M. Refatul Islam",
+                      "Mohammad Rafid Hamid",
+                      "Md. Abrar Faiaz Khan",
+                      "Md. Omar Faruk",
+                      "Yaseen Nur"
+                    ],
+                    "published": "2025-12-14T07:35:32Z",
+                    "updated": "2025-12-14T07:35:32Z",
+                    "url": "http://arxiv.org/abs/2512.12583v1",
+                    "pdf_url": "https://arxiv.org/pdf/2512.12583v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2505.11717v4",
+                    "title": "WebInject: Prompt Injection Attack to Web Agents",
+                    "summary": "Multi-modal large language model (MLLM)-based web agents interact with webpage environments by generating actions based on screenshots of the webpages. In this work, we propose WebInject, a prompt injection attack that manipulates the webpage environment to induce a web agent to perform an attacker-specified action. Our attack adds a perturbation to the raw pixel values of the rendered webpage. After these perturbed pixels are mapped into a screenshot, the perturbation induces the web agent to perform the attacker-specified action. We formulate the task of finding the perturbation as an optimization problem. A key challenge in solving this problem is that the mapping between raw pixel values and screenshot is non-differentiable, making it difficult to backpropagate gradients to the perturbation. To overcome this, we train a neural network to approximate the mapping and apply projected gradient descent to solve the reformulated optimization problem. Extensive evaluation on multiple datasets shows that WebInject is highly effective and significantly outperforms baselines.",
+                    "authors": [
+                      "Xilong Wang",
+                      "John Bloch",
+                      "Zedian Shao",
+                      "Yuepeng Hu",
+                      "Shuyan Zhou",
+                      "Neil Zhenqiang Gong"
+                    ],
+                    "published": "2025-05-16T22:00:26Z",
+                    "updated": "2025-10-17T01:52:39Z",
+                    "url": "http://arxiv.org/abs/2505.11717v4",
+                    "pdf_url": "https://arxiv.org/pdf/2505.11717v4",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.LG",
+                    "categories": [
+                      "cs.LG",
+                      "cs.AI",
+                      "cs.CL",
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2605.28999v1",
+                    "title": "Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening",
+                    "summary": "LLMs are vulnerable to prompt injection attacks. However, this vulnerability has been primarily demonstrated conceptually in academic studies or through a few anecdotal case studies. Its prevalence and impact in real-world LLM-based applications are largely unexplored. In this work, we present the first systematic study of prompt-injection attacks in a widely used application: LLM-based resume screening. Our analysis is based on approximately 200K real-world resumes collected over multiple years by hireEZ. We first design tailored methods to detect prompt injection in resumes. Manual validation on a small-scale dataset demonstrates that our detectors achieve high precision and outperform state-of-the-art general-purpose detectors. We then apply our detector to the full resume dataset and conduct a comprehensive measurement study of real-world prompt injection attacks. Our analysis reveals several intriguing findings: approximately 1% of resumes contain hidden prompt injections; the prevalence of such injected resumes has increased noticeably over the past one to two years; and more than 90% of injected prompts do not use explicit instructions. These results provide the first evidence of large-scale prompt injection in real-world LLM-based applications and lay the groundwork for future studies to understand and mitigate such attacks.",
+                    "authors": [
+                      "Mohan Zhang",
+                      "Yuqi Jia",
+                      "Zhen Tan",
+                      "Steven Jiang",
+                      "Neil Zhenqiang Gong",
+                      "Tianlong Chen",
+                      "Dawn Song"
+                    ],
+                    "published": "2026-05-27T18:56:19Z",
+                    "updated": "2026-05-27T18:56:19Z",
+                    "url": "http://arxiv.org/abs/2605.28999v1",
+                    "pdf_url": "https://arxiv.org/pdf/2605.28999v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR",
+                      "cs.AI",
+                      "cs.CL",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2604.07831v2",
+                    "title": "Are GUI Agents Focused Enough? Automated Distraction via Semantic-level UI Element Injection",
+                    "summary": "Existing red-teaming studies on GUI agents face two fundamental limitations: adversarial perturbations require white-box access unavailable in commercial deployments, while prompt injection is increasingly neutralized by stronger safety alignment. To study robustness under a more practical threat model, we propose Semantic-level UI Element Injection, a black-box red-teaming paradigm that overlays safety-aligned and harmless UI elements onto screenshots to misdirect the agent's visual grounding. Our method couples a modular Editor--Overlapper--Victim pipeline with iterative search that samples multiple candidate edits, keeps the best cumulative overlay, and adapts future prompt strategies based on previous failures. Experiments across 19 victim models spanning 8 model families show that strategic optimization substantially outperforms random injection (3.5-6.9x on the most robust victims) and transfers near-perfectly across architectures, confirming model-agnostic visual-semantic vulnerabilities. After the first successful attack, the victim still clicks the attacker-controlled icon in over 15\\% of subsequent independent trials versus below 1% for random injection, establishing that strategically placed icons act as persistent attractors that causally redirect grounding rather than introducing incidental clutter.",
+                    "authors": [
+                      "Wenkui Yang",
+                      "Chao Jin",
+                      "Haisu Zhu",
+                      "Weilin Luo",
+                      "Derek Yuen",
+                      "Kun Shao",
+                      "Junxian Duan",
+                      "Huaibo Huang",
+                      "Jie Cao",
+                      "Ran He"
+                    ],
+                    "published": "2026-04-09T05:32:34Z",
+                    "updated": "2026-07-08T02:39:35Z",
+                    "url": "http://arxiv.org/abs/2604.07831v2",
+                    "pdf_url": "https://arxiv.org/pdf/2604.07831v2",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR",
+                      "cs.CL",
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2507.15042v1",
+                    "title": "DeRAG: Black-box Adversarial Attacks on Multiple Retrieval-Augmented Generation Applications via Prompt Injection",
+                    "summary": "Adversarial prompt attacks can significantly alter the reliability of Retrieval-Augmented Generation (RAG) systems by re-ranking them to produce incorrect outputs. In this paper, we present a novel method that applies Differential Evolution (DE) to optimize adversarial prompt suffixes for RAG-based question answering. Our approach is gradient-free, treating the RAG pipeline as a black box and evolving a population of candidate suffixes to maximize the retrieval rank of a targeted incorrect document to be closer to real world scenarios. We conducted experiments on the BEIR QA datasets to evaluate attack success at certain retrieval rank thresholds under multiple retrieving applications. Our results demonstrate that DE-based prompt optimization attains competitive (and in some cases higher) success rates compared to GGPP to dense retrievers and PRADA to sparse retrievers, while using only a small number of tokens (<=5 tokens) in the adversarial suffix. Furthermore, we introduce a readability-aware suffix construction strategy, validated by a statistically significant reduction in MLM negative log-likelihood with Welch's t-test. Through evaluations with a BERT-based adversarial suffix detector, we show that DE-generated suffixes evade detection, yielding near-chance detection accuracy.",
+                    "authors": [
+                      "Jerry Wang",
+                      "Fang Yu"
+                    ],
+                    "published": "2025-07-20T16:48:20Z",
+                    "updated": "2025-07-20T16:48:20Z",
+                    "url": "http://arxiv.org/abs/2507.15042v1",
+                    "pdf_url": "https://arxiv.org/pdf/2507.15042v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.AI",
+                    "categories": [
+                      "cs.AI",
+                      "cs.IR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2510.19844v1",
+                    "title": "CourtGuard: A Local, Multiagent Prompt Injection Classifier",
+                    "summary": "As large language models (LLMs) become integrated into various sensitive applications, prompt injection, the use of prompting to induce harmful behaviors from LLMs, poses an ever increasing risk. Prompt injection attacks can cause LLMs to leak sensitive data, spread misinformation, and exhibit harmful behaviors. To defend against these attacks, we propose CourtGuard, a locally-runnable, multiagent prompt injection classifier. In it, prompts are evaluated in a court-like multiagent LLM system, where a \"defense attorney\" model argues the prompt is benign, a \"prosecution attorney\" model argues the prompt is a prompt injection, and a \"judge\" model gives the final classification. CourtGuard has a lower false positive rate than the Direct Detector, an LLM as-a-judge. However, CourtGuard is generally a worse prompt injection detector. Nevertheless, this lower false positive rate highlights the importance of considering both adversarial and benign scenarios for the classification of a prompt. Additionally, the relative performance of CourtGuard in comparison to other prompt injection classifiers advances the use of multiagent systems as a defense against prompt injection attacks. The implementations of CourtGuard and the Direct Detector with full prompts for Gemma-3-12b-it, Llama-3.3-8B, and Phi-4-mini-instruct are available at https://github.com/isaacwu2000/CourtGuard.",
+                    "authors": [
+                      "Isaac Wu",
+                      "Michael Maslowski"
+                    ],
+                    "published": "2025-10-20T20:10:06Z",
+                    "updated": "2025-10-20T20:10:06Z",
+                    "url": "http://arxiv.org/abs/2510.19844v1",
+                    "pdf_url": "https://arxiv.org/pdf/2510.19844v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CR",
+                    "categories": [
+                      "cs.CR",
+                      "cs.AI"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là một số bài báo về \"prompt injection\":\n\n1. **[Automatic and Universal Prompt Injection Attacks against Large Language Models](http://arxiv.org/abs/2403.04957v1)**  \n   - **Tác giả:** Xiaogeng Liu, Zhiyuan Yu, Yizhe Zhang, Ning Zhang, Chaowei Xiao  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu một khung thống nhất để hiểu các cuộc tấn công prompt injection và trình bày một phương pháp tự động để tạo dữ liệu prompt injection hiệu quả.  \n   - **Ngày xuất bản:** 2024-03-07  \n   - **[PDF](https://arxiv.org/pdf/2403.04957v1)**\n\n2. **[SecAlign: Defending Against Prompt Injection with Preference Optimization](http://arxiv.org/abs/2410.05451v3)**  \n   - **Tác giả:** Sizhe Chen, Arman Zharmagambetov, Saeed Mahloujifar, Kamalika Chaudhuri, David Wagner, Chuan Guo  \n   - **Tóm tắt:** Nghiên cứu này đề xuất một phương pháp phòng thủ mới gọi là SecAlign, giúp giảm tỷ lệ thành công của các cuộc tấn công prompt injection xuống dưới 10%.  \n   - **Ngày xuất bản:** 2024-10-07  \n   - **[PDF](https://arxiv.org/pdf/2410.05451v3)**\n\n3. **[UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models](http://arxiv.org/abs/2502.13141v1)**  \n   - **Tác giả:** Huawei Lin, Yingjie Lao, Tong Geng, Tan Yu, Weijie Zhao  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu UniGuardian, một cơ chế phòng thủ thống nhất để phát hiện các cuộc tấn công prompt injection và các cuộc tấn công khác trong các mô hình ngôn ngữ lớn.  \n   - **Ngày xuất bản:** 2025-02-18  \n   - **[PDF](https://arxiv.org/pdf/2502.13141v1)**\n\n4. **[StruQ: Defending Against Prompt Injection with Structured Queries](http://arxiv.org/abs/2402.06363v2)**  \n   - **Tác giả:** Sizhe Chen, Julien Piet, Chawin Sitawarin, David Wagner  \n   - **Tóm tắt:** Nghiên cứu này giới thiệu các truy vấn có cấu trúc để tách biệt các prompt và dữ liệu, giúp cải thiện khả năng chống lại các cuộc tấn công prompt injection.  \n   - **Ngày xuất bản:** 2024-02-09  \n   - **[PDF](https://arxiv.org/pdf/2402.06363v2)**\n\n5. **[Detecting Prompt Injection Attacks Against Application Using Classifiers](http://arxiv.org/abs/2512.12583v1)**  \n   - **Tác giả:** Safwan Shaheer, G. M. Refatul Islam, Mohammad Rafid Hamid, Md. Abrar Faiaz Khan, Md. Omar Faruk, Yaseen Nur  \n   - **Tóm tắt:** Nghiên cứu này phát triển một bộ dữ liệu và các bộ phân loại để phát hiện các cuộc tấn công prompt injection trong các ứng dụng web tích hợp LLM.  \n   - **Ngày xuất bản:** 2025-12-14  \n   - **[PDF](https://arxiv.org/pdf/2512.12583v1)**\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm thêm bài báo, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "prompt injection",
+            "max_results": 50
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "prompt injection",
+            "api_query": "all:prompt AND all:injection",
+            "total_results": 2342,
+            "items": [
+              {
+                "arxiv_id": "2403.04957v1",
+                "title": "Automatic and Universal Prompt Injection Attacks against Large Language Models",
+                "summary": "Large Language Models (LLMs) excel in processing and generating human language, powered by their ability to interpret and follow instructions. However, their capabilities can be exploited through prompt injection attacks. These attacks manipulate LLM-integrated applications into producing responses aligned with the attacker's injected content, deviating from the user's actual requests. The substantial risks posed by these attacks underscore the need for a thorough understanding of the threats. Yet, research in this area faces challenges due to the lack of a unified goal for such attacks and their reliance on manually crafted prompts, complicating comprehensive assessments of prompt injection robustness. We introduce a unified framework for understanding the objectives of prompt injection attacks and present an automated gradient-based method for generating highly effective and universal prompt injection data, even in the face of defensive measures. With only five training samples (0.3% relative to the test data), our attack can achieve superior performance compared with baselines. Our findings emphasize the importance of gradient-based testing, which can avoid overestimation of robustness, especially for defense mechanisms.",
+                "authors": [
+                  "Xiaogeng Liu",
+                  "Zhiyuan Yu",
+                  "Yizhe Zhang",
+                  "Ning Zhang",
+                  "Chaowei Xiao"
+                ],
+                "published": "2024-03-07T23:46:20Z",
+                "updated": "2024-03-07T23:46:20Z",
+                "url": "http://arxiv.org/abs/2403.04957v1",
+                "pdf_url": "https://arxiv.org/pdf/2403.04957v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.AI",
+                "categories": [
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2410.05451v3",
+                "title": "SecAlign: Defending Against Prompt Injection with Preference Optimization",
+                "summary": "Large language models (LLMs) are becoming increasingly prevalent in modern software systems, interfacing between the user and the Internet to assist with tasks that require advanced language understanding. To accomplish these tasks, the LLM often uses external data sources such as user documents, web retrieval, results from API calls, etc. This opens up new avenues for attackers to manipulate the LLM via prompt injection. Adversarial prompts can be injected into external data sources to override the system's intended instruction and instead execute a malicious instruction. To mitigate this vulnerability, we propose a new defense called SecAlign based on the technique of preference optimization. Our defense first constructs a preference dataset with prompt-injected inputs, secure outputs (ones that respond to the legitimate instruction), and insecure outputs (ones that respond to the injection). We then perform preference optimization on this dataset to teach the LLM to prefer the secure output over the insecure one. This provides the first known method that reduces the success rates of various prompt injections to <10%, even against attacks much more sophisticated than ones seen during training. This indicates our defense generalizes well against unknown and yet-to-come attacks. Also, SecAlign models are still practical with similar utility to the one before defensive training in our evaluations. Our code is at https://github.com/facebookresearch/SecAlign",
+                "authors": [
+                  "Sizhe Chen",
+                  "Arman Zharmagambetov",
+                  "Saeed Mahloujifar",
+                  "Kamalika Chaudhuri",
+                  "David Wagner",
+                  "Chuan Guo"
+                ],
+                "published": "2024-10-07T19:34:35Z",
+                "updated": "2025-07-03T05:45:41Z",
+                "url": "http://arxiv.org/abs/2410.05451v3",
+                "pdf_url": "https://arxiv.org/pdf/2410.05451v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2502.13141v1",
+                "title": "UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models",
+                "summary": "Large Language Models (LLMs) are vulnerable to attacks like prompt injection, backdoor attacks, and adversarial attacks, which manipulate prompts or models to generate harmful outputs. In this paper, departing from traditional deep learning attack paradigms, we explore their intrinsic relationship and collectively term them Prompt Trigger Attacks (PTA). This raises a key question: Can we determine if a prompt is benign or poisoned? To address this, we propose UniGuardian, the first unified defense mechanism designed to detect prompt injection, backdoor attacks, and adversarial attacks in LLMs. Additionally, we introduce a single-forward strategy to optimize the detection pipeline, enabling simultaneous attack detection and text generation within a single forward pass. Our experiments confirm that UniGuardian accurately and efficiently identifies malicious prompts in LLMs.",
+                "authors": [
+                  "Huawei Lin",
+                  "Yingjie Lao",
+                  "Tong Geng",
+                  "Tan Yu",
+                  "Weijie Zhao"
+                ],
+                "published": "2025-02-18T18:59:00Z",
+                "updated": "2025-02-18T18:59:00Z",
+                "url": "http://arxiv.org/abs/2502.13141v1",
+                "pdf_url": "https://arxiv.org/pdf/2502.13141v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CL",
+                "categories": [
+                  "cs.CL",
+                  "cs.AI",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2402.06363v2",
+                "title": "StruQ: Defending Against Prompt Injection with Structured Queries",
+                "summary": "Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language understanding capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attacks are an important threat: they trick the model into deviating from the original application's instructions and instead follow user directives. These attacks rely on the LLM's ability to follow instructions and inability to separate prompts and user data. We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce high-quality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instruction-tuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility. Our code is released at https://github.com/Sizhe-Chen/StruQ.",
+                "authors": [
+                  "Sizhe Chen",
+                  "Julien Piet",
+                  "Chawin Sitawarin",
+                  "David Wagner"
+                ],
+                "published": "2024-02-09T12:15:51Z",
+                "updated": "2024-09-25T19:48:39Z",
+                "url": "http://arxiv.org/abs/2402.06363v2",
+                "pdf_url": "https://arxiv.org/pdf/2402.06363v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR"
+                ]
+              },
+              {
+                "arxiv_id": "2512.12583v1",
+                "title": "Detecting Prompt Injection Attacks Against Application Using Classifiers",
+                "summary": "Prompt injection attacks can compromise the security and stability of critical systems, from infrastructure to large web applications. This work curates and augments a prompt injection dataset based on the HackAPrompt Playground Submissions corpus and trains several classifiers, including LSTM, feed forward neural networks, Random Forest, and Naive Bayes, to detect malicious prompts in LLM integrated web applications. The proposed approach improves prompt injection detection and mitigation, helping protect targeted applications and systems.",
+                "authors": [
+                  "Safwan Shaheer",
+                  "G. M. Refatul Islam",
+                  "Mohammad Rafid Hamid",
+                  "Md. Abrar Faiaz Khan",
+                  "Md. Omar Faruk",
+                  "Yaseen Nur"
+                ],
+                "published": "2025-12-14T07:35:32Z",
+                "updated": "2025-12-14T07:35:32Z",
+                "url": "http://arxiv.org/abs/2512.12583v1",
+                "pdf_url": "https://arxiv.org/pdf/2512.12583v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2505.11717v4",
+                "title": "WebInject: Prompt Injection Attack to Web Agents",
+                "summary": "Multi-modal large language model (MLLM)-based web agents interact with webpage environments by generating actions based on screenshots of the webpages. In this work, we propose WebInject, a prompt injection attack that manipulates the webpage environment to induce a web agent to perform an attacker-specified action. Our attack adds a perturbation to the raw pixel values of the rendered webpage. After these perturbed pixels are mapped into a screenshot, the perturbation induces the web agent to perform the attacker-specified action. We formulate the task of finding the perturbation as an optimization problem. A key challenge in solving this problem is that the mapping between raw pixel values and screenshot is non-differentiable, making it difficult to backpropagate gradients to the perturbation. To overcome this, we train a neural network to approximate the mapping and apply projected gradient descent to solve the reformulated optimization problem. Extensive evaluation on multiple datasets shows that WebInject is highly effective and significantly outperforms baselines.",
+                "authors": [
+                  "Xilong Wang",
+                  "John Bloch",
+                  "Zedian Shao",
+                  "Yuepeng Hu",
+                  "Shuyan Zhou",
+                  "Neil Zhenqiang Gong"
+                ],
+                "published": "2025-05-16T22:00:26Z",
+                "updated": "2025-10-17T01:52:39Z",
+                "url": "http://arxiv.org/abs/2505.11717v4",
+                "pdf_url": "https://arxiv.org/pdf/2505.11717v4",
+                "source": "arxiv.org",
+                "primary_category": "cs.LG",
+                "categories": [
+                  "cs.LG",
+                  "cs.AI",
+                  "cs.CL",
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2605.28999v1",
+                "title": "Measuring Real-World Prompt Injection Attacks in LLM-based Resume Screening",
+                "summary": "LLMs are vulnerable to prompt injection attacks. However, this vulnerability has been primarily demonstrated conceptually in academic studies or through a few anecdotal case studies. Its prevalence and impact in real-world LLM-based applications are largely unexplored. In this work, we present the first systematic study of prompt-injection attacks in a widely used application: LLM-based resume screening. Our analysis is based on approximately 200K real-world resumes collected over multiple years by hireEZ. We first design tailored methods to detect prompt injection in resumes. Manual validation on a small-scale dataset demonstrates that our detectors achieve high precision and outperform state-of-the-art general-purpose detectors. We then apply our detector to the full resume dataset and conduct a comprehensive measurement study of real-world prompt injection attacks. Our analysis reveals several intriguing findings: approximately 1% of resumes contain hidden prompt injections; the prevalence of such injected resumes has increased noticeably over the past one to two years; and more than 90% of injected prompts do not use explicit instructions. These results provide the first evidence of large-scale prompt injection in real-world LLM-based applications and lay the groundwork for future studies to understand and mitigate such attacks.",
+                "authors": [
+                  "Mohan Zhang",
+                  "Yuqi Jia",
+                  "Zhen Tan",
+                  "Steven Jiang",
+                  "Neil Zhenqiang Gong",
+                  "Tianlong Chen",
+                  "Dawn Song"
+                ],
+                "published": "2026-05-27T18:56:19Z",
+                "updated": "2026-05-27T18:56:19Z",
+                "url": "http://arxiv.org/abs/2605.28999v1",
+                "pdf_url": "https://arxiv.org/pdf/2605.28999v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR",
+                  "cs.AI",
+                  "cs.CL",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2604.07831v2",
+                "title": "Are GUI Agents Focused Enough? Automated Distraction via Semantic-level UI Element Injection",
+                "summary": "Existing red-teaming studies on GUI agents face two fundamental limitations: adversarial perturbations require white-box access unavailable in commercial deployments, while prompt injection is increasingly neutralized by stronger safety alignment. To study robustness under a more practical threat model, we propose Semantic-level UI Element Injection, a black-box red-teaming paradigm that overlays safety-aligned and harmless UI elements onto screenshots to misdirect the agent's visual grounding. Our method couples a modular Editor--Overlapper--Victim pipeline with iterative search that samples multiple candidate edits, keeps the best cumulative overlay, and adapts future prompt strategies based on previous failures. Experiments across 19 victim models spanning 8 model families show that strategic optimization substantially outperforms random injection (3.5-6.9x on the most robust victims) and transfers near-perfectly across architectures, confirming model-agnostic visual-semantic vulnerabilities. After the first successful attack, the victim still clicks the attacker-controlled icon in over 15\\% of subsequent independent trials versus below 1% for random injection, establishing that strategically placed icons act as persistent attractors that causally redirect grounding rather than introducing incidental clutter.",
+                "authors": [
+                  "Wenkui Yang",
+                  "Chao Jin",
+                  "Haisu Zhu",
+                  "Weilin Luo",
+                  "Derek Yuen",
+                  "Kun Shao",
+                  "Junxian Duan",
+                  "Huaibo Huang",
+                  "Jie Cao",
+                  "Ran He"
+                ],
+                "published": "2026-04-09T05:32:34Z",
+                "updated": "2026-07-08T02:39:35Z",
+                "url": "http://arxiv.org/abs/2604.07831v2",
+                "pdf_url": "https://arxiv.org/pdf/2604.07831v2",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR",
+                  "cs.CL",
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2507.15042v1",
+                "title": "DeRAG: Black-box Adversarial Attacks on Multiple Retrieval-Augmented Generation Applications via Prompt Injection",
+                "summary": "Adversarial prompt attacks can significantly alter the reliability of Retrieval-Augmented Generation (RAG) systems by re-ranking them to produce incorrect outputs. In this paper, we present a novel method that applies Differential Evolution (DE) to optimize adversarial prompt suffixes for RAG-based question answering. Our approach is gradient-free, treating the RAG pipeline as a black box and evolving a population of candidate suffixes to maximize the retrieval rank of a targeted incorrect document to be closer to real world scenarios. We conducted experiments on the BEIR QA datasets to evaluate attack success at certain retrieval rank thresholds under multiple retrieving applications. Our results demonstrate that DE-based prompt optimization attains competitive (and in some cases higher) success rates compared to GGPP to dense retrievers and PRADA to sparse retrievers, while using only a small number of tokens (<=5 tokens) in the adversarial suffix. Furthermore, we introduce a readability-aware suffix construction strategy, validated by a statistically significant reduction in MLM negative log-likelihood with Welch's t-test. Through evaluations with a BERT-based adversarial suffix detector, we show that DE-generated suffixes evade detection, yielding near-chance detection accuracy.",
+                "authors": [
+                  "Jerry Wang",
+                  "Fang Yu"
+                ],
+                "published": "2025-07-20T16:48:20Z",
+                "updated": "2025-07-20T16:48:20Z",
+                "url": "http://arxiv.org/abs/2507.15042v1",
+                "pdf_url": "https://arxiv.org/pdf/2507.15042v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.AI",
+                "categories": [
+                  "cs.AI",
+                  "cs.IR"
+                ]
+              },
+              {
+                "arxiv_id": "2510.19844v1",
+                "title": "CourtGuard: A Local, Multiagent Prompt Injection Classifier",
+                "summary": "As large language models (LLMs) become integrated into various sensitive applications, prompt injection, the use of prompting to induce harmful behaviors from LLMs, poses an ever increasing risk. Prompt injection attacks can cause LLMs to leak sensitive data, spread misinformation, and exhibit harmful behaviors. To defend against these attacks, we propose CourtGuard, a locally-runnable, multiagent prompt injection classifier. In it, prompts are evaluated in a court-like multiagent LLM system, where a \"defense attorney\" model argues the prompt is benign, a \"prosecution attorney\" model argues the prompt is a prompt injection, and a \"judge\" model gives the final classification. CourtGuard has a lower false positive rate than the Direct Detector, an LLM as-a-judge. However, CourtGuard is generally a worse prompt injection detector. Nevertheless, this lower false positive rate highlights the importance of considering both adversarial and benign scenarios for the classification of a prompt. Additionally, the relative performance of CourtGuard in comparison to other prompt injection classifiers advances the use of multiagent systems as a defense against prompt injection attacks. The implementations of CourtGuard and the Direct Detector with full prompts for Gemma-3-12b-it, Llama-3.3-8B, and Phi-4-mini-instruct are available at https://github.com/isaacwu2000/CourtGuard.",
+                "authors": [
+                  "Isaac Wu",
+                  "Michael Maslowski"
+                ],
+                "published": "2025-10-20T20:10:06Z",
+                "updated": "2025-10-20T20:10:06Z",
+                "url": "http://arxiv.org/abs/2510.19844v1",
+                "pdf_url": "https://arxiv.org/pdf/2510.19844v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CR",
+                "categories": [
+                  "cs.CR",
+                  "cs.AI"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:58:31"
+    }
+  ]
+}

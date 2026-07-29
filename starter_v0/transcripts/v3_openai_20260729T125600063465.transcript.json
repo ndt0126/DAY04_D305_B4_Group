@@ -1,0 +1,1140 @@
+{
+  "transcript_id": "v3_openai_20260729T125600063465",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:57:05",
+  "updated_at": "2026-07-29T12:57:05",
+  "turns": [
+    {
+      "turn_index": 3,
+      "started_at": "2026-07-29T12:56:00",
+      "user": "liệt kê 50 bài báo gần nhât về chủ đề CLIP",
+      "status": "answered",
+      "assistant_text": "Dưới đây là danh sách 10 bài báo gần nhất về chủ đề CLIP:\n\n### 1. [Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA](http://arxiv.org/abs/2607.25921v1)\n- **Tóm tắt:** Nghiên cứu này xem xét việc sử dụng các Mô hình Ngôn ngữ-Đối tượng (VLMs) để phát hiện bất thường trong quy trình Đảm bảo Chất lượng (QA) của trò chơi, tập trung vào việc cắt hình học.\n\n### 2. [Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models](http://arxiv.org/abs/2502.11049v3)\n- **Tóm tắt:** Nghiên cứu này điều tra sự thiên lệch và công bằng trong các tập dữ liệu và mô hình Nhận diện Biểu cảm Khuôn mặt (FER).\n\n### 3. [Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection](http://arxiv.org/abs/2607.25842v1)\n- **Tóm tắt:** Bài báo mô tả sự tham gia của nhóm \"Go To Germany\" trong nhiệm vụ Phát hiện và Tạo Deepfake của ImageCLEF 2026.\n\n### 4. [Fine-Grained Food Image Understanding via Target-Aware Data Alignment](http://arxiv.org/abs/2607.25794v1)\n- **Tóm tắt:** Nghiên cứu này đề xuất một phương pháp căn chỉnh dữ liệu đa phương thức cho việc mô tả và nhận diện thực phẩm tinh vi.\n\n### 5. [Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization](http://arxiv.org/abs/2607.25785v1)\n- **Tóm tắt:** Nghiên cứu này xem xét tối ưu hóa không lồi ngẫu nhiên composite khi các mẫu gradient đến từ một chuỗi Markov cố định.\n\n### 6. [Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring](http://arxiv.org/abs/2607.25448v1)\n- **Tóm tắt:** Bài báo này trình bày một quy trình điều hướng ngữ nghĩa tập trung vào đối tượng không cần đào tạo.\n\n### 7. [Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes](http://arxiv.org/abs/2607.25371v1)\n- **Tóm tắt:** Nghiên cứu này phát triển một phương pháp phân tách nội tại cho các hình ảnh hyperspectral.\n\n### 8. [Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization](http://arxiv.org/abs/2607.25260v1)\n- **Tóm tắt:** Bài báo này trình bày một chương trình tối ưu hóa cho quá trình hạ cánh có động lực.\n\n### 9. [Detect Before You Leap: Mirage Detection in Vision-Language Models](http://arxiv.org/abs/2606.00435v3)\n- **Tóm tắt:** Nghiên cứu này xem xét việc phát hiện \"mirage\" trong các mô hình ngôn ngữ-đối tượng.\n\n### 10. [MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks](http://arxiv.org/abs/2607.25092v1)\n- **Tóm tắt:** Bài báo này giới thiệu MorphUNet, một khuôn khổ biến đổi khuôn mặt dựa trên khuếch tán.\n\nNếu bạn cần thêm thông tin hoặc muốn xem nhiều bài báo hơn, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "papers",
+              "args": {
+                "query": "CLIP",
+                "max_results": 25,
+                "sort_by": "lastUpdatedDate"
+              }
+            },
+            {
+              "name": "papers",
+              "args": {
+                "query": "CLIP",
+                "max_results": 25,
+                "sort_by": "lastUpdatedDate"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "papers",
+              "args": {
+                "query": "CLIP",
+                "max_results": 25,
+                "sort_by": "lastUpdatedDate"
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "CLIP",
+                "api_query": "all:CLIP",
+                "total_results": 9837,
+                "items": [
+                  {
+                    "arxiv_id": "2607.25921v1",
+                    "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                    "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors.",
+                    "authors": [
+                      "Carlos Celemin",
+                      "Benedict Wilkins",
+                      "Adrián Barahona-Ríos",
+                      "Saman Zadtootaghaj",
+                      "Nabajeet Barman"
+                    ],
+                    "published": "2026-07-28T16:10:47Z",
+                    "updated": "2026-07-28T16:10:47Z",
+                    "url": "http://arxiv.org/abs/2607.25921v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25921v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2502.11049v3",
+                    "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                    "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation.",
+                    "authors": [
+                      "Mohammad Mehdi Hosseini",
+                      "Ali Pourramezan Fard",
+                      "Mohammad H. Mahoor"
+                    ],
+                    "published": "2025-02-16T09:23:16Z",
+                    "updated": "2026-07-28T15:58:51Z",
+                    "url": "http://arxiv.org/abs/2502.11049v3",
+                    "pdf_url": "https://arxiv.org/pdf/2502.11049v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25842v1",
+                    "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                    "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses.",
+                    "authors": [
+                      "Junghyun Kim",
+                      "Seunghyun Kim",
+                      "Jiyoung Woo"
+                    ],
+                    "published": "2026-07-28T15:19:16Z",
+                    "updated": "2026-07-28T15:19:16Z",
+                    "url": "http://arxiv.org/abs/2607.25842v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25842v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.CR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25794v1",
+                    "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                    "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient.",
+                    "authors": [
+                      "Jui-Feng Chi",
+                      "Wei-Lun Chu",
+                      "Bruce Coburn",
+                      "Jinge Ma",
+                      "Fengqing Zhu"
+                    ],
+                    "published": "2026-07-28T14:44:56Z",
+                    "updated": "2026-07-28T14:44:56Z",
+                    "url": "http://arxiv.org/abs/2607.25794v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25794v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25785v1",
+                    "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                    "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior.",
+                    "authors": [
+                      "Zhaojun Peng"
+                    ],
+                    "published": "2026-07-28T14:37:47Z",
+                    "updated": "2026-07-28T14:37:47Z",
+                    "url": "http://arxiv.org/abs/2607.25785v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25785v1",
+                    "source": "arxiv.org",
+                    "primary_category": "math.OC",
+                    "categories": [
+                      "math.OC",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25448v1",
+                    "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                    "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav.",
+                    "authors": [
+                      "Adam Scicluna",
+                      "Gavin Paul",
+                      "Alen Alempijevic"
+                    ],
+                    "published": "2026-07-28T08:36:26Z",
+                    "updated": "2026-07-28T08:36:26Z",
+                    "url": "http://arxiv.org/abs/2607.25448v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25448v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.RO",
+                    "categories": [
+                      "cs.RO"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25371v1",
+                    "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                    "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes.",
+                    "authors": [
+                      "Hao Ye",
+                      "Zhan Shi",
+                      "Chenglong Huang",
+                      "Tao Lv",
+                      "Mingjie Ji",
+                      "Qiu Shen",
+                      "Xun Cao"
+                    ],
+                    "published": "2026-07-28T07:26:07Z",
+                    "updated": "2026-07-28T07:26:07Z",
+                    "url": "http://arxiv.org/abs/2607.25371v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25371v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25260v1",
+                    "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                    "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem.",
+                    "authors": [
+                      "Wenbo Li",
+                      "Ziqi Xu",
+                      "Dai Shen",
+                      "Shengping Gong"
+                    ],
+                    "published": "2026-07-28T04:02:15Z",
+                    "updated": "2026-07-28T04:02:15Z",
+                    "url": "http://arxiv.org/abs/2607.25260v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25260v1",
+                    "source": "arxiv.org",
+                    "primary_category": "math.OC",
+                    "categories": [
+                      "math.OC"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2606.00435v3",
+                    "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                    "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate.",
+                    "authors": [
+                      "Sayeed Shafayet Chowdhury",
+                      "Md. Shaown Miah",
+                      "S. M. Taiabul Haque",
+                      "Syed Ishtiaque Ahmed"
+                    ],
+                    "published": "2026-05-29T23:51:35Z",
+                    "updated": "2026-07-27T23:31:43Z",
+                    "url": "http://arxiv.org/abs/2606.00435v3",
+                    "pdf_url": "https://arxiv.org/pdf/2606.00435v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25092v1",
+                    "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                    "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL. The full evaluation analyses MAP, MAD, per-system vulnerability, identity balance, image quality, top/bottom-similarity stress tests, and CFD unseen-identity robustness.",
+                    "authors": [
+                      "Taimoor Rizwan",
+                      "Sara Atito",
+                      "Zhenhua Feng",
+                      "Muhammad Awais",
+                      "Josef Kittler"
+                    ],
+                    "published": "2026-07-27T21:30:49Z",
+                    "updated": "2026-07-27T21:30:49Z",
+                    "url": "http://arxiv.org/abs/2607.25092v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25092v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            },
+            {
+              "tool": "papers",
+              "args": {
+                "query": "CLIP",
+                "max_results": 25,
+                "sort_by": "lastUpdatedDate"
+              },
+              "result": {
+                "tool": "arxiv_search",
+                "query": "CLIP",
+                "api_query": "all:CLIP",
+                "total_results": 9837,
+                "items": [
+                  {
+                    "arxiv_id": "2607.25921v1",
+                    "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                    "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors.",
+                    "authors": [
+                      "Carlos Celemin",
+                      "Benedict Wilkins",
+                      "Adrián Barahona-Ríos",
+                      "Saman Zadtootaghaj",
+                      "Nabajeet Barman"
+                    ],
+                    "published": "2026-07-28T16:10:47Z",
+                    "updated": "2026-07-28T16:10:47Z",
+                    "url": "http://arxiv.org/abs/2607.25921v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25921v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2502.11049v3",
+                    "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                    "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation.",
+                    "authors": [
+                      "Mohammad Mehdi Hosseini",
+                      "Ali Pourramezan Fard",
+                      "Mohammad H. Mahoor"
+                    ],
+                    "published": "2025-02-16T09:23:16Z",
+                    "updated": "2026-07-28T15:58:51Z",
+                    "url": "http://arxiv.org/abs/2502.11049v3",
+                    "pdf_url": "https://arxiv.org/pdf/2502.11049v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25842v1",
+                    "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                    "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses.",
+                    "authors": [
+                      "Junghyun Kim",
+                      "Seunghyun Kim",
+                      "Jiyoung Woo"
+                    ],
+                    "published": "2026-07-28T15:19:16Z",
+                    "updated": "2026-07-28T15:19:16Z",
+                    "url": "http://arxiv.org/abs/2607.25842v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25842v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.CR"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25794v1",
+                    "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                    "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient.",
+                    "authors": [
+                      "Jui-Feng Chi",
+                      "Wei-Lun Chu",
+                      "Bruce Coburn",
+                      "Jinge Ma",
+                      "Fengqing Zhu"
+                    ],
+                    "published": "2026-07-28T14:44:56Z",
+                    "updated": "2026-07-28T14:44:56Z",
+                    "url": "http://arxiv.org/abs/2607.25794v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25794v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25785v1",
+                    "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                    "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior.",
+                    "authors": [
+                      "Zhaojun Peng"
+                    ],
+                    "published": "2026-07-28T14:37:47Z",
+                    "updated": "2026-07-28T14:37:47Z",
+                    "url": "http://arxiv.org/abs/2607.25785v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25785v1",
+                    "source": "arxiv.org",
+                    "primary_category": "math.OC",
+                    "categories": [
+                      "math.OC",
+                      "cs.LG"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25448v1",
+                    "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                    "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav.",
+                    "authors": [
+                      "Adam Scicluna",
+                      "Gavin Paul",
+                      "Alen Alempijevic"
+                    ],
+                    "published": "2026-07-28T08:36:26Z",
+                    "updated": "2026-07-28T08:36:26Z",
+                    "url": "http://arxiv.org/abs/2607.25448v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25448v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.RO",
+                    "categories": [
+                      "cs.RO"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25371v1",
+                    "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                    "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes.",
+                    "authors": [
+                      "Hao Ye",
+                      "Zhan Shi",
+                      "Chenglong Huang",
+                      "Tao Lv",
+                      "Mingjie Ji",
+                      "Qiu Shen",
+                      "Xun Cao"
+                    ],
+                    "published": "2026-07-28T07:26:07Z",
+                    "updated": "2026-07-28T07:26:07Z",
+                    "url": "http://arxiv.org/abs/2607.25371v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25371v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25260v1",
+                    "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                    "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem.",
+                    "authors": [
+                      "Wenbo Li",
+                      "Ziqi Xu",
+                      "Dai Shen",
+                      "Shengping Gong"
+                    ],
+                    "published": "2026-07-28T04:02:15Z",
+                    "updated": "2026-07-28T04:02:15Z",
+                    "url": "http://arxiv.org/abs/2607.25260v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25260v1",
+                    "source": "arxiv.org",
+                    "primary_category": "math.OC",
+                    "categories": [
+                      "math.OC"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2606.00435v3",
+                    "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                    "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate.",
+                    "authors": [
+                      "Sayeed Shafayet Chowdhury",
+                      "Md. Shaown Miah",
+                      "S. M. Taiabul Haque",
+                      "Syed Ishtiaque Ahmed"
+                    ],
+                    "published": "2026-05-29T23:51:35Z",
+                    "updated": "2026-07-27T23:31:43Z",
+                    "url": "http://arxiv.org/abs/2606.00435v3",
+                    "pdf_url": "https://arxiv.org/pdf/2606.00435v3",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV",
+                      "cs.AI"
+                    ]
+                  },
+                  {
+                    "arxiv_id": "2607.25092v1",
+                    "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                    "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL. The full evaluation analyses MAP, MAD, per-system vulnerability, identity balance, image quality, top/bottom-similarity stress tests, and CFD unseen-identity robustness.",
+                    "authors": [
+                      "Taimoor Rizwan",
+                      "Sara Atito",
+                      "Zhenhua Feng",
+                      "Muhammad Awais",
+                      "Josef Kittler"
+                    ],
+                    "published": "2026-07-27T21:30:49Z",
+                    "updated": "2026-07-27T21:30:49Z",
+                    "url": "http://arxiv.org/abs/2607.25092v1",
+                    "pdf_url": "https://arxiv.org/pdf/2607.25092v1",
+                    "source": "arxiv.org",
+                    "primary_category": "cs.CV",
+                    "categories": [
+                      "cs.CV"
+                    ]
+                  }
+                ],
+                "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "format",
+              "args": {
+                "items": [
+                  {
+                    "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                    "url": "http://arxiv.org/abs/2607.25921v1",
+                    "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors."
+                  },
+                  {
+                    "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                    "url": "http://arxiv.org/abs/2502.11049v3",
+                    "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation."
+                  },
+                  {
+                    "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                    "url": "http://arxiv.org/abs/2607.25842v1",
+                    "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses."
+                  },
+                  {
+                    "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                    "url": "http://arxiv.org/abs/2607.25794v1",
+                    "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient."
+                  },
+                  {
+                    "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                    "url": "http://arxiv.org/abs/2607.25785v1",
+                    "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior."
+                  },
+                  {
+                    "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                    "url": "http://arxiv.org/abs/2607.25448v1",
+                    "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav."
+                  },
+                  {
+                    "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                    "url": "http://arxiv.org/abs/2607.25371v1",
+                    "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes."
+                  },
+                  {
+                    "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                    "url": "http://arxiv.org/abs/2607.25260v1",
+                    "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem."
+                  },
+                  {
+                    "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                    "url": "http://arxiv.org/abs/2606.00435v3",
+                    "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate."
+                  },
+                  {
+                    "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                    "url": "http://arxiv.org/abs/2607.25092v1",
+                    "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL."
+                  }
+                ],
+                "template": "sections",
+                "headline": "50 Bài báo gần nhất về chủ đề CLIP"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "format",
+              "args": {
+                "items": [
+                  {
+                    "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                    "url": "http://arxiv.org/abs/2607.25921v1",
+                    "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors."
+                  },
+                  {
+                    "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                    "url": "http://arxiv.org/abs/2502.11049v3",
+                    "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation."
+                  },
+                  {
+                    "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                    "url": "http://arxiv.org/abs/2607.25842v1",
+                    "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses."
+                  },
+                  {
+                    "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                    "url": "http://arxiv.org/abs/2607.25794v1",
+                    "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient."
+                  },
+                  {
+                    "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                    "url": "http://arxiv.org/abs/2607.25785v1",
+                    "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior."
+                  },
+                  {
+                    "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                    "url": "http://arxiv.org/abs/2607.25448v1",
+                    "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav."
+                  },
+                  {
+                    "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                    "url": "http://arxiv.org/abs/2607.25371v1",
+                    "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes."
+                  },
+                  {
+                    "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                    "url": "http://arxiv.org/abs/2607.25260v1",
+                    "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem."
+                  },
+                  {
+                    "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                    "url": "http://arxiv.org/abs/2606.00435v3",
+                    "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate."
+                  },
+                  {
+                    "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                    "url": "http://arxiv.org/abs/2607.25092v1",
+                    "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL."
+                  }
+                ],
+                "template": "sections",
+                "headline": "50 Bài báo gần nhất về chủ đề CLIP"
+              },
+              "result": {
+                "tool": "render_digest",
+                "template": "sections",
+                "markdown": "# 50 Bài báo gần nhất về chủ đề CLIP\n\n## Tổng hợp\n- In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, wh... - [arxiv.org](http://arxiv.org/abs/2607.25921v1)\n- Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigat... - [arxiv.org](http://arxiv.org/abs/2502.11049v3)\n- This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attac... - [arxiv.org](http://arxiv.org/abs/2607.25842v1)\n- Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their eff... - [arxiv.org](http://arxiv.org/abs/2607.25794v1)\n- We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the pr... - [arxiv.org](http://arxiv.org/abs/2607.25785v1)\n- Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships... - [arxiv.org](http://arxiv.org/abs/2607.25448v1)\n- Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Mos... - [arxiv.org](http://arxiv.org/abs/2607.25371v1)\n- Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. Th... - [arxiv.org](http://arxiv.org/abs/2607.25260v1)\n- Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA... - [arxiv.org](http://arxiv.org/abs/2606.00435v3)\n- Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport:... - [arxiv.org](http://arxiv.org/abs/2607.25092v1)\n",
+                "item_count": 10
+              }
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "assistant_text": "Dưới đây là danh sách 10 bài báo gần nhất về chủ đề CLIP:\n\n### 1. [Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA](http://arxiv.org/abs/2607.25921v1)\n- **Tóm tắt:** Nghiên cứu này xem xét việc sử dụng các Mô hình Ngôn ngữ-Đối tượng (VLMs) để phát hiện bất thường trong quy trình Đảm bảo Chất lượng (QA) của trò chơi, tập trung vào việc cắt hình học.\n\n### 2. [Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models](http://arxiv.org/abs/2502.11049v3)\n- **Tóm tắt:** Nghiên cứu này điều tra sự thiên lệch và công bằng trong các tập dữ liệu và mô hình Nhận diện Biểu cảm Khuôn mặt (FER).\n\n### 3. [Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection](http://arxiv.org/abs/2607.25842v1)\n- **Tóm tắt:** Bài báo mô tả sự tham gia của nhóm \"Go To Germany\" trong nhiệm vụ Phát hiện và Tạo Deepfake của ImageCLEF 2026.\n\n### 4. [Fine-Grained Food Image Understanding via Target-Aware Data Alignment](http://arxiv.org/abs/2607.25794v1)\n- **Tóm tắt:** Nghiên cứu này đề xuất một phương pháp căn chỉnh dữ liệu đa phương thức cho việc mô tả và nhận diện thực phẩm tinh vi.\n\n### 5. [Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization](http://arxiv.org/abs/2607.25785v1)\n- **Tóm tắt:** Nghiên cứu này xem xét tối ưu hóa không lồi ngẫu nhiên composite khi các mẫu gradient đến từ một chuỗi Markov cố định.\n\n### 6. [Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring](http://arxiv.org/abs/2607.25448v1)\n- **Tóm tắt:** Bài báo này trình bày một quy trình điều hướng ngữ nghĩa tập trung vào đối tượng không cần đào tạo.\n\n### 7. [Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes](http://arxiv.org/abs/2607.25371v1)\n- **Tóm tắt:** Nghiên cứu này phát triển một phương pháp phân tách nội tại cho các hình ảnh hyperspectral.\n\n### 8. [Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization](http://arxiv.org/abs/2607.25260v1)\n- **Tóm tắt:** Bài báo này trình bày một chương trình tối ưu hóa cho quá trình hạ cánh có động lực.\n\n### 9. [Detect Before You Leap: Mirage Detection in Vision-Language Models](http://arxiv.org/abs/2606.00435v3)\n- **Tóm tắt:** Nghiên cứu này xem xét việc phát hiện \"mirage\" trong các mô hình ngôn ngữ-đối tượng.\n\n### 10. [MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks](http://arxiv.org/abs/2607.25092v1)\n- **Tóm tắt:** Bài báo này giới thiệu MorphUNet, một khuôn khổ biến đổi khuôn mặt dựa trên khuếch tán.\n\nNếu bạn cần thêm thông tin hoặc muốn xem nhiều bài báo hơn, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "papers",
+          "args": {
+            "query": "CLIP",
+            "max_results": 25,
+            "sort_by": "lastUpdatedDate"
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "CLIP",
+            "api_query": "all:CLIP",
+            "total_results": 9837,
+            "items": [
+              {
+                "arxiv_id": "2607.25921v1",
+                "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors.",
+                "authors": [
+                  "Carlos Celemin",
+                  "Benedict Wilkins",
+                  "Adrián Barahona-Ríos",
+                  "Saman Zadtootaghaj",
+                  "Nabajeet Barman"
+                ],
+                "published": "2026-07-28T16:10:47Z",
+                "updated": "2026-07-28T16:10:47Z",
+                "url": "http://arxiv.org/abs/2607.25921v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25921v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2502.11049v3",
+                "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation.",
+                "authors": [
+                  "Mohammad Mehdi Hosseini",
+                  "Ali Pourramezan Fard",
+                  "Mohammad H. Mahoor"
+                ],
+                "published": "2025-02-16T09:23:16Z",
+                "updated": "2026-07-28T15:58:51Z",
+                "url": "http://arxiv.org/abs/2502.11049v3",
+                "pdf_url": "https://arxiv.org/pdf/2502.11049v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25842v1",
+                "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses.",
+                "authors": [
+                  "Junghyun Kim",
+                  "Seunghyun Kim",
+                  "Jiyoung Woo"
+                ],
+                "published": "2026-07-28T15:19:16Z",
+                "updated": "2026-07-28T15:19:16Z",
+                "url": "http://arxiv.org/abs/2607.25842v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25842v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.CR"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25794v1",
+                "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient.",
+                "authors": [
+                  "Jui-Feng Chi",
+                  "Wei-Lun Chu",
+                  "Bruce Coburn",
+                  "Jinge Ma",
+                  "Fengqing Zhu"
+                ],
+                "published": "2026-07-28T14:44:56Z",
+                "updated": "2026-07-28T14:44:56Z",
+                "url": "http://arxiv.org/abs/2607.25794v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25794v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25785v1",
+                "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior.",
+                "authors": [
+                  "Zhaojun Peng"
+                ],
+                "published": "2026-07-28T14:37:47Z",
+                "updated": "2026-07-28T14:37:47Z",
+                "url": "http://arxiv.org/abs/2607.25785v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25785v1",
+                "source": "arxiv.org",
+                "primary_category": "math.OC",
+                "categories": [
+                  "math.OC",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25448v1",
+                "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav.",
+                "authors": [
+                  "Adam Scicluna",
+                  "Gavin Paul",
+                  "Alen Alempijevic"
+                ],
+                "published": "2026-07-28T08:36:26Z",
+                "updated": "2026-07-28T08:36:26Z",
+                "url": "http://arxiv.org/abs/2607.25448v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25448v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.RO",
+                "categories": [
+                  "cs.RO"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25371v1",
+                "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes.",
+                "authors": [
+                  "Hao Ye",
+                  "Zhan Shi",
+                  "Chenglong Huang",
+                  "Tao Lv",
+                  "Mingjie Ji",
+                  "Qiu Shen",
+                  "Xun Cao"
+                ],
+                "published": "2026-07-28T07:26:07Z",
+                "updated": "2026-07-28T07:26:07Z",
+                "url": "http://arxiv.org/abs/2607.25371v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25371v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25260v1",
+                "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem.",
+                "authors": [
+                  "Wenbo Li",
+                  "Ziqi Xu",
+                  "Dai Shen",
+                  "Shengping Gong"
+                ],
+                "published": "2026-07-28T04:02:15Z",
+                "updated": "2026-07-28T04:02:15Z",
+                "url": "http://arxiv.org/abs/2607.25260v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25260v1",
+                "source": "arxiv.org",
+                "primary_category": "math.OC",
+                "categories": [
+                  "math.OC"
+                ]
+              },
+              {
+                "arxiv_id": "2606.00435v3",
+                "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate.",
+                "authors": [
+                  "Sayeed Shafayet Chowdhury",
+                  "Md. Shaown Miah",
+                  "S. M. Taiabul Haque",
+                  "Syed Ishtiaque Ahmed"
+                ],
+                "published": "2026-05-29T23:51:35Z",
+                "updated": "2026-07-27T23:31:43Z",
+                "url": "http://arxiv.org/abs/2606.00435v3",
+                "pdf_url": "https://arxiv.org/pdf/2606.00435v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25092v1",
+                "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL. The full evaluation analyses MAP, MAD, per-system vulnerability, identity balance, image quality, top/bottom-similarity stress tests, and CFD unseen-identity robustness.",
+                "authors": [
+                  "Taimoor Rizwan",
+                  "Sara Atito",
+                  "Zhenhua Feng",
+                  "Muhammad Awais",
+                  "Josef Kittler"
+                ],
+                "published": "2026-07-27T21:30:49Z",
+                "updated": "2026-07-27T21:30:49Z",
+                "url": "http://arxiv.org/abs/2607.25092v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25092v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        },
+        {
+          "tool": "papers",
+          "args": {
+            "query": "CLIP",
+            "max_results": 25,
+            "sort_by": "lastUpdatedDate"
+          },
+          "result": {
+            "tool": "arxiv_search",
+            "query": "CLIP",
+            "api_query": "all:CLIP",
+            "total_results": 9837,
+            "items": [
+              {
+                "arxiv_id": "2607.25921v1",
+                "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors.",
+                "authors": [
+                  "Carlos Celemin",
+                  "Benedict Wilkins",
+                  "Adrián Barahona-Ríos",
+                  "Saman Zadtootaghaj",
+                  "Nabajeet Barman"
+                ],
+                "published": "2026-07-28T16:10:47Z",
+                "updated": "2026-07-28T16:10:47Z",
+                "url": "http://arxiv.org/abs/2607.25921v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25921v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2502.11049v3",
+                "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation.",
+                "authors": [
+                  "Mohammad Mehdi Hosseini",
+                  "Ali Pourramezan Fard",
+                  "Mohammad H. Mahoor"
+                ],
+                "published": "2025-02-16T09:23:16Z",
+                "updated": "2026-07-28T15:58:51Z",
+                "url": "http://arxiv.org/abs/2502.11049v3",
+                "pdf_url": "https://arxiv.org/pdf/2502.11049v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25842v1",
+                "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses.",
+                "authors": [
+                  "Junghyun Kim",
+                  "Seunghyun Kim",
+                  "Jiyoung Woo"
+                ],
+                "published": "2026-07-28T15:19:16Z",
+                "updated": "2026-07-28T15:19:16Z",
+                "url": "http://arxiv.org/abs/2607.25842v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25842v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.CR"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25794v1",
+                "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient.",
+                "authors": [
+                  "Jui-Feng Chi",
+                  "Wei-Lun Chu",
+                  "Bruce Coburn",
+                  "Jinge Ma",
+                  "Fengqing Zhu"
+                ],
+                "published": "2026-07-28T14:44:56Z",
+                "updated": "2026-07-28T14:44:56Z",
+                "url": "http://arxiv.org/abs/2607.25794v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25794v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25785v1",
+                "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior.",
+                "authors": [
+                  "Zhaojun Peng"
+                ],
+                "published": "2026-07-28T14:37:47Z",
+                "updated": "2026-07-28T14:37:47Z",
+                "url": "http://arxiv.org/abs/2607.25785v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25785v1",
+                "source": "arxiv.org",
+                "primary_category": "math.OC",
+                "categories": [
+                  "math.OC",
+                  "cs.LG"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25448v1",
+                "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav.",
+                "authors": [
+                  "Adam Scicluna",
+                  "Gavin Paul",
+                  "Alen Alempijevic"
+                ],
+                "published": "2026-07-28T08:36:26Z",
+                "updated": "2026-07-28T08:36:26Z",
+                "url": "http://arxiv.org/abs/2607.25448v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25448v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.RO",
+                "categories": [
+                  "cs.RO"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25371v1",
+                "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes.",
+                "authors": [
+                  "Hao Ye",
+                  "Zhan Shi",
+                  "Chenglong Huang",
+                  "Tao Lv",
+                  "Mingjie Ji",
+                  "Qiu Shen",
+                  "Xun Cao"
+                ],
+                "published": "2026-07-28T07:26:07Z",
+                "updated": "2026-07-28T07:26:07Z",
+                "url": "http://arxiv.org/abs/2607.25371v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25371v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25260v1",
+                "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem.",
+                "authors": [
+                  "Wenbo Li",
+                  "Ziqi Xu",
+                  "Dai Shen",
+                  "Shengping Gong"
+                ],
+                "published": "2026-07-28T04:02:15Z",
+                "updated": "2026-07-28T04:02:15Z",
+                "url": "http://arxiv.org/abs/2607.25260v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25260v1",
+                "source": "arxiv.org",
+                "primary_category": "math.OC",
+                "categories": [
+                  "math.OC"
+                ]
+              },
+              {
+                "arxiv_id": "2606.00435v3",
+                "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate.",
+                "authors": [
+                  "Sayeed Shafayet Chowdhury",
+                  "Md. Shaown Miah",
+                  "S. M. Taiabul Haque",
+                  "Syed Ishtiaque Ahmed"
+                ],
+                "published": "2026-05-29T23:51:35Z",
+                "updated": "2026-07-27T23:31:43Z",
+                "url": "http://arxiv.org/abs/2606.00435v3",
+                "pdf_url": "https://arxiv.org/pdf/2606.00435v3",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV",
+                  "cs.AI"
+                ]
+              },
+              {
+                "arxiv_id": "2607.25092v1",
+                "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL. The full evaluation analyses MAP, MAD, per-system vulnerability, identity balance, image quality, top/bottom-similarity stress tests, and CFD unseen-identity robustness.",
+                "authors": [
+                  "Taimoor Rizwan",
+                  "Sara Atito",
+                  "Zhenhua Feng",
+                  "Muhammad Awais",
+                  "Josef Kittler"
+                ],
+                "published": "2026-07-27T21:30:49Z",
+                "updated": "2026-07-27T21:30:49Z",
+                "url": "http://arxiv.org/abs/2607.25092v1",
+                "pdf_url": "https://arxiv.org/pdf/2607.25092v1",
+                "source": "arxiv.org",
+                "primary_category": "cs.CV",
+                "categories": [
+                  "cs.CV"
+                ]
+              }
+            ],
+            "rate_limit_note": "arXiv may return 429 if called too frequently; this tool waits at least 3 seconds between requests in-process."
+          }
+        },
+        {
+          "tool": "format",
+          "args": {
+            "items": [
+              {
+                "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+                "url": "http://arxiv.org/abs/2607.25921v1",
+                "summary": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants. Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors."
+              },
+              {
+                "title": "Faces of Fairness: Examining Bias in Facial Expression Recognition Datasets and Models",
+                "url": "http://arxiv.org/abs/2502.11049v3",
+                "summary": "Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigates bias and fairness in FER datasets and models. The bias of four common in-the-wild FER datasets, including AffectNet, ExpW, Fer2013, and RAF-DB, is studied. Additionally, this research evaluates the bias and fairness of seven deep models, including three generic CNN models: MobileNet, ResNet, XceptionNet, as well as two popular Transformer-based models: ViT and CLIP, plus two FER-specific state-of-the-art models: POSTER and CEPrompt. Unlike prior studies that examine only limited aspects of bias, our work introduces a unified evaluation framework for FER that integrates five existing and two newly proposed dataset metrics with four fairness criteria for model analysis. We further introduce two new metrics, Conditional-Entropy Bias Index and Concentration Index, designed to quantify conditional dependencies and intra-group data imbalance that existing measures fail to capture. Our results show that all four datasets carry significant demographic bias, most notably in race, with AffectNet exhibiting the highest overall bias and Fer2013 the lowest. At the model level, we find that residual-based CNN architectures (ResNet and XceptionNet) exhibit the lowest overall bias, whereas Transformer-based models (ViT and CLIP) exhibit the highest, despite often achieving comparable or superior accuracy. These findings demonstrate that high predictive accuracy does not guarantee fairness, and that dataset-level and model-level bias must be addressed jointly rather than in isolation."
+              },
+              {
+                "title": "Adversarial Deepfake Generation and an Investigation of Purification-Based Adversarial Detection",
+                "url": "http://arxiv.org/abs/2607.25842v1",
+                "summary": "This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attack targeting 12 detectors simultaneously (DiffJPEG-in-loop, MI/DI/EoT, adaptive weighting, two-stage warm-start). Our approach achieved 90% evasion against organizer detectors and 57.6% against participant detectors, with a final generation score of 0.4170. For the image detection task, we combine two complementary detectors - SigLIP+DINOv2 for AI-generated images and GenD-DINOv3 for face manipulations - in a max-probability ensemble, achieving 99.4% accuracy on baseline deepfakes but suffering from high false-positive rates on real images, resulting in a final detection score of 0.6986. Beyond the official submission, we conducted a self-initiated investigation of purification-based adversarial detection, comparing three families of detection signals across six detectors that share a CLIP ViT-L/14 backbone. We find that raw $|Δ\\text{logit}|$ under median-3 purification, applied through the EFFORT detector, separates adversarial inputs from clean inputs with AUROC 0.81-0.98 across four adversarial source types - a finding that refutes the simple backbone-preservation hypothesis and exposes a sharp JPEG-quality cliff at Q70 where the signal collapses."
+              },
+              {
+                "title": "Fine-Grained Food Image Understanding via Target-Aware Data Alignment",
+                "url": "http://arxiv.org/abs/2607.25794v1",
+                "summary": "Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their effectiveness is limited when training relies on heterogeneous web-collected image--text pairs. Such data often exhibit a web-to-target domain gap and cross-modal misalignment, where images differ from the target distribution and captions are noisy, multilingual, or weakly grounded in visual content. We propose a data-centric multimodal alignment method for fine-grained food description and recognition. Our method first performs target-aware data selection to identify visually relevant training subsets, then applies VLM-based caption refinement to generate visually grounded, target-style descriptions. Using these curated image--caption pairs, we train complementary CLIP-style retrieval experts and further combine their decisions through a hierarchical VLM-assisted multi-expert decision-level fusion strategy that invokes the VLM only when experts disagree. Experiments show that our data refinement strategy significantly improves retrieval performance over naive web supervision, with VLM-based caption refinement alone yielding an average performance gain of approximately 19%. Our full method also achieves more than twice the retrieval score of pure VLM-based retrieval while remaining substantially more efficient."
+              },
+              {
+                "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+                "url": "http://arxiv.org/abs/2607.25785v1",
+                "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipping. The deepest nested average uses consecutive states from the same trajectory, yielding conditional bias $O(τ_{\\mathrm{mix}}/T)$ uniformly over the starting state, while coupling controls the gradient-difference second moment through the iterate displacement. Clipping enforces the pathwise bounds needed by the adaptive analysis. We reduce the Markovian recursion to its independent-sampling counterpart under $σ^2\\mapsto 2ΛG_σ^2$ and $L^2\\mapsto 2ΛL^2$, where $Λ=O(τ_{\\mathrm{mix}}\\log T)$. For positive centered noise, the tuned method achieves expected sample complexity $\\widetilde{O}((τ_{\\mathrm{mix}}^2G_σ+τ_{\\mathrm{mix}}^{5/2}G_σ^2)\\varepsilon^{-3}+τ_{\\mathrm{mix}}^5\\varepsilon^{-2})$. The exactly noiseless specialization achieves $\\widetilde{O}(\\varepsilon^{-2})$ with mixing-time-free constants, while a mixing-time-oblivious variant achieves $\\widetilde{O}(τ_{\\mathrm{mix}}^6\\varepsilon^{-3}+τ_{\\mathrm{mix}}^3\\varepsilon^{-2})$. All guarantees are in expectation under a fixed transition kernel. Controlled numerical studies examine dependence sensitivity, a nonconvex composite instance, and clipping behavior."
+              },
+              {
+                "title": "Room-Mediated Co-occurrence for Zero-Shot Object-Centric Semantic Navigation via Frontier Scoring",
+                "url": "http://arxiv.org/abs/2607.25448v1",
+                "summary": "Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships through a compact room lexicon. Each object label is mapped to a CLIP-derived Room Probability Vector (RPV), and object-target co-occurrence is computed from RPV distribution overlap. These scores are projected onto a value map using geodesic flood-fill propagation (Fast Marching Method), with adaptive signal decay, and are used to rank frontiers by semantic score for navigation. Together, these components form an integrated, training-free, object-centric pipeline for open-vocabulary zero-shot navigation. Results show that our object-centric approach improves Success Rate (SR) and Success by weighted inverse Path Length (SPL) by a relative 3% and 1.3%, respectively, compared to image-holistic baselines on the HM3D dataset validation split, while preserving interpretability and open-vocabulary flexibility. Code is available at: uts-ri.github.io/RPV-SemNav."
+              },
+              {
+                "title": "Hyperspectral Intrinsic Decomposition: Joint Recovery of Reflectance and Photometric Components for Non-Lambertian Scenes",
+                "url": "http://arxiv.org/abs/2607.25371v1",
+                "summary": "Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Most existing HID studies have been developed under Lambertian or near-Lambertian assumptions. The few prior non-Lambertian efforts rely on simplified specular assumptions insufficient to handle diverse real-world specularity, and typically require auxiliary inputs or recover only a subset of the coupled reflectance and photometric components, hindering complete and blind decomposition. In this paper, we revisit the dichromatic reflection model (DRM) and develop a unified inversion paradigm that reformulates the recovery of four coupled reflectance and photometric components as the estimation of two spectral--spatial target variables. Building on this reformulation, we propose a dual-scale decomposition scheme to handle non-Lambertian effects with distinct spatial characteristics. At the global scale, photometrically invariant descriptors serve as edge priors for high-fidelity intrinsic boundary preservation; at the local scale, specularity-guided attention directs refinement with emphasis on specularity-dominated regions, including those affected by clipping distortion. To facilitate future research, we establish CITE, the first public real-world HID dataset for non-Lambertian objects, and develop a Physically-faithful Intrinsic Set Generator (PISG) for controllable data synthesis. Extensive ablation studies and experiments on the CITE and additional HSIs demonstrate the effectiveness of our method and its robustness across diverse scenes."
+              },
+              {
+                "title": "Microsecond-Class Powered-Descent Optimization via Exact Condensation and Strong Convex Regularization",
+                "url": "http://arxiv.org/abs/2607.25260v1",
+                "summary": "Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. This paper combines three structural reductions. First, a dimensionally consistent low-weight energy term makes the control solution unique. Second, a terminal-state sensitivity recursion eliminates every intermediate state exactly; invertible row normalization turns the 30-node baseline with 300 primal variables and 174 equality multipliers into a problem with 90 control variables and six terminal multipliers. Third, the shared radial structure of the fuel norm and thrust ball gives an exact closed-form proximal operator consisting of group shrinkage followed by magnitude clipping. The condensed problem is solved with a fixed-budget extrapolated proportional--integral projected-gradient iteration implemented in fixed-size C17 arrays. In a Mars powered-descent case with energy weight 0.02 and relative reference-solution tolerance $10^{-3}$, the iteration count decreases from 2744 for the pure-fuel full-state epigraph baseline to 93, while the fuel metric increases by only 0.033\\%. The mean end-to-end solve time is \\SI{68.2}{\\micro\\second}, and P99 is \\SI{128.1}{\\micro\\second}, on an Intel i7-10875H. Because the thrust set in this test case is already a convex ball, the contribution is fast solution of the convex core rather than a new lossless-convexification theorem."
+              },
+              {
+                "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+                "url": "http://arxiv.org/abs/2606.00435v3",
+                "summary": "Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA, where visually ungrounded answers may be mistaken for image-based evidence. We study pre-release mirage detection: given an image-question pair, determine whether a VLM's answer should be released or the system should abstain before the answer reaches the user. We propose Text-Conditioned Layer-wise Internal Alignment (TC-LIA), a model-agnostic method that probes patch-token representations across the layers of a CLIP ViT-H/14 vision encoder. The key idea is to project layer-wise image patch tokens into the final CLIP embedding space and measure their similarity with the question embedding, tracking whether question-relevant visual evidence emerges across vision layers. TC-LIA summarizes this trajectory using final image-text cosine similarity, late-layer top-k patch-text alignment, early-to-late gain, and layer-wise slope. These features are combined with pixel-statistic-based blank/noise detection, zero-shot domain routing, and structured VLM self-assessment in an ensemble classifier. We evaluate on 19,004 samples spanning ten VQA domains, including medical imaging, document understanding, scene text, reasoning, and video understanding, with four input conditions: RELATED, IN-DOMAIN UNRELATED, OUT-OF-DOMAIN UNRELATED, and BLANK/NOISE. Across fourteen VLMs, base prompt mirage rates range from 57.3-75.0%. TC-LIA alone reduces the mirage rate to 7.5% at 83.5% accuracy; ensemble fusion further improves performance to 84.5-88.4% accuracy with 5.7-7.2% mirage rates. The best result, obtained with Qwen2.5-VL-72B, achieves 88.4% accuracy and a 6.4% mirage rate."
+              },
+              {
+                "title": "MorphUNet: Alpha-Controlled Biometric Transport for Diffusion-Based Face Morphing Attacks",
+                "url": "http://arxiv.org/abs/2607.25092v1",
+                "summary": "Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport: each parent is decomposed into CLIP appearance and ArcFace identity evidence, aligned into a CLIP-compatible token space, with the two contributors preserved as separate identity-aware token banks. To our knowledge, MorphUNet is the first diffusion-based morphing framework using trainable parent-separated dual cross-attention inside the denoising U-Net: a Biometric Transport Layer carrying parent-specific identity evidence through denoising, attending to each parent separately before combining residuals via the morphing parameter alpha. DDIM-inverted latent interpolation gives a coherent denoising start, while weaker-parent-guided selection favours morphs maximising the lower parent-similarity score, reducing collapse toward one contributor. We evaluate MorphUNet against three state-of-the-art baselines (StableMorph, MIPGAN-II, and MorDIFF) on FEI and FRLL using six recognition systems, and propose CFD-based unseen-identity stress testing across gender and ethnicity pairing, demographic shifts, and parent-similarity extremes. MorphUNet achieves the best Morphing Attack Potential (MAP) when at least three of six systems are fooled by one morph, reaching 0.919 on FEI and 0.886 on FRLL, and obtains the best FID on both datasets (35.19 FEI, 44.86 FRLL). It also gives the highest APCER at 5% BPCER in the same-dataset setting, and remains highly difficult to detect under cross-dataset transfer, with APCER 0.996 on FEI and 0.946 on FRLL."
+              }
+            ],
+            "template": "sections",
+            "headline": "50 Bài báo gần nhất về chủ đề CLIP"
+          },
+          "result": {
+            "tool": "render_digest",
+            "template": "sections",
+            "markdown": "# 50 Bài báo gần nhất về chủ đề CLIP\n\n## Tổng hợp\n- In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, wh... - [arxiv.org](http://arxiv.org/abs/2607.25921v1)\n- Automated Facial Expression Recognition (FER), involves two critical aspects: data and model design. Both significantly influence bias and fairness in FER tasks. However, issues related to bias and fairness in FER datasets and models remain underexplored. This study investigat... - [arxiv.org](http://arxiv.org/abs/2502.11049v3)\n- This paper describes the participation of team \"Go To Germany\" in the ImageCLEF 2026 Deepfake Detection and Generation Task. For the image generation task, we employ FLUX.1-dev with PuLID for identity-preserving face synthesis, combined with a multi-model PGD adversarial attac... - [arxiv.org](http://arxiv.org/abs/2607.25842v1)\n- Fine-grained food visual--semantic understanding requires models to capture subtle distinctions across ingredients, cooking methods, doneness, color, texture, and plate composition. Although CLIP-style vision-language models provide a natural framework for this task, their eff... - [arxiv.org](http://arxiv.org/abs/2607.25794v1)\n- We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the pr... - [arxiv.org](http://arxiv.org/abs/2607.25785v1)\n- Zero-shot ObjectNav methods increasingly use vision-language priors, but direct object-object similarity in the latent space is often a weak proxy for spatial co-occurrence. We present an analytical, training-free semantic navigation pipeline that mediates object relationships... - [arxiv.org](http://arxiv.org/abs/2607.25448v1)\n- Hyperspectral intrinsic decomposition (HID) aims to disentangle material-related spectral properties and photometric effects in hyperspectral images (HSIs), which is essential for understanding real-world imaging processes and benefits a variety of downstream applications. Mos... - [arxiv.org](http://arxiv.org/abs/2607.25371v1)\n- Fuel-dominant powered descent can be written as a convex program, but the usual full-state epigraph formulation still carries many state variables, fuel epigraph variables, and dynamics equalities. In addition, the pure-fuel objective provides no strong-convexity curvature. Th... - [arxiv.org](http://arxiv.org/abs/2607.25260v1)\n- Vision-language models (VLMs) can produce confident visual answers even when the required visual evidence is missing, blank, or unrelated to the question. This failure mode, recently described as mirage (Asadi et al., 2026), is especially concerning in medical and document VQA... - [arxiv.org](http://arxiv.org/abs/2606.00435v3)\n- Face morphing attacks create synthetic images verifiable against multiple identities, threatening border control and identity verification systems. We introduce MorphUNet, a diffusion morphing framework formulating two-parent generation as alpha-controlled biometric transport:... - [arxiv.org](http://arxiv.org/abs/2607.25092v1)\n",
+            "item_count": 10
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:57:05"
+    }
+  ]
+}

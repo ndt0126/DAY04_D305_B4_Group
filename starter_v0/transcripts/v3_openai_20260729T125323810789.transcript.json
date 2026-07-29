@@ -1,0 +1,74 @@
+{
+  "transcript_id": "v3_openai_20260729T125323810789",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:53:29",
+  "updated_at": "2026-07-29T12:53:29",
+  "turns": [
+    {
+      "turn_index": 2,
+      "started_at": "2026-07-29T12:53:23",
+      "user": "tìm nhược điểm self attention",
+      "status": "answered",
+      "assistant_text": "Hiện tại, tôi không thể tìm kiếm thông tin về nhược điểm của self attention do gặp sự cố với công cụ tìm kiếm. Tuy nhiên, tôi có thể cung cấp một số nhược điểm phổ biến của self attention dựa trên kiến thức hiện có:\n\n1. **Chi phí tính toán cao**: Self attention yêu cầu tính toán ma trận tương tác giữa tất cả các từ trong một câu, dẫn đến độ phức tạp tính toán là O(n^2), nơi n là số lượng từ. Điều này có thể trở thành vấn đề lớn với các chuỗi dài.\n\n2. **Khó khăn trong việc xử lý ngữ cảnh dài**: Mặc dù self attention có khả năng nắm bắt mối quan hệ xa giữa các từ, nhưng nó có thể gặp khó khăn trong việc duy trì thông tin ngữ cảnh trong các chuỗi rất dài.\n\n3. **Thiếu thông tin thứ bậc**: Self attention không tự động nắm bắt được thông tin thứ bậc trong dữ liệu, điều này có thể dẫn đến việc mất đi một số thông tin quan trọng trong ngữ nghĩa.\n\n4. **Yêu cầu bộ nhớ lớn**: Do cần lưu trữ ma trận attention, self attention có thể tiêu tốn nhiều bộ nhớ, đặc biệt là khi xử lý các tập dữ liệu lớn.\n\nNếu bạn cần thông tin chi tiết hơn hoặc có câu hỏi cụ thể nào khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "nhược điểm self attention",
+                "topic": "general"
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "nhược điểm self attention",
+                "topic": "general"
+              },
+              "result": {
+                "tool": "web_search",
+                "error": "RuntimeError",
+                "message": "Missing TAVILY_API_KEY env var"
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Hiện tại, tôi không thể tìm kiếm thông tin về nhược điểm của self attention do gặp sự cố với công cụ tìm kiếm. Tuy nhiên, tôi có thể cung cấp một số nhược điểm phổ biến của self attention dựa trên kiến thức hiện có:\n\n1. **Chi phí tính toán cao**: Self attention yêu cầu tính toán ma trận tương tác giữa tất cả các từ trong một câu, dẫn đến độ phức tạp tính toán là O(n^2), nơi n là số lượng từ. Điều này có thể trở thành vấn đề lớn với các chuỗi dài.\n\n2. **Khó khăn trong việc xử lý ngữ cảnh dài**: Mặc dù self attention có khả năng nắm bắt mối quan hệ xa giữa các từ, nhưng nó có thể gặp khó khăn trong việc duy trì thông tin ngữ cảnh trong các chuỗi rất dài.\n\n3. **Thiếu thông tin thứ bậc**: Self attention không tự động nắm bắt được thông tin thứ bậc trong dữ liệu, điều này có thể dẫn đến việc mất đi một số thông tin quan trọng trong ngữ nghĩa.\n\n4. **Yêu cầu bộ nhớ lớn**: Do cần lưu trữ ma trận attention, self attention có thể tiêu tốn nhiều bộ nhớ, đặc biệt là khi xử lý các tập dữ liệu lớn.\n\nNếu bạn cần thông tin chi tiết hơn hoặc có câu hỏi cụ thể nào khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "nhược điểm self attention",
+            "topic": "general"
+          },
+          "result": {
+            "tool": "web_search",
+            "error": "RuntimeError",
+            "message": "Missing TAVILY_API_KEY env var"
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:53:29"
+    }
+  ]
+}

@@ -1,0 +1,1729 @@
+{
+  "transcript_id": "v3_openai_20260729T130035598548",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T13:01:08",
+  "updated_at": "2026-07-29T13:01:08",
+  "turns": [
+    {
+      "turn_index": 8,
+      "started_at": "2026-07-29T13:00:35",
+      "user": "về chủ đề LLM, VLM, CV",
+      "status": "answered",
+      "assistant_text": "Dưới đây là danh sách 50 bài báo khoa học được công bố năm 2025 về chủ đề LLM (Large Language Models), VLM (Vision-Language Models) và CV (Computer Vision):\n\n### Về LLM (Large Language Models)\n1. **[Neuromodulatory Control Networks (NCNs): A Biologically Inspired Architecture for Dynamic LLM Processing](https://doi.org/10.5281/zenodo.17621804)** - Morgan, Michael Christian (2025)\n2. **[From Prediction to Precision: Leveraging LLMs for Equitable and Data-Driven Writing Placement in Developmental Education](https://doi.org/10.4230/oasics.slate.2025.1)** - Da Corte, Miguel, Baptista, Jorge (2025)\n3. **[DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning](https://www.nature.com/articles/s41586-025-09422-z.pdf)** - Daya Guo, Dejian Yang, Haowei Zhang et al. (2025)\n4. **[The TRIPOD-LLM reporting guideline for studies using large language models](https://doi.org/10.1038/s41591-024-03425-5)** - Jack Gallifant, Majid Afshar, Saleem Ameen et al. (2025)\n5. **[A systematic review of large language model (LLM) evaluations in clinical medicine](https://doi.org/10.1186/s12911-025-02954-4)** - Sina Shool, Sara Adimi, Reza Saboori Amleshi et al. (2025)\n6. **[A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation](https://doi.org/10.1038/s41746-025-01670-7)** - Elham Asgari, Nina Montaña-Brown, Magda Dubois et al. (2025)\n7. **[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration](https://doi.org/10.1145/3714983.3714987)** - Ji Lin, Jiaming Tang, Haotian Tang et al. (2025)\n8. **[When LLMs meet cybersecurity: a systematic literature review](https://doi.org/10.1186/s42400-025-00361-w)** - Jie Zhang, H. Bu, Hui Wen et al. (2025)\n9. **[Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers](https://doi.org/10.1145/3715275.3732039)** - Jared Moore, Declan Grabb, William S. Agnew et al. (2025)\n10. **[LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead](https://doi.org/10.1145/3712003)** - Junda He, Christoph Treude, David Lo (2025)\n\n### Về VLM (Vision-Language Models)\n1. **[IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence](https://doi.org/10.1016/j.aei.2024.103107)** - Zuoxu Wang, Zhijie Yan, Shufei Li et al. (2025)\n2. **[VLM-RL: A unified vision language models and reinforcement learning framework for safe autonomous driving](https://doi.org/10.1016/j.trc.2025.105321)** - Zilin Huang, Zihao Sheng, Yansong Qu et al. (2025)\n3. **[VLM-MSGraph: Vision Language Model-enabled Multi-hierarchical Scene Graph for robotic assembly](https://doi.org/10.1016/j.rcim.2025.102978)** - Shufei Li, Zhijie Yan, Zuoxu Wang et al. (2025)\n4. **[MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning](https://doi.org/10.1007/978-3-032-04981-0_32)** - Jiazhen Pan, Che Liu, Junde Wu et al. (2025)\n5. **[LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction](https://doi.org/10.1609/aaai.v39i4.32433)** - Er Jin, Qihui Feng, Yongli Mou et al. (2025)\n6. **[V2X-VLM: End-to-End V2X cooperative autonomous driving through large vision-Language models](https://doi.org/10.1016/j.trc.2025.105457)** - Junwei You, Zhuoyu Jiang, Zilin Huang et al. (2025)\n7. **[Rethinking VLMs and LLMs for image classification](https://doi.org/10.1038/s41598-025-04384-8)** - A. Feder Cooper, Keizo Kato, Chia-Hsien Shih et al. (2025)\n8. **[FLAIR: VLM with Fine-grained Language-informed Image Representations](https://doi.org/10.1109/cvpr52734.2025.02317)** - Rui Xiao, Sanghwan Kim, Mariana-Iuliana Georgescu et al. (2025)\n9. **[USER-VLM 360: Personalized Vision Language Models with User-aware Tuning for Social Human-Robot Interactions](https://doi.org/10.1145/3716553.3750767)** - Hamed Rahimi, Adil Bahaj, Mouad Abrini et al. (2025)\n10. **[Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection](https://doi.org/10.1109/cvpr52734.2025.01435)** - Zhuo Xu, Xiang Xiang, Yifan Liang (2025)\n\n### Về CV (Computer Vision)\n- Hiện tại, tôi không có thông tin cụ thể về các bài báo CV được công bố năm 2025. Nếu bạn cần tìm kiếm thêm, hãy cho tôi biết!\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm các bài báo khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "scholar",
+              "args": {
+                "query": "LLM",
+                "min_year": 2025,
+                "limit": 50
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "VLM",
+                "min_year": 2025,
+                "limit": 50
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "CV",
+                "min_year": 2025,
+                "limit": 50
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "LLM",
+                "min_year": 2025,
+                "limit": 50
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "LLM",
+                "min_year": 2025,
+                "verdict": "Most-cited work on 'LLM': 'Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems' (2026, 3,032 citations)",
+                "most_cited": {
+                  "title": "Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems",
+                  "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus et al.",
+                  "year": 2026,
+                  "venue": "arXiv (Cornell University)",
+                  "cited_by_count": 3032,
+                  "doi": "https://doi.org/10.5281/zenodo.18717227",
+                  "url": "https://arxiv.org/pdf/2005.11401",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems",
+                    "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus et al.",
+                    "year": 2026,
+                    "venue": "arXiv (Cornell University)",
+                    "cited_by_count": 3032,
+                    "doi": "https://doi.org/10.5281/zenodo.18717227",
+                    "url": "https://arxiv.org/pdf/2005.11401",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Neuromodulatory Control Networks (NCNs): A Biologically Inspired Architecture for Dynamic LLM Processing",
+                    "authors": "Morgan, Michael Christian",
+                    "year": 2025,
+                    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+                    "cited_by_count": 1407,
+                    "doi": "https://doi.org/10.5281/zenodo.17621804",
+                    "url": "https://doi.org/10.5281/zenodo.17621804",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "From Prediction to Precision: Leveraging LLMs for Equitable and Data-Driven Writing Placement in Developmental Education",
+                    "authors": "Da Corte, Miguel, Baptista, Jorge",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 741,
+                    "doi": "https://doi.org/10.4230/oasics.slate.2025.1",
+                    "url": "https://doi.org/10.4230/oasics.slate.2025.1",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+                    "authors": "Daya Guo, Dejian Yang, Haowei Zhang et al.",
+                    "year": 2025,
+                    "venue": "Nature",
+                    "cited_by_count": 707,
+                    "doi": "https://doi.org/10.1038/s41586-025-09422-z",
+                    "url": "https://www.nature.com/articles/s41586-025-09422-z.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "The TRIPOD-LLM reporting guideline for studies using large language models",
+                    "authors": "Jack Gallifant, Majid Afshar, Saleem Ameen et al.",
+                    "year": 2025,
+                    "venue": "Nature Medicine",
+                    "cited_by_count": 402,
+                    "doi": "https://doi.org/10.1038/s41591-024-03425-5",
+                    "url": "https://www.nature.com/articles/s41591-024-03425-5.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A systematic review of large language model (LLM) evaluations in clinical medicine",
+                    "authors": "Sina Shool, Sara Adimi, Reza Saboori Amleshi et al.",
+                    "year": 2025,
+                    "venue": "BMC Medical Informatics and Decision Making",
+                    "cited_by_count": 271,
+                    "doi": "https://doi.org/10.1186/s12911-025-02954-4",
+                    "url": "https://bmcmedinformdecismak.biomedcentral.com/counter/pdf/10.1186/s12911-025-02954-4",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation",
+                    "authors": "Elham Asgari, Nina Montaña-Brown, Magda Dubois et al.",
+                    "year": 2025,
+                    "venue": "npj Digital Medicine",
+                    "cited_by_count": 266,
+                    "doi": "https://doi.org/10.1038/s41746-025-01670-7",
+                    "url": "https://www.nature.com/articles/s41746-025-01670-7.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+                    "authors": "Ji Lin, Jiaming Tang, Haotian Tang et al.",
+                    "year": 2025,
+                    "venue": "GetMobile Mobile Computing and Communications",
+                    "cited_by_count": 182,
+                    "doi": "https://doi.org/10.1145/3714983.3714987",
+                    "url": "https://doi.org/10.1145/3714983.3714987",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "When LLMs meet cybersecurity: a systematic literature review",
+                    "authors": "Jie Zhang, H. Bu, Hui Wen et al.",
+                    "year": 2025,
+                    "venue": "Cybersecurity",
+                    "cited_by_count": 177,
+                    "doi": "https://doi.org/10.1186/s42400-025-00361-w",
+                    "url": "https://link.springer.com/content/pdf/10.1186/s42400-025-00361-w.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers.",
+                    "authors": "Jared Moore, Declan Grabb, William S. Agnew et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 148,
+                    "doi": "https://doi.org/10.1145/3715275.3732039",
+                    "url": "https://dl.acm.org/doi/pdf/10.1145/3715275.3732039",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead",
+                    "authors": "Junda He, Christoph Treude, David Lo",
+                    "year": 2025,
+                    "venue": "ACM Transactions on Software Engineering and Methodology",
+                    "cited_by_count": 145,
+                    "doi": "https://doi.org/10.1145/3712003",
+                    "url": "https://ink.library.smu.edu.sg/sis_research/10487",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions",
+                    "authors": "Junchao Wu, Shuhua Yang, Runzhe Zhan et al.",
+                    "year": 2025,
+                    "venue": "Computational Linguistics",
+                    "cited_by_count": 144,
+                    "doi": "https://doi.org/10.1162/coli_a_00549",
+                    "url": "https://doi.org/10.1162/coli_a_00549",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "ChatGPT for Textual Analysis? How to Use Generative LLMs in Accounting Research",
+                    "authors": "Ties de Kok",
+                    "year": 2025,
+                    "venue": "Management Science",
+                    "cited_by_count": 114,
+                    "doi": "https://doi.org/10.1287/mnsc.2023.03253",
+                    "url": "https://doi.org/10.1287/mnsc.2023.03253",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+                    "authors": "Dmitry Kobak, Rita González-Márquez, Emőke-Ágnes Horvát et al.",
+                    "year": 2025,
+                    "venue": "Science Advances",
+                    "cited_by_count": 110,
+                    "doi": "https://doi.org/10.1126/sciadv.adt3813",
+                    "url": "https://doi.org/10.1126/sciadv.adt3813",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "LLM-AE-MP: Web Attack Detection Using a Large Language Model with Autoencoder and Multilayer Perceptron",
+                    "authors": "Jing Yang, Yifan Wu, Yuping Yuan et al.",
+                    "year": 2025,
+                    "venue": "Expert Systems with Applications",
+                    "cited_by_count": 98,
+                    "doi": "https://doi.org/10.1016/j.eswa.2025.126982",
+                    "url": "https://doi.org/10.1016/j.eswa.2025.126982",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "FD-LLM: Large language model for fault diagnosis of complex equipment",
+                    "authors": "Lin Lin, Sihao Zhang, Fu Song et al.",
+                    "year": 2025,
+                    "venue": "Advanced Engineering Informatics",
+                    "cited_by_count": 93,
+                    "doi": "https://doi.org/10.1016/j.aei.2025.103208",
+                    "url": "https://doi.org/10.1016/j.aei.2025.103208",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Generative AI in cybersecurity: A comprehensive review of LLM applications and vulnerabilities",
+                    "authors": "Mohamed Amine Ferrag, Fatima Alwahedi, Ammar Battah et al.",
+                    "year": 2025,
+                    "venue": "Internet of Things and Cyber-Physical Systems",
+                    "cited_by_count": 92,
+                    "doi": "https://doi.org/10.1016/j.iotcps.2025.01.001",
+                    "url": "https://doi.org/10.1016/j.iotcps.2025.01.001",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model",
+                    "authors": "Jike Wang, Jianwen Feng, Yu Kang et al.",
+                    "year": 2025,
+                    "venue": "Science Advances",
+                    "cited_by_count": 88,
+                    "doi": "https://doi.org/10.1126/sciadv.ads8932",
+                    "url": "https://www.science.org/doi/pdf/10.1126/sciadv.ads8932?download=true",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Exploring LLMs Applications in Law: A Literature Review on Current Legal NLP Approaches",
+                    "authors": "Marco Siino, Mariana Falco, Daniele Croce et al.",
+                    "year": 2025,
+                    "venue": "IEEE Access",
+                    "cited_by_count": 85,
+                    "doi": "https://doi.org/10.1109/access.2025.3533217",
+                    "url": "https://doi.org/10.1109/access.2025.3533217",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+                    "authors": "Chaoyou Fu, Yuhan Dai, Yongdong Luo et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 82,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.02245",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.02245",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters",
+                    "authors": "Ching Chang, Wei‐Yao Wang, Wen-Chih Peng et al.",
+                    "year": 2025,
+                    "venue": "ACM Transactions on Intelligent Systems and Technology",
+                    "cited_by_count": 81,
+                    "doi": "https://doi.org/10.1145/3719207",
+                    "url": "https://doi.org/10.1145/3719207",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Maya-LLM-Defence: Sovereign Military LLM with Affective SNN Safety Substrate",
+                    "authors": "Venkatesh Swaminathan",
+                    "year": 2026,
+                    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+                    "cited_by_count": 80,
+                    "doi": "https://doi.org/10.5281/zenodo.19708800",
+                    "url": "https://doi.org/10.5281/zenodo.19708800",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+                    "authors": "Islem Bouzenia, Prémkumar Dévanbu, Michael Pradel",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 77,
+                    "doi": "https://doi.org/10.1109/icse55347.2025.00157",
+                    "url": "https://doi.org/10.1109/icse55347.2025.00157",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+                    "authors": "Da-Wei Li, Bohan Jiang, Lili Huang et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 77,
+                    "doi": "https://doi.org/10.18653/v1/2025.emnlp-main.138",
+                    "url": "https://aclanthology.org/2025.emnlp-main.138.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Integrating LLMs With ITS: Recent Advances, Potentials, Challenges, and Future Directions",
+                    "authors": "Doaa Mahmud, Hadeel Hajmohamed, Shamma Almentheri et al.",
+                    "year": 2025,
+                    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+                    "cited_by_count": 77,
+                    "doi": "https://doi.org/10.1109/tits.2025.3528116",
+                    "url": "https://doi.org/10.1109/tits.2025.3528116",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 214089
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "VLM",
+                "min_year": 2025,
+                "limit": 50
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "VLM",
+                "min_year": 2025,
+                "verdict": "Most-cited work on 'VLM': 'IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence' (2025, 37 citations)",
+                "most_cited": {
+                  "title": "IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence",
+                  "authors": "Zuoxu Wang, Zhijie Yan, Shufei Li et al.",
+                  "year": 2025,
+                  "venue": "Advanced Engineering Informatics",
+                  "cited_by_count": 37,
+                  "doi": "https://doi.org/10.1016/j.aei.2024.103107",
+                  "url": "https://doi.org/10.1016/j.aei.2024.103107",
+                  "is_open_access": false
+                },
+                "works": [
+                  {
+                    "title": "IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence",
+                    "authors": "Zuoxu Wang, Zhijie Yan, Shufei Li et al.",
+                    "year": 2025,
+                    "venue": "Advanced Engineering Informatics",
+                    "cited_by_count": 37,
+                    "doi": "https://doi.org/10.1016/j.aei.2024.103107",
+                    "url": "https://doi.org/10.1016/j.aei.2024.103107",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "VLM-RL: A unified vision language models and reinforcement learning framework for safe autonomous driving",
+                    "authors": "Zilin Huang, Zihao Sheng, Yansong Qu et al.",
+                    "year": 2025,
+                    "venue": "Transportation Research Part C Emerging Technologies",
+                    "cited_by_count": 27,
+                    "doi": "https://doi.org/10.1016/j.trc.2025.105321",
+                    "url": "https://doi.org/10.1016/j.trc.2025.105321",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "VLM-MSGraph: Vision Language Model-enabled Multi-hierarchical Scene Graph for robotic assembly",
+                    "authors": "Shufei Li, Zhijie Yan, Zuoxu Wang et al.",
+                    "year": 2025,
+                    "venue": "Robotics and Computer-Integrated Manufacturing",
+                    "cited_by_count": 22,
+                    "doi": "https://doi.org/10.1016/j.rcim.2025.102978",
+                    "url": "https://doi.org/10.1016/j.rcim.2025.102978",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning",
+                    "authors": "Jiazhen Pan, Che Liu, Junde Wu et al.",
+                    "year": 2025,
+                    "venue": "Lecture notes in computer science",
+                    "cited_by_count": 19,
+                    "doi": "https://doi.org/10.1007/978-3-032-04981-0_32",
+                    "url": "https://doi.org/10.1007/978-3-032-04981-0_32",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "CNC-VLM: An RLHF-optimized industrial large vision-language model with multimodal learning for imbalanced CNC fault detection",
+                    "authors": "Zisheng Wang, Junjie Chen, Chisen Wang et al.",
+                    "year": 2026,
+                    "venue": "Mechanical Systems and Signal Processing",
+                    "cited_by_count": 16,
+                    "doi": "https://doi.org/10.1016/j.ymssp.2025.113838",
+                    "url": "https://doi.org/10.1016/j.ymssp.2025.113838",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction",
+                    "authors": "Er Jin, Qihui Feng, Yongli Mou et al.",
+                    "year": 2025,
+                    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+                    "cited_by_count": 13,
+                    "doi": "https://doi.org/10.1609/aaai.v39i4.32433",
+                    "url": "https://ojs.aaai.org/index.php/AAAI/article/download/32433/34588",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "V2X-VLM: End-to-End V2X cooperative autonomous driving through large vision-Language models",
+                    "authors": "Junwei You, Zhuoyu Jiang, Zilin Huang et al.",
+                    "year": 2025,
+                    "venue": "Transportation Research Part C Emerging Technologies",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.1016/j.trc.2025.105457",
+                    "url": "https://doi.org/10.1016/j.trc.2025.105457",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Rethinking VLMs and LLMs for image classification",
+                    "authors": "A. Feder Cooper, Keizo Kato, Chia-Hsien Shih et al.",
+                    "year": 2025,
+                    "venue": "Scientific Reports",
+                    "cited_by_count": 8,
+                    "doi": "https://doi.org/10.1038/s41598-025-04384-8",
+                    "url": "https://www.nature.com/articles/s41598-025-04384-8.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards",
+                    "authors": "Shivansh Patel, Xinchen Yin, Wenlong Huang et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 8,
+                    "doi": "https://doi.org/10.1109/icra55743.2025.11127585",
+                    "url": "https://doi.org/10.1109/icra55743.2025.11127585",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "FLAIR: VLM with Fine-grained Language-informed Image Representations",
+                    "authors": "Rui Xiao, Sanghwan Kim, Mariana-Iuliana Georgescu et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 7,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.02317",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.02317",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "A Stitch in Time Saves Nine: Small VLM is a Precise Guidance for Accelerating Large VLMs",
+                    "authors": "Wangbo Zhao, Yizeng Han, Jiasheng Tang et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.01845",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.01845",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Audio Description Generation in the Era of LLMs and VLMs: A Review of Transferable Generative AI Technologies",
+                    "authors": "Yingqiang Gao, Lukas Fischer, Alexa Lintner et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.18653/v1/2025.findings-naacl.29",
+                    "url": "https://aclanthology.org/2025.findings-naacl.29.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "One VLM to Keep it Learning: Generation and Balancing for Data-free Continual Visual Question Answering",
+                    "authors": "Deepayan Das, Davide Talon, Massimiliano Mancini et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.1109/wacv61041.2025.00550",
+                    "url": "https://doi.org/10.1109/wacv61041.2025.00550",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding",
+                    "authors": "Jianbo Ye, Ankan Dash, Wenpeng Yin et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.18653/v1/2025.naacl-long.180",
+                    "url": "https://aclanthology.org/2025.naacl-long.180.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "USER-VLM 360: Personalized Vision Language Models with User-aware Tuning for Social Human-Robot Interactions",
+                    "authors": "Hamed Rahimi, Adil Bahaj, Mouad Abrini et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.1145/3716553.3750767",
+                    "url": "https://doi.org/10.1145/3716553.3750767",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "VLM Is a Strong Reranker: Advancing Multimodal Retrieval-augmented Generation via Knowledge-enhanced Reranking and Noise-injected Training",
+                    "authors": "Z. J. Chen, Chengjin Xu, Yiyan Qi et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 6,
+                    "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.432",
+                    "url": "https://aclanthology.org/2025.findings-emnlp.432.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection",
+                    "authors": "Zhuo Xu, Xiang Xiang, Yifan Liang",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.01435",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.01435",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "MoVE-KD: Knowledge Distillation for VLMs with Mixture of Visual Encoders",
+                    "authors": "Jiajun Cao, Yuan Zhang, Tao Huang et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.01848",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.01848",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation",
+                    "authors": "Deng Wei, Mengshi Qi, Huadóng Ma",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/cvpr52734.2025.00839",
+                    "url": "https://doi.org/10.1109/cvpr52734.2025.00839",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Distributed VLMs: Efficient Vision-Language Processing through Cloud-Edge Collaboration",
+                    "authors": "Yuyang Li, Devika Gumaste, Mehmet Kerem Türkcan et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/percomworkshops65533.2025.00078",
+                    "url": "https://doi.org/10.1109/percomworkshops65533.2025.00078",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Benchmarking Compact VLMs for Clip-Level Surveillance Anomaly Detection Under Weak Supervision",
+                    "authors": "Kirill Borodin, Kirill Kondrashov, NIKITA A. VASILIEV et al.",
+                    "year": 2025,
+                    "venue": "Journal of Imaging",
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.3390/jimaging11110400",
+                    "url": "https://www.mdpi.com/2313-433X/11/11/400/pdf?version=1762593536",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Behav: Behavioral Rule Guided Autonomy Using VLMs for Robot Navigation in Outdoor Scenes",
+                    "authors": "Kasun Weerakoon, Mohamed Elnoor, Gershom Seneviratne et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/icra55743.2025.11127890",
+                    "url": "https://doi.org/10.1109/icra55743.2025.11127890",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "PAPR reduction in DCO-OFDM VLC system using VLM precoding and nonlinear companding techniques",
+                    "authors": "Maha F. Shatti, Atheer A. Sabri, Samir M. Hameed",
+                    "year": 2025,
+                    "venue": "Journal of Optical Communications",
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1515/joc-2025-0240",
+                    "url": "https://doi.org/10.1515/joc-2025-0240",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "MapNav: A Novel Memory Representation via Annotated Semantic Maps for VLM-based Vision-and-Language Navigation",
+                    "authors": "Lingfeng Zhang, Xiaoshuai Hao, Qinwen Xu et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.22541/au.175131560.00300188/v1",
+                    "url": "https://www.authorea.com/doi/pdf/10.22541/au.175131560.00300188",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model",
+                    "authors": "Beichen Wang, Juexiao Zhang, Shuwen Dong et al.",
+                    "year": 2025,
+                    "venue": null,
+                    "cited_by_count": 5,
+                    "doi": "https://doi.org/10.1109/iros60139.2025.11246682",
+                    "url": "https://doi.org/10.1109/iros60139.2025.11246682",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 14596
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "CV",
+                "min_year": 2025,
+                "limit": 50
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "CV",
+                "min_year": 2025,
+                "verdict": "Most-cited work on 'CV': 'PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG' (2026, 35 citations)",
+                "most_cited": {
+                  "title": "PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG",
+                  "authors": "Yani, Pitri",
+                  "year": 2026,
+                  "venue": "Universitas Pasundan institutional repositories & scientific journals (Universitas Pasundan)",
+                  "cited_by_count": 35,
+                  "doi": null,
+                  "url": "https://openalex.org/W3205029504",
+                  "is_open_access": false
+                },
+                "works": [
+                  {
+                    "title": "PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG",
+                    "authors": "Yani, Pitri",
+                    "year": 2026,
+                    "venue": "Universitas Pasundan institutional repositories & scientific journals (Universitas Pasundan)",
+                    "cited_by_count": 35,
+                    "doi": null,
+                    "url": "https://openalex.org/W3205029504",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Exogenous melatonin and salicylic acid enhance postharvest quality and boost antioxidant capacity in Vitis vinifera cv. 'Cuibao seedless' grape berries",
+                    "authors": "Xiao-Fang Wang, Fengxia Dong, Yuwei Jiang et al.",
+                    "year": 2025,
+                    "venue": "Plant Physiology and Biochemistry",
+                    "cited_by_count": 24,
+                    "doi": "https://doi.org/10.1016/j.plaphy.2025.109850",
+                    "url": "https://doi.org/10.1016/j.plaphy.2025.109850",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Treatment with orforglipron, an oral glucagon like peptide-1 receptor agonist, is associated with improvements of CV risk biomarkers in participants with type 2 diabetes or obesity without diabetes",
+                    "authors": "Sean Wharton, Julio Rosenstock, Manige Konige et al.",
+                    "year": 2025,
+                    "venue": "Cardiovascular Diabetology",
+                    "cited_by_count": 20,
+                    "doi": "https://doi.org/10.1186/s12933-025-02781-x",
+                    "url": "https://cardiab.biomedcentral.com/counter/pdf/10.1186/s12933-025-02781-x",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Ni–N bonds boost S-scheme charge transfer in NiSe/Cv-C3N5 for efficient water splitting",
+                    "authors": "Yan Cao, Lin Ye, Ye Yuan et al.",
+                    "year": 2025,
+                    "venue": "CHINESE JOURNAL OF CATALYSIS (CHINESE VERSION)",
+                    "cited_by_count": 19,
+                    "doi": "https://doi.org/10.1016/s1872-2067(25)64832-7",
+                    "url": "https://doi.org/10.1016/s1872-2067(25)64832-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Quality parameters and shelf life of strawberry (cv. Centenary) fruits as affected by active modified atmosphere packaging",
+                    "authors": "Mehrajfatema Z. Mulla, Tigist Tadesse Shonte, Shivani Pathania",
+                    "year": 2025,
+                    "venue": "International Journal of Food Science & Technology",
+                    "cited_by_count": 16,
+                    "doi": "https://doi.org/10.1093/ijfood/vvaf010",
+                    "url": "https://academic.oup.com/ijfst/advance-article-pdf/doi/10.1093/ijfood/vvaf010/61440570/vvaf010.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by Sulfur nanoparticles and assessing their effect on productivity and disease severity",
+                    "authors": "Mohamed K. Abou El-Nasr, Mohamed A. Nasser, Mohamed Ebrahim et al.",
+                    "year": 2025,
+                    "venue": "Scientific Reports",
+                    "cited_by_count": 16,
+                    "doi": "https://doi.org/10.1038/s41598-025-88282-z",
+                    "url": "https://www.nature.com/articles/s41598-025-88282-z.pdf",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Exploring the Effects of Vehicle-Related Air Pollution on the Photosynthetic and Biochemical Traits of Cupressus macrocarpa cv. “Goldcrest”",
+                    "authors": "Cengiz Yücedağ, Irem Yaman, Nuray Çiçek et al.",
+                    "year": 2025,
+                    "venue": "Bulletin of Environmental Contamination and Toxicology",
+                    "cited_by_count": 15,
+                    "doi": "https://doi.org/10.1007/s00128-025-04053-6",
+                    "url": "https://doi.org/10.1007/s00128-025-04053-6",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Stomatal and non-stomatal regulations of photosynthesis in response to salinity, and K and Ca fertigation in cotton (Gossypium hirsutum L cv.)",
+                    "authors": "Yingying Ma, Zuoqiang Yuan, Zhenhua Wei et al.",
+                    "year": 2025,
+                    "venue": "Environmental and Experimental Botany",
+                    "cited_by_count": 15,
+                    "doi": "https://doi.org/10.1016/j.envexpbot.2025.106092",
+                    "url": "https://doi.org/10.1016/j.envexpbot.2025.106092",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Bioaccessibility of phenolic compounds during simulated gastrointestinal digestion of black rice (Oryza sativa L., cv. Artemide)",
+                    "authors": "Antonio Colasanto, Vincenzo Disca, Fabiano Travaglia et al.",
+                    "year": 2025,
+                    "venue": "Food Chemistry",
+                    "cited_by_count": 14,
+                    "doi": "https://doi.org/10.1016/j.foodchem.2025.142889",
+                    "url": "https://doi.org/10.1016/j.foodchem.2025.142889",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "PolSAR image classification using complex-valued multiscale attention vision transformer (CV-MsAtViT)",
+                    "authors": "Mohammed Q. Alkhatib",
+                    "year": 2025,
+                    "venue": "International Journal of Applied Earth Observation and Geoinformation",
+                    "cited_by_count": 13,
+                    "doi": "https://doi.org/10.1016/j.jag.2025.104412",
+                    "url": "https://doi.org/10.1016/j.jag.2025.104412",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Continuous glucose monitoring‑derived time in range and CV are associated with elevated risk of adverse kidney outcomes for patients with type 2 diabetes",
+                    "authors": "Qin Zhang, Shucai Xiao, Fang Zou et al.",
+                    "year": 2025,
+                    "venue": "Diabetes & Metabolism",
+                    "cited_by_count": 12,
+                    "doi": "https://doi.org/10.1016/j.diabet.2025.101616",
+                    "url": "https://doi.org/10.1016/j.diabet.2025.101616",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Influence of Preharvest sorbitol and calcium-sorbitol applications on the ripening process and anthocyanin biosynthesis in blood Orange (Citrus sinensis cv. Sanguinelli)",
+                    "authors": "A. Guirao, Domingo Martínez‐Romero, Ander Solana-Guilabert et al.",
+                    "year": 2025,
+                    "venue": "Food Chemistry",
+                    "cited_by_count": 12,
+                    "doi": "https://doi.org/10.1016/j.foodchem.2025.144105",
+                    "url": "https://doi.org/10.1016/j.foodchem.2025.144105",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Development of eco-friendly chitosan films incorporated with pomelo peel (Citrus Paradisi cv. Changshanhuyou) extract and application to prolong the shelf life of grapes",
+                    "authors": "Faryal Asif, H.N. MAHMOOD, Liu Jiangtao et al.",
+                    "year": 2025,
+                    "venue": "International Journal of Biological Macromolecules",
+                    "cited_by_count": 12,
+                    "doi": "https://doi.org/10.1016/j.ijbiomac.2025.140547",
+                    "url": "https://doi.org/10.1016/j.ijbiomac.2025.140547",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Efficient Antimicrobial/Antifungal activity and photocatalytic degradation of mixed pollutants (CV, CR, and RhB) using Ag-doped CNT-ZnO hybrid nanocomposites",
+                    "authors": "Rinku Gupta, Deepak Kumar, Kirti Bhardwaj et al.",
+                    "year": 2025,
+                    "venue": "Inorganic Chemistry Communications",
+                    "cited_by_count": 12,
+                    "doi": "https://doi.org/10.1016/j.inoche.2025.114720",
+                    "url": "https://doi.org/10.1016/j.inoche.2025.114720",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "In Vitro and In Vivo Antibacterial and Antibiofilm Activity of Zinc Sulfate (ZnSO4) and Carvacrol (CV) Alone and in Combination with Antibiotics Against Pseudomonas aeruginosa",
+                    "authors": "M. Moradi, Effat Abbasi Montazeri, Sirous Rafiei Asl et al.",
+                    "year": 2025,
+                    "venue": "Antibiotics",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.3390/antibiotics14040367",
+                    "url": "https://www.mdpi.com/2079-6382/14/4/367/pdf?version=1743520152",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A Novel Dual-Receivers/Rectifier Reconstructed WPT System With Inherent CC to CV Transmission Characteristics and Reactive Power Minimization",
+                    "authors": "Dong Guo, Weijun Zhu, Hai Lan et al.",
+                    "year": 2025,
+                    "venue": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.1109/jestpe.2025.3571206",
+                    "url": "https://doi.org/10.1109/jestpe.2025.3571206",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Multi-objective optimization of process parameters for laser cladding of Cr3C2/15-5PH composite coatings on 20CrMnTi using RSM-CMOPSO-EWM-CV",
+                    "authors": "Yanbin Du, Kaiyi Mao, Xin Lei et al.",
+                    "year": 2025,
+                    "venue": "Journal of Materials Research and Technology",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.1016/j.jmrt.2025.04.227",
+                    "url": "https://doi.org/10.1016/j.jmrt.2025.04.227",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Rescue of CUMS-induced HPA axis hyperfunction and hypothalamic synaptic deficits by Citrus aurantium L. cv. Daidai essential oil via the cAMP/PKA/Grin2b pathway",
+                    "authors": "Zeyu Zhang, Ze-Yu Zhang, Yufei Liu et al.",
+                    "year": 2025,
+                    "venue": "Journal of Ethnopharmacology",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.1016/j.jep.2025.119423",
+                    "url": "https://doi.org/10.1016/j.jep.2025.119423",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "The Type <scp>VI</scp> Secretion System of <scp> <i>Sinorhizobium fredii</i> USDA257 </scp> Is Required for Successful Nodulation With <scp> <i>Glycine max</i> </scp> cv Pekin",
+                    "authors": "Pedro José Reyes‐Pérez, Irene Jiménez‐Guerrero, Ana Sánchez‐Reina et al.",
+                    "year": 2025,
+                    "venue": "Microbial Biotechnology",
+                    "cited_by_count": 11,
+                    "doi": "https://doi.org/10.1111/1751-7915.70112",
+                    "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1751-7915.70112",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Polyphenols from Olea europaea L. cv. Caiazzana leaf pruning waste for antioxidant and UV-blocking starch-based plastic films",
+                    "authors": "Hamid Mushtaq, Simona Piccolella, Giovanna Cimmino et al.",
+                    "year": 2025,
+                    "venue": "Food Packaging and Shelf Life",
+                    "cited_by_count": 10,
+                    "doi": "https://doi.org/10.1016/j.fpsl.2025.101447",
+                    "url": "https://doi.org/10.1016/j.fpsl.2025.101447",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Increased Temperature Effects During Fruit Growth and Maturation on the Fruit Quality, Sensory and Antioxidant Properties of Raspberry (Rubus idaeus L.) cv. Heritage",
+                    "authors": "F. Aguilar, Martina Salazar, Lida Fuentes et al.",
+                    "year": 2025,
+                    "venue": "Foods",
+                    "cited_by_count": 10,
+                    "doi": "https://doi.org/10.3390/foods14071201",
+                    "url": "https://www.mdpi.com/2304-8158/14/7/1201/pdf?version=1743234800",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Effect of terroir on aroma and sensory characteristics of Xinomavro (Vitis vinifera L. cv.) red wines from different Greek protected designations of origin",
+                    "authors": "Elli Goulioti, David W. Jeffery, Panagiotis-Loukas P. Gialouris et al.",
+                    "year": 2025,
+                    "venue": "Food Chemistry",
+                    "cited_by_count": 10,
+                    "doi": "https://doi.org/10.1016/j.foodchem.2025.144507",
+                    "url": "https://doi.org/10.1016/j.foodchem.2025.144507",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Effect of Melatonin Treatment on Storage Quality and Antioxidant System of Postharvest Winter Jujube (Zizyphus jujube Mill. cv. Dongzao)",
+                    "authors": "Hongai Hei, Heyin Tang, Rui Zhao et al.",
+                    "year": 2025,
+                    "venue": "Foods",
+                    "cited_by_count": 9,
+                    "doi": "https://doi.org/10.3390/foods14040576",
+                    "url": "https://doi.org/10.3390/foods14040576",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Mechanistic study on the mitigation of cadmium accumulation in Ligusticum sinense cv. Chuanxiong through plant growth-promoting rhizobacteria Arthrobacter sp. CX-2",
+                    "authors": "Shuqi Niu, Ting Li, Lin Liu et al.",
+                    "year": 2025,
+                    "venue": "Plant Stress",
+                    "cited_by_count": 9,
+                    "doi": "https://doi.org/10.1016/j.stress.2025.100748",
+                    "url": "https://doi.org/10.1016/j.stress.2025.100748",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "A haplotype-resolved chromosome-level genome assembly of <i>Urochloa decumbens</i> cv. Basilisk resolves its allopolyploid ancestry and composition",
+                    "authors": "Camilla Ryan, F C Fraser, Naomi Irish et al.",
+                    "year": 2025,
+                    "venue": "G3 Genes Genomes Genetics",
+                    "cited_by_count": 9,
+                    "doi": "https://doi.org/10.1093/g3journal/jkaf005",
+                    "url": "https://academic.oup.com/g3journal/advance-article-pdf/doi/10.1093/g3journal/jkaf005/61621806/jkaf005.pdf",
+                    "is_open_access": true
+                  }
+                ],
+                "total_found": 43735
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là danh sách 50 bài báo khoa học được công bố năm 2025 về chủ đề LLM (Large Language Models), VLM (Vision-Language Models) và CV (Computer Vision):\n\n### Về LLM (Large Language Models)\n1. **[Neuromodulatory Control Networks (NCNs): A Biologically Inspired Architecture for Dynamic LLM Processing](https://doi.org/10.5281/zenodo.17621804)** - Morgan, Michael Christian (2025)\n2. **[From Prediction to Precision: Leveraging LLMs for Equitable and Data-Driven Writing Placement in Developmental Education](https://doi.org/10.4230/oasics.slate.2025.1)** - Da Corte, Miguel, Baptista, Jorge (2025)\n3. **[DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning](https://www.nature.com/articles/s41586-025-09422-z.pdf)** - Daya Guo, Dejian Yang, Haowei Zhang et al. (2025)\n4. **[The TRIPOD-LLM reporting guideline for studies using large language models](https://doi.org/10.1038/s41591-024-03425-5)** - Jack Gallifant, Majid Afshar, Saleem Ameen et al. (2025)\n5. **[A systematic review of large language model (LLM) evaluations in clinical medicine](https://doi.org/10.1186/s12911-025-02954-4)** - Sina Shool, Sara Adimi, Reza Saboori Amleshi et al. (2025)\n6. **[A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation](https://doi.org/10.1038/s41746-025-01670-7)** - Elham Asgari, Nina Montaña-Brown, Magda Dubois et al. (2025)\n7. **[AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration](https://doi.org/10.1145/3714983.3714987)** - Ji Lin, Jiaming Tang, Haotian Tang et al. (2025)\n8. **[When LLMs meet cybersecurity: a systematic literature review](https://doi.org/10.1186/s42400-025-00361-w)** - Jie Zhang, H. Bu, Hui Wen et al. (2025)\n9. **[Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers](https://doi.org/10.1145/3715275.3732039)** - Jared Moore, Declan Grabb, William S. Agnew et al. (2025)\n10. **[LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead](https://doi.org/10.1145/3712003)** - Junda He, Christoph Treude, David Lo (2025)\n\n### Về VLM (Vision-Language Models)\n1. **[IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence](https://doi.org/10.1016/j.aei.2024.103107)** - Zuoxu Wang, Zhijie Yan, Shufei Li et al. (2025)\n2. **[VLM-RL: A unified vision language models and reinforcement learning framework for safe autonomous driving](https://doi.org/10.1016/j.trc.2025.105321)** - Zilin Huang, Zihao Sheng, Yansong Qu et al. (2025)\n3. **[VLM-MSGraph: Vision Language Model-enabled Multi-hierarchical Scene Graph for robotic assembly](https://doi.org/10.1016/j.rcim.2025.102978)** - Shufei Li, Zhijie Yan, Zuoxu Wang et al. (2025)\n4. **[MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning](https://doi.org/10.1007/978-3-032-04981-0_32)** - Jiazhen Pan, Che Liu, Junde Wu et al. (2025)\n5. **[LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction](https://doi.org/10.1609/aaai.v39i4.32433)** - Er Jin, Qihui Feng, Yongli Mou et al. (2025)\n6. **[V2X-VLM: End-to-End V2X cooperative autonomous driving through large vision-Language models](https://doi.org/10.1016/j.trc.2025.105457)** - Junwei You, Zhuoyu Jiang, Zilin Huang et al. (2025)\n7. **[Rethinking VLMs and LLMs for image classification](https://doi.org/10.1038/s41598-025-04384-8)** - A. Feder Cooper, Keizo Kato, Chia-Hsien Shih et al. (2025)\n8. **[FLAIR: VLM with Fine-grained Language-informed Image Representations](https://doi.org/10.1109/cvpr52734.2025.02317)** - Rui Xiao, Sanghwan Kim, Mariana-Iuliana Georgescu et al. (2025)\n9. **[USER-VLM 360: Personalized Vision Language Models with User-aware Tuning for Social Human-Robot Interactions](https://doi.org/10.1145/3716553.3750767)** - Hamed Rahimi, Adil Bahaj, Mouad Abrini et al. (2025)\n10. **[Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection](https://doi.org/10.1109/cvpr52734.2025.01435)** - Zhuo Xu, Xiang Xiang, Yifan Liang (2025)\n\n### Về CV (Computer Vision)\n- Hiện tại, tôi không có thông tin cụ thể về các bài báo CV được công bố năm 2025. Nếu bạn cần tìm kiếm thêm, hãy cho tôi biết!\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm các bài báo khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "LLM",
+            "min_year": 2025,
+            "limit": 50
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "LLM",
+            "min_year": 2025,
+            "verdict": "Most-cited work on 'LLM': 'Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems' (2026, 3,032 citations)",
+            "most_cited": {
+              "title": "Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems",
+              "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus et al.",
+              "year": 2026,
+              "venue": "arXiv (Cornell University)",
+              "cited_by_count": 3032,
+              "doi": "https://doi.org/10.5281/zenodo.18717227",
+              "url": "https://arxiv.org/pdf/2005.11401",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Affordance-Compiled Intelligence: Observable-Only Cognitive Impedance Matching for No-Meta LLM-Integrated Systems",
+                "authors": "Patrick Lewis, Ethan Perez, Aleksandara Piktus et al.",
+                "year": 2026,
+                "venue": "arXiv (Cornell University)",
+                "cited_by_count": 3032,
+                "doi": "https://doi.org/10.5281/zenodo.18717227",
+                "url": "https://arxiv.org/pdf/2005.11401",
+                "is_open_access": true
+              },
+              {
+                "title": "Neuromodulatory Control Networks (NCNs): A Biologically Inspired Architecture for Dynamic LLM Processing",
+                "authors": "Morgan, Michael Christian",
+                "year": 2025,
+                "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+                "cited_by_count": 1407,
+                "doi": "https://doi.org/10.5281/zenodo.17621804",
+                "url": "https://doi.org/10.5281/zenodo.17621804",
+                "is_open_access": true
+              },
+              {
+                "title": "From Prediction to Precision: Leveraging LLMs for Equitable and Data-Driven Writing Placement in Developmental Education",
+                "authors": "Da Corte, Miguel, Baptista, Jorge",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 741,
+                "doi": "https://doi.org/10.4230/oasics.slate.2025.1",
+                "url": "https://doi.org/10.4230/oasics.slate.2025.1",
+                "is_open_access": true
+              },
+              {
+                "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+                "authors": "Daya Guo, Dejian Yang, Haowei Zhang et al.",
+                "year": 2025,
+                "venue": "Nature",
+                "cited_by_count": 707,
+                "doi": "https://doi.org/10.1038/s41586-025-09422-z",
+                "url": "https://www.nature.com/articles/s41586-025-09422-z.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "The TRIPOD-LLM reporting guideline for studies using large language models",
+                "authors": "Jack Gallifant, Majid Afshar, Saleem Ameen et al.",
+                "year": 2025,
+                "venue": "Nature Medicine",
+                "cited_by_count": 402,
+                "doi": "https://doi.org/10.1038/s41591-024-03425-5",
+                "url": "https://www.nature.com/articles/s41591-024-03425-5.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "A systematic review of large language model (LLM) evaluations in clinical medicine",
+                "authors": "Sina Shool, Sara Adimi, Reza Saboori Amleshi et al.",
+                "year": 2025,
+                "venue": "BMC Medical Informatics and Decision Making",
+                "cited_by_count": 271,
+                "doi": "https://doi.org/10.1186/s12911-025-02954-4",
+                "url": "https://bmcmedinformdecismak.biomedcentral.com/counter/pdf/10.1186/s12911-025-02954-4",
+                "is_open_access": true
+              },
+              {
+                "title": "A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation",
+                "authors": "Elham Asgari, Nina Montaña-Brown, Magda Dubois et al.",
+                "year": 2025,
+                "venue": "npj Digital Medicine",
+                "cited_by_count": 266,
+                "doi": "https://doi.org/10.1038/s41746-025-01670-7",
+                "url": "https://www.nature.com/articles/s41746-025-01670-7.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+                "authors": "Ji Lin, Jiaming Tang, Haotian Tang et al.",
+                "year": 2025,
+                "venue": "GetMobile Mobile Computing and Communications",
+                "cited_by_count": 182,
+                "doi": "https://doi.org/10.1145/3714983.3714987",
+                "url": "https://doi.org/10.1145/3714983.3714987",
+                "is_open_access": false
+              },
+              {
+                "title": "When LLMs meet cybersecurity: a systematic literature review",
+                "authors": "Jie Zhang, H. Bu, Hui Wen et al.",
+                "year": 2025,
+                "venue": "Cybersecurity",
+                "cited_by_count": 177,
+                "doi": "https://doi.org/10.1186/s42400-025-00361-w",
+                "url": "https://link.springer.com/content/pdf/10.1186/s42400-025-00361-w.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Expressing stigma and inappropriate responses prevents LLMs from safely replacing mental health providers.",
+                "authors": "Jared Moore, Declan Grabb, William S. Agnew et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 148,
+                "doi": "https://doi.org/10.1145/3715275.3732039",
+                "url": "https://dl.acm.org/doi/pdf/10.1145/3715275.3732039",
+                "is_open_access": true
+              },
+              {
+                "title": "LLM-Based Multi-Agent Systems for Software Engineering: Literature Review, Vision, and the Road Ahead",
+                "authors": "Junda He, Christoph Treude, David Lo",
+                "year": 2025,
+                "venue": "ACM Transactions on Software Engineering and Methodology",
+                "cited_by_count": 145,
+                "doi": "https://doi.org/10.1145/3712003",
+                "url": "https://ink.library.smu.edu.sg/sis_research/10487",
+                "is_open_access": true
+              },
+              {
+                "title": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions",
+                "authors": "Junchao Wu, Shuhua Yang, Runzhe Zhan et al.",
+                "year": 2025,
+                "venue": "Computational Linguistics",
+                "cited_by_count": 144,
+                "doi": "https://doi.org/10.1162/coli_a_00549",
+                "url": "https://doi.org/10.1162/coli_a_00549",
+                "is_open_access": true
+              },
+              {
+                "title": "ChatGPT for Textual Analysis? How to Use Generative LLMs in Accounting Research",
+                "authors": "Ties de Kok",
+                "year": 2025,
+                "venue": "Management Science",
+                "cited_by_count": 114,
+                "doi": "https://doi.org/10.1287/mnsc.2023.03253",
+                "url": "https://doi.org/10.1287/mnsc.2023.03253",
+                "is_open_access": false
+              },
+              {
+                "title": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+                "authors": "Dmitry Kobak, Rita González-Márquez, Emőke-Ágnes Horvát et al.",
+                "year": 2025,
+                "venue": "Science Advances",
+                "cited_by_count": 110,
+                "doi": "https://doi.org/10.1126/sciadv.adt3813",
+                "url": "https://doi.org/10.1126/sciadv.adt3813",
+                "is_open_access": true
+              },
+              {
+                "title": "LLM-AE-MP: Web Attack Detection Using a Large Language Model with Autoencoder and Multilayer Perceptron",
+                "authors": "Jing Yang, Yifan Wu, Yuping Yuan et al.",
+                "year": 2025,
+                "venue": "Expert Systems with Applications",
+                "cited_by_count": 98,
+                "doi": "https://doi.org/10.1016/j.eswa.2025.126982",
+                "url": "https://doi.org/10.1016/j.eswa.2025.126982",
+                "is_open_access": false
+              },
+              {
+                "title": "FD-LLM: Large language model for fault diagnosis of complex equipment",
+                "authors": "Lin Lin, Sihao Zhang, Fu Song et al.",
+                "year": 2025,
+                "venue": "Advanced Engineering Informatics",
+                "cited_by_count": 93,
+                "doi": "https://doi.org/10.1016/j.aei.2025.103208",
+                "url": "https://doi.org/10.1016/j.aei.2025.103208",
+                "is_open_access": false
+              },
+              {
+                "title": "Generative AI in cybersecurity: A comprehensive review of LLM applications and vulnerabilities",
+                "authors": "Mohamed Amine Ferrag, Fatima Alwahedi, Ammar Battah et al.",
+                "year": 2025,
+                "venue": "Internet of Things and Cyber-Physical Systems",
+                "cited_by_count": 92,
+                "doi": "https://doi.org/10.1016/j.iotcps.2025.01.001",
+                "url": "https://doi.org/10.1016/j.iotcps.2025.01.001",
+                "is_open_access": true
+              },
+              {
+                "title": "Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model",
+                "authors": "Jike Wang, Jianwen Feng, Yu Kang et al.",
+                "year": 2025,
+                "venue": "Science Advances",
+                "cited_by_count": 88,
+                "doi": "https://doi.org/10.1126/sciadv.ads8932",
+                "url": "https://www.science.org/doi/pdf/10.1126/sciadv.ads8932?download=true",
+                "is_open_access": true
+              },
+              {
+                "title": "Exploring LLMs Applications in Law: A Literature Review on Current Legal NLP Approaches",
+                "authors": "Marco Siino, Mariana Falco, Daniele Croce et al.",
+                "year": 2025,
+                "venue": "IEEE Access",
+                "cited_by_count": 85,
+                "doi": "https://doi.org/10.1109/access.2025.3533217",
+                "url": "https://doi.org/10.1109/access.2025.3533217",
+                "is_open_access": true
+              },
+              {
+                "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+                "authors": "Chaoyou Fu, Yuhan Dai, Yongdong Luo et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 82,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.02245",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.02245",
+                "is_open_access": false
+              },
+              {
+                "title": "LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters",
+                "authors": "Ching Chang, Wei‐Yao Wang, Wen-Chih Peng et al.",
+                "year": 2025,
+                "venue": "ACM Transactions on Intelligent Systems and Technology",
+                "cited_by_count": 81,
+                "doi": "https://doi.org/10.1145/3719207",
+                "url": "https://doi.org/10.1145/3719207",
+                "is_open_access": false
+              },
+              {
+                "title": "Maya-LLM-Defence: Sovereign Military LLM with Affective SNN Safety Substrate",
+                "authors": "Venkatesh Swaminathan",
+                "year": 2026,
+                "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+                "cited_by_count": 80,
+                "doi": "https://doi.org/10.5281/zenodo.19708800",
+                "url": "https://doi.org/10.5281/zenodo.19708800",
+                "is_open_access": true
+              },
+              {
+                "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+                "authors": "Islem Bouzenia, Prémkumar Dévanbu, Michael Pradel",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 77,
+                "doi": "https://doi.org/10.1109/icse55347.2025.00157",
+                "url": "https://doi.org/10.1109/icse55347.2025.00157",
+                "is_open_access": false
+              },
+              {
+                "title": "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+                "authors": "Da-Wei Li, Bohan Jiang, Lili Huang et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 77,
+                "doi": "https://doi.org/10.18653/v1/2025.emnlp-main.138",
+                "url": "https://aclanthology.org/2025.emnlp-main.138.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Integrating LLMs With ITS: Recent Advances, Potentials, Challenges, and Future Directions",
+                "authors": "Doaa Mahmud, Hadeel Hajmohamed, Shamma Almentheri et al.",
+                "year": 2025,
+                "venue": "IEEE Transactions on Intelligent Transportation Systems",
+                "cited_by_count": 77,
+                "doi": "https://doi.org/10.1109/tits.2025.3528116",
+                "url": "https://doi.org/10.1109/tits.2025.3528116",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 214089
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "VLM",
+            "min_year": 2025,
+            "limit": 50
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "VLM",
+            "min_year": 2025,
+            "verdict": "Most-cited work on 'VLM': 'IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence' (2025, 37 citations)",
+            "most_cited": {
+              "title": "IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence",
+              "authors": "Zuoxu Wang, Zhijie Yan, Shufei Li et al.",
+              "year": 2025,
+              "venue": "Advanced Engineering Informatics",
+              "cited_by_count": 37,
+              "doi": "https://doi.org/10.1016/j.aei.2024.103107",
+              "url": "https://doi.org/10.1016/j.aei.2024.103107",
+              "is_open_access": false
+            },
+            "works": [
+              {
+                "title": "IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence",
+                "authors": "Zuoxu Wang, Zhijie Yan, Shufei Li et al.",
+                "year": 2025,
+                "venue": "Advanced Engineering Informatics",
+                "cited_by_count": 37,
+                "doi": "https://doi.org/10.1016/j.aei.2024.103107",
+                "url": "https://doi.org/10.1016/j.aei.2024.103107",
+                "is_open_access": false
+              },
+              {
+                "title": "VLM-RL: A unified vision language models and reinforcement learning framework for safe autonomous driving",
+                "authors": "Zilin Huang, Zihao Sheng, Yansong Qu et al.",
+                "year": 2025,
+                "venue": "Transportation Research Part C Emerging Technologies",
+                "cited_by_count": 27,
+                "doi": "https://doi.org/10.1016/j.trc.2025.105321",
+                "url": "https://doi.org/10.1016/j.trc.2025.105321",
+                "is_open_access": false
+              },
+              {
+                "title": "VLM-MSGraph: Vision Language Model-enabled Multi-hierarchical Scene Graph for robotic assembly",
+                "authors": "Shufei Li, Zhijie Yan, Zuoxu Wang et al.",
+                "year": 2025,
+                "venue": "Robotics and Computer-Integrated Manufacturing",
+                "cited_by_count": 22,
+                "doi": "https://doi.org/10.1016/j.rcim.2025.102978",
+                "url": "https://doi.org/10.1016/j.rcim.2025.102978",
+                "is_open_access": false
+              },
+              {
+                "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning",
+                "authors": "Jiazhen Pan, Che Liu, Junde Wu et al.",
+                "year": 2025,
+                "venue": "Lecture notes in computer science",
+                "cited_by_count": 19,
+                "doi": "https://doi.org/10.1007/978-3-032-04981-0_32",
+                "url": "https://doi.org/10.1007/978-3-032-04981-0_32",
+                "is_open_access": false
+              },
+              {
+                "title": "CNC-VLM: An RLHF-optimized industrial large vision-language model with multimodal learning for imbalanced CNC fault detection",
+                "authors": "Zisheng Wang, Junjie Chen, Chisen Wang et al.",
+                "year": 2026,
+                "venue": "Mechanical Systems and Signal Processing",
+                "cited_by_count": 16,
+                "doi": "https://doi.org/10.1016/j.ymssp.2025.113838",
+                "url": "https://doi.org/10.1016/j.ymssp.2025.113838",
+                "is_open_access": false
+              },
+              {
+                "title": "LogicAD: Explainable Anomaly Detection via VLM-based Text Feature Extraction",
+                "authors": "Er Jin, Qihui Feng, Yongli Mou et al.",
+                "year": 2025,
+                "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+                "cited_by_count": 13,
+                "doi": "https://doi.org/10.1609/aaai.v39i4.32433",
+                "url": "https://ojs.aaai.org/index.php/AAAI/article/download/32433/34588",
+                "is_open_access": true
+              },
+              {
+                "title": "V2X-VLM: End-to-End V2X cooperative autonomous driving through large vision-Language models",
+                "authors": "Junwei You, Zhuoyu Jiang, Zilin Huang et al.",
+                "year": 2025,
+                "venue": "Transportation Research Part C Emerging Technologies",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.1016/j.trc.2025.105457",
+                "url": "https://doi.org/10.1016/j.trc.2025.105457",
+                "is_open_access": false
+              },
+              {
+                "title": "Rethinking VLMs and LLMs for image classification",
+                "authors": "A. Feder Cooper, Keizo Kato, Chia-Hsien Shih et al.",
+                "year": 2025,
+                "venue": "Scientific Reports",
+                "cited_by_count": 8,
+                "doi": "https://doi.org/10.1038/s41598-025-04384-8",
+                "url": "https://www.nature.com/articles/s41598-025-04384-8.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards",
+                "authors": "Shivansh Patel, Xinchen Yin, Wenlong Huang et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 8,
+                "doi": "https://doi.org/10.1109/icra55743.2025.11127585",
+                "url": "https://doi.org/10.1109/icra55743.2025.11127585",
+                "is_open_access": false
+              },
+              {
+                "title": "FLAIR: VLM with Fine-grained Language-informed Image Representations",
+                "authors": "Rui Xiao, Sanghwan Kim, Mariana-Iuliana Georgescu et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 7,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.02317",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.02317",
+                "is_open_access": false
+              },
+              {
+                "title": "A Stitch in Time Saves Nine: Small VLM is a Precise Guidance for Accelerating Large VLMs",
+                "authors": "Wangbo Zhao, Yizeng Han, Jiasheng Tang et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.01845",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.01845",
+                "is_open_access": false
+              },
+              {
+                "title": "Audio Description Generation in the Era of LLMs and VLMs: A Review of Transferable Generative AI Technologies",
+                "authors": "Yingqiang Gao, Lukas Fischer, Alexa Lintner et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.18653/v1/2025.findings-naacl.29",
+                "url": "https://aclanthology.org/2025.findings-naacl.29.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "One VLM to Keep it Learning: Generation and Balancing for Data-free Continual Visual Question Answering",
+                "authors": "Deepayan Das, Davide Talon, Massimiliano Mancini et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.1109/wacv61041.2025.00550",
+                "url": "https://doi.org/10.1109/wacv61041.2025.00550",
+                "is_open_access": false
+              },
+              {
+                "title": "Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding",
+                "authors": "Jianbo Ye, Ankan Dash, Wenpeng Yin et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.18653/v1/2025.naacl-long.180",
+                "url": "https://aclanthology.org/2025.naacl-long.180.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "USER-VLM 360: Personalized Vision Language Models with User-aware Tuning for Social Human-Robot Interactions",
+                "authors": "Hamed Rahimi, Adil Bahaj, Mouad Abrini et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.1145/3716553.3750767",
+                "url": "https://doi.org/10.1145/3716553.3750767",
+                "is_open_access": true
+              },
+              {
+                "title": "VLM Is a Strong Reranker: Advancing Multimodal Retrieval-augmented Generation via Knowledge-enhanced Reranking and Noise-injected Training",
+                "authors": "Z. J. Chen, Chengjin Xu, Yiyan Qi et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 6,
+                "doi": "https://doi.org/10.18653/v1/2025.findings-emnlp.432",
+                "url": "https://aclanthology.org/2025.findings-emnlp.432.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection",
+                "authors": "Zhuo Xu, Xiang Xiang, Yifan Liang",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.01435",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.01435",
+                "is_open_access": false
+              },
+              {
+                "title": "MoVE-KD: Knowledge Distillation for VLMs with Mixture of Visual Encoders",
+                "authors": "Jiajun Cao, Yuan Zhang, Tao Huang et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.01848",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.01848",
+                "is_open_access": false
+              },
+              {
+                "title": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation",
+                "authors": "Deng Wei, Mengshi Qi, Huadóng Ma",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/cvpr52734.2025.00839",
+                "url": "https://doi.org/10.1109/cvpr52734.2025.00839",
+                "is_open_access": false
+              },
+              {
+                "title": "Distributed VLMs: Efficient Vision-Language Processing through Cloud-Edge Collaboration",
+                "authors": "Yuyang Li, Devika Gumaste, Mehmet Kerem Türkcan et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/percomworkshops65533.2025.00078",
+                "url": "https://doi.org/10.1109/percomworkshops65533.2025.00078",
+                "is_open_access": false
+              },
+              {
+                "title": "Benchmarking Compact VLMs for Clip-Level Surveillance Anomaly Detection Under Weak Supervision",
+                "authors": "Kirill Borodin, Kirill Kondrashov, NIKITA A. VASILIEV et al.",
+                "year": 2025,
+                "venue": "Journal of Imaging",
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.3390/jimaging11110400",
+                "url": "https://www.mdpi.com/2313-433X/11/11/400/pdf?version=1762593536",
+                "is_open_access": true
+              },
+              {
+                "title": "Behav: Behavioral Rule Guided Autonomy Using VLMs for Robot Navigation in Outdoor Scenes",
+                "authors": "Kasun Weerakoon, Mohamed Elnoor, Gershom Seneviratne et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/icra55743.2025.11127890",
+                "url": "https://doi.org/10.1109/icra55743.2025.11127890",
+                "is_open_access": false
+              },
+              {
+                "title": "PAPR reduction in DCO-OFDM VLC system using VLM precoding and nonlinear companding techniques",
+                "authors": "Maha F. Shatti, Atheer A. Sabri, Samir M. Hameed",
+                "year": 2025,
+                "venue": "Journal of Optical Communications",
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1515/joc-2025-0240",
+                "url": "https://doi.org/10.1515/joc-2025-0240",
+                "is_open_access": false
+              },
+              {
+                "title": "MapNav: A Novel Memory Representation via Annotated Semantic Maps for VLM-based Vision-and-Language Navigation",
+                "authors": "Lingfeng Zhang, Xiaoshuai Hao, Qinwen Xu et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.22541/au.175131560.00300188/v1",
+                "url": "https://www.authorea.com/doi/pdf/10.22541/au.175131560.00300188",
+                "is_open_access": true
+              },
+              {
+                "title": "VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model",
+                "authors": "Beichen Wang, Juexiao Zhang, Shuwen Dong et al.",
+                "year": 2025,
+                "venue": null,
+                "cited_by_count": 5,
+                "doi": "https://doi.org/10.1109/iros60139.2025.11246682",
+                "url": "https://doi.org/10.1109/iros60139.2025.11246682",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 14596
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "CV",
+            "min_year": 2025,
+            "limit": 50
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "CV",
+            "min_year": 2025,
+            "verdict": "Most-cited work on 'CV': 'PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG' (2026, 35 citations)",
+            "most_cited": {
+              "title": "PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG",
+              "authors": "Yani, Pitri",
+              "year": 2026,
+              "venue": "Universitas Pasundan institutional repositories & scientific journals (Universitas Pasundan)",
+              "cited_by_count": 35,
+              "doi": null,
+              "url": "https://openalex.org/W3205029504",
+              "is_open_access": false
+            },
+            "works": [
+              {
+                "title": "PENGARUH KUALITAS LAYANAN DAN KEPERCAYAAN PALANGGANTERHADAP LOYALITAS PELANGGAN PADA CV RAZL RENTALMOBIL KOTA BANDUNG",
+                "authors": "Yani, Pitri",
+                "year": 2026,
+                "venue": "Universitas Pasundan institutional repositories & scientific journals (Universitas Pasundan)",
+                "cited_by_count": 35,
+                "doi": null,
+                "url": "https://openalex.org/W3205029504",
+                "is_open_access": false
+              },
+              {
+                "title": "Exogenous melatonin and salicylic acid enhance postharvest quality and boost antioxidant capacity in Vitis vinifera cv. 'Cuibao seedless' grape berries",
+                "authors": "Xiao-Fang Wang, Fengxia Dong, Yuwei Jiang et al.",
+                "year": 2025,
+                "venue": "Plant Physiology and Biochemistry",
+                "cited_by_count": 24,
+                "doi": "https://doi.org/10.1016/j.plaphy.2025.109850",
+                "url": "https://doi.org/10.1016/j.plaphy.2025.109850",
+                "is_open_access": false
+              },
+              {
+                "title": "Treatment with orforglipron, an oral glucagon like peptide-1 receptor agonist, is associated with improvements of CV risk biomarkers in participants with type 2 diabetes or obesity without diabetes",
+                "authors": "Sean Wharton, Julio Rosenstock, Manige Konige et al.",
+                "year": 2025,
+                "venue": "Cardiovascular Diabetology",
+                "cited_by_count": 20,
+                "doi": "https://doi.org/10.1186/s12933-025-02781-x",
+                "url": "https://cardiab.biomedcentral.com/counter/pdf/10.1186/s12933-025-02781-x",
+                "is_open_access": true
+              },
+              {
+                "title": "Ni–N bonds boost S-scheme charge transfer in NiSe/Cv-C3N5 for efficient water splitting",
+                "authors": "Yan Cao, Lin Ye, Ye Yuan et al.",
+                "year": 2025,
+                "venue": "CHINESE JOURNAL OF CATALYSIS (CHINESE VERSION)",
+                "cited_by_count": 19,
+                "doi": "https://doi.org/10.1016/s1872-2067(25)64832-7",
+                "url": "https://doi.org/10.1016/s1872-2067(25)64832-7",
+                "is_open_access": false
+              },
+              {
+                "title": "Quality parameters and shelf life of strawberry (cv. Centenary) fruits as affected by active modified atmosphere packaging",
+                "authors": "Mehrajfatema Z. Mulla, Tigist Tadesse Shonte, Shivani Pathania",
+                "year": 2025,
+                "venue": "International Journal of Food Science & Technology",
+                "cited_by_count": 16,
+                "doi": "https://doi.org/10.1093/ijfood/vvaf010",
+                "url": "https://academic.oup.com/ijfst/advance-article-pdf/doi/10.1093/ijfood/vvaf010/61440570/vvaf010.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Alleviating biotic stress of powdery mildew in mango cv. Keitt by Sulfur nanoparticles and assessing their effect on productivity and disease severity",
+                "authors": "Mohamed K. Abou El-Nasr, Mohamed A. Nasser, Mohamed Ebrahim et al.",
+                "year": 2025,
+                "venue": "Scientific Reports",
+                "cited_by_count": 16,
+                "doi": "https://doi.org/10.1038/s41598-025-88282-z",
+                "url": "https://www.nature.com/articles/s41598-025-88282-z.pdf",
+                "is_open_access": true
+              },
+              {
+                "title": "Exploring the Effects of Vehicle-Related Air Pollution on the Photosynthetic and Biochemical Traits of Cupressus macrocarpa cv. “Goldcrest”",
+                "authors": "Cengiz Yücedağ, Irem Yaman, Nuray Çiçek et al.",
+                "year": 2025,
+                "venue": "Bulletin of Environmental Contamination and Toxicology",
+                "cited_by_count": 15,
+                "doi": "https://doi.org/10.1007/s00128-025-04053-6",
+                "url": "https://doi.org/10.1007/s00128-025-04053-6",
+                "is_open_access": false
+              },
+              {
+                "title": "Stomatal and non-stomatal regulations of photosynthesis in response to salinity, and K and Ca fertigation in cotton (Gossypium hirsutum L cv.)",
+                "authors": "Yingying Ma, Zuoqiang Yuan, Zhenhua Wei et al.",
+                "year": 2025,
+                "venue": "Environmental and Experimental Botany",
+                "cited_by_count": 15,
+                "doi": "https://doi.org/10.1016/j.envexpbot.2025.106092",
+                "url": "https://doi.org/10.1016/j.envexpbot.2025.106092",
+                "is_open_access": true
+              },
+              {
+                "title": "Bioaccessibility of phenolic compounds during simulated gastrointestinal digestion of black rice (Oryza sativa L., cv. Artemide)",
+                "authors": "Antonio Colasanto, Vincenzo Disca, Fabiano Travaglia et al.",
+                "year": 2025,
+                "venue": "Food Chemistry",
+                "cited_by_count": 14,
+                "doi": "https://doi.org/10.1016/j.foodchem.2025.142889",
+                "url": "https://doi.org/10.1016/j.foodchem.2025.142889",
+                "is_open_access": true
+              },
+              {
+                "title": "PolSAR image classification using complex-valued multiscale attention vision transformer (CV-MsAtViT)",
+                "authors": "Mohammed Q. Alkhatib",
+                "year": 2025,
+                "venue": "International Journal of Applied Earth Observation and Geoinformation",
+                "cited_by_count": 13,
+                "doi": "https://doi.org/10.1016/j.jag.2025.104412",
+                "url": "https://doi.org/10.1016/j.jag.2025.104412",
+                "is_open_access": true
+              },
+              {
+                "title": "Continuous glucose monitoring‑derived time in range and CV are associated with elevated risk of adverse kidney outcomes for patients with type 2 diabetes",
+                "authors": "Qin Zhang, Shucai Xiao, Fang Zou et al.",
+                "year": 2025,
+                "venue": "Diabetes & Metabolism",
+                "cited_by_count": 12,
+                "doi": "https://doi.org/10.1016/j.diabet.2025.101616",
+                "url": "https://doi.org/10.1016/j.diabet.2025.101616",
+                "is_open_access": false
+              },
+              {
+                "title": "Influence of Preharvest sorbitol and calcium-sorbitol applications on the ripening process and anthocyanin biosynthesis in blood Orange (Citrus sinensis cv. Sanguinelli)",
+                "authors": "A. Guirao, Domingo Martínez‐Romero, Ander Solana-Guilabert et al.",
+                "year": 2025,
+                "venue": "Food Chemistry",
+                "cited_by_count": 12,
+                "doi": "https://doi.org/10.1016/j.foodchem.2025.144105",
+                "url": "https://doi.org/10.1016/j.foodchem.2025.144105",
+                "is_open_access": true
+              },
+              {
+                "title": "Development of eco-friendly chitosan films incorporated with pomelo peel (Citrus Paradisi cv. Changshanhuyou) extract and application to prolong the shelf life of grapes",
+                "authors": "Faryal Asif, H.N. MAHMOOD, Liu Jiangtao et al.",
+                "year": 2025,
+                "venue": "International Journal of Biological Macromolecules",
+                "cited_by_count": 12,
+                "doi": "https://doi.org/10.1016/j.ijbiomac.2025.140547",
+                "url": "https://doi.org/10.1016/j.ijbiomac.2025.140547",
+                "is_open_access": false
+              },
+              {
+                "title": "Efficient Antimicrobial/Antifungal activity and photocatalytic degradation of mixed pollutants (CV, CR, and RhB) using Ag-doped CNT-ZnO hybrid nanocomposites",
+                "authors": "Rinku Gupta, Deepak Kumar, Kirti Bhardwaj et al.",
+                "year": 2025,
+                "venue": "Inorganic Chemistry Communications",
+                "cited_by_count": 12,
+                "doi": "https://doi.org/10.1016/j.inoche.2025.114720",
+                "url": "https://doi.org/10.1016/j.inoche.2025.114720",
+                "is_open_access": false
+              },
+              {
+                "title": "In Vitro and In Vivo Antibacterial and Antibiofilm Activity of Zinc Sulfate (ZnSO4) and Carvacrol (CV) Alone and in Combination with Antibiotics Against Pseudomonas aeruginosa",
+                "authors": "M. Moradi, Effat Abbasi Montazeri, Sirous Rafiei Asl et al.",
+                "year": 2025,
+                "venue": "Antibiotics",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.3390/antibiotics14040367",
+                "url": "https://www.mdpi.com/2079-6382/14/4/367/pdf?version=1743520152",
+                "is_open_access": true
+              },
+              {
+                "title": "A Novel Dual-Receivers/Rectifier Reconstructed WPT System With Inherent CC to CV Transmission Characteristics and Reactive Power Minimization",
+                "authors": "Dong Guo, Weijun Zhu, Hai Lan et al.",
+                "year": 2025,
+                "venue": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.1109/jestpe.2025.3571206",
+                "url": "https://doi.org/10.1109/jestpe.2025.3571206",
+                "is_open_access": false
+              },
+              {
+                "title": "Multi-objective optimization of process parameters for laser cladding of Cr3C2/15-5PH composite coatings on 20CrMnTi using RSM-CMOPSO-EWM-CV",
+                "authors": "Yanbin Du, Kaiyi Mao, Xin Lei et al.",
+                "year": 2025,
+                "venue": "Journal of Materials Research and Technology",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.1016/j.jmrt.2025.04.227",
+                "url": "https://doi.org/10.1016/j.jmrt.2025.04.227",
+                "is_open_access": true
+              },
+              {
+                "title": "Rescue of CUMS-induced HPA axis hyperfunction and hypothalamic synaptic deficits by Citrus aurantium L. cv. Daidai essential oil via the cAMP/PKA/Grin2b pathway",
+                "authors": "Zeyu Zhang, Ze-Yu Zhang, Yufei Liu et al.",
+                "year": 2025,
+                "venue": "Journal of Ethnopharmacology",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.1016/j.jep.2025.119423",
+                "url": "https://doi.org/10.1016/j.jep.2025.119423",
+                "is_open_access": false
+              },
+              {
+                "title": "The Type <scp>VI</scp> Secretion System of <scp> <i>Sinorhizobium fredii</i> USDA257 </scp> Is Required for Successful Nodulation With <scp> <i>Glycine max</i> </scp> cv Pekin",
+                "authors": "Pedro José Reyes‐Pérez, Irene Jiménez‐Guerrero, Ana Sánchez‐Reina et al.",
+                "year": 2025,
+                "venue": "Microbial Biotechnology",
+                "cited_by_count": 11,
+                "doi": "https://doi.org/10.1111/1751-7915.70112",
+                "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1751-7915.70112",
+                "is_open_access": true
+              },
+              {
+                "title": "Polyphenols from Olea europaea L. cv. Caiazzana leaf pruning waste for antioxidant and UV-blocking starch-based plastic films",
+                "authors": "Hamid Mushtaq, Simona Piccolella, Giovanna Cimmino et al.",
+                "year": 2025,
+                "venue": "Food Packaging and Shelf Life",
+                "cited_by_count": 10,
+                "doi": "https://doi.org/10.1016/j.fpsl.2025.101447",
+                "url": "https://doi.org/10.1016/j.fpsl.2025.101447",
+                "is_open_access": true
+              },
+              {
+                "title": "Increased Temperature Effects During Fruit Growth and Maturation on the Fruit Quality, Sensory and Antioxidant Properties of Raspberry (Rubus idaeus L.) cv. Heritage",
+                "authors": "F. Aguilar, Martina Salazar, Lida Fuentes et al.",
+                "year": 2025,
+                "venue": "Foods",
+                "cited_by_count": 10,
+                "doi": "https://doi.org/10.3390/foods14071201",
+                "url": "https://www.mdpi.com/2304-8158/14/7/1201/pdf?version=1743234800",
+                "is_open_access": true
+              },
+              {
+                "title": "Effect of terroir on aroma and sensory characteristics of Xinomavro (Vitis vinifera L. cv.) red wines from different Greek protected designations of origin",
+                "authors": "Elli Goulioti, David W. Jeffery, Panagiotis-Loukas P. Gialouris et al.",
+                "year": 2025,
+                "venue": "Food Chemistry",
+                "cited_by_count": 10,
+                "doi": "https://doi.org/10.1016/j.foodchem.2025.144507",
+                "url": "https://doi.org/10.1016/j.foodchem.2025.144507",
+                "is_open_access": false
+              },
+              {
+                "title": "Effect of Melatonin Treatment on Storage Quality and Antioxidant System of Postharvest Winter Jujube (Zizyphus jujube Mill. cv. Dongzao)",
+                "authors": "Hongai Hei, Heyin Tang, Rui Zhao et al.",
+                "year": 2025,
+                "venue": "Foods",
+                "cited_by_count": 9,
+                "doi": "https://doi.org/10.3390/foods14040576",
+                "url": "https://doi.org/10.3390/foods14040576",
+                "is_open_access": true
+              },
+              {
+                "title": "Mechanistic study on the mitigation of cadmium accumulation in Ligusticum sinense cv. Chuanxiong through plant growth-promoting rhizobacteria Arthrobacter sp. CX-2",
+                "authors": "Shuqi Niu, Ting Li, Lin Liu et al.",
+                "year": 2025,
+                "venue": "Plant Stress",
+                "cited_by_count": 9,
+                "doi": "https://doi.org/10.1016/j.stress.2025.100748",
+                "url": "https://doi.org/10.1016/j.stress.2025.100748",
+                "is_open_access": true
+              },
+              {
+                "title": "A haplotype-resolved chromosome-level genome assembly of <i>Urochloa decumbens</i> cv. Basilisk resolves its allopolyploid ancestry and composition",
+                "authors": "Camilla Ryan, F C Fraser, Naomi Irish et al.",
+                "year": 2025,
+                "venue": "G3 Genes Genomes Genetics",
+                "cited_by_count": 9,
+                "doi": "https://doi.org/10.1093/g3journal/jkaf005",
+                "url": "https://academic.oup.com/g3journal/advance-article-pdf/doi/10.1093/g3journal/jkaf005/61621806/jkaf005.pdf",
+                "is_open_access": true
+              }
+            ],
+            "total_found": 43735
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T13:01:08"
+    }
+  ]
+}

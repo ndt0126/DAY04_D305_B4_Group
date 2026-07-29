@@ -1,0 +1,520 @@
+{
+  "transcript_id": "v3_openai_20260729T125432609497",
+  "version": "v3",
+  "artifact_version": "v3+p9a9d711efde9+t0e8ff5a33f70",
+  "prompt_hash": "9a9d711efde91ae3916e5f9ee81e43e8a763d4da8c872132505fed0faf034815",
+  "tools_hash": "0e8ff5a33f709cc24ad63b24c00caba0ff500983a8789add63ba0e8e5910c89e",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "system_prompt": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\code\\AITHUCCHIEN\\LAB\\DAY04_D305_D2_Group\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T12:54:47",
+  "updated_at": "2026-07-29T12:54:47",
+  "turns": [
+    {
+      "turn_index": 9,
+      "started_at": "2026-07-29T12:54:32",
+      "user": "lại 3 lần",
+      "status": "answered",
+      "assistant_text": "Dưới đây là một số bài báo khoa học đã xuất bản về trí tuệ nhân tạo (AI) được trích dẫn nhiều nhất:\n\n1. **[Artificial intelligence: a modern approach](https://doi.org/10.5281/zenodo.11381885)**  \n   - **Tác giả:** Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.  \n   - **Năm:** 1995  \n   - **Nơi xuất bản:** Choice Reviews Online  \n   - **Số lần trích dẫn:** 22,252  \n   - **Mở truy cập:** Có\n\n2. **[Artificial intelligence: A modern approach](https://doi.org/10.1016/0004-3702(96)00007-0)**  \n   - **Tác giả:** Nils J. Nilsson  \n   - **Năm:** 1996  \n   - **Nơi xuất bản:** Artificial Intelligence  \n   - **Số lần trích dẫn:** 10,702  \n   - **Mở truy cập:** Không\n\n3. **[Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)**  \n   - **Tác giả:** Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** Information Fusion  \n   - **Số lần trích dẫn:** 9,295  \n   - **Mở truy cập:** Có\n\n4. **[High-performance medicine: the convergence of human and artificial intelligence](https://doi.org/10.1038/s41591-018-0300-7)**  \n   - **Tác giả:** Eric J. Topol  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** Nature Medicine  \n   - **Số lần trích dẫn:** 9,115  \n   - **Mở truy cập:** Không\n\n5. **[Lecture Notes in Artificial Intelligence](https://openalex.org/W26772505)**  \n   - **Tác giả:** Patrick Brézillon, Paolo Bouquet  \n   - **Năm:** 1999  \n   - **Số lần trích dẫn:** 7,440  \n   - **Mở truy cập:** Không\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm bài báo khác, hãy cho tôi biết!",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              }
+            },
+            {
+              "name": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "artificial intelligence",
+                "min_year": null,
+                "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+                "most_cited": {
+                  "title": "Artificial intelligence: a modern approach",
+                  "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                  "year": 1995,
+                  "venue": "Choice Reviews Online",
+                  "cited_by_count": 22252,
+                  "doi": "https://doi.org/10.5860/choice.33-1577",
+                  "url": "https://doi.org/10.5281/zenodo.11381885",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Artificial intelligence: a modern approach",
+                    "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                    "year": 1995,
+                    "venue": "Choice Reviews Online",
+                    "cited_by_count": 22252,
+                    "doi": "https://doi.org/10.5860/choice.33-1577",
+                    "url": "https://doi.org/10.5281/zenodo.11381885",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence: A modern approach",
+                    "authors": "Nils J. Nilsson",
+                    "year": 1996,
+                    "venue": "Artificial Intelligence",
+                    "cited_by_count": 10702,
+                    "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                    "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                    "year": 2019,
+                    "venue": "Information Fusion",
+                    "cited_by_count": 9295,
+                    "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                    "url": "https://arxiv.org/pdf/1910.10045",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                    "authors": "Eric J. Topol",
+                    "year": 2018,
+                    "venue": "Nature Medicine",
+                    "cited_by_count": 9115,
+                    "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Lecture Notes in Artificial Intelligence",
+                    "authors": "Patrick Brézillon, Paolo Bouquet",
+                    "year": 1999,
+                    "venue": null,
+                    "cited_by_count": 7440,
+                    "doi": null,
+                    "url": "https://openalex.org/W26772505",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 979123
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "artificial intelligence",
+                "min_year": null,
+                "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+                "most_cited": {
+                  "title": "Artificial intelligence: a modern approach",
+                  "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                  "year": 1995,
+                  "venue": "Choice Reviews Online",
+                  "cited_by_count": 22252,
+                  "doi": "https://doi.org/10.5860/choice.33-1577",
+                  "url": "https://doi.org/10.5281/zenodo.11381885",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Artificial intelligence: a modern approach",
+                    "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                    "year": 1995,
+                    "venue": "Choice Reviews Online",
+                    "cited_by_count": 22252,
+                    "doi": "https://doi.org/10.5860/choice.33-1577",
+                    "url": "https://doi.org/10.5281/zenodo.11381885",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence: A modern approach",
+                    "authors": "Nils J. Nilsson",
+                    "year": 1996,
+                    "venue": "Artificial Intelligence",
+                    "cited_by_count": 10702,
+                    "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                    "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                    "year": 2019,
+                    "venue": "Information Fusion",
+                    "cited_by_count": 9295,
+                    "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                    "url": "https://arxiv.org/pdf/1910.10045",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                    "authors": "Eric J. Topol",
+                    "year": 2018,
+                    "venue": "Nature Medicine",
+                    "cited_by_count": 9115,
+                    "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Lecture Notes in Artificial Intelligence",
+                    "authors": "Patrick Brézillon, Paolo Bouquet",
+                    "year": 1999,
+                    "venue": null,
+                    "cited_by_count": 7440,
+                    "doi": null,
+                    "url": "https://openalex.org/W26772505",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 979123
+              }
+            },
+            {
+              "tool": "scholar",
+              "args": {
+                "query": "artificial intelligence",
+                "limit": 5
+              },
+              "result": {
+                "tool": "find_scholarly_works",
+                "query": "artificial intelligence",
+                "min_year": null,
+                "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+                "most_cited": {
+                  "title": "Artificial intelligence: a modern approach",
+                  "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                  "year": 1995,
+                  "venue": "Choice Reviews Online",
+                  "cited_by_count": 22252,
+                  "doi": "https://doi.org/10.5860/choice.33-1577",
+                  "url": "https://doi.org/10.5281/zenodo.11381885",
+                  "is_open_access": true
+                },
+                "works": [
+                  {
+                    "title": "Artificial intelligence: a modern approach",
+                    "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                    "year": 1995,
+                    "venue": "Choice Reviews Online",
+                    "cited_by_count": 22252,
+                    "doi": "https://doi.org/10.5860/choice.33-1577",
+                    "url": "https://doi.org/10.5281/zenodo.11381885",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "Artificial intelligence: A modern approach",
+                    "authors": "Nils J. Nilsson",
+                    "year": 1996,
+                    "venue": "Artificial Intelligence",
+                    "cited_by_count": 10702,
+                    "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                    "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                    "year": 2019,
+                    "venue": "Information Fusion",
+                    "cited_by_count": 9295,
+                    "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                    "url": "https://arxiv.org/pdf/1910.10045",
+                    "is_open_access": true
+                  },
+                  {
+                    "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                    "authors": "Eric J. Topol",
+                    "year": 2018,
+                    "venue": "Nature Medicine",
+                    "cited_by_count": 9115,
+                    "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                    "is_open_access": false
+                  },
+                  {
+                    "title": "Lecture Notes in Artificial Intelligence",
+                    "authors": "Patrick Brézillon, Paolo Bouquet",
+                    "year": 1999,
+                    "venue": null,
+                    "cited_by_count": 7440,
+                    "doi": null,
+                    "url": "https://openalex.org/W26772505",
+                    "is_open_access": false
+                  }
+                ],
+                "total_found": 979123
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Dưới đây là một số bài báo khoa học đã xuất bản về trí tuệ nhân tạo (AI) được trích dẫn nhiều nhất:\n\n1. **[Artificial intelligence: a modern approach](https://doi.org/10.5281/zenodo.11381885)**  \n   - **Tác giả:** Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.  \n   - **Năm:** 1995  \n   - **Nơi xuất bản:** Choice Reviews Online  \n   - **Số lần trích dẫn:** 22,252  \n   - **Mở truy cập:** Có\n\n2. **[Artificial intelligence: A modern approach](https://doi.org/10.1016/0004-3702(96)00007-0)**  \n   - **Tác giả:** Nils J. Nilsson  \n   - **Năm:** 1996  \n   - **Nơi xuất bản:** Artificial Intelligence  \n   - **Số lần trích dẫn:** 10,702  \n   - **Mở truy cập:** Không\n\n3. **[Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)**  \n   - **Tác giả:** Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.  \n   - **Năm:** 2019  \n   - **Nơi xuất bản:** Information Fusion  \n   - **Số lần trích dẫn:** 9,295  \n   - **Mở truy cập:** Có\n\n4. **[High-performance medicine: the convergence of human and artificial intelligence](https://doi.org/10.1038/s41591-018-0300-7)**  \n   - **Tác giả:** Eric J. Topol  \n   - **Năm:** 2018  \n   - **Nơi xuất bản:** Nature Medicine  \n   - **Số lần trích dẫn:** 9,115  \n   - **Mở truy cập:** Không\n\n5. **[Lecture Notes in Artificial Intelligence](https://openalex.org/W26772505)**  \n   - **Tác giả:** Patrick Brézillon, Paolo Bouquet  \n   - **Năm:** 1999  \n   - **Số lần trích dẫn:** 7,440  \n   - **Mở truy cập:** Không\n\nNếu bạn cần thêm thông tin hoặc muốn tìm kiếm bài báo khác, hãy cho tôi biết!",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "artificial intelligence",
+            "limit": 5
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "artificial intelligence",
+            "min_year": null,
+            "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+            "most_cited": {
+              "title": "Artificial intelligence: a modern approach",
+              "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+              "year": 1995,
+              "venue": "Choice Reviews Online",
+              "cited_by_count": 22252,
+              "doi": "https://doi.org/10.5860/choice.33-1577",
+              "url": "https://doi.org/10.5281/zenodo.11381885",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Artificial intelligence: a modern approach",
+                "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                "year": 1995,
+                "venue": "Choice Reviews Online",
+                "cited_by_count": 22252,
+                "doi": "https://doi.org/10.5860/choice.33-1577",
+                "url": "https://doi.org/10.5281/zenodo.11381885",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence: A modern approach",
+                "authors": "Nils J. Nilsson",
+                "year": 1996,
+                "venue": "Artificial Intelligence",
+                "cited_by_count": 10702,
+                "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "is_open_access": false
+              },
+              {
+                "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                "year": 2019,
+                "venue": "Information Fusion",
+                "cited_by_count": 9295,
+                "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                "url": "https://arxiv.org/pdf/1910.10045",
+                "is_open_access": true
+              },
+              {
+                "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                "authors": "Eric J. Topol",
+                "year": 2018,
+                "venue": "Nature Medicine",
+                "cited_by_count": 9115,
+                "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                "is_open_access": false
+              },
+              {
+                "title": "Lecture Notes in Artificial Intelligence",
+                "authors": "Patrick Brézillon, Paolo Bouquet",
+                "year": 1999,
+                "venue": null,
+                "cited_by_count": 7440,
+                "doi": null,
+                "url": "https://openalex.org/W26772505",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 979123
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "artificial intelligence",
+            "limit": 5
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "artificial intelligence",
+            "min_year": null,
+            "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+            "most_cited": {
+              "title": "Artificial intelligence: a modern approach",
+              "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+              "year": 1995,
+              "venue": "Choice Reviews Online",
+              "cited_by_count": 22252,
+              "doi": "https://doi.org/10.5860/choice.33-1577",
+              "url": "https://doi.org/10.5281/zenodo.11381885",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Artificial intelligence: a modern approach",
+                "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                "year": 1995,
+                "venue": "Choice Reviews Online",
+                "cited_by_count": 22252,
+                "doi": "https://doi.org/10.5860/choice.33-1577",
+                "url": "https://doi.org/10.5281/zenodo.11381885",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence: A modern approach",
+                "authors": "Nils J. Nilsson",
+                "year": 1996,
+                "venue": "Artificial Intelligence",
+                "cited_by_count": 10702,
+                "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "is_open_access": false
+              },
+              {
+                "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                "year": 2019,
+                "venue": "Information Fusion",
+                "cited_by_count": 9295,
+                "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                "url": "https://arxiv.org/pdf/1910.10045",
+                "is_open_access": true
+              },
+              {
+                "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                "authors": "Eric J. Topol",
+                "year": 2018,
+                "venue": "Nature Medicine",
+                "cited_by_count": 9115,
+                "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                "is_open_access": false
+              },
+              {
+                "title": "Lecture Notes in Artificial Intelligence",
+                "authors": "Patrick Brézillon, Paolo Bouquet",
+                "year": 1999,
+                "venue": null,
+                "cited_by_count": 7440,
+                "doi": null,
+                "url": "https://openalex.org/W26772505",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 979123
+          }
+        },
+        {
+          "tool": "scholar",
+          "args": {
+            "query": "artificial intelligence",
+            "limit": 5
+          },
+          "result": {
+            "tool": "find_scholarly_works",
+            "query": "artificial intelligence",
+            "min_year": null,
+            "verdict": "Most-cited work on 'artificial intelligence': 'Artificial intelligence: a modern approach' (1995, 22,252 citations)",
+            "most_cited": {
+              "title": "Artificial intelligence: a modern approach",
+              "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+              "year": 1995,
+              "venue": "Choice Reviews Online",
+              "cited_by_count": 22252,
+              "doi": "https://doi.org/10.5860/choice.33-1577",
+              "url": "https://doi.org/10.5281/zenodo.11381885",
+              "is_open_access": true
+            },
+            "works": [
+              {
+                "title": "Artificial intelligence: a modern approach",
+                "authors": "Dr. Anil Kumar, Sivasubramanian Balasubramanian, Dr. Haewon Byeon et al.",
+                "year": 1995,
+                "venue": "Choice Reviews Online",
+                "cited_by_count": 22252,
+                "doi": "https://doi.org/10.5860/choice.33-1577",
+                "url": "https://doi.org/10.5281/zenodo.11381885",
+                "is_open_access": true
+              },
+              {
+                "title": "Artificial intelligence: A modern approach",
+                "authors": "Nils J. Nilsson",
+                "year": 1996,
+                "venue": "Artificial Intelligence",
+                "cited_by_count": 10702,
+                "doi": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "url": "https://doi.org/10.1016/0004-3702(96)00007-0",
+                "is_open_access": false
+              },
+              {
+                "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+                "authors": "Alejandro Barredo Arrieta, Natalia Díaz-Rodríguez, Javier Del Ser et al.",
+                "year": 2019,
+                "venue": "Information Fusion",
+                "cited_by_count": 9295,
+                "doi": "https://doi.org/10.1016/j.inffus.2019.12.012",
+                "url": "https://arxiv.org/pdf/1910.10045",
+                "is_open_access": true
+              },
+              {
+                "title": "High-performance medicine: the convergence of human and artificial intelligence",
+                "authors": "Eric J. Topol",
+                "year": 2018,
+                "venue": "Nature Medicine",
+                "cited_by_count": 9115,
+                "doi": "https://doi.org/10.1038/s41591-018-0300-7",
+                "url": "https://doi.org/10.1038/s41591-018-0300-7",
+                "is_open_access": false
+              },
+              {
+                "title": "Lecture Notes in Artificial Intelligence",
+                "authors": "Patrick Brézillon, Paolo Bouquet",
+                "year": 1999,
+                "venue": null,
+                "cited_by_count": 7440,
+                "doi": null,
+                "url": "https://openalex.org/W26772505",
+                "is_open_access": false
+              }
+            ],
+            "total_found": 979123
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T12:54:47"
+    }
+  ]
+}
