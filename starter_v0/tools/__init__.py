@@ -9,6 +9,12 @@ import yaml
 # The imported function names are the underlying implementations (unchanged).
 from .clarify.tool import ask_user
 from .papers.tool import arxiv_search
+# --- Team-built tools (Tool Engineer): the research-notebook track ---
+from .define.tool import define_concept
+from .note_append.tool import append_to_research_note
+from .note_write.tool import write_research_note
+from .scholar.tool import find_scholarly_works
+# --- end team-built tools ---
 from .paper_text.tool import get_arxiv_paper_text
 from .timeline.tool import get_user_tweets
 from .fetch.tool import read_url
@@ -35,6 +41,12 @@ TOOL_FUNCTIONS = {
     "policy": search_company_policy,
     "papers": arxiv_search,
     "paper_text": get_arxiv_paper_text,
+    # --- Team-built tools (Tool Engineer): research-notebook track.
+    # --- Keep in sync with the matching block at the bottom of artifacts/tools.yaml.
+    "define": define_concept,
+    "scholar": find_scholarly_works,
+    "note_write": write_research_note,
+    "note_append": append_to_research_note,
 }
 
 

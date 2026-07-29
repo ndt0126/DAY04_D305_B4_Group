@@ -16,10 +16,16 @@ class OpenAIProvider:
         api_key_env: str = "OPENAI_API_KEY",
         base_url: str | None = None,
         default_model: str = "gpt-4o-mini",
+        timeout: float = 60.0,
+        max_retries: int = 2,
     ) -> None:
         self.api_key_env = api_key_env
         self.base_url = base_url
         self.default_model = default_model
+        # The OpenAI SDK defaults to a 600s timeout with 2 retries, so an
+        # unreachable endpoint looks like a 30-minute hang instead of an error.
+        self.timeout = timeout
+        self.max_retries = max_retries
 
     def complete(
         self,
@@ -39,7 +45,12 @@ class OpenAIProvider:
         if not api_key:
             raise RuntimeError(f"Missing API key env var: {self.api_key_env}")
 
-        client = OpenAI(api_key=api_key, base_url=self.base_url)
+        client = OpenAI(
+            api_key=api_key,
+            base_url=self.base_url,
+            timeout=self.timeout,
+            max_retries=self.max_retries,
+        )
         kwargs: dict[str, Any] = {
             "model": model or self.default_model,
             "messages": messages,
