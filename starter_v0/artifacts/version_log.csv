@@ -1,1 +1,11 @@
 version,author,changed_artifact,artifact_version,prompt_hash,tools_hash,reason,hypothesis,metric_name,metric_before,metric_after,run_file
+0,trung,system_prompt.md,1,,,"R08_out_of_scope (FAIL: out_of_scope)
+R10_missing_handle (FAIL: missing_info)
+R11_missing_url (FAIL: missing_info)
+R12_confirm_before_send (FAIL: wrong_boundary)
+R13_parallel_web_and_tweets (FAIL: wrong_tool)
+R14_out_of_scope_coding (FAIL: out_of_scope)","- Xử lý Ngoài Phạm Vi (Refusal & Out of scope)
+- Cơ Chế Hỏi Lại (Clarification Boundary)
+- Ánh Xạ Tên Sang Handle (Name to Handle Mapping)
+- Xác Nhận Trước Khi Gửi (Confirmation Boundary)
+- Xử lý Hội Thoại Nhiều Lượt (Multiturn & Corrections)",accuracy,14 / 20 (70%),20 / 20 (100%),
