@@ -1,118 +1,232 @@
-# starter_v0 — tool declarations (intentionally vague).
-# Names and descriptions here are a rough first draft. Routing rules, name->handle
-# mapping, arg conventions (news/timeframe/Top), and the send-confirmation boundary
-# are NOT spelled out anywhere yet. Your job is to make these declarations + the
-# system prompt good enough that the agent routes correctly on the eval.
-#
-# If you rename a tool, keep the name in sync across:
-#   this file  ->  tools/__init__.py (TOOL_FUNCTIONS)  ->  data/eval_base.json + data/eval_research_extension.json
-tools:
-  # ---------------- Core tools ----------------
-  - name: clarify
-    description: "Gửi một câu hỏi cho người dùng."
-    parameters:
-      type: object
-      properties:
-        question: {type: string, default: "", description: "Câu hỏi"}
-        response_type: {type: string, enum: [text, yes_no, choice], default: "text", description: "Kiểu trả lời"}
-        options: {type: array, default: [], items: {type: string}, description: "Các lựa chọn"}
-      required: [question]
-
-  - name: timeline
-    description: "Lấy các bài đăng gần đây."
-    parameters:
-      type: object
-      properties:
-        screenname: {type: string, default: "", description: "Tên tài khoản"}
-        limit: {type: integer, default: 5, description: "Số lượng"}
-      required: [screenname]
-
-  - name: social_search
-    description: "Tìm trên mạng xã hội."
-    parameters:
-      type: object
-      properties:
-        query: {type: string, default: "", description: "Từ khóa"}
-        search_type: {type: string, enum: [Latest, Top], default: "Latest", description: "Cách sắp xếp"}
-        limit: {type: integer, default: 5, description: "Số lượng"}
-      required: [query]
-
-  - name: lookup
-    description: "Tra cứu thông tin trên internet."
-    parameters:
-      type: object
-      properties:
-        query: {type: string, default: "", description: "Truy vấn"}
-        topic: {type: string, enum: [general, news], default: "general", description: "Phân loại"}
-        timeframe: {type: string, enum: [day, week, month, year], default: "week", description: "Khoảng thời gian"}
-        max_results: {type: integer, default: 5, description: "Số kết quả"}
-      required: [query]
-
-  - name: fetch
-    description: "Lấy nội dung từ một địa chỉ."
-    parameters:
-      type: object
-      properties:
-        url: {type: string, default: "", description: "Địa chỉ"}
-      required: [url]
-
-  - name: format
-    description: "Trình bày dữ liệu đã có thành văn bản."
-    parameters:
-      type: object
-      properties:
-        items:
-          type: array
-          default: []
-          description: "Danh sách item"
-          items:
-            type: object
-            properties:
-              title: {type: string}
-              url: {type: string}
-              source: {type: string}
-              summary: {type: string}
-              section: {type: string}
-        template: {type: string, enum: [brief, sections, bullets, thread, daily_ai_vn], default: "sections", description: "Khuôn"}
-        headline: {type: string, default: "", description: "Tiêu đề"}
-      required: [items, template]
-
-  # ---------------- Bonus tools ----------------
-  - name: send
-    description: "Gửi một đoạn văn bản đi."
-    parameters:
-      type: object
-      properties:
-        text: {type: string, default: "", description: "Nội dung"}
-        confirmed: {type: boolean, default: false, description: "Cờ xác nhận"}
-      required: [text]
-
-  - name: policy
-    description: "Tìm trong tài liệu nội bộ."
-    parameters:
-      type: object
-      properties:
-        query: {type: string, default: "", description: "Truy vấn"}
-        policy_area: {type: string, enum: [all, ai_research, source_citation, data_privacy, external_publishing, tool_usage], default: "all", description: "Nhóm"}
-        top_k: {type: integer, default: 3, description: "Số mục"}
-      required: [query]
-
-  - name: papers
-    description: "Tìm bài báo khoa học."
-    parameters:
-      type: object
-      properties:
-        query: {type: string, default: "", description: "Từ khóa"}
-        max_results: {type: integer, default: 5, description: "Số lượng"}
-        sort_by: {type: string, enum: [relevance, lastUpdatedDate, submittedDate], default: "relevance", description: "Sắp xếp"}
-      required: [query]
-
-  - name: paper_text
-    description: "Lấy nội dung text của một bài báo."
-    parameters:
-      type: object
-      properties:
-        arxiv_url: {type: string, default: "", description: "ID hoặc địa chỉ"}
-        max_pages: {type: integer, default: 5, description: "Số trang"}
-        max_chars: {type: integer, default: 8000, description: "Số ký tự"}
+# starter_v0 — tool declarations (intentionally vague).
+# Names and descriptions here are a rough first draft. Routing rules, name->handle
+# mapping, arg conventions (news/timeframe/Top), and the send-confirmation boundary
+# are NOT spelled out anywhere yet. Your job is to make these declarations + the
+# system prompt good enough that the agent routes correctly on the eval.
+#
+# If you rename a tool, keep the name in sync across:
+#   this file  ->  tools/__init__.py (TOOL_FUNCTIONS)  ->  data/eval_base.json + data/eval_research_extension.json
+tools:
+  # ---------------- Core tools ----------------
+  - name: clarify
+    description: "Gửi một câu hỏi cho người dùng."
+    parameters:
+      type: object
+      properties:
+        question: {type: string, default: "", description: "Câu hỏi"}
+        response_type: {type: string, enum: [text, yes_no, choice], default: "text", description: "Kiểu trả lời"}
+        options: {type: array, default: [], items: {type: string}, description: "Các lựa chọn"}
+      required: [question]
+
+  - name: timeline
+    description: "Lấy các bài đăng gần đây."
+    parameters:
+      type: object
+      properties:
+        screenname: {type: string, default: "", description: "Tên tài khoản"}
+        limit: {type: integer, default: 5, description: "Số lượng"}
+      required: [screenname]
+
+  - name: social_search
+    description: "Tìm trên mạng xã hội."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Từ khóa"}
+        search_type: {type: string, enum: [Latest, Top], default: "Latest", description: "Cách sắp xếp"}
+        limit: {type: integer, default: 5, description: "Số lượng"}
+      required: [query]
+
+  - name: lookup
+    description: "Tra cứu thông tin trên internet."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Truy vấn"}
+        topic: {type: string, enum: [general, news], default: "general", description: "Phân loại"}
+        timeframe: {type: string, enum: [day, week, month, year], default: "week", description: "Khoảng thời gian"}
+        max_results: {type: integer, default: 5, description: "Số kết quả"}
+      required: [query]
+
+  - name: fetch
+    description: "Lấy nội dung từ một địa chỉ."
+    parameters:
+      type: object
+      properties:
+        url: {type: string, default: "", description: "Địa chỉ"}
+      required: [url]
+
+  - name: format
+    description: "Trình bày dữ liệu đã có thành văn bản."
+    parameters:
+      type: object
+      properties:
+        items:
+          type: array
+          default: []
+          description: "Danh sách item"
+          items:
+            type: object
+            properties:
+              title: {type: string}
+              url: {type: string}
+              source: {type: string}
+              summary: {type: string}
+              section: {type: string}
+        template: {type: string, enum: [brief, sections, bullets, thread, daily_ai_vn], default: "sections", description: "Khuôn"}
+        headline: {type: string, default: "", description: "Tiêu đề"}
+      required: [items, template]
+
+  # ---------------- Bonus tools ----------------
+  - name: send
+    description: "Gửi một đoạn văn bản đi."
+    parameters:
+      type: object
+      properties:
+        text: {type: string, default: "", description: "Nội dung"}
+        confirmed: {type: boolean, default: false, description: "Cờ xác nhận"}
+      required: [text]
+
+  - name: policy
+    description: "Tìm trong tài liệu nội bộ."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Truy vấn"}
+        policy_area: {type: string, enum: [all, ai_research, source_citation, data_privacy, external_publishing, tool_usage], default: "all", description: "Nhóm"}
+        top_k: {type: integer, default: 3, description: "Số mục"}
+      required: [query]
+
+  - name: papers
+    description: "Tìm bài báo khoa học."
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Từ khóa"}
+        max_results: {type: integer, default: 5, description: "Số lượng"}
+        sort_by: {type: string, enum: [relevance, lastUpdatedDate, submittedDate], default: "relevance", description: "Sắp xếp"}
+      required: [query]
+
+  - name: paper_text
+    description: "Lấy nội dung text của một bài báo."
+    parameters:
+      type: object
+      properties:
+        arxiv_url: {type: string, default: "", description: "ID hoặc địa chỉ"}
+        max_pages: {type: integer, default: 5, description: "Số trang"}
+        max_chars: {type: integer, default: 8000, description: "Số ký tự"}
       required: [arxiv_url]
+  # ============================================================================
+  # TEAM-BUILT TOOLS — "Sổ tay nghiên cứu" — owner: Tool Engineer (Vinh)
+  # ----------------------------------------------------------------------------
+  # NOTE cho Prompt Engineer:
+  #   - Mọi thứ PHÍA TRÊN dòng này là của bạn, cứ tự do sửa description cho v2/v3.
+  #   - Khối DƯỚI đây là 4 tool mới do team tự viết. Mình cố ý viết description
+  #     theo dạng "DÙNG KHI / KHÔNG DÙNG KHI" để làm sẵn nguyên liệu routing.
+  #     Bạn vẫn được sửa, chỉ cần báo mình để mình sync lại TOOL.md tương ứng.
+  #
+  # CÂU CHUYỆN: agent là trợ lý nghiên cứu duy trì một sổ tay cá nhân.
+  #   Mỗi tool trả lời ĐÚNG MỘT câu hỏi nghiệp vụ và trả về KẾT LUẬN, không phải
+  #   dữ liệu thô:
+  #     define      "X nghĩa là gì?"                  -> một định nghĩa ngắn
+  #     scholar     "Công trình nào đã được công nhận?" -> verdict + most_cited
+  #     note_write  "Mở sổ mới cho chủ đề này"          -> tạo notes/<slug>.md
+  #     note_append "Ghi phát hiện này vào sổ đã có"    -> bổ sung vào note
+  #   Luồng demo: define/scholar (thu thập) -> note_write (mở sổ) -> note_append
+  #   (bổ sung dần). Hai tool note đều CÓ SIDE EFFECT và cần clarify yes_no trước.
+  #
+  # RANH GIỚI ROUTING -> nguyên liệu cho eval_group.json:
+  #     define vs lookup          wrong_tool      (khái niệm nền vs tin "mới nhất")
+  #     scholar vs papers         wrong_tool      (peer-reviewed/trích dẫn vs arXiv preprint)
+  #     note_write vs note_append wrong_tool      (tạo mới vs bổ sung note đã có)
+  #     cả hai note tool          wrong_boundary  (confirmed=true khi chưa clarify)
+  #     note_append không rõ note missing_info    (phải clarify hỏi note nào)
+  #
+  # LƯU Ý: 4 tool này KHÔNG cần API key, nhưng CÓ ẢNH HƯỞNG ROUTING. Nếu muốn
+  # baseline v0 sạch để so với run cũ, comment cả khối này lại trước khi chạy.
+  # Sync bắt buộc: file này <-> tools/__init__.py <-> tools/<tên>/TOOL.md
+  # ============================================================================
+
+  - name: define
+    description: >-
+      Trả về một định nghĩa ngắn gọn, đã sẵn sàng dán vào ghi chú, cho một thuật
+      ngữ hoặc khái niệm. Nguồn là bách khoa toàn thư, trả về ĐỊNH NGHĨA chứ
+      không phải cả bài viết hay danh sách kết quả tìm kiếm.
+      DÙNG KHI: người dùng hỏi "X là gì", xin định nghĩa, xin giải thích khái
+      niệm, hoặc cần một câu chú thích chuẩn cho thuật ngữ trước khi ghi vào sổ.
+      KHÔNG DÙNG KHI: câu hỏi có yếu tố thời sự như "mới nhất", "hôm nay", "vừa
+      ra mắt" (dùng lookup với topic=news); cần paper hay trích dẫn học thuật
+      (dùng scholar); đã có URL cụ thể (dùng fetch).
+      Nếu thuật ngữ mơ hồ, tool báo lỗi để bạn clarify thay vì đoán bừa.
+      Không cần API key.
+    parameters:
+      type: object
+      properties:
+        term: {type: string, default: "", description: "Thuật ngữ cần định nghĩa, không được rỗng. Gõ sai chính tả vẫn được vì có fallback search"}
+        lang:
+          type: string
+          enum: [en, vi]
+          default: "en"
+          description: "vi cho chủ đề Việt Nam; en cho thuật ngữ kỹ thuật quốc tế vì nội dung đầy đủ hơn"
+        max_sentences: {type: integer, default: 2, description: "Độ dài định nghĩa, 1-5 câu. Tăng khi cần đoạn mở đầu dài hơn"}
+      required: [term]
+
+  - name: scholar
+    description: >-
+      Tìm tài liệu học thuật ĐÃ XUẤT BẢN trên mọi nhà xuất bản và xếp hạng theo
+      SỐ LƯỢT TRÍCH DẪN, nên kết quả đầu là công trình nền tảng của lĩnh vực.
+      Trả về verdict một dòng kèm công trình được trích dẫn nhiều nhất.
+      DÙNG KHI: người dùng hỏi paper kinh điển, công trình nền tảng, tài liệu có
+      sức nặng học thuật để dẫn nguồn, hoặc cần nguồn ngoài arXiv.
+      KHÔNG DÙNG KHI: người dùng muốn preprint MỚI NHẤT trên arXiv (dùng papers);
+      cần đọc toàn văn một paper arXiv cụ thể (dùng paper_text); chỉ cần định
+      nghĩa khái niệm (dùng define); hỏi tin tức hay blog (dùng lookup).
+      Khác biệt then chốt với papers: papers = preprint arXiv chưa bình duyệt,
+      sắp xếp theo ngày/liên quan. scholar = đã bình duyệt, sắp theo trích dẫn.
+      Không cần API key.
+    parameters:
+      type: object
+      properties:
+        query: {type: string, default: "", description: "Từ khóa chủ đề, không phải tên tác giả. Không được rỗng"}
+        min_year: {type: integer, description: "Chỉ đặt khi người dùng giới hạn thời gian. Cảnh báo: lọc năm gần sẽ loại mất công trình kinh điển"}
+        limit: {type: integer, default: 5, description: "Số công trình, tự kẹp trong 1-25"}
+      required: [query]
+
+  - name: note_write
+    description: >-
+      Tạo MỚI một mục ghi chú nghiên cứu trong sổ tay, tại notes/<slug>.md.
+      ĐÂY LÀ ACTION CÓ SIDE EFFECT. Bắt buộc gọi clarify với response_type="yes_no"
+      trước; chỉ khi người dùng đồng ý mới gọi lại với confirmed=true. Khi
+      confirmed=false tool không tạo gì và trả status="needs_confirmation".
+      DÙNG KHI: chủ đề CHƯA có ghi chú nào và người dùng muốn bắt đầu lưu lại.
+      KHÔNG DÙNG KHI: chủ đề ĐÃ có ghi chú và người dùng muốn bổ sung (dùng
+      note_append); người dùng chỉ muốn xem kết quả (dừng ở format); muốn gửi ra
+      ngoài Telegram (dùng send).
+      Tool cố tình TỪ CHỐI ghi đè note đã tồn tại và sẽ chỉ bạn sang note_append.
+    parameters:
+      type: object
+      properties:
+        topic: {type: string, default: "", description: "Chủ đề ghi chú. Sinh slug ổn định để note_append tìm lại được"}
+        content: {type: string, default: "", description: "Nội dung markdown cho phần Overview, thường ghép từ define/scholar/format"}
+        confirmed: {type: boolean, default: false, description: "Chỉ đặt true SAU KHI người dùng đã xác nhận rõ ràng qua clarify yes_no"}
+      required: [topic, content]
+
+  - name: note_append
+    description: >-
+      Bổ sung một mục mới vào ghi chú nghiên cứu ĐÃ TỒN TẠI. Không bao giờ tự
+      tạo note mới.
+      ĐÂY LÀ ACTION CÓ SIDE EFFECT. Bắt buộc gọi clarify với response_type="yes_no"
+      trước; chỉ khi người dùng đồng ý mới gọi lại với confirmed=true.
+      DÙNG KHI: chủ đề đã có sổ và người dùng muốn ghi thêm phát hiện mới.
+      KHÔNG DÙNG KHI: chủ đề hoàn toàn mới, chưa có sổ (dùng note_write); người
+      dùng nói mơ hồ "lưu vào ghi chú của tôi" trong khi đang có nhiều note và
+      không rõ note nào (gọi clarify hỏi trước, đừng đoán).
+      Nếu không tìm thấy note, tool trả lỗi kèm danh sách note đang có.
+    parameters:
+      type: object
+      properties:
+        topic: {type: string, default: "", description: "Chủ đề của note đã tồn tại, phải khớp topic lúc tạo"}
+        entry: {type: string, default: "", description: "Nội dung markdown cần thêm vào"}
+        section: {type: string, default: "Findings", description: "Tiêu đề mục mới, ví dụ Sources, Open questions, Related work"}
+        confirmed: {type: boolean, default: false, description: "Chỉ đặt true SAU KHI người dùng đã xác nhận rõ ràng qua clarify yes_no"}
+      required: [topic, entry]

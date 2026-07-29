@@ -6,3 +6,5 @@ __pycache__/
 .env.*
 !.env.example
 arxiv_papers/
+# notes/ is written by the team-built `save_note` tool during demos.
+notes/
